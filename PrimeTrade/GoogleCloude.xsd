@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="GoogleCloude" targetNamespace="http://tempuri.org/GoogleCloude.xsd" xmlns:mstns="http://tempuri.org/GoogleCloude.xsd" xmlns="http://tempuri.org/GoogleCloude.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PrimeTrade.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tb_adminuserTableAdapter" GeneratorDataComponentClassName="tb_adminuserTableAdapter" Name="tb_adminuser" UserDataComponentName="tb_adminuserTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="base.tb_adminuser" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `userid`, `firstname`, `lastname`, `gender`, `email`, `address`, `telephone`, `mobile`, `position`, `joineddate`, `username`, `password`, `managsection`, `active` FROM `tb_adminuser`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tb_areaTableAdapter" GeneratorDataComponentClassName="tb_areaTableAdapter" Name="tb_area" UserDataComponentName="tb_areaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="base.tb_area" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `areaid`, `areaname`, `province` FROM `tb_area`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tb_distributer_areaTableAdapter" GeneratorDataComponentClassName="tb_distributer_areaTableAdapter" Name="tb_distributer_area" UserDataComponentName="tb_distributer_areaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="base.tb_distributer_area" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `recid`, `userid`, `areaid` FROM `tb_distributer_area`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tb_distributersTableAdapter" GeneratorDataComponentClassName="tb_distributersTableAdapter" Name="tb_distributers" UserDataComponentName="tb_distributersTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="base.tb_distributers" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `userid`, `firstname`, `lastname`, `gender`, `email`, `telephone`, `mobile`, `address`, `username`, `password`, `active`, `joineddate` FROM `tb_distributers`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="GoogleCloude" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="GoogleCloude" msprop:Generator_UserDSName="GoogleCloude">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tb_adminuser" msprop:Generator_TableClassName="tb_adminuserDataTable" msprop:Generator_TableVarName="tabletb_adminuser" msprop:Generator_TablePropName="tb_adminuser" msprop:Generator_RowDeletingName="tb_adminuserRowDeleting" msprop:Generator_RowChangingName="tb_adminuserRowChanging" msprop:Generator_RowEvHandlerName="tb_adminuserRowChangeEventHandler" msprop:Generator_RowDeletedName="tb_adminuserRowDeleted" msprop:Generator_UserTableName="tb_adminuser" msprop:Generator_RowChangedName="tb_adminuserRowChanged" msprop:Generator_RowEvArgName="tb_adminuserRowChangeEvent" msprop:Generator_RowClassName="tb_adminuserRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tb_area" msprop:Generator_TableClassName="tb_areaDataTable" msprop:Generator_TableVarName="tabletb_area" msprop:Generator_TablePropName="tb_area" msprop:Generator_RowDeletingName="tb_areaRowDeleting" msprop:Generator_RowChangingName="tb_areaRowChanging" msprop:Generator_RowEvHandlerName="tb_areaRowChangeEventHandler" msprop:Generator_RowDeletedName="tb_areaRowDeleted" msprop:Generator_UserTableName="tb_area" msprop:Generator_RowChangedName="tb_areaRowChanged" msprop:Generator_RowEvArgName="tb_areaRowChangeEvent" msprop:Generator_RowClassName="tb_areaRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tb_distributer_area" msprop:Generator_TableClassName="tb_distributer_areaDataTable" msprop:Generator_TableVarName="tabletb_distributer_area" msprop:Generator_TablePropName="tb_distributer_area" msprop:Generator_RowDeletingName="tb_distributer_areaRowDeleting" msprop:Generator_RowChangingName="tb_distributer_areaRowChanging" msprop:Generator_RowEvHandlerName="tb_distributer_areaRowChangeEventHandler" msprop:Generator_RowDeletedName="tb_distributer_areaRowDeleted" msprop:Generator_UserTableName="tb_distributer_area" msprop:Generator_RowChangedName="tb_distributer_areaRowChanged" msprop:Generator_RowEvArgName="tb_distributer_areaRowChangeEvent" msprop:Generator_RowClassName="tb_distributer_areaRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tb_distributers" msprop:Generator_TableClassName="tb_distributersDataTable" msprop:Generator_TableVarName="tabletb_distributers" msprop:Generator_TablePropName="tb_distributers" msprop:Generator_RowDeletingName="tb_distributersRowDeleting" msprop:Generator_RowChangingName="tb_distributersRowChanging" msprop:Generator_RowEvHandlerName="tb_distributersRowChangeEventHandler" msprop:Generator_RowDeletedName="tb_distributersRowDeleted" msprop:Generator_UserTableName="tb_distributers" msprop:Generator_RowChangedName="tb_distributersRowChanged" msprop:Generator_RowEvArgName="tb_distributersRowChangeEvent" msprop:Generator_RowClassName="tb_distributersRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
