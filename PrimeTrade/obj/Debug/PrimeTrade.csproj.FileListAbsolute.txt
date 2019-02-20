@@ -19,3 +19,4 @@ D:\PrimeTrade\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmAdminViewUsers.resou
 D:\PrimeTrade\PrimeTrade\PrimeTrade\bin\Debug\MaterialSkin.dll
 D:\PrimeTrade\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmAdminChangePassword.resources
 D:\PrimeTrade\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.csprojResolveAssemblyReference.cache
+D:\PrimeTrade\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmManagerStockManagement.resources

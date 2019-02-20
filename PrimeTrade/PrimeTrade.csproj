@@ -94,6 +94,12 @@
     <Compile Include="frmFinanceManagerHome.Designer.cs">
       <DependentUpon>frmFinanceManagerHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmManagerStockManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerStockManagement.Designer.cs">
+      <DependentUpon>frmManagerStockManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmStartup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmFinanceManagerHome.resx">
       <DependentUpon>frmFinanceManagerHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerStockManagement.resx">
+      <DependentUpon>frmManagerStockManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmStartup.resx">
       <DependentUpon>frmStartup.cs</DependentUpon>
