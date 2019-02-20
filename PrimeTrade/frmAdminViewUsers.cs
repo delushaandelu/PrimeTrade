@@ -19,6 +19,7 @@ namespace PrimeTrade
         public frmAdminViewUsers()
         {
             InitializeComponent();
+            listView1.Columns.RemoveAt(11);
             listView1.Columns.RemoveAt(10);
             refreshView();
         }
@@ -37,7 +38,7 @@ namespace PrimeTrade
             listView1.Items.Clear();
             listView1.View = View.Details;
 
-            MySqlDataAdapter dAdpter = new MySqlDataAdapter("SELECT firstname, lasename, email, address, telephone, role, joindate, nic, username, status, idtbl_user FROM base.tbl_user", connect);
+            MySqlDataAdapter dAdpter = new MySqlDataAdapter("SELECT firstname, lasename, email, address, telephone, role, joindate, nic, username, status, idtbl_user, password FROM base.tbl_user", connect);
             
             DataTable dTable = new DataTable();
             dAdpter.Fill(dTable);
@@ -58,6 +59,7 @@ namespace PrimeTrade
                 listItem.SubItems.Add(dRow["username"].ToString());
                 listItem.SubItems.Add(dRow["status"].ToString());
                 listItem.SubItems.Add(dRow["idtbl_user"].ToString());
+                listItem.SubItems.Add(dRow["password"].ToString());
 
                 listView1.Items.Add(listItem);
             }
@@ -201,7 +203,20 @@ namespace PrimeTrade
 
         private void updateUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmAdminAddUser form = new frmAdminAddUser("Update");
+            string user_id = listView1.SelectedItems[0].SubItems[10].Text;
+            string firstname = listView1.SelectedItems[0].SubItems[0].Text;
+            string lastname = listView1.SelectedItems[0].SubItems[1].Text;
+            string email = listView1.SelectedItems[0].SubItems[2].Text;
+            string address = listView1.SelectedItems[0].SubItems[3].Text;
+            string telephone = listView1.SelectedItems[0].SubItems[4].Text;
+            string role = listView1.SelectedItems[0].SubItems[5].Text;
+            string joineddate = listView1.SelectedItems[0].SubItems[6].Text;
+            string nic = listView1.SelectedItems[0].SubItems[7].Text;
+            string username = listView1.SelectedItems[0].SubItems[8].Text;
+            string activestate = listView1.SelectedItems[0].SubItems[9].Text;
+            string password = listView1.SelectedItems[0].SubItems[11].Text;
+            frmAdminAddUser form = new frmAdminAddUser("Update", user_id, firstname, lastname, email, address, telephone, role, joineddate, nic, username, activestate, password);
+            form.MdiParent = frmAdminHome.ActiveForm;
             form.Show();
         }
     }

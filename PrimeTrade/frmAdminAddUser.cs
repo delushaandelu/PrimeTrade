@@ -15,12 +15,15 @@ using MySql.Data.MySqlClient;
 using MetroFramework.Forms;
 using MetroFramework.Fonts;
 using PrimeTrade.adminUser;
+using MaterialSkin.Controls;
+using MaterialSkin.Animations;
 
 namespace PrimeTrade
 {
     public partial class frmAdminAddUser : MetroForm
     {
         MySqlConnection connect = new MySqlConnection(connections.classConnection.ConnectNow("GoogleCloude"));
+        string activestatus;
         public frmAdminAddUser(string control)
         {
             InitializeComponent();
@@ -33,6 +36,34 @@ namespace PrimeTrade
             {
                 btnAddUser.Hide();
             }
+        }
+
+        public frmAdminAddUser(string control, string userid, string firstname, string lastname, string email, string address, string telephone, string role, string joineddate, string nic, string username, string activestate, string password)
+        {
+            InitializeComponent();
+            chkstate.Visible = false;
+            lblactive.Visible = false;
+            if (control == "Add")
+            {
+                btnUpdateUser.Hide();
+            }
+            else if (control == "Update")
+            {
+                btnAddUser.Hide();
+            }
+
+            txtfirstname.Text = firstname;
+            txtlastname.Text = lastname;
+            txtemail.Text = email;
+            txtaddress.Text = address;
+            txttelephone.Text = telephone;
+            cmbRole.SelectedItem = role;
+            dtpjoineddate.Text = joineddate;
+            txtnic.Text = nic;
+            txtusername.Text = username;
+            txtuserid.Text = userid;
+            txtpass.Text = password;
+            activestatus = activestate;
         }
 
         public void clearField()
@@ -116,13 +147,13 @@ namespace PrimeTrade
             pera[8].Value = txtnic.Text;
 
             pera[9] = new MySqlParameter("username", MySqlDbType.VarChar);
-            pera[9].Value = txtuserid.Text;
+            pera[9].Value = txtusername.Text;
 
             pera[10] = new MySqlParameter("pass", MySqlDbType.VarChar);
             pera[10].Value = txtpass.Text;
 
             pera[11] = new MySqlParameter("stat", MySqlDbType.VarChar);
-            pera[11].Value = chkstate.Text;
+            pera[11].Value = activestatus;
 
             MySqlCommand command = new MySqlCommand();
             command.Connection = connect;
@@ -136,11 +167,13 @@ namespace PrimeTrade
             {
                 connect.Close();
                 MessageBox.Show("User profile updated.", "Success !", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
             }
             else
             {
                 connect.Close();
                 MessageBox.Show("Can not update user profile.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
             }
         }
     }

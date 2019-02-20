@@ -46,5 +46,12 @@ namespace PrimeTrade
             form.MdiParent = this;
             form.Show();
         }
+
+        private void metroTile3_Click(object sender, EventArgs e)
+        {
+            frmAdminChangePassword form = new frmAdminChangePassword();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

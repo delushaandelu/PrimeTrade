@@ -95,7 +95,7 @@
             this.menuStrip.Location = new System.Drawing.Point(120, 60);
             this.menuStrip.MdiWindowListItem = this.windowsMenu;
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(1066, 24);
+            this.menuStrip.Size = new System.Drawing.Size(1063, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
             // 
@@ -412,9 +412,9 @@
             // 
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel});
-            this.statusStrip.Location = new System.Drawing.Point(120, 628);
+            this.statusStrip.Location = new System.Drawing.Point(120, 629);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(1066, 22);
+            this.statusStrip.Size = new System.Drawing.Size(1063, 22);
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "StatusStrip";
             // 
@@ -433,6 +433,9 @@
             this.metroTile1.Size = new System.Drawing.Size(80, 81);
             this.metroTile1.TabIndex = 4;
             this.metroTile1.Text = "Add User";
+            this.metroTile1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.metroTile1.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile1.TileImage")));
+            this.metroTile1.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.metroTile1.UseSelectable = true;
             this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
             // 
@@ -456,6 +459,7 @@
             this.metroTile3.TabIndex = 6;
             this.metroTile3.Text = "metroTile3";
             this.metroTile3.UseSelectable = true;
+            this.metroTile3.Click += new System.EventHandler(this.metroTile3_Click);
             // 
             // metroTile4
             // 
@@ -491,7 +495,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1206, 670);
+            this.ClientSize = new System.Drawing.Size(1203, 671);
             this.Controls.Add(this.metroTile6);
             this.Controls.Add(this.metroTile5);
             this.Controls.Add(this.metroTile4);

@@ -48,6 +48,7 @@
             this.removeUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contectActiveStatus = new System.Windows.Forms.ToolStripMenuItem();
+            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cntDeleteUser.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,12 +65,13 @@
             this.columnHeader10,
             this.columnHeader8,
             this.columnHeader1,
-            this.columnHeader9});
+            this.columnHeader9,
+            this.columnHeader11});
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.Location = new System.Drawing.Point(34, 114);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1019, 310);
+            this.listView1.Size = new System.Drawing.Size(1035, 310);
             this.listView1.TabIndex = 17;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -179,35 +181,39 @@
             this.updateUserToolStripMenuItem,
             this.contectActiveStatus});
             this.cntDeleteUser.Name = "cntDeleteUser";
-            this.cntDeleteUser.Size = new System.Drawing.Size(153, 92);
+            this.cntDeleteUser.Size = new System.Drawing.Size(144, 70);
             this.cntDeleteUser.Text = "Delete User";
             // 
             // removeUserToolStripMenuItem
             // 
             this.removeUserToolStripMenuItem.Name = "removeUserToolStripMenuItem";
-            this.removeUserToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.removeUserToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.removeUserToolStripMenuItem.Text = "Remove User";
             this.removeUserToolStripMenuItem.Click += new System.EventHandler(this.removeUserToolStripMenuItem_Click);
             // 
             // updateUserToolStripMenuItem
             // 
             this.updateUserToolStripMenuItem.Name = "updateUserToolStripMenuItem";
-            this.updateUserToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.updateUserToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.updateUserToolStripMenuItem.Text = "Update User";
             this.updateUserToolStripMenuItem.Click += new System.EventHandler(this.updateUserToolStripMenuItem_Click);
             // 
             // contectActiveStatus
             // 
             this.contectActiveStatus.Name = "contectActiveStatus";
-            this.contectActiveStatus.Size = new System.Drawing.Size(152, 22);
+            this.contectActiveStatus.Size = new System.Drawing.Size(143, 22);
             this.contectActiveStatus.Text = "Active Status";
             this.contectActiveStatus.Click += new System.EventHandler(this.contectActiveStatus_Click);
+            // 
+            // columnHeader11
+            // 
+            this.columnHeader11.Text = "password";
             // 
             // frmAdminViewUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1083, 465);
+            this.ClientSize = new System.Drawing.Size(1103, 465);
             this.Controls.Add(this.txtsearch);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.listView1);
@@ -240,5 +246,6 @@
         private System.Windows.Forms.ToolStripMenuItem removeUserToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem contectActiveStatus;
         private System.Windows.Forms.ToolStripMenuItem updateUserToolStripMenuItem;
+        private System.Windows.Forms.ColumnHeader columnHeader11;
     }
 }

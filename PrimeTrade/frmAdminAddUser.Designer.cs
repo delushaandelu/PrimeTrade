@@ -37,7 +37,7 @@
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
+            this.lblactive = new MetroFramework.Controls.MetroLabel();
             this.txtfirstname = new MetroFramework.Controls.MetroTextBox();
             this.txtlastname = new MetroFramework.Controls.MetroTextBox();
             this.txtemail = new MetroFramework.Controls.MetroTextBox();
@@ -135,14 +135,14 @@
             this.metroLabel9.TabIndex = 8;
             this.metroLabel9.Text = "Username";
             // 
-            // metroLabel10
+            // lblactive
             // 
-            this.metroLabel10.AutoSize = true;
-            this.metroLabel10.Location = new System.Drawing.Point(380, 288);
-            this.metroLabel10.Name = "metroLabel10";
-            this.metroLabel10.Size = new System.Drawing.Size(77, 19);
-            this.metroLabel10.TabIndex = 9;
-            this.metroLabel10.Text = "Active State";
+            this.lblactive.AutoSize = true;
+            this.lblactive.Location = new System.Drawing.Point(380, 288);
+            this.lblactive.Name = "lblactive";
+            this.lblactive.Size = new System.Drawing.Size(77, 19);
+            this.lblactive.TabIndex = 9;
+            this.lblactive.Text = "Active State";
             // 
             // txtfirstname
             // 
@@ -489,7 +489,7 @@
             this.Controls.Add(this.txtemail);
             this.Controls.Add(this.txtlastname);
             this.Controls.Add(this.txtfirstname);
-            this.Controls.Add(this.metroLabel10);
+            this.Controls.Add(this.lblactive);
             this.Controls.Add(this.metroLabel9);
             this.Controls.Add(this.metroLabel8);
             this.Controls.Add(this.metroLabel7);
@@ -518,7 +518,7 @@
         private MetroFramework.Controls.MetroLabel metroLabel7;
         private MetroFramework.Controls.MetroLabel metroLabel8;
         private MetroFramework.Controls.MetroLabel metroLabel9;
-        private MetroFramework.Controls.MetroLabel metroLabel10;
+        private MetroFramework.Controls.MetroLabel lblactive;
         private MetroFramework.Controls.MetroTextBox txtfirstname;
         private MetroFramework.Controls.MetroTextBox txtlastname;
         private MetroFramework.Controls.MetroTextBox txtemail;

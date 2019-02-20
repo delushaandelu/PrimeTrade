@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
     </Reference>
@@ -66,6 +69,12 @@
     </Compile>
     <Compile Include="frmAdminAddUser.Designer.cs">
       <DependentUpon>frmAdminAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminChangePassword.Designer.cs">
+      <DependentUpon>frmAdminChangePassword.cs</DependentUpon>
     </Compile>
     <Compile Include="frmAdminHome.cs">
       <SubType>Form</SubType>
@@ -112,6 +121,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAdminAddUser.resx">
       <DependentUpon>frmAdminAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminChangePassword.resx">
+      <DependentUpon>frmAdminChangePassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAdminHome.resx">
       <DependentUpon>frmAdminHome.cs</DependentUpon>

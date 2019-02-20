@@ -7,10 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework.Fonts;
+using MetroFramework.Forms;
+using MaterialSkin.Controls;
+using MaterialSkin.Animations;
 
 namespace PrimeTrade
 {
-    public partial class frmFinanceManagerHome : Form
+    public partial class frmFinanceManagerHome : MetroForm
     {
         private int childFormNumber = 0;
 
