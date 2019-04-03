@@ -52,6 +52,19 @@
             this.cmbbrand = new System.Windows.Forms.ComboBox();
             this.cmbpromocode = new System.Windows.Forms.ComboBox();
             this.cmbstate = new System.Windows.Forms.ComboBox();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader19 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader20 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader22 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.txtstkid = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.SuspendLayout();
             // 
             // materialLabel6
@@ -291,6 +304,7 @@
             this.btnupdatestock.TabIndex = 34;
             this.btnupdatestock.Text = "UPDATE STOCK";
             this.btnupdatestock.UseVisualStyleBackColor = true;
+            this.btnupdatestock.Click += new System.EventHandler(this.btnupdatestock_Click);
             // 
             // btndeletestock
             // 
@@ -354,11 +368,105 @@
             this.cmbstate.Size = new System.Drawing.Size(195, 21);
             this.cmbstate.TabIndex = 40;
             // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader12,
+            this.columnHeader13,
+            this.columnHeader14,
+            this.columnHeader15,
+            this.columnHeader16,
+            this.columnHeader18,
+            this.columnHeader19,
+            this.columnHeader20,
+            this.columnHeader22,
+            this.columnHeader1,
+            this.columnHeader2});
+            this.listView1.FullRowSelect = true;
+            this.listView1.GridLines = true;
+            this.listView1.Location = new System.Drawing.Point(54, 335);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(909, 299);
+            this.listView1.TabIndex = 41;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listView1_MouseDoubleClick);
+            // 
+            // columnHeader12
+            // 
+            this.columnHeader12.Text = "Stock ID";
+            // 
+            // columnHeader13
+            // 
+            this.columnHeader13.Text = "Item Name";
+            this.columnHeader13.Width = 90;
+            // 
+            // columnHeader14
+            // 
+            this.columnHeader14.Text = "Category";
+            this.columnHeader14.Width = 80;
+            // 
+            // columnHeader15
+            // 
+            this.columnHeader15.Text = "Brand";
+            this.columnHeader15.Width = 80;
+            // 
+            // columnHeader16
+            // 
+            this.columnHeader16.Text = "QTY";
+            // 
+            // columnHeader18
+            // 
+            this.columnHeader18.Text = "Manufactor";
+            this.columnHeader18.Width = 80;
+            // 
+            // columnHeader19
+            // 
+            this.columnHeader19.Text = "Manufacture Date";
+            this.columnHeader19.Width = 120;
+            // 
+            // columnHeader20
+            // 
+            this.columnHeader20.Text = "Expaired Date";
+            this.columnHeader20.Width = 120;
+            // 
+            // columnHeader22
+            // 
+            this.columnHeader22.Text = "State";
+            this.columnHeader22.Width = 80;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Reorder Level";
+            this.columnHeader1.Width = 70;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Promo Code";
+            this.columnHeader2.Width = 80;
+            // 
+            // txtstkid
+            // 
+            this.txtstkid.Depth = 0;
+            this.txtstkid.Hint = "";
+            this.txtstkid.Location = new System.Drawing.Point(162, 71);
+            this.txtstkid.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtstkid.Name = "txtstkid";
+            this.txtstkid.PasswordChar = '\0';
+            this.txtstkid.SelectedText = "";
+            this.txtstkid.SelectionLength = 0;
+            this.txtstkid.SelectionStart = 0;
+            this.txtstkid.Size = new System.Drawing.Size(40, 23);
+            this.txtstkid.TabIndex = 42;
+            this.txtstkid.UseSystemPasswordChar = false;
+            // 
             // frmManagerStockManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1168, 646);
+            this.ClientSize = new System.Drawing.Size(1015, 658);
+            this.Controls.Add(this.txtstkid);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.cmbstate);
             this.Controls.Add(this.cmbpromocode);
             this.Controls.Add(this.cmbbrand);
@@ -418,5 +526,18 @@
         private System.Windows.Forms.ComboBox cmbbrand;
         private System.Windows.Forms.ComboBox cmbpromocode;
         private System.Windows.Forms.ComboBox cmbstate;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnHeader12;
+        private System.Windows.Forms.ColumnHeader columnHeader13;
+        private System.Windows.Forms.ColumnHeader columnHeader14;
+        private System.Windows.Forms.ColumnHeader columnHeader15;
+        private System.Windows.Forms.ColumnHeader columnHeader16;
+        private System.Windows.Forms.ColumnHeader columnHeader18;
+        private System.Windows.Forms.ColumnHeader columnHeader19;
+        private System.Windows.Forms.ColumnHeader columnHeader20;
+        private System.Windows.Forms.ColumnHeader columnHeader22;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtstkid;
     }
 }
