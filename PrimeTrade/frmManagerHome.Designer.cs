@@ -432,7 +432,7 @@
             this.metroTile1.Name = "metroTile1";
             this.metroTile1.Size = new System.Drawing.Size(94, 93);
             this.metroTile1.TabIndex = 4;
-            this.metroTile1.Text = "metroTile1";
+            this.metroTile1.Text = "Stock";
             this.metroTile1.UseSelectable = true;
             this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
             // 
@@ -443,8 +443,9 @@
             this.metroTile2.Name = "metroTile2";
             this.metroTile2.Size = new System.Drawing.Size(94, 93);
             this.metroTile2.TabIndex = 5;
-            this.metroTile2.Text = "metroTile2";
+            this.metroTile2.Text = "Basic Data";
             this.metroTile2.UseSelectable = true;
+            this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click);
             // 
             // metroTile3
             // 
@@ -453,8 +454,9 @@
             this.metroTile3.Name = "metroTile3";
             this.metroTile3.Size = new System.Drawing.Size(94, 93);
             this.metroTile3.TabIndex = 6;
-            this.metroTile3.Text = "metroTile3";
+            this.metroTile3.Text = "View Stock";
             this.metroTile3.UseSelectable = true;
+            this.metroTile3.Click += new System.EventHandler(this.metroTile3_Click);
             // 
             // metroTile4
             // 

@@ -125,11 +125,23 @@
     <Compile Include="frmFinanceManagerHome.Designer.cs">
       <DependentUpon>frmFinanceManagerHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmManagerStockBasicData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerStockBasicData.Designer.cs">
+      <DependentUpon>frmManagerStockBasicData.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmManagerStockManagement.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmManagerStockManagement.Designer.cs">
       <DependentUpon>frmManagerStockManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManagerViewStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerViewStock.Designer.cs">
+      <DependentUpon>frmManagerViewStock.cs</DependentUpon>
     </Compile>
     <Compile Include="frmStartup.cs">
       <SubType>Form</SubType>
@@ -171,8 +183,14 @@
     <EmbeddedResource Include="frmFinanceManagerHome.resx">
       <DependentUpon>frmFinanceManagerHome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerStockBasicData.resx">
+      <DependentUpon>frmManagerStockBasicData.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmManagerStockManagement.resx">
       <DependentUpon>frmManagerStockManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerViewStock.resx">
+      <DependentUpon>frmManagerViewStock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmStartup.resx">
       <DependentUpon>frmStartup.cs</DependentUpon>

@@ -317,6 +317,7 @@
             this.btndeletestock.TabIndex = 35;
             this.btndeletestock.Text = "Delete Stock";
             this.btndeletestock.UseVisualStyleBackColor = true;
+            this.btndeletestock.Click += new System.EventHandler(this.btndeletestock_Click);
             // 
             // cmbmanufactor
             // 

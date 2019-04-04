@@ -198,12 +198,43 @@ namespace PrimeTrade
                 MessageBox.Show("Stock data updated.", "Success !", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
                 view_stock();
+                clearn_form();
             }
             else
             {
                 connect.Close();
                 MessageBox.Show("Can not update stock data.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 this.Close();
+                clearn_form();
+            }
+        }
+
+        private void btndeletestock_Click(object sender, EventArgs e)
+        {
+            MySqlParameter[] pera = new MySqlParameter[1];
+            pera[0] = new MySqlParameter("stockid", SqlDbType.VarChar);
+            pera[0].Value = txtstkid.Text;
+
+            MySqlCommand command = new MySqlCommand();
+            command.Connection = connect;
+            command.CommandType = CommandType.StoredProcedure;
+            command.CommandText = "stock_delete_item";
+
+            command.Parameters.AddRange(pera);
+            connect.Open();
+
+            if (command.ExecuteNonQuery() == 1)
+            {
+                connect.Close();
+                MessageBox.Show("Stock Item Deleted.", "Success !", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                view_stock();
+                clearn_form();
+            }
+            else
+            {
+                connect.Close();
+                MessageBox.Show("Can not Delete the Stock Item.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                clearn_form();
             }
         }
     }

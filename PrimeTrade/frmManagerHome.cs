@@ -50,5 +50,19 @@ namespace PrimeTrade
             form.MdiParent = this;
             form.Show();
         }
+
+        private void metroTile2_Click(object sender, EventArgs e)
+        {
+            frmManagerStockBasicData form = new frmManagerStockBasicData();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void metroTile3_Click(object sender, EventArgs e)
+        {
+            frmManagerViewStock form = new frmManagerViewStock();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }
