@@ -21,6 +21,9 @@ namespace PrimeTrade
             InitializeComponent();
             //load table data
             view_stock();
+            viewCatagory();
+            viewBrand();
+            ViewManufactor();
         }
         MySqlConnection connect = new MySqlConnection(connections.classConnection.ConnectNow("GoogleCloude"));
 
@@ -235,6 +238,63 @@ namespace PrimeTrade
                 connect.Close();
                 MessageBox.Show("Can not Delete the Stock Item.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 clearn_form();
+            }
+        }
+
+        public void viewCatagory()
+        {
+            connect.Open();
+
+            string query = "SELECT catagoryname FROM tb_stock_cat";
+            using (var command = new MySqlCommand(query, connect))
+            {
+                using (var reader = command.ExecuteReader())
+                {
+                    //Iterate through the rows and add it to the combobox's items
+                    while (reader.Read())
+                    {
+                        cmbcatogery.Items.Add(reader.GetString("catagoryname"));
+                    }
+                }
+                connect.Close();
+            }
+        }
+
+        public void viewBrand()
+        {
+            connect.Open();
+
+            string query = "SELECT idtb_stock_brand FROM tb_stock_brand";
+            using (var command = new MySqlCommand(query, connect))
+            {
+                using (var reader = command.ExecuteReader())
+                {
+                    //Iterate through the rows and add it to the combobox's items
+                    while (reader.Read())
+                    {
+                        cmbbrand.Items.Add(reader.GetString("idtb_stock_brand"));
+                    }
+                }
+                connect.Close();
+            }
+        }
+
+        public void ViewManufactor()
+        {
+            connect.Open();
+
+            string query = "SELECT manufactorname FROM tb_stock_manufactor";
+            using (var command = new MySqlCommand(query, connect))
+            {
+                using (var reader = command.ExecuteReader())
+                {
+                    //Iterate through the rows and add it to the combobox's items
+                    while (reader.Read())
+                    {
+                        cmbmanufactor.Items.Add(reader.GetString("manufactorname"));
+                    }
+                }
+                connect.Close();
             }
         }
     }
