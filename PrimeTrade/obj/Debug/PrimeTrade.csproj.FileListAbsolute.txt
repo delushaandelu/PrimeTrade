@@ -23,6 +23,5 @@ D:\PrimeTrade\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.exe.manifest
 D:\PrimeTrade\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.application
 D:\PrimeTrade\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.exe
 D:\PrimeTrade\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.pdb
-D:\PrimeTrade\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.csprojResolveAssemblyReference.cache
 D:\PrimeTrade\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmManagerStockBasicData.resources
 D:\PrimeTrade\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmManagerViewStock.resources

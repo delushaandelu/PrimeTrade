@@ -29,41 +29,44 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtstockname = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.btncatremove = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btncatupdate = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btncatadd = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.chkstate = new MetroFramework.Controls.MetroToggle();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.listviewCatogory = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.chkstate = new MetroFramework.Controls.MetroToggle();
-            this.btnaddstock = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.txtcatagory = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.materialRaisedButton3 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton4 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton5 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.metroToggle1 = new MetroFramework.Controls.MetroToggle();
+            this.btnbrandremove = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnbrandchange = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.brandadd = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.ckkbrandstate = new MetroFramework.Controls.MetroToggle();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-            this.listView2 = new System.Windows.Forms.ListView();
+            this.listviewbrand = new System.Windows.Forms.ListView();
             this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader21 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.materialSingleLineTextField2 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialSingleLineTextField3 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtbrandid = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtbrand = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.materialRaisedButton6 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton7 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton8 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.metroToggle2 = new MetroFramework.Controls.MetroToggle();
+            this.btnmanremove = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnmanchange = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnmanadd = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.chkmanufactorstate = new MetroFramework.Controls.MetroToggle();
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
-            this.listView3 = new System.Windows.Forms.ListView();
+            this.listviewmanufactor = new System.Windows.Forms.ListView();
             this.columnHeader32 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader33 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.materialSingleLineTextField4 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialSingleLineTextField5 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtmanufactorid = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtmanufactor = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.txtcatid = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -72,14 +75,14 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox1.Controls.Add(this.materialRaisedButton2);
-            this.groupBox1.Controls.Add(this.materialRaisedButton1);
-            this.groupBox1.Controls.Add(this.btnaddstock);
+            this.groupBox1.Controls.Add(this.btncatremove);
+            this.groupBox1.Controls.Add(this.btncatupdate);
+            this.groupBox1.Controls.Add(this.btncatadd);
             this.groupBox1.Controls.Add(this.chkstate);
             this.groupBox1.Controls.Add(this.materialLabel1);
-            this.groupBox1.Controls.Add(this.listView1);
-            this.groupBox1.Controls.Add(this.materialSingleLineTextField1);
-            this.groupBox1.Controls.Add(this.txtstockname);
+            this.groupBox1.Controls.Add(this.listviewCatogory);
+            this.groupBox1.Controls.Add(this.txtcatid);
+            this.groupBox1.Controls.Add(this.txtcatagory);
             this.groupBox1.Controls.Add(this.materialLabel2);
             this.groupBox1.Location = new System.Drawing.Point(32, 111);
             this.groupBox1.Name = "groupBox1";
@@ -88,73 +91,56 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Stock Catagory";
             // 
-            // txtstockname
+            // btncatremove
             // 
-            this.txtstockname.Depth = 0;
-            this.txtstockname.Hint = "";
-            this.txtstockname.Location = new System.Drawing.Point(124, 28);
-            this.txtstockname.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtstockname.Name = "txtstockname";
-            this.txtstockname.PasswordChar = '\0';
-            this.txtstockname.SelectedText = "";
-            this.txtstockname.SelectionLength = 0;
-            this.txtstockname.SelectionStart = 0;
-            this.txtstockname.Size = new System.Drawing.Size(155, 23);
-            this.txtstockname.TabIndex = 23;
-            this.txtstockname.UseSystemPasswordChar = false;
+            this.btncatremove.Depth = 0;
+            this.btncatremove.Location = new System.Drawing.Point(216, 115);
+            this.btncatremove.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btncatremove.Name = "btncatremove";
+            this.btncatremove.Primary = true;
+            this.btncatremove.Size = new System.Drawing.Size(63, 35);
+            this.btncatremove.TabIndex = 47;
+            this.btncatremove.Text = "Remove";
+            this.btncatremove.UseVisualStyleBackColor = true;
+            this.btncatremove.Click += new System.EventHandler(this.btncatremove_Click);
             // 
-            // materialLabel2
+            // btncatupdate
             // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(8, 32);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(69, 19);
-            this.materialLabel2.TabIndex = 22;
-            this.materialLabel2.Text = "Catagory";
+            this.btncatupdate.Depth = 0;
+            this.btncatupdate.Location = new System.Drawing.Point(113, 115);
+            this.btncatupdate.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btncatupdate.Name = "btncatupdate";
+            this.btncatupdate.Primary = true;
+            this.btncatupdate.Size = new System.Drawing.Size(63, 35);
+            this.btncatupdate.TabIndex = 46;
+            this.btncatupdate.Text = "Change";
+            this.btncatupdate.UseVisualStyleBackColor = true;
+            this.btncatupdate.Click += new System.EventHandler(this.btncatupdate_Click);
             // 
-            // materialSingleLineTextField1
+            // btncatadd
             // 
-            this.materialSingleLineTextField1.Depth = 0;
-            this.materialSingleLineTextField1.Hint = "";
-            this.materialSingleLineTextField1.Location = new System.Drawing.Point(216, 75);
-            this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
-            this.materialSingleLineTextField1.PasswordChar = '\0';
-            this.materialSingleLineTextField1.SelectedText = "";
-            this.materialSingleLineTextField1.SelectionLength = 0;
-            this.materialSingleLineTextField1.SelectionStart = 0;
-            this.materialSingleLineTextField1.Size = new System.Drawing.Size(38, 23);
-            this.materialSingleLineTextField1.TabIndex = 24;
-            this.materialSingleLineTextField1.UseSystemPasswordChar = false;
+            this.btncatadd.Depth = 0;
+            this.btncatadd.Location = new System.Drawing.Point(12, 115);
+            this.btncatadd.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btncatadd.Name = "btncatadd";
+            this.btncatadd.Primary = true;
+            this.btncatadd.Size = new System.Drawing.Size(50, 35);
+            this.btncatadd.TabIndex = 45;
+            this.btncatadd.Text = "Add ";
+            this.btncatadd.UseVisualStyleBackColor = true;
+            this.btncatadd.Click += new System.EventHandler(this.btncatadd_Click);
             // 
-            // listView1
+            // chkstate
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2});
-            this.listView1.FullRowSelect = true;
-            this.listView1.GridLines = true;
-            this.listView1.Location = new System.Drawing.Point(12, 165);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(267, 249);
-            this.listView1.TabIndex = 42;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Reorder Level";
-            this.columnHeader1.Width = 70;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Promo Code";
-            this.columnHeader2.Width = 80;
+            this.chkstate.AutoSize = true;
+            this.chkstate.Checked = true;
+            this.chkstate.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkstate.Location = new System.Drawing.Point(124, 77);
+            this.chkstate.Name = "chkstate";
+            this.chkstate.Size = new System.Drawing.Size(80, 17);
+            this.chkstate.TabIndex = 44;
+            this.chkstate.Text = "On";
+            this.chkstate.UseSelectable = true;
             // 
             // materialLabel1
             // 
@@ -170,65 +156,72 @@
             this.materialLabel1.TabIndex = 43;
             this.materialLabel1.Text = "Available State";
             // 
-            // chkstate
+            // listviewCatogory
             // 
-            this.chkstate.AutoSize = true;
-            this.chkstate.Checked = true;
-            this.chkstate.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkstate.Location = new System.Drawing.Point(124, 77);
-            this.chkstate.Name = "chkstate";
-            this.chkstate.Size = new System.Drawing.Size(80, 17);
-            this.chkstate.TabIndex = 44;
-            this.chkstate.Text = "On";
-            this.chkstate.UseSelectable = true;
+            this.listviewCatogory.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader3,
+            this.columnHeader1,
+            this.columnHeader2});
+            this.listviewCatogory.FullRowSelect = true;
+            this.listviewCatogory.GridLines = true;
+            this.listviewCatogory.Location = new System.Drawing.Point(12, 165);
+            this.listviewCatogory.Name = "listviewCatogory";
+            this.listviewCatogory.Size = new System.Drawing.Size(267, 249);
+            this.listviewCatogory.TabIndex = 42;
+            this.listviewCatogory.UseCompatibleStateImageBehavior = false;
+            this.listviewCatogory.View = System.Windows.Forms.View.Details;
+            this.listviewCatogory.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listviewCatogory_MouseDoubleClick);
             // 
-            // btnaddstock
+            // columnHeader1
             // 
-            this.btnaddstock.Depth = 0;
-            this.btnaddstock.Location = new System.Drawing.Point(12, 115);
-            this.btnaddstock.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnaddstock.Name = "btnaddstock";
-            this.btnaddstock.Primary = true;
-            this.btnaddstock.Size = new System.Drawing.Size(50, 35);
-            this.btnaddstock.TabIndex = 45;
-            this.btnaddstock.Text = "Add ";
-            this.btnaddstock.UseVisualStyleBackColor = true;
+            this.columnHeader1.Text = "Catagory";
+            this.columnHeader1.Width = 120;
             // 
-            // materialRaisedButton1
+            // columnHeader2
             // 
-            this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(113, 115);
-            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton1.Name = "materialRaisedButton1";
-            this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(63, 35);
-            this.materialRaisedButton1.TabIndex = 46;
-            this.materialRaisedButton1.Text = "Change";
-            this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.columnHeader2.Text = "Active State";
+            this.columnHeader2.Width = 120;
             // 
-            // materialRaisedButton2
+            // txtcatagory
             // 
-            this.materialRaisedButton2.Depth = 0;
-            this.materialRaisedButton2.Location = new System.Drawing.Point(216, 115);
-            this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton2.Name = "materialRaisedButton2";
-            this.materialRaisedButton2.Primary = true;
-            this.materialRaisedButton2.Size = new System.Drawing.Size(63, 35);
-            this.materialRaisedButton2.TabIndex = 47;
-            this.materialRaisedButton2.Text = "Remove";
-            this.materialRaisedButton2.UseVisualStyleBackColor = true;
+            this.txtcatagory.Depth = 0;
+            this.txtcatagory.Hint = "";
+            this.txtcatagory.Location = new System.Drawing.Point(124, 28);
+            this.txtcatagory.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtcatagory.Name = "txtcatagory";
+            this.txtcatagory.PasswordChar = '\0';
+            this.txtcatagory.SelectedText = "";
+            this.txtcatagory.SelectionLength = 0;
+            this.txtcatagory.SelectionStart = 0;
+            this.txtcatagory.Size = new System.Drawing.Size(155, 23);
+            this.txtcatagory.TabIndex = 23;
+            this.txtcatagory.UseSystemPasswordChar = false;
+            // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel2.Location = new System.Drawing.Point(8, 32);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(69, 19);
+            this.materialLabel2.TabIndex = 22;
+            this.materialLabel2.Text = "Catagory";
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox2.Controls.Add(this.materialRaisedButton3);
-            this.groupBox2.Controls.Add(this.materialRaisedButton4);
-            this.groupBox2.Controls.Add(this.materialRaisedButton5);
-            this.groupBox2.Controls.Add(this.metroToggle1);
+            this.groupBox2.Controls.Add(this.btnbrandremove);
+            this.groupBox2.Controls.Add(this.btnbrandchange);
+            this.groupBox2.Controls.Add(this.brandadd);
+            this.groupBox2.Controls.Add(this.ckkbrandstate);
             this.groupBox2.Controls.Add(this.materialLabel3);
-            this.groupBox2.Controls.Add(this.listView2);
-            this.groupBox2.Controls.Add(this.materialSingleLineTextField2);
-            this.groupBox2.Controls.Add(this.materialSingleLineTextField3);
+            this.groupBox2.Controls.Add(this.listviewbrand);
+            this.groupBox2.Controls.Add(this.txtbrandid);
+            this.groupBox2.Controls.Add(this.txtbrand);
             this.groupBox2.Controls.Add(this.materialLabel4);
             this.groupBox2.Location = new System.Drawing.Point(361, 111);
             this.groupBox2.Name = "groupBox2";
@@ -237,53 +230,56 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Stock Brand";
             // 
-            // materialRaisedButton3
+            // btnbrandremove
             // 
-            this.materialRaisedButton3.Depth = 0;
-            this.materialRaisedButton3.Location = new System.Drawing.Point(216, 115);
-            this.materialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton3.Name = "materialRaisedButton3";
-            this.materialRaisedButton3.Primary = true;
-            this.materialRaisedButton3.Size = new System.Drawing.Size(63, 35);
-            this.materialRaisedButton3.TabIndex = 47;
-            this.materialRaisedButton3.Text = "Remove";
-            this.materialRaisedButton3.UseVisualStyleBackColor = true;
+            this.btnbrandremove.Depth = 0;
+            this.btnbrandremove.Location = new System.Drawing.Point(216, 115);
+            this.btnbrandremove.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnbrandremove.Name = "btnbrandremove";
+            this.btnbrandremove.Primary = true;
+            this.btnbrandremove.Size = new System.Drawing.Size(63, 35);
+            this.btnbrandremove.TabIndex = 47;
+            this.btnbrandremove.Text = "Remove";
+            this.btnbrandremove.UseVisualStyleBackColor = true;
+            this.btnbrandremove.Click += new System.EventHandler(this.btnbrandremove_Click);
             // 
-            // materialRaisedButton4
+            // btnbrandchange
             // 
-            this.materialRaisedButton4.Depth = 0;
-            this.materialRaisedButton4.Location = new System.Drawing.Point(113, 115);
-            this.materialRaisedButton4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton4.Name = "materialRaisedButton4";
-            this.materialRaisedButton4.Primary = true;
-            this.materialRaisedButton4.Size = new System.Drawing.Size(63, 35);
-            this.materialRaisedButton4.TabIndex = 46;
-            this.materialRaisedButton4.Text = "Change";
-            this.materialRaisedButton4.UseVisualStyleBackColor = true;
+            this.btnbrandchange.Depth = 0;
+            this.btnbrandchange.Location = new System.Drawing.Point(113, 115);
+            this.btnbrandchange.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnbrandchange.Name = "btnbrandchange";
+            this.btnbrandchange.Primary = true;
+            this.btnbrandchange.Size = new System.Drawing.Size(63, 35);
+            this.btnbrandchange.TabIndex = 46;
+            this.btnbrandchange.Text = "Change";
+            this.btnbrandchange.UseVisualStyleBackColor = true;
+            this.btnbrandchange.Click += new System.EventHandler(this.btnbrandchange_Click);
             // 
-            // materialRaisedButton5
+            // brandadd
             // 
-            this.materialRaisedButton5.Depth = 0;
-            this.materialRaisedButton5.Location = new System.Drawing.Point(12, 115);
-            this.materialRaisedButton5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton5.Name = "materialRaisedButton5";
-            this.materialRaisedButton5.Primary = true;
-            this.materialRaisedButton5.Size = new System.Drawing.Size(50, 35);
-            this.materialRaisedButton5.TabIndex = 45;
-            this.materialRaisedButton5.Text = "Add ";
-            this.materialRaisedButton5.UseVisualStyleBackColor = true;
+            this.brandadd.Depth = 0;
+            this.brandadd.Location = new System.Drawing.Point(12, 115);
+            this.brandadd.MouseState = MaterialSkin.MouseState.HOVER;
+            this.brandadd.Name = "brandadd";
+            this.brandadd.Primary = true;
+            this.brandadd.Size = new System.Drawing.Size(50, 35);
+            this.brandadd.TabIndex = 45;
+            this.brandadd.Text = "Add ";
+            this.brandadd.UseVisualStyleBackColor = true;
+            this.brandadd.Click += new System.EventHandler(this.brandadd_Click);
             // 
-            // metroToggle1
+            // ckkbrandstate
             // 
-            this.metroToggle1.AutoSize = true;
-            this.metroToggle1.Checked = true;
-            this.metroToggle1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.metroToggle1.Location = new System.Drawing.Point(124, 77);
-            this.metroToggle1.Name = "metroToggle1";
-            this.metroToggle1.Size = new System.Drawing.Size(80, 17);
-            this.metroToggle1.TabIndex = 44;
-            this.metroToggle1.Text = "On";
-            this.metroToggle1.UseSelectable = true;
+            this.ckkbrandstate.AutoSize = true;
+            this.ckkbrandstate.Checked = true;
+            this.ckkbrandstate.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ckkbrandstate.Location = new System.Drawing.Point(124, 77);
+            this.ckkbrandstate.Name = "ckkbrandstate";
+            this.ckkbrandstate.Size = new System.Drawing.Size(80, 17);
+            this.ckkbrandstate.TabIndex = 44;
+            this.ckkbrandstate.Text = "On";
+            this.ckkbrandstate.UseSelectable = true;
             // 
             // materialLabel3
             // 
@@ -299,59 +295,62 @@
             this.materialLabel3.TabIndex = 43;
             this.materialLabel3.Text = "Available State";
             // 
-            // listView2
+            // listviewbrand
             // 
-            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listviewbrand.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader4,
             this.columnHeader17,
             this.columnHeader21});
-            this.listView2.FullRowSelect = true;
-            this.listView2.GridLines = true;
-            this.listView2.Location = new System.Drawing.Point(12, 165);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(267, 249);
-            this.listView2.TabIndex = 42;
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            this.listView2.View = System.Windows.Forms.View.Details;
+            this.listviewbrand.FullRowSelect = true;
+            this.listviewbrand.GridLines = true;
+            this.listviewbrand.Location = new System.Drawing.Point(12, 165);
+            this.listviewbrand.Name = "listviewbrand";
+            this.listviewbrand.Size = new System.Drawing.Size(267, 249);
+            this.listviewbrand.TabIndex = 42;
+            this.listviewbrand.UseCompatibleStateImageBehavior = false;
+            this.listviewbrand.View = System.Windows.Forms.View.Details;
+            this.listviewbrand.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listviewbrand_MouseDoubleClick);
             // 
             // columnHeader17
             // 
-            this.columnHeader17.Text = "Reorder Level";
-            this.columnHeader17.Width = 70;
+            this.columnHeader17.Text = "Brand";
+            this.columnHeader17.Width = 120;
             // 
             // columnHeader21
             // 
-            this.columnHeader21.Text = "Promo Code";
-            this.columnHeader21.Width = 80;
+            this.columnHeader21.Text = "Active State";
+            this.columnHeader21.Width = 120;
             // 
-            // materialSingleLineTextField2
+            // txtbrandid
             // 
-            this.materialSingleLineTextField2.Depth = 0;
-            this.materialSingleLineTextField2.Hint = "";
-            this.materialSingleLineTextField2.Location = new System.Drawing.Point(216, 75);
-            this.materialSingleLineTextField2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField2.Name = "materialSingleLineTextField2";
-            this.materialSingleLineTextField2.PasswordChar = '\0';
-            this.materialSingleLineTextField2.SelectedText = "";
-            this.materialSingleLineTextField2.SelectionLength = 0;
-            this.materialSingleLineTextField2.SelectionStart = 0;
-            this.materialSingleLineTextField2.Size = new System.Drawing.Size(38, 23);
-            this.materialSingleLineTextField2.TabIndex = 24;
-            this.materialSingleLineTextField2.UseSystemPasswordChar = false;
+            this.txtbrandid.Depth = 0;
+            this.txtbrandid.Hint = "";
+            this.txtbrandid.Location = new System.Drawing.Point(216, 75);
+            this.txtbrandid.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtbrandid.Name = "txtbrandid";
+            this.txtbrandid.PasswordChar = '\0';
+            this.txtbrandid.SelectedText = "";
+            this.txtbrandid.SelectionLength = 0;
+            this.txtbrandid.SelectionStart = 0;
+            this.txtbrandid.Size = new System.Drawing.Size(38, 23);
+            this.txtbrandid.TabIndex = 24;
+            this.txtbrandid.UseSystemPasswordChar = false;
+            this.txtbrandid.Visible = false;
             // 
-            // materialSingleLineTextField3
+            // txtbrand
             // 
-            this.materialSingleLineTextField3.Depth = 0;
-            this.materialSingleLineTextField3.Hint = "";
-            this.materialSingleLineTextField3.Location = new System.Drawing.Point(124, 28);
-            this.materialSingleLineTextField3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField3.Name = "materialSingleLineTextField3";
-            this.materialSingleLineTextField3.PasswordChar = '\0';
-            this.materialSingleLineTextField3.SelectedText = "";
-            this.materialSingleLineTextField3.SelectionLength = 0;
-            this.materialSingleLineTextField3.SelectionStart = 0;
-            this.materialSingleLineTextField3.Size = new System.Drawing.Size(155, 23);
-            this.materialSingleLineTextField3.TabIndex = 23;
-            this.materialSingleLineTextField3.UseSystemPasswordChar = false;
+            this.txtbrand.Depth = 0;
+            this.txtbrand.Hint = "";
+            this.txtbrand.Location = new System.Drawing.Point(124, 28);
+            this.txtbrand.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtbrand.Name = "txtbrand";
+            this.txtbrand.PasswordChar = '\0';
+            this.txtbrand.SelectedText = "";
+            this.txtbrand.SelectionLength = 0;
+            this.txtbrand.SelectionStart = 0;
+            this.txtbrand.Size = new System.Drawing.Size(155, 23);
+            this.txtbrand.TabIndex = 23;
+            this.txtbrand.UseSystemPasswordChar = false;
             // 
             // materialLabel4
             // 
@@ -370,14 +369,14 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox3.Controls.Add(this.materialRaisedButton6);
-            this.groupBox3.Controls.Add(this.materialRaisedButton7);
-            this.groupBox3.Controls.Add(this.materialRaisedButton8);
-            this.groupBox3.Controls.Add(this.metroToggle2);
+            this.groupBox3.Controls.Add(this.btnmanremove);
+            this.groupBox3.Controls.Add(this.btnmanchange);
+            this.groupBox3.Controls.Add(this.btnmanadd);
+            this.groupBox3.Controls.Add(this.chkmanufactorstate);
             this.groupBox3.Controls.Add(this.materialLabel5);
-            this.groupBox3.Controls.Add(this.listView3);
-            this.groupBox3.Controls.Add(this.materialSingleLineTextField4);
-            this.groupBox3.Controls.Add(this.materialSingleLineTextField5);
+            this.groupBox3.Controls.Add(this.listviewmanufactor);
+            this.groupBox3.Controls.Add(this.txtmanufactorid);
+            this.groupBox3.Controls.Add(this.txtmanufactor);
             this.groupBox3.Controls.Add(this.materialLabel6);
             this.groupBox3.Location = new System.Drawing.Point(688, 111);
             this.groupBox3.Name = "groupBox3";
@@ -386,53 +385,56 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Stock Manufactor";
             // 
-            // materialRaisedButton6
+            // btnmanremove
             // 
-            this.materialRaisedButton6.Depth = 0;
-            this.materialRaisedButton6.Location = new System.Drawing.Point(216, 115);
-            this.materialRaisedButton6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton6.Name = "materialRaisedButton6";
-            this.materialRaisedButton6.Primary = true;
-            this.materialRaisedButton6.Size = new System.Drawing.Size(63, 35);
-            this.materialRaisedButton6.TabIndex = 47;
-            this.materialRaisedButton6.Text = "Remove";
-            this.materialRaisedButton6.UseVisualStyleBackColor = true;
+            this.btnmanremove.Depth = 0;
+            this.btnmanremove.Location = new System.Drawing.Point(216, 115);
+            this.btnmanremove.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnmanremove.Name = "btnmanremove";
+            this.btnmanremove.Primary = true;
+            this.btnmanremove.Size = new System.Drawing.Size(63, 35);
+            this.btnmanremove.TabIndex = 47;
+            this.btnmanremove.Text = "Remove";
+            this.btnmanremove.UseVisualStyleBackColor = true;
+            this.btnmanremove.Click += new System.EventHandler(this.btnmanremove_Click);
             // 
-            // materialRaisedButton7
+            // btnmanchange
             // 
-            this.materialRaisedButton7.Depth = 0;
-            this.materialRaisedButton7.Location = new System.Drawing.Point(113, 115);
-            this.materialRaisedButton7.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton7.Name = "materialRaisedButton7";
-            this.materialRaisedButton7.Primary = true;
-            this.materialRaisedButton7.Size = new System.Drawing.Size(63, 35);
-            this.materialRaisedButton7.TabIndex = 46;
-            this.materialRaisedButton7.Text = "Change";
-            this.materialRaisedButton7.UseVisualStyleBackColor = true;
+            this.btnmanchange.Depth = 0;
+            this.btnmanchange.Location = new System.Drawing.Point(113, 115);
+            this.btnmanchange.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnmanchange.Name = "btnmanchange";
+            this.btnmanchange.Primary = true;
+            this.btnmanchange.Size = new System.Drawing.Size(63, 35);
+            this.btnmanchange.TabIndex = 46;
+            this.btnmanchange.Text = "Change";
+            this.btnmanchange.UseVisualStyleBackColor = true;
+            this.btnmanchange.Click += new System.EventHandler(this.btnmanchange_Click);
             // 
-            // materialRaisedButton8
+            // btnmanadd
             // 
-            this.materialRaisedButton8.Depth = 0;
-            this.materialRaisedButton8.Location = new System.Drawing.Point(12, 115);
-            this.materialRaisedButton8.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton8.Name = "materialRaisedButton8";
-            this.materialRaisedButton8.Primary = true;
-            this.materialRaisedButton8.Size = new System.Drawing.Size(50, 35);
-            this.materialRaisedButton8.TabIndex = 45;
-            this.materialRaisedButton8.Text = "Add ";
-            this.materialRaisedButton8.UseVisualStyleBackColor = true;
+            this.btnmanadd.Depth = 0;
+            this.btnmanadd.Location = new System.Drawing.Point(12, 115);
+            this.btnmanadd.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnmanadd.Name = "btnmanadd";
+            this.btnmanadd.Primary = true;
+            this.btnmanadd.Size = new System.Drawing.Size(50, 35);
+            this.btnmanadd.TabIndex = 45;
+            this.btnmanadd.Text = "Add ";
+            this.btnmanadd.UseVisualStyleBackColor = true;
+            this.btnmanadd.Click += new System.EventHandler(this.btnmanadd_Click);
             // 
-            // metroToggle2
+            // chkmanufactorstate
             // 
-            this.metroToggle2.AutoSize = true;
-            this.metroToggle2.Checked = true;
-            this.metroToggle2.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.metroToggle2.Location = new System.Drawing.Point(124, 77);
-            this.metroToggle2.Name = "metroToggle2";
-            this.metroToggle2.Size = new System.Drawing.Size(80, 17);
-            this.metroToggle2.TabIndex = 44;
-            this.metroToggle2.Text = "On";
-            this.metroToggle2.UseSelectable = true;
+            this.chkmanufactorstate.AutoSize = true;
+            this.chkmanufactorstate.Checked = true;
+            this.chkmanufactorstate.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkmanufactorstate.Location = new System.Drawing.Point(124, 77);
+            this.chkmanufactorstate.Name = "chkmanufactorstate";
+            this.chkmanufactorstate.Size = new System.Drawing.Size(80, 17);
+            this.chkmanufactorstate.TabIndex = 44;
+            this.chkmanufactorstate.Text = "On";
+            this.chkmanufactorstate.UseSelectable = true;
             // 
             // materialLabel5
             // 
@@ -448,59 +450,62 @@
             this.materialLabel5.TabIndex = 43;
             this.materialLabel5.Text = "Available State";
             // 
-            // listView3
+            // listviewmanufactor
             // 
-            this.listView3.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listviewmanufactor.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader5,
             this.columnHeader32,
             this.columnHeader33});
-            this.listView3.FullRowSelect = true;
-            this.listView3.GridLines = true;
-            this.listView3.Location = new System.Drawing.Point(12, 165);
-            this.listView3.Name = "listView3";
-            this.listView3.Size = new System.Drawing.Size(267, 249);
-            this.listView3.TabIndex = 42;
-            this.listView3.UseCompatibleStateImageBehavior = false;
-            this.listView3.View = System.Windows.Forms.View.Details;
+            this.listviewmanufactor.FullRowSelect = true;
+            this.listviewmanufactor.GridLines = true;
+            this.listviewmanufactor.Location = new System.Drawing.Point(12, 165);
+            this.listviewmanufactor.Name = "listviewmanufactor";
+            this.listviewmanufactor.Size = new System.Drawing.Size(267, 249);
+            this.listviewmanufactor.TabIndex = 42;
+            this.listviewmanufactor.UseCompatibleStateImageBehavior = false;
+            this.listviewmanufactor.View = System.Windows.Forms.View.Details;
+            this.listviewmanufactor.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listviewmanufactor_MouseDoubleClick);
             // 
             // columnHeader32
             // 
-            this.columnHeader32.Text = "Reorder Level";
-            this.columnHeader32.Width = 70;
+            this.columnHeader32.Text = "Manufactor";
+            this.columnHeader32.Width = 120;
             // 
             // columnHeader33
             // 
-            this.columnHeader33.Text = "Promo Code";
-            this.columnHeader33.Width = 80;
+            this.columnHeader33.Text = "Active State";
+            this.columnHeader33.Width = 120;
             // 
-            // materialSingleLineTextField4
+            // txtmanufactorid
             // 
-            this.materialSingleLineTextField4.Depth = 0;
-            this.materialSingleLineTextField4.Hint = "";
-            this.materialSingleLineTextField4.Location = new System.Drawing.Point(216, 75);
-            this.materialSingleLineTextField4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField4.Name = "materialSingleLineTextField4";
-            this.materialSingleLineTextField4.PasswordChar = '\0';
-            this.materialSingleLineTextField4.SelectedText = "";
-            this.materialSingleLineTextField4.SelectionLength = 0;
-            this.materialSingleLineTextField4.SelectionStart = 0;
-            this.materialSingleLineTextField4.Size = new System.Drawing.Size(38, 23);
-            this.materialSingleLineTextField4.TabIndex = 24;
-            this.materialSingleLineTextField4.UseSystemPasswordChar = false;
+            this.txtmanufactorid.Depth = 0;
+            this.txtmanufactorid.Hint = "";
+            this.txtmanufactorid.Location = new System.Drawing.Point(216, 75);
+            this.txtmanufactorid.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtmanufactorid.Name = "txtmanufactorid";
+            this.txtmanufactorid.PasswordChar = '\0';
+            this.txtmanufactorid.SelectedText = "";
+            this.txtmanufactorid.SelectionLength = 0;
+            this.txtmanufactorid.SelectionStart = 0;
+            this.txtmanufactorid.Size = new System.Drawing.Size(38, 23);
+            this.txtmanufactorid.TabIndex = 24;
+            this.txtmanufactorid.UseSystemPasswordChar = false;
+            this.txtmanufactorid.Visible = false;
             // 
-            // materialSingleLineTextField5
+            // txtmanufactor
             // 
-            this.materialSingleLineTextField5.Depth = 0;
-            this.materialSingleLineTextField5.Hint = "";
-            this.materialSingleLineTextField5.Location = new System.Drawing.Point(124, 28);
-            this.materialSingleLineTextField5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField5.Name = "materialSingleLineTextField5";
-            this.materialSingleLineTextField5.PasswordChar = '\0';
-            this.materialSingleLineTextField5.SelectedText = "";
-            this.materialSingleLineTextField5.SelectionLength = 0;
-            this.materialSingleLineTextField5.SelectionStart = 0;
-            this.materialSingleLineTextField5.Size = new System.Drawing.Size(155, 23);
-            this.materialSingleLineTextField5.TabIndex = 23;
-            this.materialSingleLineTextField5.UseSystemPasswordChar = false;
+            this.txtmanufactor.Depth = 0;
+            this.txtmanufactor.Hint = "";
+            this.txtmanufactor.Location = new System.Drawing.Point(124, 28);
+            this.txtmanufactor.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtmanufactor.Name = "txtmanufactor";
+            this.txtmanufactor.PasswordChar = '\0';
+            this.txtmanufactor.SelectedText = "";
+            this.txtmanufactor.SelectionLength = 0;
+            this.txtmanufactor.SelectionStart = 0;
+            this.txtmanufactor.Size = new System.Drawing.Size(155, 23);
+            this.txtmanufactor.TabIndex = 23;
+            this.txtmanufactor.UseSystemPasswordChar = false;
             // 
             // materialLabel6
             // 
@@ -516,11 +521,40 @@
             this.materialLabel6.TabIndex = 22;
             this.materialLabel6.Text = "Manufactor";
             // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Id";
+            this.columnHeader3.Width = 30;
+            // 
+            // txtcatid
+            // 
+            this.txtcatid.Depth = 0;
+            this.txtcatid.Hint = "";
+            this.txtcatid.Location = new System.Drawing.Point(216, 75);
+            this.txtcatid.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtcatid.Name = "txtcatid";
+            this.txtcatid.PasswordChar = '\0';
+            this.txtcatid.SelectedText = "";
+            this.txtcatid.SelectionLength = 0;
+            this.txtcatid.SelectionStart = 0;
+            this.txtcatid.Size = new System.Drawing.Size(38, 23);
+            this.txtcatid.TabIndex = 24;
+            this.txtcatid.UseSystemPasswordChar = false;
+            this.txtcatid.Visible = false;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Id";
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Id";
+            // 
             // frmManagerStockBasicData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1016, 584);
+            this.ClientSize = new System.Drawing.Size(1019, 584);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -540,40 +574,43 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField1;
-        private MaterialSkin.Controls.MaterialSingleLineTextField txtstockname;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtcatagory;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listviewCatogory;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private MetroFramework.Controls.MetroToggle chkstate;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton2;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
-        private MaterialSkin.Controls.MaterialRaisedButton btnaddstock;
+        private MaterialSkin.Controls.MaterialRaisedButton btncatremove;
+        private MaterialSkin.Controls.MaterialRaisedButton btncatupdate;
+        private MaterialSkin.Controls.MaterialRaisedButton btncatadd;
         private System.Windows.Forms.GroupBox groupBox2;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton3;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton4;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton5;
-        private MetroFramework.Controls.MetroToggle metroToggle1;
+        private MaterialSkin.Controls.MaterialRaisedButton btnbrandremove;
+        private MaterialSkin.Controls.MaterialRaisedButton btnbrandchange;
+        private MaterialSkin.Controls.MaterialRaisedButton brandadd;
+        private MetroFramework.Controls.MetroToggle ckkbrandstate;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
-        private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.ListView listviewbrand;
         private System.Windows.Forms.ColumnHeader columnHeader17;
         private System.Windows.Forms.ColumnHeader columnHeader21;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField2;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField3;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtbrandid;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtbrand;
         private MaterialSkin.Controls.MaterialLabel materialLabel4;
         private System.Windows.Forms.GroupBox groupBox3;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton6;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton7;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton8;
-        private MetroFramework.Controls.MetroToggle metroToggle2;
+        private MaterialSkin.Controls.MaterialRaisedButton btnmanremove;
+        private MaterialSkin.Controls.MaterialRaisedButton btnmanchange;
+        private MaterialSkin.Controls.MaterialRaisedButton btnmanadd;
+        private MetroFramework.Controls.MetroToggle chkmanufactorstate;
         private MaterialSkin.Controls.MaterialLabel materialLabel5;
-        private System.Windows.Forms.ListView listView3;
+        private System.Windows.Forms.ListView listviewmanufactor;
         private System.Windows.Forms.ColumnHeader columnHeader32;
         private System.Windows.Forms.ColumnHeader columnHeader33;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField4;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField5;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtmanufactorid;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtmanufactor;
         private MaterialSkin.Controls.MaterialLabel materialLabel6;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtcatid;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
     }
 }
