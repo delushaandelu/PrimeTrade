@@ -46,7 +46,7 @@ namespace PrimeTrade
 
         private void metroTile1_Click(object sender, EventArgs e)
         {
-            frmManagerStockManagement form = new frmManagerStockManagement();
+            frmManagerStockManagement form = new frmManagerStockManagement("BRAND");
             form.MdiParent = this;
             form.Show();
         }

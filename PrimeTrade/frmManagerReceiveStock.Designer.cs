@@ -47,11 +47,12 @@
             this.lblbrand = new MaterialSkin.Controls.MaterialLabel();
             this.lblmanufactor = new MaterialSkin.Controls.MaterialLabel();
             this.lblstock = new MaterialSkin.Controls.MaterialLabel();
-            this.lblnewstock = new MaterialSkin.Controls.MaterialLabel();
             this.lbltotalstock = new MaterialSkin.Controls.MaterialLabel();
             this.lblitem = new MaterialSkin.Controls.MaterialLabel();
-            this.btnReset = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnReceiveNewStock = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.txtnewstock = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.btnApproceNewStock = new MaterialSkin.Controls.MaterialRaisedButton();
             this.SuspendLayout();
             // 
             // materialLabel2
@@ -320,20 +321,6 @@
             this.lblstock.TabIndex = 30;
             this.lblstock.Text = ":";
             // 
-            // lblnewstock
-            // 
-            this.lblnewstock.AutoSize = true;
-            this.lblnewstock.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblnewstock.Depth = 0;
-            this.lblnewstock.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lblnewstock.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblnewstock.Location = new System.Drawing.Point(471, 137);
-            this.lblnewstock.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblnewstock.Name = "lblnewstock";
-            this.lblnewstock.Size = new System.Drawing.Size(13, 19);
-            this.lblnewstock.TabIndex = 31;
-            this.lblnewstock.Text = ":";
-            // 
             // lbltotalstock
             // 
             this.lbltotalstock.AutoSize = true;
@@ -363,17 +350,18 @@
             this.lblitem.Text = ":";
             this.lblitem.Visible = false;
             // 
-            // btnReset
+            // btnReceiveNewStock
             // 
-            this.btnReset.Depth = 0;
-            this.btnReset.Location = new System.Drawing.Point(138, 255);
-            this.btnReset.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Primary = true;
-            this.btnReset.Size = new System.Drawing.Size(191, 25);
-            this.btnReset.TabIndex = 44;
-            this.btnReset.Text = "Receive new stock";
-            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReceiveNewStock.Depth = 0;
+            this.btnReceiveNewStock.Location = new System.Drawing.Point(138, 255);
+            this.btnReceiveNewStock.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnReceiveNewStock.Name = "btnReceiveNewStock";
+            this.btnReceiveNewStock.Primary = true;
+            this.btnReceiveNewStock.Size = new System.Drawing.Size(191, 25);
+            this.btnReceiveNewStock.TabIndex = 44;
+            this.btnReceiveNewStock.Text = "Receive new stock";
+            this.btnReceiveNewStock.UseVisualStyleBackColor = true;
+            this.btnReceiveNewStock.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // materialRaisedButton1
             // 
@@ -386,17 +374,49 @@
             this.materialRaisedButton1.TabIndex = 45;
             this.materialRaisedButton1.Text = "Exit";
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
+            // 
+            // txtnewstock
+            // 
+            this.txtnewstock.Depth = 0;
+            this.txtnewstock.Hint = "";
+            this.txtnewstock.Location = new System.Drawing.Point(475, 133);
+            this.txtnewstock.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtnewstock.Name = "txtnewstock";
+            this.txtnewstock.PasswordChar = '\0';
+            this.txtnewstock.SelectedText = "";
+            this.txtnewstock.SelectionLength = 0;
+            this.txtnewstock.SelectionStart = 0;
+            this.txtnewstock.Size = new System.Drawing.Size(98, 23);
+            this.txtnewstock.TabIndex = 46;
+            this.txtnewstock.UseSystemPasswordChar = false;
+            this.txtnewstock.TextChanged += new System.EventHandler(this.txtreorder_TextChanged);
+            // 
+            // btnApproceNewStock
+            // 
+            this.btnApproceNewStock.Depth = 0;
+            this.btnApproceNewStock.Location = new System.Drawing.Point(121, 255);
+            this.btnApproceNewStock.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnApproceNewStock.Name = "btnApproceNewStock";
+            this.btnApproceNewStock.Primary = true;
+            this.btnApproceNewStock.Size = new System.Drawing.Size(210, 25);
+            this.btnApproceNewStock.TabIndex = 47;
+            this.btnApproceNewStock.Text = "Approve received quantity";
+            this.btnApproceNewStock.UseVisualStyleBackColor = true;
+            this.btnApproceNewStock.Visible = false;
+            this.btnApproceNewStock.Click += new System.EventHandler(this.materialRaisedButton2_Click);
             // 
             // frmManagerReceiveStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(601, 313);
+            this.Controls.Add(this.btnApproceNewStock);
+            this.Controls.Add(this.txtnewstock);
             this.Controls.Add(this.materialRaisedButton1);
-            this.Controls.Add(this.btnReset);
+            this.Controls.Add(this.btnReceiveNewStock);
             this.Controls.Add(this.lblitem);
             this.Controls.Add(this.lbltotalstock);
-            this.Controls.Add(this.lblnewstock);
             this.Controls.Add(this.lblstock);
             this.Controls.Add(this.lblmanufactor);
             this.Controls.Add(this.lblbrand);
@@ -417,7 +437,6 @@
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.materialLabel2);
             this.Name = "frmManagerReceiveStock";
-            this.Sizable = false;
             this.Text = "Receive Inventory ";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -445,10 +464,11 @@
         private MaterialSkin.Controls.MaterialLabel lblbrand;
         private MaterialSkin.Controls.MaterialLabel lblmanufactor;
         private MaterialSkin.Controls.MaterialLabel lblstock;
-        private MaterialSkin.Controls.MaterialLabel lblnewstock;
         private MaterialSkin.Controls.MaterialLabel lbltotalstock;
         private MaterialSkin.Controls.MaterialLabel lblitem;
-        private MaterialSkin.Controls.MaterialRaisedButton btnReset;
+        private MaterialSkin.Controls.MaterialRaisedButton btnReceiveNewStock;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtnewstock;
+        private MaterialSkin.Controls.MaterialRaisedButton btnApproceNewStock;
     }
 }

@@ -41,7 +41,7 @@ namespace PrimeTrade
 
         private void manageStockToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmManagerStockManagement form = new frmManagerStockManagement();
+            frmManagerStockManagement form = new frmManagerStockManagement("FINANCE");
             form.MdiParent = this;
             form.Show();
         }

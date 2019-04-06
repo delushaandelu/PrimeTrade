@@ -66,12 +66,15 @@
             this.columnHeader22 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.txtstkid = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.btnReset = new MaterialSkin.Controls.MaterialRaisedButton();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.receiveNewStockQuantityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnRefresh = new MetroFramework.Controls.MetroButton();
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lblcallfrom = new MaterialSkin.Controls.MaterialLabel();
+            this.approveNewStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chkShowQtyRecords = new MaterialSkin.Controls.MaterialCheckBox();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -394,7 +397,7 @@
             this.columnHeader3});
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
-            this.listView1.Location = new System.Drawing.Point(54, 335);
+            this.listView1.Location = new System.Drawing.Point(54, 366);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(909, 299);
             this.listView1.TabIndex = 41;
@@ -456,6 +459,10 @@
             this.columnHeader2.Text = "Promo Code";
             this.columnHeader2.Width = 80;
             // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "New Qty";
+            // 
             // txtstkid
             // 
             this.txtstkid.Depth = 0;
@@ -488,9 +495,10 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.receiveNewStockQuantityToolStripMenuItem});
+            this.receiveNewStockQuantityToolStripMenuItem,
+            this.approveNewStockToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(220, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(220, 48);
             // 
             // receiveNewStockQuantityToolStripMenuItem
             // 
@@ -503,22 +511,60 @@
             // 
             this.btnRefresh.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnRefresh.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRefresh.BackgroundImage")));
-            this.btnRefresh.Location = new System.Drawing.Point(931, 297);
+            this.btnRefresh.Location = new System.Drawing.Point(931, 331);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(32, 32);
             this.btnRefresh.TabIndex = 45;
             this.btnRefresh.UseSelectable = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
-            // columnHeader3
+            // lblcallfrom
             // 
-            this.columnHeader3.Text = "New Qty";
+            this.lblcallfrom.AutoSize = true;
+            this.lblcallfrom.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblcallfrom.Depth = 0;
+            this.lblcallfrom.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblcallfrom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblcallfrom.Location = new System.Drawing.Point(208, 75);
+            this.lblcallfrom.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblcallfrom.Name = "lblcallfrom";
+            this.lblcallfrom.Size = new System.Drawing.Size(0, 19);
+            this.lblcallfrom.TabIndex = 46;
+            this.lblcallfrom.Visible = false;
+            // 
+            // approveNewStockToolStripMenuItem
+            // 
+            this.approveNewStockToolStripMenuItem.Name = "approveNewStockToolStripMenuItem";
+            this.approveNewStockToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.approveNewStockToolStripMenuItem.Text = "Approve new stock";
+            this.approveNewStockToolStripMenuItem.Visible = false;
+            this.approveNewStockToolStripMenuItem.Click += new System.EventHandler(this.approveNewStockToolStripMenuItem_Click);
+            // 
+            // chkShowQtyRecords
+            // 
+            this.chkShowQtyRecords.AutoSize = true;
+            this.chkShowQtyRecords.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.chkShowQtyRecords.Depth = 0;
+            this.chkShowQtyRecords.Font = new System.Drawing.Font("Roboto", 10F);
+            this.chkShowQtyRecords.Location = new System.Drawing.Point(720, 333);
+            this.chkShowQtyRecords.Margin = new System.Windows.Forms.Padding(0);
+            this.chkShowQtyRecords.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.chkShowQtyRecords.MouseState = MaterialSkin.MouseState.HOVER;
+            this.chkShowQtyRecords.Name = "chkShowQtyRecords";
+            this.chkShowQtyRecords.Ripple = true;
+            this.chkShowQtyRecords.Size = new System.Drawing.Size(193, 30);
+            this.chkShowQtyRecords.TabIndex = 47;
+            this.chkShowQtyRecords.Text = "Show finalized qty records";
+            this.chkShowQtyRecords.UseVisualStyleBackColor = false;
+            this.chkShowQtyRecords.CheckedChanged += new System.EventHandler(this.materialCheckBox1_CheckedChanged);
             // 
             // frmManagerStockManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1005, 658);
+            this.ClientSize = new System.Drawing.Size(1005, 685);
+            this.Controls.Add(this.chkShowQtyRecords);
+            this.Controls.Add(this.lblcallfrom);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.txtstkid);
@@ -601,5 +647,8 @@
         private System.Windows.Forms.ToolStripMenuItem receiveNewStockQuantityToolStripMenuItem;
         private MetroFramework.Controls.MetroButton btnRefresh;
         private System.Windows.Forms.ColumnHeader columnHeader3;
+        private MaterialSkin.Controls.MaterialLabel lblcallfrom;
+        private System.Windows.Forms.ToolStripMenuItem approveNewStockToolStripMenuItem;
+        private MaterialSkin.Controls.MaterialCheckBox chkShowQtyRecords;
     }
 }
