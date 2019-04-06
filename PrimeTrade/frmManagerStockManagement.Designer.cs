@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmManagerStockManagement));
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
@@ -65,6 +67,12 @@
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.txtstkid = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.btnReset = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.receiveNewStockQuantityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnRefresh = new MetroFramework.Controls.MetroButton();
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // materialLabel6
@@ -283,11 +291,11 @@
             // btnaddstock
             // 
             this.btnaddstock.Depth = 0;
-            this.btnaddstock.Location = new System.Drawing.Point(845, 107);
+            this.btnaddstock.Location = new System.Drawing.Point(856, 105);
             this.btnaddstock.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnaddstock.Name = "btnaddstock";
             this.btnaddstock.Primary = true;
-            this.btnaddstock.Size = new System.Drawing.Size(118, 35);
+            this.btnaddstock.Size = new System.Drawing.Size(107, 25);
             this.btnaddstock.TabIndex = 33;
             this.btnaddstock.Text = "Add Stock";
             this.btnaddstock.UseVisualStyleBackColor = true;
@@ -296,11 +304,11 @@
             // btnupdatestock
             // 
             this.btnupdatestock.Depth = 0;
-            this.btnupdatestock.Location = new System.Drawing.Point(845, 151);
+            this.btnupdatestock.Location = new System.Drawing.Point(856, 136);
             this.btnupdatestock.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnupdatestock.Name = "btnupdatestock";
             this.btnupdatestock.Primary = true;
-            this.btnupdatestock.Size = new System.Drawing.Size(118, 35);
+            this.btnupdatestock.Size = new System.Drawing.Size(107, 25);
             this.btnupdatestock.TabIndex = 34;
             this.btnupdatestock.Text = "UPDATE STOCK";
             this.btnupdatestock.UseVisualStyleBackColor = true;
@@ -309,11 +317,11 @@
             // btndeletestock
             // 
             this.btndeletestock.Depth = 0;
-            this.btndeletestock.Location = new System.Drawing.Point(845, 196);
+            this.btndeletestock.Location = new System.Drawing.Point(856, 167);
             this.btndeletestock.MouseState = MaterialSkin.MouseState.HOVER;
             this.btndeletestock.Name = "btndeletestock";
             this.btndeletestock.Primary = true;
-            this.btndeletestock.Size = new System.Drawing.Size(118, 35);
+            this.btndeletestock.Size = new System.Drawing.Size(107, 25);
             this.btndeletestock.TabIndex = 35;
             this.btndeletestock.Text = "Delete Stock";
             this.btndeletestock.UseVisualStyleBackColor = true;
@@ -382,7 +390,8 @@
             this.columnHeader20,
             this.columnHeader22,
             this.columnHeader1,
-            this.columnHeader2});
+            this.columnHeader2,
+            this.columnHeader3});
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.Location = new System.Drawing.Point(54, 335);
@@ -391,6 +400,7 @@
             this.listView1.TabIndex = 41;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listView1_MouseClick);
             this.listView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listView1_MouseDoubleClick);
             // 
             // columnHeader12
@@ -460,12 +470,57 @@
             this.txtstkid.Size = new System.Drawing.Size(40, 23);
             this.txtstkid.TabIndex = 42;
             this.txtstkid.UseSystemPasswordChar = false;
+            this.txtstkid.Visible = false;
+            // 
+            // btnReset
+            // 
+            this.btnReset.Depth = 0;
+            this.btnReset.Location = new System.Drawing.Point(856, 198);
+            this.btnReset.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Primary = true;
+            this.btnReset.Size = new System.Drawing.Size(107, 25);
+            this.btnReset.TabIndex = 43;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.receiveNewStockQuantityToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(220, 26);
+            // 
+            // receiveNewStockQuantityToolStripMenuItem
+            // 
+            this.receiveNewStockQuantityToolStripMenuItem.Name = "receiveNewStockQuantityToolStripMenuItem";
+            this.receiveNewStockQuantityToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.receiveNewStockQuantityToolStripMenuItem.Text = "Receive new stock Quantity";
+            this.receiveNewStockQuantityToolStripMenuItem.Click += new System.EventHandler(this.receiveNewStockQuantityToolStripMenuItem_Click);
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnRefresh.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRefresh.BackgroundImage")));
+            this.btnRefresh.Location = new System.Drawing.Point(931, 297);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(32, 32);
+            this.btnRefresh.TabIndex = 45;
+            this.btnRefresh.UseSelectable = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "New Qty";
             // 
             // frmManagerStockManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1015, 658);
+            this.ClientSize = new System.Drawing.Size(1005, 658);
+            this.Controls.Add(this.btnRefresh);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.txtstkid);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.cmbstate);
@@ -496,6 +551,7 @@
             this.MinimizeBox = false;
             this.Name = "frmManagerStockManagement";
             this.Text = "Stock Management";
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -540,5 +596,10 @@
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtstkid;
+        private MaterialSkin.Controls.MaterialRaisedButton btnReset;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem receiveNewStockQuantityToolStripMenuItem;
+        private MetroFramework.Controls.MetroButton btnRefresh;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
     }
 }

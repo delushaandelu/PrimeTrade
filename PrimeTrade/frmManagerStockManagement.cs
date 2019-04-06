@@ -111,7 +111,7 @@ namespace PrimeTrade
             listView1.Items.Clear();
             listView1.View = View.Details;
 
-            MySqlDataAdapter dAdpter = new MySqlDataAdapter("SELECT idtb_stock,name,catogery,brand,qty,manufactor,mandate,expdate,state,reorder,promocode FROM base.tb_stock", connect);
+            MySqlDataAdapter dAdpter = new MySqlDataAdapter("SELECT idtb_stock,name,catogery,brand,qty,manufactor,mandate,expdate,state,reorder,promocode,newqty FROM base.tb_stock", connect);
 
             DataTable dTable = new DataTable();
             dAdpter.Fill(dTable);
@@ -131,6 +131,7 @@ namespace PrimeTrade
                 listItem.SubItems.Add(dRow["state"].ToString());
                 listItem.SubItems.Add(dRow["reorder"].ToString());
                 listItem.SubItems.Add(dRow["promocode"].ToString());
+                listItem.SubItems.Add(dRow["newqty"].ToString());
 
                 listView1.Items.Add(listItem);
             }
@@ -296,6 +297,47 @@ namespace PrimeTrade
                 }
                 connect.Close();
             }
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            clearn_form();
+        }
+
+        private void listView1_MouseClick(object sender, MouseEventArgs e)
+        {
+            switch (e.Button)
+            {
+                case MouseButtons.Right:
+                    {
+                        contextMenuStrip1.Show(Cursor.Position);                       
+                    }
+                    break;
+            }
+        }
+
+        private void receiveNewStockQuantityToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string stockid = listView1.SelectedItems[0].SubItems[0].Text;
+            string item = listView1.SelectedItems[0].SubItems[1].Text;
+            string cat = listView1.SelectedItems[0].SubItems[2].Text;
+            string brand = listView1.SelectedItems[0].SubItems[3].Text;
+            string man = listView1.SelectedItems[0].SubItems[5].Text;
+            int quantity;
+            int newqty;
+
+            int.TryParse(listView1.SelectedItems[0].SubItems[4].Text, out quantity);
+            int.TryParse(listView1.SelectedItems[0].SubItems[11].Text, out newqty);
+
+            frmManagerReceiveStock receiveStock = new frmManagerReceiveStock(stockid, quantity, newqty, item, cat, brand, man);
+            receiveStock.MdiParent = frmFinanceManagerHome.ActiveForm;
+            receiveStock.Show();
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            view_stock();
+            clearn_form();
         }
     }
 }
