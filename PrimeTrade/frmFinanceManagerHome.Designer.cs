@@ -39,11 +39,12 @@
             this.manageStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stockBasicDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.promotionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.promotionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.activeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -112,23 +113,38 @@
             // manageStockToolStripMenuItem
             // 
             this.manageStockToolStripMenuItem.Name = "manageStockToolStripMenuItem";
-            this.manageStockToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.manageStockToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.manageStockToolStripMenuItem.Text = "Manage Stock";
             this.manageStockToolStripMenuItem.Click += new System.EventHandler(this.manageStockToolStripMenuItem_Click);
             // 
             // viewStockToolStripMenuItem
             // 
             this.viewStockToolStripMenuItem.Name = "viewStockToolStripMenuItem";
-            this.viewStockToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.viewStockToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.viewStockToolStripMenuItem.Text = "View Stock";
             this.viewStockToolStripMenuItem.Click += new System.EventHandler(this.viewStockToolStripMenuItem_Click);
             // 
             // stockBasicDataToolStripMenuItem
             // 
             this.stockBasicDataToolStripMenuItem.Name = "stockBasicDataToolStripMenuItem";
-            this.stockBasicDataToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.stockBasicDataToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.stockBasicDataToolStripMenuItem.Text = "Stock Basic Data";
             this.stockBasicDataToolStripMenuItem.Click += new System.EventHandler(this.stockBasicDataToolStripMenuItem_Click);
+            // 
+            // promotionToolStripMenuItem
+            // 
+            this.promotionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pToolStripMenuItem,
+            this.activeToolStripMenuItem});
+            this.promotionToolStripMenuItem.Name = "promotionToolStripMenuItem";
+            this.promotionToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
+            this.promotionToolStripMenuItem.Text = "Promotion";
+            // 
+            // pToolStripMenuItem
+            // 
+            this.pToolStripMenuItem.Name = "pToolStripMenuItem";
+            this.pToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.pToolStripMenuItem.Text = "View Promotion";
             // 
             // statusStrip
             // 
@@ -146,19 +162,11 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
             this.toolStripStatusLabel.Text = "Status";
             // 
-            // promotionToolStripMenuItem
+            // activeToolStripMenuItem
             // 
-            this.promotionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pToolStripMenuItem});
-            this.promotionToolStripMenuItem.Name = "promotionToolStripMenuItem";
-            this.promotionToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
-            this.promotionToolStripMenuItem.Text = "Promotion";
-            // 
-            // pToolStripMenuItem
-            // 
-            this.pToolStripMenuItem.Name = "pToolStripMenuItem";
-            this.pToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
-            this.pToolStripMenuItem.Text = "View Promotion";
+            this.activeToolStripMenuItem.Name = "activeToolStripMenuItem";
+            this.activeToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.activeToolStripMenuItem.Text = "Active ";
             // 
             // frmFinanceManagerHome
             // 
@@ -199,6 +207,7 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem promotionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem activeToolStripMenuItem;
     }
 }
 

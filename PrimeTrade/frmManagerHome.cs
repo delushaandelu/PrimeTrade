@@ -114,5 +114,19 @@ namespace PrimeTrade
             form.MdiParent = this;
             form.Show();
         }
+
+        private void activePromotionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmManagerActivePromo form = new frmManagerActivePromo();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void viewAllPromotionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmManagerViewAllPromotion form = new frmManagerViewAllPromotion();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

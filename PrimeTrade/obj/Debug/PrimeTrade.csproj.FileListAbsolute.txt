@@ -29,3 +29,4 @@ D:\PrimeTrade\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.csprojResolveAssemblyRe
 D:\PrimeTrade\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmManagerReceiveStock.resources
 D:\PrimeTrade\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmManagerPromotion.resources
 D:\PrimeTrade\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmManagerActivePromo.resources
+D:\PrimeTrade\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmManagerViewAllPromotion.resources

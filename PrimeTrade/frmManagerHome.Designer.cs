@@ -40,6 +40,10 @@
             this.stockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stockManagementToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.viewStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.promotionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.promotionPlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.activePromotionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.asignPromitonToDistributionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
@@ -48,10 +52,7 @@
             this.metroTile3 = new MetroFramework.Controls.MetroTile();
             this.metroTile4 = new MetroFramework.Controls.MetroTile();
             this.metroTile5 = new MetroFramework.Controls.MetroTile();
-            this.promotionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.promotionPlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.activePromotionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.asignPromitonToDistributionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewAllPromotionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -146,6 +147,37 @@
             this.viewStockToolStripMenuItem.Text = "View Stock";
             this.viewStockToolStripMenuItem.Click += new System.EventHandler(this.viewStockToolStripMenuItem_Click);
             // 
+            // promotionToolStripMenuItem
+            // 
+            this.promotionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.promotionPlanToolStripMenuItem,
+            this.activePromotionToolStripMenuItem,
+            this.viewAllPromotionsToolStripMenuItem,
+            this.asignPromitonToDistributionToolStripMenuItem});
+            this.promotionToolStripMenuItem.Name = "promotionToolStripMenuItem";
+            this.promotionToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
+            this.promotionToolStripMenuItem.Text = "Promotion";
+            // 
+            // promotionPlanToolStripMenuItem
+            // 
+            this.promotionPlanToolStripMenuItem.Name = "promotionPlanToolStripMenuItem";
+            this.promotionPlanToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.promotionPlanToolStripMenuItem.Text = "Promotion Plan";
+            this.promotionPlanToolStripMenuItem.Click += new System.EventHandler(this.promotionPlanToolStripMenuItem_Click);
+            // 
+            // activePromotionToolStripMenuItem
+            // 
+            this.activePromotionToolStripMenuItem.Name = "activePromotionToolStripMenuItem";
+            this.activePromotionToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.activePromotionToolStripMenuItem.Text = "Active Promotion";
+            this.activePromotionToolStripMenuItem.Click += new System.EventHandler(this.activePromotionToolStripMenuItem_Click);
+            // 
+            // asignPromitonToDistributionToolStripMenuItem
+            // 
+            this.asignPromitonToDistributionToolStripMenuItem.Name = "asignPromitonToDistributionToolStripMenuItem";
+            this.asignPromitonToDistributionToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.asignPromitonToDistributionToolStripMenuItem.Text = "Asign Promiton to Distribution";
+            // 
             // statusStrip
             // 
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -215,34 +247,12 @@
             this.metroTile5.Text = "metroTile5";
             this.metroTile5.UseSelectable = true;
             // 
-            // promotionToolStripMenuItem
+            // viewAllPromotionsToolStripMenuItem
             // 
-            this.promotionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.promotionPlanToolStripMenuItem,
-            this.activePromotionToolStripMenuItem,
-            this.asignPromitonToDistributionToolStripMenuItem});
-            this.promotionToolStripMenuItem.Name = "promotionToolStripMenuItem";
-            this.promotionToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
-            this.promotionToolStripMenuItem.Text = "Promotion";
-            // 
-            // promotionPlanToolStripMenuItem
-            // 
-            this.promotionPlanToolStripMenuItem.Name = "promotionPlanToolStripMenuItem";
-            this.promotionPlanToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
-            this.promotionPlanToolStripMenuItem.Text = "Promotion Plan";
-            this.promotionPlanToolStripMenuItem.Click += new System.EventHandler(this.promotionPlanToolStripMenuItem_Click);
-            // 
-            // activePromotionToolStripMenuItem
-            // 
-            this.activePromotionToolStripMenuItem.Name = "activePromotionToolStripMenuItem";
-            this.activePromotionToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
-            this.activePromotionToolStripMenuItem.Text = "Active Promotion";
-            // 
-            // asignPromitonToDistributionToolStripMenuItem
-            // 
-            this.asignPromitonToDistributionToolStripMenuItem.Name = "asignPromitonToDistributionToolStripMenuItem";
-            this.asignPromitonToDistributionToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
-            this.asignPromitonToDistributionToolStripMenuItem.Text = "Asign Promiton to Distribution";
+            this.viewAllPromotionsToolStripMenuItem.Name = "viewAllPromotionsToolStripMenuItem";
+            this.viewAllPromotionsToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.viewAllPromotionsToolStripMenuItem.Text = "View all Promotions";
+            this.viewAllPromotionsToolStripMenuItem.Click += new System.EventHandler(this.viewAllPromotionsToolStripMenuItem_Click);
             // 
             // frmManagerHome
             // 
@@ -296,6 +306,7 @@
         private System.Windows.Forms.ToolStripMenuItem promotionPlanToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem activePromotionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem asignPromitonToDistributionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewAllPromotionsToolStripMenuItem;
     }
 }
 

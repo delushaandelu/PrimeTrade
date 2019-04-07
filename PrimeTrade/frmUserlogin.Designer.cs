@@ -135,7 +135,9 @@
             this.cmbusertype.Items.AddRange(new object[] {
             "FINANCE",
             "BRAND MANAGER",
-            "SYSTEM ADMIN"});
+            "SYSTEM ADMIN",
+            "SALES",
+            "DISTRIBUTION"});
             this.cmbusertype.Location = new System.Drawing.Point(143, 327);
             this.cmbusertype.Name = "cmbusertype";
             this.cmbusertype.Size = new System.Drawing.Size(202, 29);
