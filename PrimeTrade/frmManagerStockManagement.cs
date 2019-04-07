@@ -35,14 +35,14 @@ namespace PrimeTrade
         
         private void btnaddstock_Click(object sender, EventArgs e)
         {
-            if (txtstockname.Text == "" || txtqty.Text == "" || txtreorder.Text == "" || txtreorder.Text == "" || cmbcatogery.Text == "" || cmbbrand.Text == "" || cmbmanufactor.Text  == "" || cmbstate.Text  == "" || cmbpromocode.Text == "" )
+            if (txtstockname.Text == "" || txtqty.Text == "" || txtreorder.Text == "" || txtreorder.Text == "" || cmbcatogery.Text == "" || cmbbrand.Text == "" || cmbmanufactor.Text  == "" || cmbstate.Text  == "" || txtcost.Text == "" || txtmrp.Text == "")
             {
                 MessageBox.Show("Please fill up all the fields.", "Empty Fields Detected !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             else
             {
-                MySqlParameter[] pera = new MySqlParameter[10];
+                MySqlParameter[] pera = new MySqlParameter[12];
                 pera[0] = new MySqlParameter("stockname", MySqlDbType.VarChar);
                 pera[0].Value = txtstockname.Text;
 
@@ -72,6 +72,12 @@ namespace PrimeTrade
 
                 pera[9] = new MySqlParameter("promocode", MySqlDbType.VarChar);
                 pera[9].Value = cmbpromocode.Text;
+
+                pera[10] = new MySqlParameter("cost", MySqlDbType.VarChar);
+                pera[10].Value = txtcost.Text;
+
+                pera[11] = new MySqlParameter("mrp", MySqlDbType.VarChar);
+                pera[11].Value = txtmrp.Text;
 
                 MySqlCommand command = new MySqlCommand();
                 command.Connection = connect;
@@ -110,6 +116,8 @@ namespace PrimeTrade
             txtqty.ResetText();
             txtreorder.ResetText();
             cmbpromocode.ResetText();
+            txtcost.ResetText();
+            txtmrp.ResetText();
         }
 
         public void view_stock()
@@ -117,7 +125,7 @@ namespace PrimeTrade
             listView1.Items.Clear();
             listView1.View = View.Details;
 
-            MySqlDataAdapter dAdpter = new MySqlDataAdapter("SELECT idtb_stock,name,catogery,brand,qty,manufactor,mandate,expdate,state,reorder,promocode,newqty FROM base.tb_stock", connect);
+            MySqlDataAdapter dAdpter = new MySqlDataAdapter("SELECT idtb_stock,name,catogery,brand,qty,manufactor,mandate,expdate,state,reorder,promocode,newqty,cost,mrp FROM base.tb_stock", connect);
 
             DataTable dTable = new DataTable();
             dAdpter.Fill(dTable);
@@ -138,6 +146,8 @@ namespace PrimeTrade
                 listItem.SubItems.Add(dRow["reorder"].ToString());
                 listItem.SubItems.Add(dRow["promocode"].ToString());
                 listItem.SubItems.Add(dRow["newqty"].ToString());
+                listItem.SubItems.Add(dRow["cost"].ToString());
+                listItem.SubItems.Add(dRow["mrp"].ToString());
 
                 listView1.Items.Add(listItem);
             }
@@ -156,6 +166,8 @@ namespace PrimeTrade
             txtqty.Text         = listView1.SelectedItems[0].SubItems[4].Text;
             txtreorder.Text     = listView1.SelectedItems[0].SubItems[9].Text;
             cmbpromocode.Text   = listView1.SelectedItems[0].SubItems[10].Text;
+            txtcost.Text        = listView1.SelectedItems[0].SubItems[11].Text;
+            txtmrp.Text         = listView1.SelectedItems[0].SubItems[12].Text;
         }
 
         private void btnupdatestock_Click(object sender, EventArgs e)
@@ -386,7 +398,7 @@ namespace PrimeTrade
                 listView1.Items.Clear();
                 listView1.View = View.Details;
 
-                MySqlDataAdapter dAdpter = new MySqlDataAdapter("SELECT idtb_stock,name,catogery,brand,qty,manufactor,mandate,expdate,state,reorder,promocode,newqty FROM base.tb_stock where newqty !=0 or newqty != null", connect);
+                MySqlDataAdapter dAdpter = new MySqlDataAdapter("SELECT idtb_stock,name,catogery,brand,qty,manufactor,mandate,expdate,state,reorder,promocode,newqty,cost,mrp FROM base.tb_stock where newqty !=0 or newqty != null", connect);
 
                 DataTable dTable = new DataTable();
                 dAdpter.Fill(dTable);
@@ -407,6 +419,8 @@ namespace PrimeTrade
                     listItem.SubItems.Add(dRow["reorder"].ToString());
                     listItem.SubItems.Add(dRow["promocode"].ToString());
                     listItem.SubItems.Add(dRow["newqty"].ToString());
+                    listItem.SubItems.Add(dRow["cost"].ToString());
+                    listItem.SubItems.Add(dRow["mrp"].ToString());
 
                     listView1.Items.Add(listItem);
                 }  
@@ -416,7 +430,7 @@ namespace PrimeTrade
                 listView1.Items.Clear();
                 listView1.View = View.Details;
 
-                MySqlDataAdapter dAdpter = new MySqlDataAdapter("SELECT idtb_stock,name,catogery,brand,qty,manufactor,mandate,expdate,state,reorder,promocode,newqty FROM base.tb_stock where newqty =0 or newqty = null", connect);
+                MySqlDataAdapter dAdpter = new MySqlDataAdapter("SELECT idtb_stock,name,catogery,brand,qty,manufactor,mandate,expdate,state,reorder,promocode,newqty,cost,mrp FROM base.tb_stock where newqty =0 or newqty = null", connect);
 
                 DataTable dTable = new DataTable();
                 dAdpter.Fill(dTable);
@@ -437,10 +451,47 @@ namespace PrimeTrade
                     listItem.SubItems.Add(dRow["reorder"].ToString());
                     listItem.SubItems.Add(dRow["promocode"].ToString());
                     listItem.SubItems.Add(dRow["newqty"].ToString());
+                    listItem.SubItems.Add(dRow["cost"].ToString());
+                    listItem.SubItems.Add(dRow["mrp"].ToString());
 
                     listView1.Items.Add(listItem);
                 }
             }
+        }
+
+        private void txtmrp_TextChanged(object sender, EventArgs e)
+        {
+            int cost;
+            int mrp;
+            int profit;
+            lblprofit.ResetText();
+
+            int.TryParse(txtcost.Text, out cost);
+            int.TryParse(txtmrp.Text, out mrp);
+
+            profit = mrp - cost;
+
+            lblprofit.Text = profit.ToString();
+        }
+
+        private void txtcost_TextChanged(object sender, EventArgs e)
+        {
+            int cost;
+            int mrp;
+            int profit;
+            lblprofit.ResetText();
+
+            int.TryParse(txtcost.Text, out cost);
+            int.TryParse(txtmrp.Text, out mrp);
+
+            profit = mrp - cost;
+
+            lblprofit.Text = profit.ToString();
+        }
+
+        private void frmManagerStockManagement_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

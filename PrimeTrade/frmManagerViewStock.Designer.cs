@@ -40,6 +40,9 @@
             this.columnHeader22 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // listView1
@@ -55,12 +58,15 @@
             this.columnHeader20,
             this.columnHeader22,
             this.columnHeader1,
-            this.columnHeader2});
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5});
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.Location = new System.Drawing.Point(28, 104);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(941, 513);
+            this.listView1.Size = new System.Drawing.Size(1147, 513);
             this.listView1.TabIndex = 42;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -118,11 +124,24 @@
             this.columnHeader2.Text = "Promo Code";
             this.columnHeader2.Width = 80;
             // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Received Qty";
+            this.columnHeader3.Width = 100;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Cost";
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "MRP";
+            // 
             // frmManagerViewStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(996, 648);
+            this.ClientSize = new System.Drawing.Size(1199, 648);
             this.Controls.Add(this.listView1);
             this.Name = "frmManagerViewStock";
             this.Text = "View all stock ";
@@ -144,5 +163,8 @@
         private System.Windows.Forms.ColumnHeader columnHeader22;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
     }
 }

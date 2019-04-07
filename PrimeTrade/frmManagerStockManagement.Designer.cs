@@ -67,14 +67,25 @@
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.txtstkid = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.btnReset = new MaterialSkin.Controls.MaterialRaisedButton();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.receiveNewStockQuantityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.approveNewStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnRefresh = new MetroFramework.Controls.MetroButton();
             this.lblcallfrom = new MaterialSkin.Controls.MaterialLabel();
-            this.approveNewStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chkShowQtyRecords = new MaterialSkin.Controls.MaterialCheckBox();
+            this.txtcost = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
+            this.txtmrp = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.materialLabel12 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel14 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel15 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblprofit = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel17 = new MaterialSkin.Controls.MaterialLabel();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -394,10 +405,12 @@
             this.columnHeader22,
             this.columnHeader1,
             this.columnHeader2,
-            this.columnHeader3});
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5});
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
-            this.listView1.Location = new System.Drawing.Point(54, 366);
+            this.listView1.Location = new System.Drawing.Point(54, 424);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(909, 299);
             this.listView1.TabIndex = 41;
@@ -463,6 +476,14 @@
             // 
             this.columnHeader3.Text = "New Qty";
             // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Cost";
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "MRP";
+            // 
             // txtstkid
             // 
             this.txtstkid.Depth = 0;
@@ -507,11 +528,19 @@
             this.receiveNewStockQuantityToolStripMenuItem.Text = "Receive new stock Quantity";
             this.receiveNewStockQuantityToolStripMenuItem.Click += new System.EventHandler(this.receiveNewStockQuantityToolStripMenuItem_Click);
             // 
+            // approveNewStockToolStripMenuItem
+            // 
+            this.approveNewStockToolStripMenuItem.Name = "approveNewStockToolStripMenuItem";
+            this.approveNewStockToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.approveNewStockToolStripMenuItem.Text = "Approve new stock";
+            this.approveNewStockToolStripMenuItem.Visible = false;
+            this.approveNewStockToolStripMenuItem.Click += new System.EventHandler(this.approveNewStockToolStripMenuItem_Click);
+            // 
             // btnRefresh
             // 
             this.btnRefresh.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnRefresh.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRefresh.BackgroundImage")));
-            this.btnRefresh.Location = new System.Drawing.Point(931, 331);
+            this.btnRefresh.Location = new System.Drawing.Point(933, 389);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(32, 32);
             this.btnRefresh.TabIndex = 45;
@@ -532,21 +561,13 @@
             this.lblcallfrom.TabIndex = 46;
             this.lblcallfrom.Visible = false;
             // 
-            // approveNewStockToolStripMenuItem
-            // 
-            this.approveNewStockToolStripMenuItem.Name = "approveNewStockToolStripMenuItem";
-            this.approveNewStockToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
-            this.approveNewStockToolStripMenuItem.Text = "Approve new stock";
-            this.approveNewStockToolStripMenuItem.Visible = false;
-            this.approveNewStockToolStripMenuItem.Click += new System.EventHandler(this.approveNewStockToolStripMenuItem_Click);
-            // 
             // chkShowQtyRecords
             // 
             this.chkShowQtyRecords.AutoSize = true;
             this.chkShowQtyRecords.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.chkShowQtyRecords.Depth = 0;
             this.chkShowQtyRecords.Font = new System.Drawing.Font("Roboto", 10F);
-            this.chkShowQtyRecords.Location = new System.Drawing.Point(720, 333);
+            this.chkShowQtyRecords.Location = new System.Drawing.Point(722, 391);
             this.chkShowQtyRecords.Margin = new System.Windows.Forms.Padding(0);
             this.chkShowQtyRecords.MouseLocation = new System.Drawing.Point(-1, -1);
             this.chkShowQtyRecords.MouseState = MaterialSkin.MouseState.HOVER;
@@ -558,11 +579,149 @@
             this.chkShowQtyRecords.UseVisualStyleBackColor = false;
             this.chkShowQtyRecords.CheckedChanged += new System.EventHandler(this.materialCheckBox1_CheckedChanged);
             // 
+            // txtcost
+            // 
+            this.txtcost.Depth = 0;
+            this.txtcost.Hint = "";
+            this.txtcost.Location = new System.Drawing.Point(404, 322);
+            this.txtcost.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtcost.Name = "txtcost";
+            this.txtcost.PasswordChar = '\0';
+            this.txtcost.SelectedText = "";
+            this.txtcost.SelectionLength = 0;
+            this.txtcost.SelectionStart = 0;
+            this.txtcost.Size = new System.Drawing.Size(195, 23);
+            this.txtcost.TabIndex = 49;
+            this.txtcost.UseSystemPasswordChar = false;
+            this.txtcost.TextChanged += new System.EventHandler(this.txtcost_TextChanged);
+            // 
+            // materialLabel11
+            // 
+            this.materialLabel11.AutoSize = true;
+            this.materialLabel11.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.materialLabel11.Depth = 0;
+            this.materialLabel11.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel11.Location = new System.Drawing.Point(277, 324);
+            this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel11.Name = "materialLabel11";
+            this.materialLabel11.Size = new System.Drawing.Size(47, 19);
+            this.materialLabel11.TabIndex = 48;
+            this.materialLabel11.Text = "COST";
+            // 
+            // txtmrp
+            // 
+            this.txtmrp.Depth = 0;
+            this.txtmrp.Hint = "";
+            this.txtmrp.Location = new System.Drawing.Point(404, 351);
+            this.txtmrp.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtmrp.Name = "txtmrp";
+            this.txtmrp.PasswordChar = '\0';
+            this.txtmrp.SelectedText = "";
+            this.txtmrp.SelectionLength = 0;
+            this.txtmrp.SelectionStart = 0;
+            this.txtmrp.Size = new System.Drawing.Size(195, 23);
+            this.txtmrp.TabIndex = 51;
+            this.txtmrp.UseSystemPasswordChar = false;
+            this.txtmrp.TextChanged += new System.EventHandler(this.txtmrp_TextChanged);
+            // 
+            // materialLabel12
+            // 
+            this.materialLabel12.AutoSize = true;
+            this.materialLabel12.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.materialLabel12.Depth = 0;
+            this.materialLabel12.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel12.Location = new System.Drawing.Point(277, 353);
+            this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel12.Name = "materialLabel12";
+            this.materialLabel12.Size = new System.Drawing.Size(40, 19);
+            this.materialLabel12.TabIndex = 50;
+            this.materialLabel12.Text = "MRP";
+            // 
+            // materialLabel13
+            // 
+            this.materialLabel13.AutoSize = true;
+            this.materialLabel13.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.materialLabel13.Depth = 0;
+            this.materialLabel13.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel13.Location = new System.Drawing.Point(605, 326);
+            this.materialLabel13.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel13.Name = "materialLabel13";
+            this.materialLabel13.Size = new System.Drawing.Size(39, 19);
+            this.materialLabel13.TabIndex = 52;
+            this.materialLabel13.Text = ".LKR";
+            // 
+            // materialLabel14
+            // 
+            this.materialLabel14.AutoSize = true;
+            this.materialLabel14.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.materialLabel14.Depth = 0;
+            this.materialLabel14.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel14.Location = new System.Drawing.Point(605, 353);
+            this.materialLabel14.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel14.Name = "materialLabel14";
+            this.materialLabel14.Size = new System.Drawing.Size(39, 19);
+            this.materialLabel14.TabIndex = 53;
+            this.materialLabel14.Text = ".LKR";
+            // 
+            // materialLabel15
+            // 
+            this.materialLabel15.AutoSize = true;
+            this.materialLabel15.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.materialLabel15.Depth = 0;
+            this.materialLabel15.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel15.Location = new System.Drawing.Point(230, 389);
+            this.materialLabel15.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel15.Name = "materialLabel15";
+            this.materialLabel15.Size = new System.Drawing.Size(173, 19);
+            this.materialLabel15.TabIndex = 54;
+            this.materialLabel15.Text = "Estimated Profit per Qty:";
+            // 
+            // lblprofit
+            // 
+            this.lblprofit.AutoSize = true;
+            this.lblprofit.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblprofit.Depth = 0;
+            this.lblprofit.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblprofit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblprofit.Location = new System.Drawing.Point(409, 389);
+            this.lblprofit.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblprofit.Name = "lblprofit";
+            this.lblprofit.Size = new System.Drawing.Size(0, 19);
+            this.lblprofit.TabIndex = 55;
+            // 
+            // materialLabel17
+            // 
+            this.materialLabel17.AutoSize = true;
+            this.materialLabel17.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.materialLabel17.Depth = 0;
+            this.materialLabel17.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel17.Location = new System.Drawing.Point(605, 386);
+            this.materialLabel17.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel17.Name = "materialLabel17";
+            this.materialLabel17.Size = new System.Drawing.Size(39, 19);
+            this.materialLabel17.TabIndex = 56;
+            this.materialLabel17.Text = ".LKR";
+            // 
             // frmManagerStockManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1005, 685);
+            this.ClientSize = new System.Drawing.Size(1005, 735);
+            this.Controls.Add(this.materialLabel17);
+            this.Controls.Add(this.lblprofit);
+            this.Controls.Add(this.materialLabel15);
+            this.Controls.Add(this.materialLabel14);
+            this.Controls.Add(this.materialLabel13);
+            this.Controls.Add(this.txtmrp);
+            this.Controls.Add(this.materialLabel12);
+            this.Controls.Add(this.txtcost);
+            this.Controls.Add(this.materialLabel11);
             this.Controls.Add(this.chkShowQtyRecords);
             this.Controls.Add(this.lblcallfrom);
             this.Controls.Add(this.btnRefresh);
@@ -597,6 +756,7 @@
             this.MinimizeBox = false;
             this.Name = "frmManagerStockManagement";
             this.Text = "Stock Management";
+            this.Load += new System.EventHandler(this.frmManagerStockManagement_Load);
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -650,5 +810,16 @@
         private MaterialSkin.Controls.MaterialLabel lblcallfrom;
         private System.Windows.Forms.ToolStripMenuItem approveNewStockToolStripMenuItem;
         private MaterialSkin.Controls.MaterialCheckBox chkShowQtyRecords;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtcost;
+        private MaterialSkin.Controls.MaterialLabel materialLabel11;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtmrp;
+        private MaterialSkin.Controls.MaterialLabel materialLabel12;
+        private MaterialSkin.Controls.MaterialLabel materialLabel13;
+        private MaterialSkin.Controls.MaterialLabel materialLabel14;
+        private MaterialSkin.Controls.MaterialLabel materialLabel15;
+        private MaterialSkin.Controls.MaterialLabel lblprofit;
+        private MaterialSkin.Controls.MaterialLabel materialLabel17;
     }
 }

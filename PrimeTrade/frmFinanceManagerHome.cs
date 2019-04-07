@@ -59,5 +59,27 @@ namespace PrimeTrade
             form.MdiParent = this;
             form.Show();
         }
+
+        private void restartToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmStartup login = new frmStartup();
+            login.Show();
+            this.Hide();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void reconnectToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("System is reconnect to the Cloud.", "Success !", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void updateSystemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("System has updated from Github reposotory. Please restart", "Success !", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
