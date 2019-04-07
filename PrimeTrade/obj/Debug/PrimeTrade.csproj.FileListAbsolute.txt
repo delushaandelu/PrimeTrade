@@ -27,3 +27,5 @@ D:\PrimeTrade\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmManagerStockBasicDat
 D:\PrimeTrade\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmManagerViewStock.resources
 D:\PrimeTrade\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.csprojResolveAssemblyReference.cache
 D:\PrimeTrade\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmManagerReceiveStock.resources
+D:\PrimeTrade\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmManagerPromotion.resources
+D:\PrimeTrade\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmManagerActivePromo.resources

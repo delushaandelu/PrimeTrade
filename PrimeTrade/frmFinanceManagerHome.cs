@@ -81,5 +81,10 @@ namespace PrimeTrade
         {
             MessageBox.Show("System has updated from Github reposotory. Please restart", "Success !", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void receiveNewStockToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

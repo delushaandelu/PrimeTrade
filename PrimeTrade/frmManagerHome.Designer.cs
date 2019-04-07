@@ -30,14 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.statusStrip = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.metroTile1 = new MetroFramework.Controls.MetroTile();
-            this.metroTile2 = new MetroFramework.Controls.MetroTile();
-            this.metroTile3 = new MetroFramework.Controls.MetroTile();
-            this.metroTile4 = new MetroFramework.Controls.MetroTile();
-            this.metroTile5 = new MetroFramework.Controls.MetroTile();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reconnectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateSystemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,6 +40,18 @@
             this.stockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stockManagementToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.viewStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.metroTile1 = new MetroFramework.Controls.MetroTile();
+            this.metroTile2 = new MetroFramework.Controls.MetroTile();
+            this.metroTile3 = new MetroFramework.Controls.MetroTile();
+            this.metroTile4 = new MetroFramework.Controls.MetroTile();
+            this.metroTile5 = new MetroFramework.Controls.MetroTile();
+            this.promotionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.promotionPlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.activePromotionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.asignPromitonToDistributionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -57,81 +61,13 @@
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.stockManagementToolStripMenuItem,
-            this.stockToolStripMenuItem});
+            this.stockToolStripMenuItem,
+            this.promotionToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(130, 60);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(1076, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
-            // 
-            // statusStrip
-            // 
-            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel});
-            this.statusStrip.Location = new System.Drawing.Point(130, 619);
-            this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(1076, 22);
-            this.statusStrip.TabIndex = 2;
-            this.statusStrip.Text = "StatusStrip";
-            // 
-            // toolStripStatusLabel
-            // 
-            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
-            this.toolStripStatusLabel.Text = "Status";
-            // 
-            // metroTile1
-            // 
-            this.metroTile1.ActiveControl = null;
-            this.metroTile1.Location = new System.Drawing.Point(15, 86);
-            this.metroTile1.Name = "metroTile1";
-            this.metroTile1.Size = new System.Drawing.Size(94, 93);
-            this.metroTile1.TabIndex = 4;
-            this.metroTile1.Text = "Stock";
-            this.metroTile1.UseSelectable = true;
-            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
-            // 
-            // metroTile2
-            // 
-            this.metroTile2.ActiveControl = null;
-            this.metroTile2.Location = new System.Drawing.Point(15, 195);
-            this.metroTile2.Name = "metroTile2";
-            this.metroTile2.Size = new System.Drawing.Size(94, 93);
-            this.metroTile2.TabIndex = 5;
-            this.metroTile2.Text = "Basic Data";
-            this.metroTile2.UseSelectable = true;
-            this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click);
-            // 
-            // metroTile3
-            // 
-            this.metroTile3.ActiveControl = null;
-            this.metroTile3.Location = new System.Drawing.Point(15, 304);
-            this.metroTile3.Name = "metroTile3";
-            this.metroTile3.Size = new System.Drawing.Size(94, 93);
-            this.metroTile3.TabIndex = 6;
-            this.metroTile3.Text = "View Stock";
-            this.metroTile3.UseSelectable = true;
-            this.metroTile3.Click += new System.EventHandler(this.metroTile3_Click);
-            // 
-            // metroTile4
-            // 
-            this.metroTile4.ActiveControl = null;
-            this.metroTile4.Location = new System.Drawing.Point(15, 415);
-            this.metroTile4.Name = "metroTile4";
-            this.metroTile4.Size = new System.Drawing.Size(94, 93);
-            this.metroTile4.TabIndex = 7;
-            this.metroTile4.Text = "metroTile4";
-            this.metroTile4.UseSelectable = true;
-            // 
-            // metroTile5
-            // 
-            this.metroTile5.ActiveControl = null;
-            this.metroTile5.Location = new System.Drawing.Point(15, 524);
-            this.metroTile5.Name = "metroTile5";
-            this.metroTile5.Size = new System.Drawing.Size(94, 93);
-            this.metroTile5.TabIndex = 8;
-            this.metroTile5.Text = "metroTile5";
-            this.metroTile5.UseSelectable = true;
             // 
             // fileToolStripMenuItem
             // 
@@ -210,6 +146,104 @@
             this.viewStockToolStripMenuItem.Text = "View Stock";
             this.viewStockToolStripMenuItem.Click += new System.EventHandler(this.viewStockToolStripMenuItem_Click);
             // 
+            // statusStrip
+            // 
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel});
+            this.statusStrip.Location = new System.Drawing.Point(130, 619);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Size = new System.Drawing.Size(1076, 22);
+            this.statusStrip.TabIndex = 2;
+            this.statusStrip.Text = "StatusStrip";
+            // 
+            // toolStripStatusLabel
+            // 
+            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
+            this.toolStripStatusLabel.Text = "Status";
+            // 
+            // metroTile1
+            // 
+            this.metroTile1.ActiveControl = null;
+            this.metroTile1.Location = new System.Drawing.Point(15, 86);
+            this.metroTile1.Name = "metroTile1";
+            this.metroTile1.Size = new System.Drawing.Size(94, 93);
+            this.metroTile1.TabIndex = 4;
+            this.metroTile1.Text = "Stock";
+            this.metroTile1.UseSelectable = true;
+            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
+            // 
+            // metroTile2
+            // 
+            this.metroTile2.ActiveControl = null;
+            this.metroTile2.Location = new System.Drawing.Point(15, 195);
+            this.metroTile2.Name = "metroTile2";
+            this.metroTile2.Size = new System.Drawing.Size(94, 93);
+            this.metroTile2.TabIndex = 5;
+            this.metroTile2.Text = "Basic Data";
+            this.metroTile2.UseSelectable = true;
+            this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click);
+            // 
+            // metroTile3
+            // 
+            this.metroTile3.ActiveControl = null;
+            this.metroTile3.Location = new System.Drawing.Point(15, 304);
+            this.metroTile3.Name = "metroTile3";
+            this.metroTile3.Size = new System.Drawing.Size(94, 93);
+            this.metroTile3.TabIndex = 6;
+            this.metroTile3.Text = "View Stock";
+            this.metroTile3.UseSelectable = true;
+            this.metroTile3.Click += new System.EventHandler(this.metroTile3_Click);
+            // 
+            // metroTile4
+            // 
+            this.metroTile4.ActiveControl = null;
+            this.metroTile4.Location = new System.Drawing.Point(15, 415);
+            this.metroTile4.Name = "metroTile4";
+            this.metroTile4.Size = new System.Drawing.Size(94, 93);
+            this.metroTile4.TabIndex = 7;
+            this.metroTile4.Text = "metroTile4";
+            this.metroTile4.UseSelectable = true;
+            // 
+            // metroTile5
+            // 
+            this.metroTile5.ActiveControl = null;
+            this.metroTile5.Location = new System.Drawing.Point(15, 524);
+            this.metroTile5.Name = "metroTile5";
+            this.metroTile5.Size = new System.Drawing.Size(94, 93);
+            this.metroTile5.TabIndex = 8;
+            this.metroTile5.Text = "metroTile5";
+            this.metroTile5.UseSelectable = true;
+            // 
+            // promotionToolStripMenuItem
+            // 
+            this.promotionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.promotionPlanToolStripMenuItem,
+            this.activePromotionToolStripMenuItem,
+            this.asignPromitonToDistributionToolStripMenuItem});
+            this.promotionToolStripMenuItem.Name = "promotionToolStripMenuItem";
+            this.promotionToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
+            this.promotionToolStripMenuItem.Text = "Promotion";
+            // 
+            // promotionPlanToolStripMenuItem
+            // 
+            this.promotionPlanToolStripMenuItem.Name = "promotionPlanToolStripMenuItem";
+            this.promotionPlanToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.promotionPlanToolStripMenuItem.Text = "Promotion Plan";
+            this.promotionPlanToolStripMenuItem.Click += new System.EventHandler(this.promotionPlanToolStripMenuItem_Click);
+            // 
+            // activePromotionToolStripMenuItem
+            // 
+            this.activePromotionToolStripMenuItem.Name = "activePromotionToolStripMenuItem";
+            this.activePromotionToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.activePromotionToolStripMenuItem.Text = "Active Promotion";
+            // 
+            // asignPromitonToDistributionToolStripMenuItem
+            // 
+            this.asignPromitonToDistributionToolStripMenuItem.Name = "asignPromitonToDistributionToolStripMenuItem";
+            this.asignPromitonToDistributionToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.asignPromitonToDistributionToolStripMenuItem.Text = "Asign Promiton to Distribution";
+            // 
             // frmManagerHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -258,6 +292,10 @@
         private System.Windows.Forms.ToolStripMenuItem stockToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem stockManagementToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem viewStockToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem promotionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem promotionPlanToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem activePromotionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem asignPromitonToDistributionToolStripMenuItem;
     }
 }
 

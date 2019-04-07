@@ -125,6 +125,18 @@
     <Compile Include="frmFinanceManagerHome.Designer.cs">
       <DependentUpon>frmFinanceManagerHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmManagerActivePromo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerActivePromo.Designer.cs">
+      <DependentUpon>frmManagerActivePromo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManagerPromotion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerPromotion.Designer.cs">
+      <DependentUpon>frmManagerPromotion.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmManagerReceiveStock.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +200,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmFinanceManagerHome.resx">
       <DependentUpon>frmFinanceManagerHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerActivePromo.resx">
+      <DependentUpon>frmManagerActivePromo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerPromotion.resx">
+      <DependentUpon>frmManagerPromotion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmManagerReceiveStock.resx">
       <DependentUpon>frmManagerReceiveStock.cs</DependentUpon>

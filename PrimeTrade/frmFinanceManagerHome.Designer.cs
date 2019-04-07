@@ -30,19 +30,20 @@
         {
             this.components = new System.ComponentModel.Container();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reconnectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateSystemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.restartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.receiveNewStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stockBasicDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.restartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.updateSystemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reconnectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.promotionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -51,19 +52,58 @@
             // 
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.stockToolStripMenuItem});
+            this.stockToolStripMenuItem,
+            this.promotionToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(160, 60);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(1072, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
             // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reconnectToolStripMenuItem,
+            this.updateSystemToolStripMenuItem,
+            this.restartToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // reconnectToolStripMenuItem
+            // 
+            this.reconnectToolStripMenuItem.Name = "reconnectToolStripMenuItem";
+            this.reconnectToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.reconnectToolStripMenuItem.Text = "Reconnect ";
+            this.reconnectToolStripMenuItem.Click += new System.EventHandler(this.reconnectToolStripMenuItem_Click);
+            // 
+            // updateSystemToolStripMenuItem
+            // 
+            this.updateSystemToolStripMenuItem.Name = "updateSystemToolStripMenuItem";
+            this.updateSystemToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.updateSystemToolStripMenuItem.Text = "Update System";
+            this.updateSystemToolStripMenuItem.Click += new System.EventHandler(this.updateSystemToolStripMenuItem_Click);
+            // 
+            // restartToolStripMenuItem
+            // 
+            this.restartToolStripMenuItem.Name = "restartToolStripMenuItem";
+            this.restartToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.restartToolStripMenuItem.Text = "Restart";
+            this.restartToolStripMenuItem.Click += new System.EventHandler(this.restartToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
             // stockToolStripMenuItem
             // 
             this.stockToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.manageStockToolStripMenuItem,
             this.viewStockToolStripMenuItem,
-            this.receiveNewStockToolStripMenuItem,
             this.stockBasicDataToolStripMenuItem});
             this.stockToolStripMenuItem.Name = "stockToolStripMenuItem";
             this.stockToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
@@ -82,12 +122,6 @@
             this.viewStockToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.viewStockToolStripMenuItem.Text = "View Stock";
             this.viewStockToolStripMenuItem.Click += new System.EventHandler(this.viewStockToolStripMenuItem_Click);
-            // 
-            // receiveNewStockToolStripMenuItem
-            // 
-            this.receiveNewStockToolStripMenuItem.Name = "receiveNewStockToolStripMenuItem";
-            this.receiveNewStockToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
-            this.receiveNewStockToolStripMenuItem.Text = "Receive New Stock";
             // 
             // stockBasicDataToolStripMenuItem
             // 
@@ -112,44 +146,19 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
             this.toolStripStatusLabel.Text = "Status";
             // 
-            // fileToolStripMenuItem
+            // promotionToolStripMenuItem
             // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.reconnectToolStripMenuItem,
-            this.updateSystemToolStripMenuItem,
-            this.restartToolStripMenuItem,
-            this.exitToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
+            this.promotionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pToolStripMenuItem});
+            this.promotionToolStripMenuItem.Name = "promotionToolStripMenuItem";
+            this.promotionToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
+            this.promotionToolStripMenuItem.Text = "Promotion";
             // 
-            // restartToolStripMenuItem
+            // pToolStripMenuItem
             // 
-            this.restartToolStripMenuItem.Name = "restartToolStripMenuItem";
-            this.restartToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.restartToolStripMenuItem.Text = "Restart";
-            this.restartToolStripMenuItem.Click += new System.EventHandler(this.restartToolStripMenuItem_Click);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
-            // updateSystemToolStripMenuItem
-            // 
-            this.updateSystemToolStripMenuItem.Name = "updateSystemToolStripMenuItem";
-            this.updateSystemToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.updateSystemToolStripMenuItem.Text = "Update System";
-            this.updateSystemToolStripMenuItem.Click += new System.EventHandler(this.updateSystemToolStripMenuItem_Click);
-            // 
-            // reconnectToolStripMenuItem
-            // 
-            this.reconnectToolStripMenuItem.Name = "reconnectToolStripMenuItem";
-            this.reconnectToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.reconnectToolStripMenuItem.Text = "Reconnect ";
-            this.reconnectToolStripMenuItem.Click += new System.EventHandler(this.reconnectToolStripMenuItem_Click);
+            this.pToolStripMenuItem.Name = "pToolStripMenuItem";
+            this.pToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.pToolStripMenuItem.Text = "View Promotion";
             // 
             // frmFinanceManagerHome
             // 
@@ -182,13 +191,14 @@
         private System.Windows.Forms.ToolStripMenuItem stockToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manageStockToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewStockToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem receiveNewStockToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem stockBasicDataToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reconnectToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem updateSystemToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem restartToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem promotionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pToolStripMenuItem;
     }
 }
 
