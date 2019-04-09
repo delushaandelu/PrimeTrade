@@ -211,9 +211,9 @@
             this.materialLabel2.Location = new System.Drawing.Point(50, 107);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(92, 19);
+            this.materialLabel2.Size = new System.Drawing.Size(83, 19);
             this.materialLabel2.TabIndex = 11;
-            this.materialLabel2.Text = "Stock Name";
+            this.materialLabel2.Text = "Item Name";
             // 
             // txtstockid
             // 
@@ -421,7 +421,7 @@
             // 
             // columnHeader12
             // 
-            this.columnHeader12.Text = "Stock ID";
+            this.columnHeader12.Text = "Item ID";
             // 
             // columnHeader13
             // 
@@ -712,7 +712,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1005, 735);
+            this.ClientSize = new System.Drawing.Size(1008, 735);
             this.Controls.Add(this.materialLabel17);
             this.Controls.Add(this.lblprofit);
             this.Controls.Add(this.materialLabel15);
@@ -755,7 +755,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmManagerStockManagement";
-            this.Text = "Stock Management";
+            this.Text = "Inventory Management ";
             this.Load += new System.EventHandler(this.frmManagerStockManagement_Load);
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);

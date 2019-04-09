@@ -43,6 +43,7 @@
             this.promotionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.promotionPlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.activePromotionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewAllPromotionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.asignPromitonToDistributionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
@@ -52,7 +53,8 @@
             this.metroTile3 = new MetroFramework.Controls.MetroTile();
             this.metroTile4 = new MetroFramework.Controls.MetroTile();
             this.metroTile5 = new MetroFramework.Controls.MetroTile();
-            this.viewAllPromotionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.areaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manageAreaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -63,6 +65,7 @@
             this.fileToolStripMenuItem,
             this.stockManagementToolStripMenuItem,
             this.stockToolStripMenuItem,
+            this.areaToolStripMenuItem,
             this.promotionToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(130, 60);
             this.menuStrip.Name = "menuStrip";
@@ -172,6 +175,13 @@
             this.activePromotionToolStripMenuItem.Text = "Active Promotion";
             this.activePromotionToolStripMenuItem.Click += new System.EventHandler(this.activePromotionToolStripMenuItem_Click);
             // 
+            // viewAllPromotionsToolStripMenuItem
+            // 
+            this.viewAllPromotionsToolStripMenuItem.Name = "viewAllPromotionsToolStripMenuItem";
+            this.viewAllPromotionsToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.viewAllPromotionsToolStripMenuItem.Text = "View all Promotions";
+            this.viewAllPromotionsToolStripMenuItem.Click += new System.EventHandler(this.viewAllPromotionsToolStripMenuItem_Click);
+            // 
             // asignPromitonToDistributionToolStripMenuItem
             // 
             this.asignPromitonToDistributionToolStripMenuItem.Name = "asignPromitonToDistributionToolStripMenuItem";
@@ -247,12 +257,20 @@
             this.metroTile5.Text = "metroTile5";
             this.metroTile5.UseSelectable = true;
             // 
-            // viewAllPromotionsToolStripMenuItem
+            // areaToolStripMenuItem
             // 
-            this.viewAllPromotionsToolStripMenuItem.Name = "viewAllPromotionsToolStripMenuItem";
-            this.viewAllPromotionsToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
-            this.viewAllPromotionsToolStripMenuItem.Text = "View all Promotions";
-            this.viewAllPromotionsToolStripMenuItem.Click += new System.EventHandler(this.viewAllPromotionsToolStripMenuItem_Click);
+            this.areaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.manageAreaToolStripMenuItem});
+            this.areaToolStripMenuItem.Name = "areaToolStripMenuItem";
+            this.areaToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.areaToolStripMenuItem.Text = "Area";
+            // 
+            // manageAreaToolStripMenuItem
+            // 
+            this.manageAreaToolStripMenuItem.Name = "manageAreaToolStripMenuItem";
+            this.manageAreaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.manageAreaToolStripMenuItem.Text = "Manage Area";
+            this.manageAreaToolStripMenuItem.Click += new System.EventHandler(this.manageAreaToolStripMenuItem_Click);
             // 
             // frmManagerHome
             // 
@@ -307,6 +325,8 @@
         private System.Windows.Forms.ToolStripMenuItem activePromotionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem asignPromitonToDistributionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewAllPromotionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem areaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem manageAreaToolStripMenuItem;
     }
 }
 

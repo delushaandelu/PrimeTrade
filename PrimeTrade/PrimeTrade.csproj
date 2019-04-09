@@ -131,6 +131,12 @@
     <Compile Include="frmManagerActivePromo.Designer.cs">
       <DependentUpon>frmManagerActivePromo.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmManagerManageArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerManageArea.Designer.cs">
+      <DependentUpon>frmManagerManageArea.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmManagerPromotion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,6 +215,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmManagerActivePromo.resx">
       <DependentUpon>frmManagerActivePromo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerManageArea.resx">
+      <DependentUpon>frmManagerManageArea.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmManagerPromotion.resx">
       <DependentUpon>frmManagerPromotion.cs</DependentUpon>
