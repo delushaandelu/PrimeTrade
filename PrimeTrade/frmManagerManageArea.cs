@@ -101,20 +101,22 @@ namespace PrimeTrade
             }
             else
             {
+                int areadid;
                 MySqlParameter[] pera = new MySqlParameter[3];
-                pera[0] = new MySqlParameter("areaid", MySqlDbType.VarChar);
-                pera[0].Value = txtarea.Text;
+                pera[0] = new MySqlParameter("areaid", SqlDbType.Int);
+                int.TryParse(txtareaid.Text, out areadid);
+                pera[0].Value = areadid;
 
                 pera[1] = new MySqlParameter("areaname", MySqlDbType.VarChar);
                 pera[1].Value = txtarea.Text;
                 
                 pera[2] = new MySqlParameter("provience", MySqlDbType.VarChar);
-                pera[2].Value = cmbprov.Text;
+                pera[2].Value = cmbprov.SelectedItem;
 
                 MySqlCommand command = new MySqlCommand();
                 command.Connection = connect;
                 command.CommandType = CommandType.StoredProcedure;
-                command.CommandText = "area_update";
+                command.CommandText = "area_data_update";
 
                 command.Parameters.AddRange(pera);
                 connect.Open();
@@ -157,8 +159,8 @@ namespace PrimeTrade
             else
             {
                 MySqlParameter[] pera = new MySqlParameter[1];
-                pera[0] = new MySqlParameter("areaid", MySqlDbType.VarChar);
-                pera[0].Value = txtarea.Text;
+                pera[0] = new MySqlParameter("areaid", SqlDbType.Int);
+                pera[0].Value = txtareaid.Text;
 
 
                 MySqlCommand command = new MySqlCommand();

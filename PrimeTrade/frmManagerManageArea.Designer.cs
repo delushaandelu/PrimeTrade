@@ -126,7 +126,7 @@
             this.btndeletearea.Primary = true;
             this.btndeletearea.Size = new System.Drawing.Size(107, 25);
             this.btndeletearea.TabIndex = 46;
-            this.btndeletearea.Text = "Delete Stock";
+            this.btndeletearea.Text = "Delete Area";
             this.btndeletearea.UseVisualStyleBackColor = true;
             this.btndeletearea.Click += new System.EventHandler(this.btndeletearea_Click);
             // 
@@ -139,7 +139,7 @@
             this.btnupdatearea.Primary = true;
             this.btnupdatearea.Size = new System.Drawing.Size(107, 25);
             this.btnupdatearea.TabIndex = 45;
-            this.btnupdatearea.Text = "UPDATE STOCK";
+            this.btnupdatearea.Text = "UPDATE Area";
             this.btnupdatearea.UseVisualStyleBackColor = true;
             this.btnupdatearea.Click += new System.EventHandler(this.btnupdatearea_Click);
             // 
@@ -152,7 +152,7 @@
             this.btnaddarea.Primary = true;
             this.btnaddarea.Size = new System.Drawing.Size(107, 25);
             this.btnaddarea.TabIndex = 44;
-            this.btnaddarea.Text = "Add Stock";
+            this.btnaddarea.Text = "Add Area";
             this.btnaddarea.UseVisualStyleBackColor = true;
             this.btnaddarea.Click += new System.EventHandler(this.btnaddarea_Click);
             // 
