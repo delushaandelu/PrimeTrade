@@ -102,14 +102,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PrimeTrade.exe" size="339384">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PrimeTrade.exe" size="349112">
       <assemblyIdentity name="PrimeTrade" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>X5+hwKoROgHgN1KFaJF4oUgI8Dhbhw6CdMrfREtzxqY=</dsig:DigestValue>
+        <dsig:DigestValue>R2CjUQpxI8PGzZnDm6aMWSt6g3vniuVqCoC50Tr2Fcc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
