@@ -135,5 +135,12 @@ namespace PrimeTrade
             form.MdiParent = this;
             form.Show();
         }
+
+        private void assignAreasToDistributersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmManagerDistributerArea form = new frmManagerDistributerArea();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }
