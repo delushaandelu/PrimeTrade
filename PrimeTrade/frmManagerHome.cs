@@ -142,5 +142,55 @@ namespace PrimeTrade
             form.MdiParent = this;
             form.Show();
         }
+
+        private void viewAreasByDistributersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmManagerViewAllAreaDistRecords form = new frmManagerViewAllAreaDistRecords();
+            form.MdiParent = this;
+            form.Show();
+
+        }
+
+        private void asignPromitonToDistributionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPromotionsToDistributers form = new frmPromotionsToDistributers();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void viewAllPromotionByDIstributersToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ManagerViewPromotionByDistributers form = new ManagerViewPromotionByDistributers();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void viewAllPromotionByDistributersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ManagerViewPromotionByDistributers form = new ManagerViewPromotionByDistributers();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void viewStockToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmManagerViewStock form = new frmManagerViewStock();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void viewAreaByDIstributersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmManagerViewAllAreaDistRecords form = new frmManagerViewAllAreaDistRecords();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void viewAllPromotionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmManagerViewAllPromotion form = new frmManagerViewAllPromotion();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

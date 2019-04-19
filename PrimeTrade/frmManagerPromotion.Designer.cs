@@ -34,7 +34,6 @@
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.txtdes = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.txtmac = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.btnaddpromo = new MaterialSkin.Controls.MaterialFlatButton();
             this.btnupdatepromo = new MaterialSkin.Controls.MaterialFlatButton();
             this.btndeletepromo = new MaterialSkin.Controls.MaterialFlatButton();
@@ -45,6 +44,7 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnRefresh = new MetroFramework.Controls.MetroButton();
+            this.txtmac = new MetroFramework.Controls.MetroComboBox();
             this.SuspendLayout();
             // 
             // txtname
@@ -118,21 +118,6 @@
             this.txtdes.Size = new System.Drawing.Size(399, 23);
             this.txtdes.TabIndex = 51;
             this.txtdes.UseSystemPasswordChar = false;
-            // 
-            // txtmac
-            // 
-            this.txtmac.Depth = 0;
-            this.txtmac.Hint = "";
-            this.txtmac.Location = new System.Drawing.Point(207, 136);
-            this.txtmac.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtmac.Name = "txtmac";
-            this.txtmac.PasswordChar = '\0';
-            this.txtmac.SelectedText = "";
-            this.txtmac.SelectionLength = 0;
-            this.txtmac.SelectionStart = 0;
-            this.txtmac.Size = new System.Drawing.Size(399, 23);
-            this.txtmac.TabIndex = 52;
-            this.txtmac.UseSystemPasswordChar = false;
             // 
             // btnaddpromo
             // 
@@ -246,18 +231,32 @@
             this.btnRefresh.UseSelectable = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
+            // txtmac
+            // 
+            this.txtmac.FormattingEnabled = true;
+            this.txtmac.ItemHeight = 23;
+            this.txtmac.Items.AddRange(new object[] {
+            "Buy one get one free",
+            "Free 3rd party item",
+            "Free pack with another SKU"});
+            this.txtmac.Location = new System.Drawing.Point(207, 132);
+            this.txtmac.Name = "txtmac";
+            this.txtmac.Size = new System.Drawing.Size(399, 29);
+            this.txtmac.TabIndex = 59;
+            this.txtmac.UseSelectable = true;
+            // 
             // frmManagerPromotion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(638, 607);
+            this.Controls.Add(this.txtmac);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.txtpromoid);
             this.Controls.Add(this.btndeletepromo);
             this.Controls.Add(this.btnupdatepromo);
             this.Controls.Add(this.btnaddpromo);
-            this.Controls.Add(this.txtmac);
             this.Controls.Add(this.txtdes);
             this.Controls.Add(this.txtname);
             this.Controls.Add(this.materialLabel3);
@@ -277,7 +276,6 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtdes;
-        private MaterialSkin.Controls.MaterialSingleLineTextField txtmac;
         private MaterialSkin.Controls.MaterialFlatButton btnaddpromo;
         private MaterialSkin.Controls.MaterialFlatButton btnupdatepromo;
         private MaterialSkin.Controls.MaterialFlatButton btndeletepromo;
@@ -288,5 +286,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private MetroFramework.Controls.MetroButton btnRefresh;
+        private MetroFramework.Controls.MetroComboBox txtmac;
     }
 }

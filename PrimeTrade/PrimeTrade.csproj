@@ -185,6 +185,12 @@
     <Compile Include="frmManagerViewStock.Designer.cs">
       <DependentUpon>frmManagerViewStock.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPromotionsToDistributers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPromotionsToDistributers.Designer.cs">
+      <DependentUpon>frmPromotionsToDistributers.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmStartup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +213,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>GoogleCloude.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerViewPromotionByDistributers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerViewPromotionByDistributers.Designer.cs">
+      <DependentUpon>ManagerViewPromotionByDistributers.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -255,6 +267,9 @@
     <EmbeddedResource Include="frmManagerViewStock.resx">
       <DependentUpon>frmManagerViewStock.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPromotionsToDistributers.resx">
+      <DependentUpon>frmPromotionsToDistributers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmStartup.resx">
       <DependentUpon>frmStartup.cs</DependentUpon>
     </EmbeddedResource>
@@ -263,6 +278,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmManagerHome.resx">
       <DependentUpon>frmManagerHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerViewPromotionByDistributers.resx">
+      <DependentUpon>ManagerViewPromotionByDistributers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
