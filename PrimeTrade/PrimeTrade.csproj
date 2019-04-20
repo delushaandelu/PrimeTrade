@@ -125,6 +125,18 @@
     <Compile Include="FrmDistibuterHome.Designer.cs">
       <DependentUpon>FrmDistibuterHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDistributerMyPromotionTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDistributerMyPromotionTasks.Designer.cs">
+      <DependentUpon>frmDistributerMyPromotionTasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDistributerNewPromotins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDistributerNewPromotins.Designer.cs">
+      <DependentUpon>FrmDistributerNewPromotins.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmFinaceApproveStock.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +203,12 @@
     <Compile Include="frmManagerViewAllPromotion.Designer.cs">
       <DependentUpon>frmManagerViewAllPromotion.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmManagerViewPromotionByState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerViewPromotionByState.Designer.cs">
+      <DependentUpon>frmManagerViewPromotionByState.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmManagerViewStock.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -255,6 +273,12 @@
     <EmbeddedResource Include="FrmDistibuterHome.resx">
       <DependentUpon>FrmDistibuterHome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDistributerMyPromotionTasks.resx">
+      <DependentUpon>frmDistributerMyPromotionTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDistributerNewPromotins.resx">
+      <DependentUpon>FrmDistributerNewPromotins.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmFinaceApproveStock.resx">
       <DependentUpon>frmFinaceApproveStock.cs</DependentUpon>
     </EmbeddedResource>
@@ -287,6 +311,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmManagerViewAllPromotion.resx">
       <DependentUpon>frmManagerViewAllPromotion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerViewPromotionByState.resx">
+      <DependentUpon>frmManagerViewPromotionByState.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmManagerViewStock.resx">
       <DependentUpon>frmManagerViewStock.cs</DependentUpon>

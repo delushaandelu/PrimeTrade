@@ -192,5 +192,12 @@ namespace PrimeTrade
             form.MdiParent = this;
             form.Show();
         }
+
+        private void viewAllPromotionByStateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmManagerViewPromotionByState form = new frmManagerViewPromotionByState();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

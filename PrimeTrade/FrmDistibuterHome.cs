@@ -16,11 +16,24 @@ namespace PrimeTrade
 {
     public partial class FrmDistibuterHome : MetroForm
     {
-        private int childFormNumber = 0;
-
-        public FrmDistibuterHome()
+        public FrmDistibuterHome(string userid)
         {
             InitializeComponent();
+            lblstatus.Text = userid;
+        }
+
+        private void approvedPromotionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmDistributerNewPromotins form = new FrmDistributerNewPromotins(lblstatus.Text);
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void myPromotionTasksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDistributerMyPromotionTasks form = new frmDistributerMyPromotionTasks(lblstatus.Text);
+            form.MdiParent = this;
+            form.Show();
         }
     }
 }

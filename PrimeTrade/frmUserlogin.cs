@@ -56,7 +56,7 @@ namespace PrimeTrade
             }
             else if (profile == "DISTRIBUTER") 
             {
-                FrmDistibuterHome adminHome = new FrmDistibuterHome();
+                FrmDistibuterHome adminHome = new FrmDistibuterHome(userid);
                 adminHome.Closed += (s, arg) => this.Close();
                 adminHome.Show();
                 this.Hide();
