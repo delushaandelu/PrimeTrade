@@ -41,10 +41,11 @@
             this.stockBasicDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.promotionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.activeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.activeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aprovePromotionStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -75,28 +76,28 @@
             // reconnectToolStripMenuItem
             // 
             this.reconnectToolStripMenuItem.Name = "reconnectToolStripMenuItem";
-            this.reconnectToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.reconnectToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.reconnectToolStripMenuItem.Text = "Reconnect ";
             this.reconnectToolStripMenuItem.Click += new System.EventHandler(this.reconnectToolStripMenuItem_Click);
             // 
             // updateSystemToolStripMenuItem
             // 
             this.updateSystemToolStripMenuItem.Name = "updateSystemToolStripMenuItem";
-            this.updateSystemToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.updateSystemToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.updateSystemToolStripMenuItem.Text = "Update System";
             this.updateSystemToolStripMenuItem.Click += new System.EventHandler(this.updateSystemToolStripMenuItem_Click);
             // 
             // restartToolStripMenuItem
             // 
             this.restartToolStripMenuItem.Name = "restartToolStripMenuItem";
-            this.restartToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.restartToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.restartToolStripMenuItem.Text = "Restart";
             this.restartToolStripMenuItem.Click += new System.EventHandler(this.restartToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -135,7 +136,8 @@
             // 
             this.promotionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pToolStripMenuItem,
-            this.activeToolStripMenuItem});
+            this.activeToolStripMenuItem,
+            this.aprovePromotionStockToolStripMenuItem});
             this.promotionToolStripMenuItem.Name = "promotionToolStripMenuItem";
             this.promotionToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
             this.promotionToolStripMenuItem.Text = "Promotion";
@@ -143,8 +145,14 @@
             // pToolStripMenuItem
             // 
             this.pToolStripMenuItem.Name = "pToolStripMenuItem";
-            this.pToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.pToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.pToolStripMenuItem.Text = "View Promotion";
+            // 
+            // activeToolStripMenuItem
+            // 
+            this.activeToolStripMenuItem.Name = "activeToolStripMenuItem";
+            this.activeToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.activeToolStripMenuItem.Text = "Active ";
             // 
             // statusStrip
             // 
@@ -162,11 +170,11 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
             this.toolStripStatusLabel.Text = "Status";
             // 
-            // activeToolStripMenuItem
+            // aprovePromotionStockToolStripMenuItem
             // 
-            this.activeToolStripMenuItem.Name = "activeToolStripMenuItem";
-            this.activeToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
-            this.activeToolStripMenuItem.Text = "Active ";
+            this.aprovePromotionStockToolStripMenuItem.Name = "aprovePromotionStockToolStripMenuItem";
+            this.aprovePromotionStockToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.aprovePromotionStockToolStripMenuItem.Text = "Approve Promotion Stock";
             // 
             // frmFinanceManagerHome
             // 
@@ -208,6 +216,7 @@
         private System.Windows.Forms.ToolStripMenuItem promotionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem activeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aprovePromotionStockToolStripMenuItem;
     }
 }
 

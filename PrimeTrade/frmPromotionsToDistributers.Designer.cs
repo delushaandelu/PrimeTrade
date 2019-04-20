@@ -30,6 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPromotionsToDistributers));
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.lblstate1 = new System.Windows.Forms.Label();
+            this.lblstate = new System.Windows.Forms.Label();
+            this.btnRefresh = new MetroFramework.Controls.MetroButton();
+            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            this.cmbdist = new MetroFramework.Controls.MetroComboBox();
+            this.btndeliver = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.cmbitem2 = new MetroFramework.Controls.MetroComboBox();
+            this.cmbitem1 = new MetroFramework.Controls.MetroComboBox();
+            this.txtprice2 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
+            this.txtqty2 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
             this.txtprice1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
@@ -104,21 +116,29 @@
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
-            this.txtprice2 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
-            this.txtqty2 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
-            this.cmbitem1 = new MetroFramework.Controls.MetroComboBox();
-            this.cmbitem2 = new MetroFramework.Controls.MetroComboBox();
-            this.btndeliver = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
-            this.cmbdist = new MetroFramework.Controls.MetroComboBox();
-            this.btnRefresh = new MetroFramework.Controls.MetroButton();
-            this.lblstate = new System.Windows.Forms.Label();
-            this.lblstate1 = new System.Windows.Forms.Label();
+            this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
+            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
+            this.cmbDistViewPromo = new MetroFramework.Controls.MetroComboBox();
+            this.listView6 = new System.Windows.Forms.ListView();
+            this.columnHeader46 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader47 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader48 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader49 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader52 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader53 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader54 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader55 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader56 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader57 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader58 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader59 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader60 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader61 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader62 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.metroTabPage2.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
+            this.metroTabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroTabPage2
@@ -159,6 +179,155 @@
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.VerticalScrollbarSize = 10;
+            // 
+            // lblstate1
+            // 
+            this.lblstate1.AutoSize = true;
+            this.lblstate1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblstate1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblstate1.ForeColor = System.Drawing.Color.Red;
+            this.lblstate1.Location = new System.Drawing.Point(86, 280);
+            this.lblstate1.Name = "lblstate1";
+            this.lblstate1.Size = new System.Drawing.Size(0, 15);
+            this.lblstate1.TabIndex = 133;
+            // 
+            // lblstate
+            // 
+            this.lblstate.AutoSize = true;
+            this.lblstate.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblstate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblstate.ForeColor = System.Drawing.Color.Red;
+            this.lblstate.Location = new System.Drawing.Point(86, 265);
+            this.lblstate.Name = "lblstate";
+            this.lblstate.Size = new System.Drawing.Size(0, 15);
+            this.lblstate.TabIndex = 132;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnRefresh.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRefresh.BackgroundImage")));
+            this.btnRefresh.Location = new System.Drawing.Point(1211, 35);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(32, 32);
+            this.btnRefresh.TabIndex = 129;
+            this.btnRefresh.UseSelectable = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // metroLabel4
+            // 
+            this.metroLabel4.AutoSize = true;
+            this.metroLabel4.Location = new System.Drawing.Point(384, 20);
+            this.metroLabel4.Name = "metroLabel4";
+            this.metroLabel4.Size = new System.Drawing.Size(135, 19);
+            this.metroLabel4.TabIndex = 128;
+            this.metroLabel4.Text = "Search by Distributers";
+            // 
+            // cmbdist
+            // 
+            this.cmbdist.FormattingEnabled = true;
+            this.cmbdist.ItemHeight = 23;
+            this.cmbdist.Location = new System.Drawing.Point(544, 17);
+            this.cmbdist.Name = "cmbdist";
+            this.cmbdist.Size = new System.Drawing.Size(270, 29);
+            this.cmbdist.TabIndex = 127;
+            this.cmbdist.UseSelectable = true;
+            this.cmbdist.SelectedIndexChanged += new System.EventHandler(this.cmbdist_SelectedIndexChanged);
+            // 
+            // btndeliver
+            // 
+            this.btndeliver.Depth = 0;
+            this.btndeliver.Location = new System.Drawing.Point(113, 483);
+            this.btndeliver.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btndeliver.Name = "btndeliver";
+            this.btndeliver.Primary = true;
+            this.btndeliver.Size = new System.Drawing.Size(222, 38);
+            this.btndeliver.TabIndex = 126;
+            this.btndeliver.Text = "Deliver for Distributers";
+            this.btndeliver.UseVisualStyleBackColor = true;
+            this.btndeliver.Click += new System.EventHandler(this.btndeliver_Click);
+            // 
+            // cmbitem2
+            // 
+            this.cmbitem2.FormattingEnabled = true;
+            this.cmbitem2.ItemHeight = 23;
+            this.cmbitem2.Location = new System.Drawing.Point(131, 403);
+            this.cmbitem2.Name = "cmbitem2";
+            this.cmbitem2.Size = new System.Drawing.Size(218, 29);
+            this.cmbitem2.TabIndex = 125;
+            this.cmbitem2.UseSelectable = true;
+            this.cmbitem2.SelectedIndexChanged += new System.EventHandler(this.cmbitem2_SelectedIndexChanged);
+            // 
+            // cmbitem1
+            // 
+            this.cmbitem1.FormattingEnabled = true;
+            this.cmbitem1.ItemHeight = 23;
+            this.cmbitem1.Location = new System.Drawing.Point(131, 335);
+            this.cmbitem1.Name = "cmbitem1";
+            this.cmbitem1.Size = new System.Drawing.Size(218, 29);
+            this.cmbitem1.TabIndex = 124;
+            this.cmbitem1.UseSelectable = true;
+            this.cmbitem1.SelectedIndexChanged += new System.EventHandler(this.cmbitem1_SelectedIndexChanged);
+            // 
+            // txtprice2
+            // 
+            this.txtprice2.Depth = 0;
+            this.txtprice2.Enabled = false;
+            this.txtprice2.Hint = "";
+            this.txtprice2.Location = new System.Drawing.Point(284, 445);
+            this.txtprice2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtprice2.Name = "txtprice2";
+            this.txtprice2.PasswordChar = '\0';
+            this.txtprice2.SelectedText = "";
+            this.txtprice2.SelectionLength = 0;
+            this.txtprice2.SelectionStart = 0;
+            this.txtprice2.Size = new System.Drawing.Size(65, 23);
+            this.txtprice2.TabIndex = 123;
+            this.txtprice2.UseSystemPasswordChar = false;
+            // 
+            // materialLabel6
+            // 
+            this.materialLabel6.AutoSize = true;
+            this.materialLabel6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.materialLabel6.Depth = 0;
+            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel6.Location = new System.Drawing.Point(235, 449);
+            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel6.Name = "materialLabel6";
+            this.materialLabel6.Size = new System.Drawing.Size(43, 19);
+            this.materialLabel6.TabIndex = 122;
+            this.materialLabel6.Text = "Price";
+            // 
+            // txtqty2
+            // 
+            this.txtqty2.Depth = 0;
+            this.txtqty2.Enabled = false;
+            this.txtqty2.Hint = "";
+            this.txtqty2.Location = new System.Drawing.Point(165, 445);
+            this.txtqty2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtqty2.Name = "txtqty2";
+            this.txtqty2.PasswordChar = '\0';
+            this.txtqty2.SelectedText = "";
+            this.txtqty2.SelectionLength = 0;
+            this.txtqty2.SelectionStart = 0;
+            this.txtqty2.Size = new System.Drawing.Size(64, 23);
+            this.txtqty2.TabIndex = 121;
+            this.txtqty2.UseSystemPasswordChar = false;
+            this.txtqty2.Leave += new System.EventHandler(this.txtqty2_Leave);
+            // 
+            // materialLabel10
+            // 
+            this.materialLabel10.AutoSize = true;
+            this.materialLabel10.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.materialLabel10.Depth = 0;
+            this.materialLabel10.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel10.Location = new System.Drawing.Point(127, 445);
+            this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel10.Name = "materialLabel10";
+            this.materialLabel10.Size = new System.Drawing.Size(31, 19);
+            this.materialLabel10.TabIndex = 120;
+            this.materialLabel10.Text = "Qty";
             // 
             // txtprice1
             // 
@@ -800,160 +969,149 @@
             // 
             this.metroTabControl1.Controls.Add(this.metroTabPage1);
             this.metroTabControl1.Controls.Add(this.metroTabPage2);
+            this.metroTabControl1.Controls.Add(this.metroTabPage3);
             this.metroTabControl1.Location = new System.Drawing.Point(26, 85);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 1;
+            this.metroTabControl1.SelectedIndex = 2;
             this.metroTabControl1.Size = new System.Drawing.Size(1254, 574);
             this.metroTabControl1.TabIndex = 86;
             this.metroTabControl1.UseSelectable = true;
             // 
-            // txtprice2
+            // metroTabPage3
             // 
-            this.txtprice2.Depth = 0;
-            this.txtprice2.Enabled = false;
-            this.txtprice2.Hint = "";
-            this.txtprice2.Location = new System.Drawing.Point(284, 445);
-            this.txtprice2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtprice2.Name = "txtprice2";
-            this.txtprice2.PasswordChar = '\0';
-            this.txtprice2.SelectedText = "";
-            this.txtprice2.SelectionLength = 0;
-            this.txtprice2.SelectionStart = 0;
-            this.txtprice2.Size = new System.Drawing.Size(65, 23);
-            this.txtprice2.TabIndex = 123;
-            this.txtprice2.UseSystemPasswordChar = false;
+            this.metroTabPage3.Controls.Add(this.metroLabel5);
+            this.metroTabPage3.Controls.Add(this.cmbDistViewPromo);
+            this.metroTabPage3.Controls.Add(this.listView6);
+            this.metroTabPage3.HorizontalScrollbarBarColor = true;
+            this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage3.HorizontalScrollbarSize = 10;
+            this.metroTabPage3.Location = new System.Drawing.Point(4, 38);
+            this.metroTabPage3.Name = "metroTabPage3";
+            this.metroTabPage3.Size = new System.Drawing.Size(1246, 532);
+            this.metroTabPage3.TabIndex = 2;
+            this.metroTabPage3.Text = "View OnGoing Promotions";
+            this.metroTabPage3.VerticalScrollbarBarColor = true;
+            this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage3.VerticalScrollbarSize = 10;
             // 
-            // materialLabel6
+            // metroLabel5
             // 
-            this.materialLabel6.AutoSize = true;
-            this.materialLabel6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.materialLabel6.Depth = 0;
-            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel6.Location = new System.Drawing.Point(235, 449);
-            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel6.Name = "materialLabel6";
-            this.materialLabel6.Size = new System.Drawing.Size(43, 19);
-            this.materialLabel6.TabIndex = 122;
-            this.materialLabel6.Text = "Price";
+            this.metroLabel5.AutoSize = true;
+            this.metroLabel5.Location = new System.Drawing.Point(381, 17);
+            this.metroLabel5.Name = "metroLabel5";
+            this.metroLabel5.Size = new System.Drawing.Size(135, 19);
+            this.metroLabel5.TabIndex = 131;
+            this.metroLabel5.Text = "Search by Distributers";
             // 
-            // txtqty2
+            // cmbDistViewPromo
             // 
-            this.txtqty2.Depth = 0;
-            this.txtqty2.Enabled = false;
-            this.txtqty2.Hint = "";
-            this.txtqty2.Location = new System.Drawing.Point(165, 445);
-            this.txtqty2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtqty2.Name = "txtqty2";
-            this.txtqty2.PasswordChar = '\0';
-            this.txtqty2.SelectedText = "";
-            this.txtqty2.SelectionLength = 0;
-            this.txtqty2.SelectionStart = 0;
-            this.txtqty2.Size = new System.Drawing.Size(64, 23);
-            this.txtqty2.TabIndex = 121;
-            this.txtqty2.UseSystemPasswordChar = false;
-            this.txtqty2.Leave += new System.EventHandler(this.txtqty2_Leave);
+            this.cmbDistViewPromo.FormattingEnabled = true;
+            this.cmbDistViewPromo.ItemHeight = 23;
+            this.cmbDistViewPromo.Location = new System.Drawing.Point(541, 14);
+            this.cmbDistViewPromo.Name = "cmbDistViewPromo";
+            this.cmbDistViewPromo.Size = new System.Drawing.Size(270, 29);
+            this.cmbDistViewPromo.TabIndex = 130;
+            this.cmbDistViewPromo.UseSelectable = true;
+            this.cmbDistViewPromo.SelectedIndexChanged += new System.EventHandler(this.metroComboBox1_SelectedIndexChanged);
             // 
-            // materialLabel10
+            // listView6
             // 
-            this.materialLabel10.AutoSize = true;
-            this.materialLabel10.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.materialLabel10.Depth = 0;
-            this.materialLabel10.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel10.Location = new System.Drawing.Point(127, 445);
-            this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel10.Name = "materialLabel10";
-            this.materialLabel10.Size = new System.Drawing.Size(31, 19);
-            this.materialLabel10.TabIndex = 120;
-            this.materialLabel10.Text = "Qty";
+            this.listView6.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader46,
+            this.columnHeader47,
+            this.columnHeader48,
+            this.columnHeader49,
+            this.columnHeader52,
+            this.columnHeader53,
+            this.columnHeader54,
+            this.columnHeader55,
+            this.columnHeader56,
+            this.columnHeader57,
+            this.columnHeader58,
+            this.columnHeader59,
+            this.columnHeader60,
+            this.columnHeader61,
+            this.columnHeader62});
+            this.listView6.FullRowSelect = true;
+            this.listView6.GridLines = true;
+            this.listView6.Location = new System.Drawing.Point(0, 62);
+            this.listView6.Name = "listView6";
+            this.listView6.Size = new System.Drawing.Size(1246, 448);
+            this.listView6.TabIndex = 129;
+            this.listView6.UseCompatibleStateImageBehavior = false;
+            this.listView6.View = System.Windows.Forms.View.Details;
             // 
-            // cmbitem1
+            // columnHeader46
             // 
-            this.cmbitem1.FormattingEnabled = true;
-            this.cmbitem1.ItemHeight = 23;
-            this.cmbitem1.Location = new System.Drawing.Point(131, 335);
-            this.cmbitem1.Name = "cmbitem1";
-            this.cmbitem1.Size = new System.Drawing.Size(218, 29);
-            this.cmbitem1.TabIndex = 124;
-            this.cmbitem1.UseSelectable = true;
-            this.cmbitem1.SelectedIndexChanged += new System.EventHandler(this.cmbitem1_SelectedIndexChanged);
+            this.columnHeader46.Text = "PROMO CODE";
+            this.columnHeader46.Width = 80;
             // 
-            // cmbitem2
+            // columnHeader47
             // 
-            this.cmbitem2.FormattingEnabled = true;
-            this.cmbitem2.ItemHeight = 23;
-            this.cmbitem2.Location = new System.Drawing.Point(131, 403);
-            this.cmbitem2.Name = "cmbitem2";
-            this.cmbitem2.Size = new System.Drawing.Size(218, 29);
-            this.cmbitem2.TabIndex = 125;
-            this.cmbitem2.UseSelectable = true;
-            this.cmbitem2.SelectedIndexChanged += new System.EventHandler(this.cmbitem2_SelectedIndexChanged);
+            this.columnHeader47.Text = "Distributer";
+            this.columnHeader47.Width = 80;
             // 
-            // btndeliver
+            // columnHeader48
             // 
-            this.btndeliver.Depth = 0;
-            this.btndeliver.Location = new System.Drawing.Point(113, 483);
-            this.btndeliver.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btndeliver.Name = "btndeliver";
-            this.btndeliver.Primary = true;
-            this.btndeliver.Size = new System.Drawing.Size(222, 38);
-            this.btndeliver.TabIndex = 126;
-            this.btndeliver.Text = "Deliver for Distributers";
-            this.btndeliver.UseVisualStyleBackColor = true;
+            this.columnHeader48.Text = "Promotion Name";
+            this.columnHeader48.Width = 100;
             // 
-            // metroLabel4
+            // columnHeader49
             // 
-            this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(384, 20);
-            this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(135, 19);
-            this.metroLabel4.TabIndex = 128;
-            this.metroLabel4.Text = "Search by Distributers";
+            this.columnHeader49.Text = "Promo Machanisum";
+            this.columnHeader49.Width = 100;
             // 
-            // cmbdist
+            // columnHeader52
             // 
-            this.cmbdist.FormattingEnabled = true;
-            this.cmbdist.ItemHeight = 23;
-            this.cmbdist.Location = new System.Drawing.Point(544, 17);
-            this.cmbdist.Name = "cmbdist";
-            this.cmbdist.Size = new System.Drawing.Size(270, 29);
-            this.cmbdist.TabIndex = 127;
-            this.cmbdist.UseSelectable = true;
-            this.cmbdist.SelectedIndexChanged += new System.EventHandler(this.cmbdist_SelectedIndexChanged);
+            this.columnHeader52.Text = "Promo Dec";
+            this.columnHeader52.Width = 100;
             // 
-            // btnRefresh
+            // columnHeader53
             // 
-            this.btnRefresh.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRefresh.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRefresh.BackgroundImage")));
-            this.btnRefresh.Location = new System.Drawing.Point(1211, 35);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(32, 32);
-            this.btnRefresh.TabIndex = 129;
-            this.btnRefresh.UseSelectable = true;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            this.columnHeader53.Text = "Main Item";
+            this.columnHeader53.Width = 80;
             // 
-            // lblstate
+            // columnHeader54
             // 
-            this.lblstate.AutoSize = true;
-            this.lblstate.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblstate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblstate.ForeColor = System.Drawing.Color.Red;
-            this.lblstate.Location = new System.Drawing.Point(86, 265);
-            this.lblstate.Name = "lblstate";
-            this.lblstate.Size = new System.Drawing.Size(0, 15);
-            this.lblstate.TabIndex = 132;
+            this.columnHeader54.Text = "Left QTY";
             // 
-            // lblstate1
+            // columnHeader55
             // 
-            this.lblstate1.AutoSize = true;
-            this.lblstate1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblstate1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblstate1.ForeColor = System.Drawing.Color.Red;
-            this.lblstate1.Location = new System.Drawing.Point(86, 280);
-            this.lblstate1.Name = "lblstate1";
-            this.lblstate1.Size = new System.Drawing.Size(0, 15);
-            this.lblstate1.TabIndex = 133;
+            this.columnHeader55.Text = "Attaced Item";
+            this.columnHeader55.Width = 80;
+            // 
+            // columnHeader56
+            // 
+            this.columnHeader56.Text = "Left QTY";
+            // 
+            // columnHeader57
+            // 
+            this.columnHeader57.Text = "From Date";
+            this.columnHeader57.Width = 80;
+            // 
+            // columnHeader58
+            // 
+            this.columnHeader58.Text = "Until Date";
+            this.columnHeader58.Width = 80;
+            // 
+            // columnHeader59
+            // 
+            this.columnHeader59.Text = "Comments";
+            this.columnHeader59.Width = 100;
+            // 
+            // columnHeader60
+            // 
+            this.columnHeader60.Text = "Active State";
+            this.columnHeader60.Width = 100;
+            // 
+            // columnHeader61
+            // 
+            this.columnHeader61.Text = "Left Days";
+            // 
+            // columnHeader62
+            // 
+            this.columnHeader62.Text = "Track State";
+            this.columnHeader62.Width = 80;
             // 
             // frmPromotionsToDistributers
             // 
@@ -968,6 +1126,8 @@
             this.metroTabPage1.ResumeLayout(false);
             this.metroTabPage1.PerformLayout();
             this.metroTabControl1.ResumeLayout(false);
+            this.metroTabPage3.ResumeLayout(false);
+            this.metroTabPage3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1061,5 +1221,24 @@
         private MetroFramework.Controls.MetroButton btnRefresh;
         private System.Windows.Forms.Label lblstate1;
         private System.Windows.Forms.Label lblstate;
+        private MetroFramework.Controls.MetroTabPage metroTabPage3;
+        private MetroFramework.Controls.MetroLabel metroLabel5;
+        private MetroFramework.Controls.MetroComboBox cmbDistViewPromo;
+        private System.Windows.Forms.ListView listView6;
+        private System.Windows.Forms.ColumnHeader columnHeader46;
+        private System.Windows.Forms.ColumnHeader columnHeader47;
+        private System.Windows.Forms.ColumnHeader columnHeader48;
+        private System.Windows.Forms.ColumnHeader columnHeader49;
+        private System.Windows.Forms.ColumnHeader columnHeader52;
+        private System.Windows.Forms.ColumnHeader columnHeader53;
+        private System.Windows.Forms.ColumnHeader columnHeader54;
+        private System.Windows.Forms.ColumnHeader columnHeader55;
+        private System.Windows.Forms.ColumnHeader columnHeader56;
+        private System.Windows.Forms.ColumnHeader columnHeader57;
+        private System.Windows.Forms.ColumnHeader columnHeader58;
+        private System.Windows.Forms.ColumnHeader columnHeader59;
+        private System.Windows.Forms.ColumnHeader columnHeader60;
+        private System.Windows.Forms.ColumnHeader columnHeader61;
+        private System.Windows.Forms.ColumnHeader columnHeader62;
     }
 }

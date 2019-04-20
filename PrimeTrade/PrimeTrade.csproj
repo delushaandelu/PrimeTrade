@@ -119,6 +119,12 @@
     <Compile Include="frmAdminViewUsers.Designer.cs">
       <DependentUpon>frmAdminViewUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmFinaceApproveStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFinaceApproveStock.Designer.cs">
+      <DependentUpon>frmFinaceApproveStock.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmFinanceManagerHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,6 +239,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAdminViewUsers.resx">
       <DependentUpon>frmAdminViewUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFinaceApproveStock.resx">
+      <DependentUpon>frmFinaceApproveStock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFinanceManagerHome.resx">
       <DependentUpon>frmFinanceManagerHome.cs</DependentUpon>
