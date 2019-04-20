@@ -137,7 +137,7 @@
             "BRAND MANAGER",
             "SYSTEM ADMIN",
             "SALES",
-            "DISTRIBUTION"});
+            "DISTRIBUTER"});
             this.cmbusertype.Location = new System.Drawing.Point(143, 327);
             this.cmbusertype.Name = "cmbusertype";
             this.cmbusertype.Size = new System.Drawing.Size(202, 29);

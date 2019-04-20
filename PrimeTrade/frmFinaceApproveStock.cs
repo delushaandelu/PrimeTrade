@@ -80,5 +80,54 @@ namespace PrimeTrade
                 listView6.Items.Add(listItem);
             }
         }
+
+        private void listView6_MouseClick(object sender, MouseEventArgs e)
+        {
+            switch (e.Button)
+            {
+                case MouseButtons.Right:
+                    {
+                        contextMenuStrip1.Show(Cursor.Position);
+                    }
+                    break;
+            }
+        }
+
+        private void approveRequestToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MySqlCommand command = new MySqlCommand();
+            connect.Open();
+            command.Connection = connect;
+
+            command.CommandText = "promo_approve_finance";
+            command.CommandType = CommandType.StoredProcedure;
+
+            command.Parameters.AddWithValue("@promoid", listView6.SelectedItems[0].SubItems[0].Text);
+            command.Parameters["@promoid"].Direction = ParameterDirection.Input;
+
+            command.Parameters.AddWithValue("@itemid1", listView6.SelectedItems[0].SubItems[5].Text);
+            command.Parameters["@itemid1"].Direction = ParameterDirection.Input;
+
+            command.Parameters.AddWithValue("@itemqty1", listView6.SelectedItems[0].SubItems[6].Text);
+            command.Parameters["@itemqty1"].Direction = ParameterDirection.Input;
+
+            command.Parameters.AddWithValue("@itemid2", listView6.SelectedItems[0].SubItems[7].Text);
+            command.Parameters["@itemid2"].Direction = ParameterDirection.Input;
+
+            command.Parameters.AddWithValue("@itemqty2", listView6.SelectedItems[0].SubItems[8].Text);
+            command.Parameters["@itemqty2"].Direction = ParameterDirection.Input;
+
+            if (command.ExecuteNonQuery() == 1)
+            {
+                connect.Close();
+                MessageBox.Show("Stock Allocated Sent to Finance Department for Approval.", "Success !", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                loadDate();
+            }
+            else
+            {
+                connect.Close();
+                MessageBox.Show("Can not allocate stock for the promotion..", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

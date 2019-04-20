@@ -175,6 +175,7 @@
             this.aprovePromotionStockToolStripMenuItem.Name = "aprovePromotionStockToolStripMenuItem";
             this.aprovePromotionStockToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.aprovePromotionStockToolStripMenuItem.Text = "Approve Promotion Stock";
+            this.aprovePromotionStockToolStripMenuItem.Click += new System.EventHandler(this.aprovePromotionStockToolStripMenuItem_Click);
             // 
             // frmFinanceManagerHome
             // 

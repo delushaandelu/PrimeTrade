@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.listView6 = new System.Windows.Forms.ListView();
             this.columnHeader46 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader47 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -45,6 +46,9 @@
             this.columnHeader61 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader62 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.approveRequestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // listView6
@@ -69,10 +73,11 @@
             this.listView6.GridLines = true;
             this.listView6.Location = new System.Drawing.Point(18, 117);
             this.listView6.Name = "listView6";
-            this.listView6.Size = new System.Drawing.Size(1246, 448);
+            this.listView6.Size = new System.Drawing.Size(1246, 477);
             this.listView6.TabIndex = 130;
             this.listView6.UseCompatibleStateImageBehavior = false;
             this.listView6.View = System.Windows.Forms.View.Details;
+            this.listView6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listView6_MouseClick);
             // 
             // columnHeader46
             // 
@@ -106,7 +111,8 @@
             // 
             // columnHeader54
             // 
-            this.columnHeader54.Text = "Left QTY";
+            this.columnHeader54.Text = "Reqest QTY";
+            this.columnHeader54.Width = 63;
             // 
             // columnHeader55
             // 
@@ -115,7 +121,7 @@
             // 
             // columnHeader56
             // 
-            this.columnHeader56.Text = "Left QTY";
+            this.columnHeader56.Text = "Reqest QTY";
             // 
             // columnHeader57
             // 
@@ -155,6 +161,20 @@
             this.metroLabel5.TabIndex = 132;
             this.metroLabel5.Text = "New Approvel list For Distribution";
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.approveRequestToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(165, 26);
+            // 
+            // approveRequestToolStripMenuItem
+            // 
+            this.approveRequestToolStripMenuItem.Name = "approveRequestToolStripMenuItem";
+            this.approveRequestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.approveRequestToolStripMenuItem.Text = "Approve Request";
+            this.approveRequestToolStripMenuItem.Click += new System.EventHandler(this.approveRequestToolStripMenuItem_Click);
+            // 
             // frmFinaceApproveStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -164,6 +184,7 @@
             this.Controls.Add(this.listView6);
             this.Name = "frmFinaceApproveStock";
             this.Text = "Approve Promotion Stock";
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,5 +209,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader61;
         private System.Windows.Forms.ColumnHeader columnHeader62;
         private MetroFramework.Controls.MetroLabel metroLabel5;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem approveRequestToolStripMenuItem;
     }
 }

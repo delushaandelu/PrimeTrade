@@ -47,6 +47,20 @@ namespace PrimeTrade
                 adminHome.Show();
                 this.Hide();
             }
+            else if (profile == "SALES") 
+            {
+                frmSalesHome adminHome = new frmSalesHome();
+                adminHome.Closed += (s, arg) => this.Close();
+                adminHome.Show();
+                this.Hide();
+            }
+            else if (profile == "DISTRIBUTER") 
+            {
+                FrmDistibuterHome adminHome = new FrmDistibuterHome();
+                adminHome.Closed += (s, arg) => this.Close();
+                adminHome.Show();
+                this.Hide();
+            }
         }
 
         private void btnlogin_Click(object sender, EventArgs e)

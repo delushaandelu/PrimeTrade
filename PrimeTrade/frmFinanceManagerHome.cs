@@ -86,5 +86,12 @@ namespace PrimeTrade
         {
 
         }
+
+        private void aprovePromotionStockToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFinaceApproveStock form = new frmFinaceApproveStock();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }
