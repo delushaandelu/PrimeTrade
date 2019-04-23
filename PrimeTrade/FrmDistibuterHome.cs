@@ -35,5 +35,19 @@ namespace PrimeTrade
             form.MdiParent = this;
             form.Show();
         }
+
+        private void suppliyGoodsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDistributersSales form = new frmDistributersSales(lblstatus.Text);
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void viewMySalesProgressToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDistributersMySalesProgress form = new frmDistributersMySalesProgress(lblstatus.Text);
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

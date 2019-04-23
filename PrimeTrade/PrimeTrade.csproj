@@ -82,6 +82,7 @@
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -136,6 +137,18 @@
     </Compile>
     <Compile Include="FrmDistributerNewPromotins.Designer.cs">
       <DependentUpon>FrmDistributerNewPromotins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDistributersMySalesProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDistributersMySalesProgress.Designer.cs">
+      <DependentUpon>frmDistributersMySalesProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDistributersSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDistributersSales.Designer.cs">
+      <DependentUpon>frmDistributersSales.cs</DependentUpon>
     </Compile>
     <Compile Include="frmFinaceApproveStock.cs">
       <SubType>Form</SubType>
@@ -278,6 +291,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDistributerNewPromotins.resx">
       <DependentUpon>FrmDistributerNewPromotins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDistributersMySalesProgress.resx">
+      <DependentUpon>frmDistributersMySalesProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDistributersSales.resx">
+      <DependentUpon>frmDistributersSales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFinaceApproveStock.resx">
       <DependentUpon>frmFinaceApproveStock.cs</DependentUpon>

@@ -30,14 +30,17 @@
         {
             this.components = new System.ComponentModel.Container();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.newRequestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.approvedPromotionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.myPromotionTasksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.distributionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.suppliyGoodsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.lblstatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.newRequestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.approvedPromotionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.distributionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.suppliyGoodsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.myPromotionTasksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mySalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewMySalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewMySalesProgressToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -46,28 +49,13 @@
             // 
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newRequestToolStripMenuItem,
-            this.distributionToolStripMenuItem});
+            this.distributionToolStripMenuItem,
+            this.mySalesToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(180, 60);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(1071, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
-            // 
-            // statusStrip
-            // 
-            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lblstatus});
-            this.statusStrip.Location = new System.Drawing.Point(180, 636);
-            this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(1071, 22);
-            this.statusStrip.TabIndex = 2;
-            this.statusStrip.Text = "StatusStrip";
-            // 
-            // lblstatus
-            // 
-            this.lblstatus.Name = "lblstatus";
-            this.lblstatus.Size = new System.Drawing.Size(39, 17);
-            this.lblstatus.Text = "Status";
             // 
             // newRequestToolStripMenuItem
             // 
@@ -85,6 +73,13 @@
             this.approvedPromotionsToolStripMenuItem.Text = "Approved Promotions";
             this.approvedPromotionsToolStripMenuItem.Click += new System.EventHandler(this.approvedPromotionsToolStripMenuItem_Click);
             // 
+            // myPromotionTasksToolStripMenuItem
+            // 
+            this.myPromotionTasksToolStripMenuItem.Name = "myPromotionTasksToolStripMenuItem";
+            this.myPromotionTasksToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.myPromotionTasksToolStripMenuItem.Text = "My Promotion Tasks";
+            this.myPromotionTasksToolStripMenuItem.Click += new System.EventHandler(this.myPromotionTasksToolStripMenuItem_Click);
+            // 
             // distributionToolStripMenuItem
             // 
             this.distributionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -98,13 +93,45 @@
             this.suppliyGoodsToolStripMenuItem.Name = "suppliyGoodsToolStripMenuItem";
             this.suppliyGoodsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.suppliyGoodsToolStripMenuItem.Text = "Supply Goods";
+            this.suppliyGoodsToolStripMenuItem.Click += new System.EventHandler(this.suppliyGoodsToolStripMenuItem_Click);
             // 
-            // myPromotionTasksToolStripMenuItem
+            // statusStrip
             // 
-            this.myPromotionTasksToolStripMenuItem.Name = "myPromotionTasksToolStripMenuItem";
-            this.myPromotionTasksToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
-            this.myPromotionTasksToolStripMenuItem.Text = "My Promotion Tasks";
-            this.myPromotionTasksToolStripMenuItem.Click += new System.EventHandler(this.myPromotionTasksToolStripMenuItem_Click);
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lblstatus});
+            this.statusStrip.Location = new System.Drawing.Point(180, 636);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Size = new System.Drawing.Size(1071, 22);
+            this.statusStrip.TabIndex = 2;
+            this.statusStrip.Text = "StatusStrip";
+            // 
+            // lblstatus
+            // 
+            this.lblstatus.Name = "lblstatus";
+            this.lblstatus.Size = new System.Drawing.Size(39, 17);
+            this.lblstatus.Text = "Status";
+            // 
+            // mySalesToolStripMenuItem
+            // 
+            this.mySalesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.viewMySalesToolStripMenuItem,
+            this.viewMySalesProgressToolStripMenuItem});
+            this.mySalesToolStripMenuItem.Name = "mySalesToolStripMenuItem";
+            this.mySalesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.mySalesToolStripMenuItem.Text = "My Sales";
+            // 
+            // viewMySalesToolStripMenuItem
+            // 
+            this.viewMySalesToolStripMenuItem.Name = "viewMySalesToolStripMenuItem";
+            this.viewMySalesToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.viewMySalesToolStripMenuItem.Text = "View My Sales";
+            // 
+            // viewMySalesProgressToolStripMenuItem
+            // 
+            this.viewMySalesProgressToolStripMenuItem.Name = "viewMySalesProgressToolStripMenuItem";
+            this.viewMySalesProgressToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.viewMySalesProgressToolStripMenuItem.Text = "View My Sales Progress";
+            this.viewMySalesProgressToolStripMenuItem.Click += new System.EventHandler(this.viewMySalesProgressToolStripMenuItem_Click);
             // 
             // FrmDistibuterHome
             // 
@@ -139,6 +166,9 @@
         private System.Windows.Forms.ToolStripMenuItem distributionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem suppliyGoodsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem myPromotionTasksToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mySalesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewMySalesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewMySalesProgressToolStripMenuItem;
     }
 }
 

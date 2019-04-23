@@ -74,3 +74,5 @@ C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmS
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.FrmDistributerNewPromotins.resources
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmDistributerMyPromotionTasks.resources
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmManagerViewPromotionByState.resources
+C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmDistributersSales.resources
+C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmDistributersMySalesProgress.resources

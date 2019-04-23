@@ -50,11 +50,13 @@
             this.viewAllPromotionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.asignPromitonToDistributionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewAllPromotionByDIstributersToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewPromotionByStateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewStockToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.viewAreaByDIstributersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewAllPromotionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewAllPromotionByDistributersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewAllPromotionByStateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
@@ -63,8 +65,6 @@
             this.metroTile3 = new MetroFramework.Controls.MetroTile();
             this.metroTile4 = new MetroFramework.Controls.MetroTile();
             this.metroTile5 = new MetroFramework.Controls.MetroTile();
-            this.viewPromotionByStateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewAllPromotionByStateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -240,6 +240,12 @@
             this.viewAllPromotionByDIstributersToolStripMenuItem1.Text = "View all Promotion By DIstributers";
             this.viewAllPromotionByDIstributersToolStripMenuItem1.Click += new System.EventHandler(this.viewAllPromotionByDIstributersToolStripMenuItem1_Click);
             // 
+            // viewPromotionByStateToolStripMenuItem
+            // 
+            this.viewPromotionByStateToolStripMenuItem.Name = "viewPromotionByStateToolStripMenuItem";
+            this.viewPromotionByStateToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
+            this.viewPromotionByStateToolStripMenuItem.Text = "View Promotion By State";
+            // 
             // viewToolStripMenuItem
             // 
             this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -279,6 +285,13 @@
             this.viewAllPromotionByDistributersToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.viewAllPromotionByDistributersToolStripMenuItem.Text = "View all Promotion by Distributers";
             this.viewAllPromotionByDistributersToolStripMenuItem.Click += new System.EventHandler(this.viewAllPromotionByDistributersToolStripMenuItem_Click);
+            // 
+            // viewAllPromotionByStateToolStripMenuItem
+            // 
+            this.viewAllPromotionByStateToolStripMenuItem.Name = "viewAllPromotionByStateToolStripMenuItem";
+            this.viewAllPromotionByStateToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
+            this.viewAllPromotionByStateToolStripMenuItem.Text = "View All Promotion By State";
+            this.viewAllPromotionByStateToolStripMenuItem.Click += new System.EventHandler(this.viewAllPromotionByStateToolStripMenuItem_Click);
             // 
             // statusStrip
             // 
@@ -336,7 +349,7 @@
             this.metroTile4.Name = "metroTile4";
             this.metroTile4.Size = new System.Drawing.Size(94, 93);
             this.metroTile4.TabIndex = 7;
-            this.metroTile4.Text = "metroTile4";
+            this.metroTile4.Text = "Best prod mix";
             this.metroTile4.UseSelectable = true;
             // 
             // metroTile5
@@ -348,19 +361,6 @@
             this.metroTile5.TabIndex = 8;
             this.metroTile5.Text = "metroTile5";
             this.metroTile5.UseSelectable = true;
-            // 
-            // viewPromotionByStateToolStripMenuItem
-            // 
-            this.viewPromotionByStateToolStripMenuItem.Name = "viewPromotionByStateToolStripMenuItem";
-            this.viewPromotionByStateToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
-            this.viewPromotionByStateToolStripMenuItem.Text = "View Promotion By State";
-            // 
-            // viewAllPromotionByStateToolStripMenuItem
-            // 
-            this.viewAllPromotionByStateToolStripMenuItem.Name = "viewAllPromotionByStateToolStripMenuItem";
-            this.viewAllPromotionByStateToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
-            this.viewAllPromotionByStateToolStripMenuItem.Text = "View All Promotion By State";
-            this.viewAllPromotionByStateToolStripMenuItem.Click += new System.EventHandler(this.viewAllPromotionByStateToolStripMenuItem_Click);
             // 
             // frmManagerHome
             // 

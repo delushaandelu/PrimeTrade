@@ -65,6 +65,17 @@ namespace PrimeTrade
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
+            
+
+        }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void metroTile1_Click(object sender, EventArgs e)
+        {
             string db_string = classConnection.ConnectNow("GoogleCloude");
             MySqlConnection connect = new MySqlConnection(db_string);
             MySqlCommand cmd = new MySqlCommand();
@@ -128,7 +139,6 @@ namespace PrimeTrade
                 txtusername.ResetText();
                 cmbusertype.ResetText();
             }
-
         }
     }
 }
