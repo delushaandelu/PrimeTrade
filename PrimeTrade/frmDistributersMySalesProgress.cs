@@ -21,18 +21,41 @@ namespace PrimeTrade
         public frmDistributersMySalesProgress(string userid)
         {
             InitializeComponent();
+            viewPromotions();
             lbluserid.Text = userid;
-            LoadChart();
         }
 
         MySqlConnection connect = new MySqlConnection(classConnection.ConnectNow("GoogleCloude"));
 
-        public void LoadChart()
+        
+
+        public void viewPromotions()
+        {
+
+            connect.Open();
+
+            string query = "SELECT distinct `tb_sales`.`promotionid` FROM `base`.`tb_sales`";
+            using (var command = new MySqlCommand(query, connect))
+            {
+                using (var reader = command.ExecuteReader())
+                {
+                    //Iterate through the rows and add it to the combobox's items
+                    while (reader.Read())
+                    {
+                        CmbPromotion.Items.Add(reader.GetString("promotionid"));
+                    }
+                }
+                connect.Close();
+            }
+
+        }
+
+        private void CmbPromotion_SelectedIndexChanged(object sender, EventArgs e)
         {
             connect.Open();
 
             MySqlCommand cmd = connect.CreateCommand();
-            cmd.CommandText = "SELECT sum(`tb_sales`.`qty1`), sum(`tb_sales`.`qty2`),`tb_sales`.`salesdate` FROM `base`.`tb_sales` where `tb_sales`.`distributer` = '"+lbluserid.Text+ "' group by `tb_sales`.`salesdate`";
+            cmd.CommandText = "SELECT sum(`tb_sales`.`qty1`), sum(`tb_sales`.`qty2`),`tb_sales`.`salesdate` FROM `base`.`tb_sales` where `tb_sales`.`distributer` = '" + lbluserid.Text + "' AND `tb_sales`.`promotionid` = '"+CmbPromotion.SelectedItem+"' group by `tb_sales`.`salesdate`";
             MySqlDataReader reader;
 
             reader = cmd.ExecuteReader();
@@ -43,6 +66,11 @@ namespace PrimeTrade
             }
 
             connect.Close();
+        }
+
+        private void btnClearChart_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
