@@ -87,117 +87,115 @@ namespace PrimeTrade
             MessageBox.Show("System has updated from Github reposotory. Please restart", "Success !", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void sToolStripMenuItem_Click(object sender, EventArgs e)
+
+        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
-            frmManagerStockBasicData form = new frmManagerStockBasicData();
-            form.MdiParent = this;
-            form.Show();
+            string path = treeView1.SelectedNode.FullPath;
+            string window = treeView1.SelectedNode.Name;
+
+            lblstatus.Text = path;
+
+            if (window == "Node6")
+            {
+                frmManagerStockBasicData form = new frmManagerStockBasicData();
+                form.MdiParent = this;
+                form.Show();
+            }
+            else if (window == "Node7")
+            {
+                frmManagerStockManagement form = new frmManagerStockManagement("BRAND");
+                form.MdiParent = this;
+                form.Show();
+            }
+            else if (window == "Node8")
+            {
+                frmManagerViewStock form = new frmManagerViewStock();
+                form.MdiParent = this;
+                form.Show();
+            }
+            else if (window == "Node9")
+            {
+                frmManagerManageArea form = new frmManagerManageArea();
+                form.MdiParent = this;
+                form.Show();
+            }
+            else if (window == "Node10")
+            {
+                frmManagerDistributerArea form = new frmManagerDistributerArea();
+                form.MdiParent = this;
+                form.Show();
+            }
+            else if (window == "Node11")
+            {
+                frmManagerViewAllAreaDistRecords form = new frmManagerViewAllAreaDistRecords();
+                form.MdiParent = this;
+                form.Show();
+            }
+            else if (window == "Node12")
+            {
+                frmManagerPromotion form = new frmManagerPromotion();
+                form.MdiParent = this;
+                form.Show();
+            }
+            else if (window == "Node13")
+            {
+                frmManagerActivePromo form = new frmManagerActivePromo();
+                form.MdiParent = this;
+                form.Show();
+            }
+            else if (window == "Node14")
+            {
+                frmManagerViewAllPromotion form = new frmManagerViewAllPromotion();
+                form.MdiParent = this;
+                form.Show();
+            }
+            else if (window == "Node15")
+            {
+                frmPromotionsToDistributers form = new frmPromotionsToDistributers();
+                form.MdiParent = this;
+                form.Show();
+            }
+            else if (window == "Node16")
+            {
+                ManagerViewPromotionByDistributers form = new ManagerViewPromotionByDistributers();
+                form.MdiParent = this;
+                form.Show();
+            }
+            else if (window == "Node17")
+            {
+                string x = "x";
+            }
+            else if (window == "Node18")
+            {
+                frmManagerViewStock form = new frmManagerViewStock();
+                form.MdiParent = this;
+                form.Show();
+            }
+            else if (window == "Node19")
+            {
+                frmManagerViewAllAreaDistRecords form = new frmManagerViewAllAreaDistRecords();
+                form.MdiParent = this;
+                form.Show();
+            }
+            else if (window == "Node20")
+            {
+                frmManagerViewAllPromotion form = new frmManagerViewAllPromotion();
+                form.MdiParent = this;
+                form.Show();
+            }
+            else if (window == "Node21")
+            {
+                ManagerViewPromotionByDistributers form = new ManagerViewPromotionByDistributers();
+                form.MdiParent = this;
+                form.Show();
+            }
+            else if (window == "Node22")
+            {
+                frmManagerViewPromotionByState form = new frmManagerViewPromotionByState();
+                form.MdiParent = this;
+                form.Show();
+            }
         }
 
-        private void stockManagementToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            frmManagerStockManagement form = new frmManagerStockManagement("BRAND");
-            form.MdiParent = this;
-            form.Show();
-        }
-
-        private void viewStockToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmManagerViewStock form = new frmManagerViewStock();
-            form.MdiParent = this;
-            form.Show();
-        }
-
-        private void promotionPlanToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmManagerPromotion form = new frmManagerPromotion();
-            form.MdiParent = this;
-            form.Show();
-        }
-
-        private void activePromotionToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmManagerActivePromo form = new frmManagerActivePromo();
-            form.MdiParent = this;
-            form.Show();
-        }
-
-        private void viewAllPromotionsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmManagerViewAllPromotion form = new frmManagerViewAllPromotion();
-            form.MdiParent = this;
-            form.Show();
-        }
-
-        private void manageAreaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmManagerManageArea form = new frmManagerManageArea();
-            form.MdiParent = this;
-            form.Show();
-        }
-
-        private void assignAreasToDistributersToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmManagerDistributerArea form = new frmManagerDistributerArea();
-            form.MdiParent = this;
-            form.Show();
-        }
-
-        private void viewAreasByDistributersToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmManagerViewAllAreaDistRecords form = new frmManagerViewAllAreaDistRecords();
-            form.MdiParent = this;
-            form.Show();
-
-        }
-
-        private void asignPromitonToDistributionToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmPromotionsToDistributers form = new frmPromotionsToDistributers();
-            form.MdiParent = this;
-            form.Show();
-        }
-
-        private void viewAllPromotionByDIstributersToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            ManagerViewPromotionByDistributers form = new ManagerViewPromotionByDistributers();
-            form.MdiParent = this;
-            form.Show();
-        }
-
-        private void viewAllPromotionByDistributersToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ManagerViewPromotionByDistributers form = new ManagerViewPromotionByDistributers();
-            form.MdiParent = this;
-            form.Show();
-        }
-
-        private void viewStockToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            frmManagerViewStock form = new frmManagerViewStock();
-            form.MdiParent = this;
-            form.Show();
-        }
-
-        private void viewAreaByDIstributersToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmManagerViewAllAreaDistRecords form = new frmManagerViewAllAreaDistRecords();
-            form.MdiParent = this;
-            form.Show();
-        }
-
-        private void viewAllPromotionToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmManagerViewAllPromotion form = new frmManagerViewAllPromotion();
-            form.MdiParent = this;
-            form.Show();
-        }
-
-        private void viewAllPromotionByStateToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmManagerViewPromotionByState form = new frmManagerViewPromotionByState();
-            form.MdiParent = this;
-            form.Show();
-        }
     }
 }

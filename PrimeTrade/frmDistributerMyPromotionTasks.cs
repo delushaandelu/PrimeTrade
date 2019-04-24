@@ -11,10 +11,11 @@ using MaterialSkin.Controls;
 using MaterialSkin.Animations;
 using System.Configuration;
 using MySql.Data.MySqlClient;
+using MetroFramework.Forms;
 
 namespace PrimeTrade
 {
-    public partial class frmDistributerMyPromotionTasks : MaterialForm
+    public partial class frmDistributerMyPromotionTasks : MetroForm
     {
         public frmDistributerMyPromotionTasks(string userid)
         {

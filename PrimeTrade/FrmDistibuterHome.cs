@@ -49,5 +49,45 @@ namespace PrimeTrade
             form.MdiParent = this;
             form.Show();
         }
+
+        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            string path = treeView1.SelectedNode.FullPath;
+            string window = treeView1.SelectedNode.Name;
+
+            if (window == "Node1")
+            {
+                lblpath.Text = path;
+                FrmDistributerNewPromotins form = new FrmDistributerNewPromotins(lblstatus.Text);
+                form.MdiParent = this;
+                form.Show();
+            }
+            else if (window == "Node2")
+            {
+                lblpath.Text = path;
+                frmDistributerMyPromotionTasks form = new frmDistributerMyPromotionTasks(lblstatus.Text);
+                form.MdiParent = this;
+                form.Show();
+            }
+            else if (window == "Node4")
+            {
+                lblpath.Text = path;
+                frmDistributersSales form = new frmDistributersSales(lblstatus.Text);
+                form.MdiParent = this;
+                form.Show();
+            }
+            else if (window == "Node6")
+            {
+                lblpath.Text = path;
+                string x = null;
+            }
+            else if (window == "Node7")
+            {
+                lblpath.Text = path;
+                frmDistributersMySalesProgress form = new frmDistributersMySalesProgress(lblstatus.Text);
+                form.MdiParent = this;
+                form.Show();
+            }
+        }
     }
 }
