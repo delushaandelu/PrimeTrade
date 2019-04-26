@@ -138,6 +138,12 @@
     <Compile Include="frmDistributerMyPromotionTasks.Designer.cs">
       <DependentUpon>frmDistributerMyPromotionTasks.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDistributerMySalesData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDistributerMySalesData.Designer.cs">
+      <DependentUpon>frmDistributerMySalesData.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmDistributerNewPromotins.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -300,6 +306,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDistributerMyPromotionTasks.resx">
       <DependentUpon>frmDistributerMyPromotionTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDistributerMySalesData.resx">
+      <DependentUpon>frmDistributerMySalesData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDistributerNewPromotins.resx">
       <DependentUpon>FrmDistributerNewPromotins.cs</DependentUpon>

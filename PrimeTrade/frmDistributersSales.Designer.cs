@@ -68,6 +68,10 @@
             this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
             this.lblonhand1 = new MetroFramework.Controls.MetroLabel();
             this.lblonhand2 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
+            this.txtprice2 = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel12 = new MetroFramework.Controls.MetroLabel();
+            this.txtprice1 = new MetroFramework.Controls.MetroTextBox();
             this.SuspendLayout();
             // 
             // txtpromo
@@ -550,11 +554,93 @@
             this.lblonhand2.Size = new System.Drawing.Size(0, 0);
             this.lblonhand2.TabIndex = 121;
             // 
+            // metroLabel11
+            // 
+            this.metroLabel11.AutoSize = true;
+            this.metroLabel11.Location = new System.Drawing.Point(460, 517);
+            this.metroLabel11.Name = "metroLabel11";
+            this.metroLabel11.Size = new System.Drawing.Size(81, 19);
+            this.metroLabel11.TabIndex = 125;
+            this.metroLabel11.Text = "Supply Price";
+            // 
+            // txtprice2
+            // 
+            // 
+            // 
+            // 
+            this.txtprice2.CustomButton.Image = null;
+            this.txtprice2.CustomButton.Location = new System.Drawing.Point(136, 1);
+            this.txtprice2.CustomButton.Name = "";
+            this.txtprice2.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtprice2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtprice2.CustomButton.TabIndex = 1;
+            this.txtprice2.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtprice2.CustomButton.UseSelectable = true;
+            this.txtprice2.CustomButton.Visible = false;
+            this.txtprice2.Lines = new string[0];
+            this.txtprice2.Location = new System.Drawing.Point(593, 517);
+            this.txtprice2.MaxLength = 32767;
+            this.txtprice2.Name = "txtprice2";
+            this.txtprice2.PasswordChar = '\0';
+            this.txtprice2.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtprice2.SelectedText = "";
+            this.txtprice2.SelectionLength = 0;
+            this.txtprice2.SelectionStart = 0;
+            this.txtprice2.ShortcutsEnabled = true;
+            this.txtprice2.Size = new System.Drawing.Size(158, 23);
+            this.txtprice2.TabIndex = 124;
+            this.txtprice2.UseSelectable = true;
+            this.txtprice2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtprice2.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel12
+            // 
+            this.metroLabel12.AutoSize = true;
+            this.metroLabel12.Location = new System.Drawing.Point(138, 517);
+            this.metroLabel12.Name = "metroLabel12";
+            this.metroLabel12.Size = new System.Drawing.Size(81, 19);
+            this.metroLabel12.TabIndex = 123;
+            this.metroLabel12.Text = "Supply Price";
+            // 
+            // txtprice1
+            // 
+            // 
+            // 
+            // 
+            this.txtprice1.CustomButton.Image = null;
+            this.txtprice1.CustomButton.Location = new System.Drawing.Point(136, 1);
+            this.txtprice1.CustomButton.Name = "";
+            this.txtprice1.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtprice1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtprice1.CustomButton.TabIndex = 1;
+            this.txtprice1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtprice1.CustomButton.UseSelectable = true;
+            this.txtprice1.CustomButton.Visible = false;
+            this.txtprice1.Lines = new string[0];
+            this.txtprice1.Location = new System.Drawing.Point(251, 517);
+            this.txtprice1.MaxLength = 32767;
+            this.txtprice1.Name = "txtprice1";
+            this.txtprice1.PasswordChar = '\0';
+            this.txtprice1.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtprice1.SelectedText = "";
+            this.txtprice1.SelectionLength = 0;
+            this.txtprice1.SelectionStart = 0;
+            this.txtprice1.ShortcutsEnabled = true;
+            this.txtprice1.Size = new System.Drawing.Size(158, 23);
+            this.txtprice1.TabIndex = 122;
+            this.txtprice1.UseSelectable = true;
+            this.txtprice1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtprice1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
             // frmDistributersSales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1048, 548);
+            this.ClientSize = new System.Drawing.Size(1048, 627);
+            this.Controls.Add(this.metroLabel11);
+            this.Controls.Add(this.txtprice2);
+            this.Controls.Add(this.metroLabel12);
+            this.Controls.Add(this.txtprice1);
             this.Controls.Add(this.lblonhand2);
             this.Controls.Add(this.lblonhand1);
             this.Controls.Add(this.metroLabel10);
@@ -626,5 +712,9 @@
         private MetroFramework.Controls.MetroLabel metroLabel10;
         private MetroFramework.Controls.MetroLabel lblonhand1;
         private MetroFramework.Controls.MetroLabel lblonhand2;
+        private MetroFramework.Controls.MetroLabel metroLabel11;
+        private MetroFramework.Controls.MetroTextBox txtprice2;
+        private MetroFramework.Controls.MetroLabel metroLabel12;
+        private MetroFramework.Controls.MetroTextBox txtprice1;
     }
 }

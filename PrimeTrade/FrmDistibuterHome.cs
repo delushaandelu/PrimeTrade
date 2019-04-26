@@ -79,7 +79,9 @@ namespace PrimeTrade
             else if (window == "Node6")
             {
                 lblpath.Text = path;
-                string x = null;
+                frmDistributerMySalesData from = new frmDistributerMySalesData(lblstatus.Text);
+                from.MdiParent = this;
+                from.Show();
             }
             else if (window == "Node7")
             {

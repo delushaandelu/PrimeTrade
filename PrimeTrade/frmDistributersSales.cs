@@ -105,7 +105,7 @@ namespace PrimeTrade
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
-            if (txtitemqty1.Text == "" || txtitemqty2.Text == "" || txtseller.Text == "" || txtpromo.Text == "")
+            if (txtitemqty1.Text == "" || txtitemqty2.Text == "" || txtseller.Text == "" || txtpromo.Text == "" || txtprice1.Text == "" || txtprice2.Text == "")
             {
                 MessageBox.Show("Please fill up all the fields.", "Empty Fields Detected !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -146,6 +146,12 @@ namespace PrimeTrade
                 command.Parameters.AddWithValue("@distributer", lbluser.Text);
                 command.Parameters["@distributer"].Direction = ParameterDirection.Input;
 
+                command.Parameters.AddWithValue("@price1", txtprice1.Text);
+                command.Parameters["@price1"].Direction = ParameterDirection.Input;
+
+                command.Parameters.AddWithValue("@price2", txtprice2.Text);
+                command.Parameters["@price2"].Direction = ParameterDirection.Input;
+
                 if (command.ExecuteNonQuery() == 1)
                 {
                     connect.Close();
@@ -175,6 +181,8 @@ namespace PrimeTrade
             txtseller.ResetText();
             lblonhand1.ResetText();
             lblonhand2.ResetText();
+            txtprice1.ResetText();
+            txtprice2.ResetText();
         }
     }
 }
