@@ -76,3 +76,9 @@ C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmD
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmManagerViewPromotionByState.resources
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmDistributersSales.resources
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmDistributersMySalesProgress.resources
+C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.csprojAssemblyReference.cache
+C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\CSharpTest.Net.BPlusTree.dll
+C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\CSharpTest.Net.Library.dll
+C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\CSharpTest.Net.BPlusTree.xml
+C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\CSharpTest.Net.Library.xml
+C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmManagerViewDistributersByPromotion.resources

@@ -195,6 +195,18 @@ namespace PrimeTrade
                 form.MdiParent = this;
                 form.Show();
             }
+            else if (window == "nodedpro1")
+            { 
+                frmManagerViewDistributersByPromotion form = new frmManagerViewDistributersByPromotion();
+                form.MdiParent = this;
+                form.Show();
+            }
+            else if (window == "nodedpro2")
+            {
+                frmManagerViewDistributersByPromotion form = new frmManagerViewDistributersByPromotion();
+                form.MdiParent = this;
+                form.Show();
+            }
         }
 
     }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -37,6 +38,7 @@
             this.CmbPromotion = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.btnClearChart = new MetroFramework.Controls.MetroButton();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.chartSales)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,6 +73,7 @@
             this.chartSales.Size = new System.Drawing.Size(1310, 586);
             this.chartSales.TabIndex = 1;
             this.chartSales.Text = "chart1";
+            this.chartSales.MouseMove += new System.Windows.Forms.MouseEventHandler(this.chartSales_MouseMove);
             // 
             // CmbPromotion
             // 
@@ -127,5 +130,6 @@
         private MetroFramework.Controls.MetroComboBox CmbPromotion;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroButton btnClearChart;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

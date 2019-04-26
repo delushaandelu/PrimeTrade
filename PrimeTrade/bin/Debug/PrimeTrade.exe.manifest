@@ -42,6 +42,30 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CSharpTest.Net.BPlusTree.dll" size="118272">
+      <assemblyIdentity name="CSharpTest.Net.BPlusTree" version="2.14.126.467" publicKeyToken="06AEE00CCE822474" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>sV3DHAufsvqWdhg3LXjNUS2vmOE3e8DE7JeWqZT/+yI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CSharpTest.Net.Library.dll" size="656896">
+      <assemblyIdentity name="CSharpTest.Net.Library" version="2.14.126.467" publicKeyToken="06AEE00CCE822474" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>fYpITBRYJY0boB7EmxjK3UOz9XUzmca0JH/TTts7MeA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MaterialSkin.dll" size="587776">
       <assemblyIdentity name="MaterialSkin" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -102,14 +126,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PrimeTrade.exe" size="451512">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PrimeTrade.exe" size="462264">
       <assemblyIdentity name="PrimeTrade" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Wgvn+Z1rPbCRj4yFlUml1QrzkxfFGBhVmBXjUCV6Iqc=</dsig:DigestValue>
+        <dsig:DigestValue>7dywpndgOjsgb2/2y/YTR0EvfaBnsk44LXfpPVP/YrM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
