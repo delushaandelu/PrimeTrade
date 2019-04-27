@@ -171,9 +171,9 @@
             this.metroTabPage2.HorizontalScrollbarBarColor = true;
             this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.HorizontalScrollbarSize = 10;
-            this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
+            this.metroTabPage2.Location = new System.Drawing.Point(4, 47);
             this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(1246, 532);
+            this.metroTabPage2.Size = new System.Drawing.Size(1246, 523);
             this.metroTabPage2.TabIndex = 1;
             this.metroTabPage2.Text = "Allocate stock to promotion";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
@@ -271,7 +271,6 @@
             // txtprice2
             // 
             this.txtprice2.Depth = 0;
-            this.txtprice2.Enabled = false;
             this.txtprice2.Hint = "";
             this.txtprice2.Location = new System.Drawing.Point(284, 445);
             this.txtprice2.MouseState = MaterialSkin.MouseState.HOVER;
@@ -332,7 +331,6 @@
             // txtprice1
             // 
             this.txtprice1.Depth = 0;
-            this.txtprice1.Enabled = false;
             this.txtprice1.Hint = "";
             this.txtprice1.Location = new System.Drawing.Point(284, 374);
             this.txtprice1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -665,9 +663,9 @@
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
             this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.HorizontalScrollbarSize = 10;
-            this.metroTabPage1.Location = new System.Drawing.Point(4, 38);
+            this.metroTabPage1.Location = new System.Drawing.Point(4, 47);
             this.metroTabPage1.Name = "metroTabPage1";
-            this.metroTabPage1.Size = new System.Drawing.Size(1246, 532);
+            this.metroTabPage1.Size = new System.Drawing.Size(1246, 523);
             this.metroTabPage1.TabIndex = 0;
             this.metroTabPage1.Text = "Promo to Distributers";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
@@ -967,12 +965,14 @@
             // 
             // metroTabControl1
             // 
+            this.metroTabControl1.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
             this.metroTabControl1.Controls.Add(this.metroTabPage1);
             this.metroTabControl1.Controls.Add(this.metroTabPage2);
             this.metroTabControl1.Controls.Add(this.metroTabPage3);
+            this.metroTabControl1.FontSize = MetroFramework.MetroTabControlSize.Tall;
             this.metroTabControl1.Location = new System.Drawing.Point(26, 85);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 2;
+            this.metroTabControl1.SelectedIndex = 1;
             this.metroTabControl1.Size = new System.Drawing.Size(1254, 574);
             this.metroTabControl1.TabIndex = 86;
             this.metroTabControl1.UseSelectable = true;
@@ -985,9 +985,9 @@
             this.metroTabPage3.HorizontalScrollbarBarColor = true;
             this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage3.HorizontalScrollbarSize = 10;
-            this.metroTabPage3.Location = new System.Drawing.Point(4, 38);
+            this.metroTabPage3.Location = new System.Drawing.Point(4, 47);
             this.metroTabPage3.Name = "metroTabPage3";
-            this.metroTabPage3.Size = new System.Drawing.Size(1246, 532);
+            this.metroTabPage3.Size = new System.Drawing.Size(1246, 523);
             this.metroTabPage3.TabIndex = 2;
             this.metroTabPage3.Text = "View OnGoing Promotions";
             this.metroTabPage3.VerticalScrollbarBarColor = true;

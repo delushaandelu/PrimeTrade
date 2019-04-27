@@ -47,12 +47,12 @@ namespace PrimeTrade
 
         private void cmbPromotion_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string promotion_id = cmbPromotion.SelectedText;
-
+            string promotion_id = cmbPromotion.SelectedItem.ToString();
+            MessageBox.Show(promotion_id);
             listView2.Items.Clear();
             listView2.View = View.Details;
 
-            MySqlDataAdapter dAdpter = new MySqlDataAdapter("SELECT `tbl_user`.`firstname`,`tb_promotion`.`promoname`,`tb_promotion`.`promomach`,`tb_promotion`.`promodes`,`tb_promo_distributer`.`itemone`,`tb_stock`.`name`,`tb_promo_distributer`.`priceone`,`tb_promo_distributer`.`itemoneqty`,`tb_promo_distributer`.`itemtwo`,`tb_stock`.`name`,`tb_promo_distributer`.`itemtwoqty`, `tb_promo_distributer`.`pricetwo`,`tb_promotion_active`.`fromdate`,`tb_promotion_active`.`untildate`,`tb_promotion_active`.`Comments`, `tb_promo_distributer`.`state` FROM `base`.`tb_promotion`,`base`.`tb_promo_distributer`,`base`.`tb_promotion_active`, `base`.`tbl_user` ,`base`.`tb_stock`WHERE `tb_promotion`.`idtb_promotion` = `tb_promo_distributer`.`promo_id` AND `tb_promotion_active`.`idtb_promotion_active` = `tb_promo_distributer`.`promo_id` AND `tbl_user`.`status` = 'On' AND `tbl_user`.`role` = 'DISTRIBUTER'  AND `tb_promo_distributer`.`itemone` = `tb_stock`.`idtb_stock` AND `tb_promo_distributer`.`itemtwo` = `tb_stock`.`idtb_stock` AND `tb_promo_distributer`.`dist_id` =`tbl_user`.`idtbl_user` AND `tb_promo_distributer`.`state`  = 'ONSALES'AND `tb_promotion`.`idtb_promotion` = '"+ promotion_id + "'", connect);
+            MySqlDataAdapter dAdpter = new MySqlDataAdapter("SELECT `tbl_user`.`firstname`,`tb_promotion`.`promoname`,`tb_promotion`.`promomach`,`tb_promotion`.`promodes`,`tb_promo_distributer`.`itemone`,`tb_stock`.`name`,`tb_promo_distributer`.`priceone`,`tb_promo_distributer`.`itemoneqty`,`tb_promo_distributer`.`itemtwo`,`tb_stock`.`name`,`tb_promo_distributer`.`itemtwoqty`, `tb_promo_distributer`.`pricetwo`,`tb_promotion_active`.`fromdate`,`tb_promotion_active`.`untildate`,`tb_promotion_active`.`Comments`, `tb_promo_distributer`.`state` FROM `base`.`tb_promotion`,`base`.`tb_promo_distributer`,`base`.`tb_promotion_active`, `base`.`tbl_user` ,`base`.`tb_stock`WHERE `tb_promotion_active`.`idtb_promotion_active` = `tb_promo_distributer`.`promo_id` AND `tbl_user`.`status` = 'On' AND `tbl_user`.`role` = 'DISTRIBUTER'  AND `tb_promo_distributer`.`itemone` = `tb_stock`.`idtb_stock` AND `tb_promo_distributer`.`itemtwo` = `tb_stock`.`idtb_stock` AND `tb_promo_distributer`.`dist_id` =`tbl_user`.`idtbl_user` AND `tb_promo_distributer`.`state`  = 'ONSALES'AND `tb_promo_distributer`.`promo_id`  = '" + promotion_id + "'", connect);
 
             DataTable dTable = new DataTable();
             dAdpter.Fill(dTable);
@@ -88,7 +88,7 @@ namespace PrimeTrade
 
                 MySqlCommand command1 = new MySqlCommand();
                 connect.Open();
-                command.Connection = connect;
+                command1.Connection = connect;
 
                 command1.CommandText = "get_tot_item2_sold_qty";
                 command1.CommandType = CommandType.StoredProcedure;

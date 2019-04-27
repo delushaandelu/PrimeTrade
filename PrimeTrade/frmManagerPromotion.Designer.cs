@@ -262,6 +262,7 @@
             this.Controls.Add(this.materialLabel3);
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.materialLabel2);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Name = "frmManagerPromotion";
             this.Text = "Promotion ";
             this.ResumeLayout(false);

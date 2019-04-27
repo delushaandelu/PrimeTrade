@@ -41,7 +41,7 @@ namespace PrimeTrade
             listView2.Items.Clear();
             listView2.View = View.Details;
 
-            MySqlDataAdapter dAdpter = new MySqlDataAdapter("select proa.idtb_promotion_active,pro.promoname,pro.promomach,pro.promodes,proa.fromdate, proa.untildate, proa.Comments from tb_promotion pro,tb_promotion_active proa where pro.idtb_promotion = proa.promoid", connect);
+            MySqlDataAdapter dAdpter = new MySqlDataAdapter("select distinct proa.idtb_promotion_active,pro.promoname,pro.promomach,pro.promodes,proa.fromdate, proa.untildate, proa.Comments from tb_promotion pro,tb_promotion_active proa where pro.idtb_promotion = proa.promoid", connect);
 
             DataTable dTable = new DataTable();
             dAdpter.Fill(dTable);
@@ -67,7 +67,7 @@ namespace PrimeTrade
             listView1.Items.Clear();
             listView1.View = View.Details;
 
-            MySqlDataAdapter dAdpter = new MySqlDataAdapter("SELECT idtbl_user,firstname,lasename,email,address,telephone,joindate,nic FROM tbl_user WHERE status = 'On' AND role = 'DISTRIBUTER';", connect);
+            MySqlDataAdapter dAdpter = new MySqlDataAdapter("SELECT distinct idtbl_user,firstname,lasename,email,address,telephone,joindate,nic FROM tbl_user WHERE status = 'On' AND role = 'DISTRIBUTER';", connect);
 
             DataTable dTable = new DataTable();
             dAdpter.Fill(dTable);
@@ -198,7 +198,7 @@ namespace PrimeTrade
             listView3.Items.Clear();
             listView3.View = View.Details;
 
-            MySqlDataAdapter dAdpter = new MySqlDataAdapter("SELECT distinct `tbl_user`.`firstname`,`tb_promotion`.`promoname`,`tb_promotion`.`promomach`,`tb_promotion`.`promodes`,`tb_promotion_active`.`fromdate`,`tb_promotion_active`.`untildate`,`tb_promotion_active`.`Comments` FROM `base`.`tb_promotion`,`base`.`tb_promo_distributer`,`base`.`tb_promotion_active`, `base`.`tbl_user` WHERE `tb_promotion_active`.`idtb_promotion_active` = `tb_promo_distributer`.`promo_id` AND `tbl_user`.`status` = 'On' AND `tbl_user`.`role` = 'DISTRIBUTER' AND `tb_promo_distributer`.`dist_id` =`tbl_user`.`idtbl_user` AND `tb_promo_distributer`.`dist_id` = '" + user_id + "';", connect);
+            MySqlDataAdapter dAdpter = new MySqlDataAdapter("SELECT distinct `tb_promo_distributer`.`promo_id` ,`tbl_user`.`firstname`,`tb_promotion`.`promoname`,`tb_promotion`.`promomach`,`tb_promotion`.`promodes`,`tb_promotion_active`.`fromdate`,`tb_promotion_active`.`untildate`,`tb_promotion_active`.`Comments` FROM `base`.`tb_promotion`,`base`.`tb_promo_distributer`,`base`.`tb_promotion_active`, `base`.`tbl_user` WHERE `tb_promotion_active`.`idtb_promotion_active` = `tb_promo_distributer`.`promo_id` AND  `tb_promo_distributer`.`promo_id` = `tb_promo_distributer`.`promo_id` AND `tbl_user`.`status` = 'On' AND `tbl_user`.`role` = 'DISTRIBUTER' AND `tb_promo_distributer`.`dist_id` =`tbl_user`.`idtbl_user` AND `tb_promo_distributer`.`dist_id` = '" + user_id + "';", connect);
 
             DataTable dTable = new DataTable();
             dAdpter.Fill(dTable);
@@ -230,7 +230,7 @@ namespace PrimeTrade
             listView4.Items.Clear();
             listView4.View = View.Details;
 
-            MySqlDataAdapter dAdpter = new MySqlDataAdapter("SELECT `tb_promo_distributer`.`idtb_promo_distributer`,`tbl_user`.`firstname`,`tb_promotion`.`promoname`,`tb_promotion`.`promomach`,`tb_promotion`.`promodes`,`tb_promo_distributer`.`itemone`,`tb_promo_distributer`.`itemoneqty`,`tb_promo_distributer`.`itemtwo`,`tb_promo_distributer`.`itemtwoqty`,`tb_promotion_active`.`fromdate`,`tb_promotion_active`.`untildate`,`tb_promotion_active`.`Comments`, `tb_promo_distributer`.`state` FROM `base`.`tb_promotion`,`base`.`tb_promo_distributer`,`base`.`tb_promotion_active`, `base`.`tbl_user` WHERE `tb_promotion`.`idtb_promotion` = `tb_promo_distributer`.`promo_id` AND `tb_promotion_active`.`idtb_promotion_active` = `tb_promo_distributer`.`promo_id` AND `tbl_user`.`status` = 'On' AND `tbl_user`.`role` = 'DISTRIBUTER' AND `tb_promo_distributer`.`dist_id` =`tbl_user`.`idtbl_user`AND `tb_promo_distributer`.`state` = 'NEW' ; ", connect);
+            MySqlDataAdapter dAdpter = new MySqlDataAdapter("SELECT distinct `tb_promo_distributer`.`idtb_promo_distributer`,`tbl_user`.`firstname`,`tb_promotion`.`promoname`,`tb_promotion`.`promomach`,`tb_promotion`.`promodes`,`tb_promo_distributer`.`itemone`,`tb_promo_distributer`.`itemoneqty`,`tb_promo_distributer`.`itemtwo`,`tb_promo_distributer`.`itemtwoqty`,`tb_promotion_active`.`fromdate`,`tb_promotion_active`.`untildate`,`tb_promotion_active`.`Comments`, `tb_promo_distributer`.`state` FROM `base`.`tb_promotion`,`base`.`tb_promo_distributer`,`base`.`tb_promotion_active`, `base`.`tbl_user` WHERE `tb_promotion`.`idtb_promotion` = `tb_promo_distributer`.`promo_id` AND `tb_promotion_active`.`idtb_promotion_active` = `tb_promo_distributer`.`promo_id` AND `tbl_user`.`status` = 'On' AND `tbl_user`.`role` = 'DISTRIBUTER' AND `tb_promo_distributer`.`dist_id` =`tbl_user`.`idtbl_user`AND `tb_promo_distributer`.`state` = 'NEW' ; ", connect);
 
             DataTable dTable = new DataTable();
             dAdpter.Fill(dTable);
@@ -364,11 +364,23 @@ namespace PrimeTrade
         {
             txtqty1.Enabled = true;
             listView5.Items[2].Selected = true;
+
+            string itemid = cmbitem1.SelectedItem.ToString();
+            int output = 0;
+            output = getDistributionPrice(itemid);
+
+            txtprice1.Text = output.ToString();
         }
 
         private void cmbitem2_SelectedIndexChanged(object sender, EventArgs e)
         {
             txtqty2.Enabled = true;
+
+            string itemid = cmbitem2.SelectedItem.ToString();
+            int output = 0;
+            output = getDistributionPrice(itemid);
+
+            txtprice2.Text = output.ToString();
         }
 
         private void materialLabel7_Click(object sender, EventArgs e)
@@ -400,7 +412,7 @@ namespace PrimeTrade
             listView4.Items.Clear();
             listView4.View = View.Details;
 
-            MySqlDataAdapter dAdpter = new MySqlDataAdapter("SELECT `tb_promo_distributer`.`idtb_promo_distributer`,`tbl_user`.`firstname`,`tb_promotion`.`promoname`,`tb_promotion`.`promomach`,`tb_promotion`.`promodes`,`tb_promo_distributer`.`itemone`,`tb_promo_distributer`.`itemoneqty`,`tb_promo_distributer`.`itemtwo`,`tb_promo_distributer`.`itemtwoqty`,`tb_promotion_active`.`fromdate`,`tb_promotion_active`.`untildate`,`tb_promotion_active`.`Comments`, `tb_promo_distributer`.`state` FROM `base`.`tb_promotion`,`base`.`tb_promo_distributer`,`base`.`tb_promotion_active`, `base`.`tbl_user` WHERE  `tb_promotion_active`.`idtb_promotion_active` = `tb_promo_distributer`.`promo_id` AND `tbl_user`.`status` = 'On' AND `tbl_user`.`role` = 'DISTRIBUTER' AND `tb_promo_distributer`.`dist_id` =`tbl_user`.`idtbl_user` AND `tbl_user`.`firstname` = '"+cmbdist.Text+ "' ; ", connect);
+            MySqlDataAdapter dAdpter = new MySqlDataAdapter("SELECT distinct `tb_promo_distributer`.`idtb_promo_distributer`,`tbl_user`.`firstname`,`tb_promotion`.`promoname`,`tb_promotion`.`promomach`,`tb_promotion`.`promodes`,`tb_promo_distributer`.`itemone`,`tb_promo_distributer`.`itemoneqty`,`tb_promo_distributer`.`itemtwo`,`tb_promo_distributer`.`itemtwoqty`,`tb_promotion_active`.`fromdate`,`tb_promotion_active`.`untildate`,`tb_promotion_active`.`Comments`, `tb_promo_distributer`.`state` FROM `base`.`tb_promotion`,`base`.`tb_promo_distributer`,`base`.`tb_promotion_active`, `base`.`tbl_user` WHERE `tb_promotion_active`.`idtb_promotion_active` = `tb_promo_distributer`.`promo_id` AND `tbl_user`.`status` = 'On' AND `tbl_user`.`role` = 'DISTRIBUTER' AND `tb_promo_distributer`.`dist_id` =`tbl_user`.`idtbl_user` AND `tbl_user`.`firstname` = '" + cmbdist.Text+ "' ; ", connect);
 
             DataTable dTable = new DataTable();
             dAdpter.Fill(dTable);
@@ -493,6 +505,32 @@ namespace PrimeTrade
                 lblstate.ResetText();
                 btndeliver.Enabled = true;
             }
+        }
+
+        static int getDistributionPrice(string itemId)
+        {
+            int priceFinal;
+
+            MySqlCommand command = new MySqlCommand();
+            MySqlConnection connect = new MySqlConnection(connections.classConnection.ConnectNow("GoogleCloude"));
+            connect.Open();
+            command.Connection = connect;
+
+            command.CommandText = "get_distribution_price";
+            command.CommandType = CommandType.StoredProcedure;
+
+            command.Parameters.AddWithValue("@stockid", itemId);
+            command.Parameters["@stockid"].Direction = ParameterDirection.Input;
+
+            command.Parameters.AddWithValue("@price", MySqlDbType.Int32);
+            command.Parameters["@price"].Direction = ParameterDirection.Output;
+
+            command.ExecuteNonQuery();
+
+            int.TryParse(command.Parameters["@price"].Value.ToString(), out priceFinal);
+            connect.Close();
+
+            return priceFinal;
         }
 
         private void txtqty2_Leave(object sender, EventArgs e)

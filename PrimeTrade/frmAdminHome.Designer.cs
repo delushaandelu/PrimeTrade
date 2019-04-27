@@ -427,15 +427,18 @@
             // metroTile1
             // 
             this.metroTile1.ActiveControl = null;
+            this.metroTile1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.metroTile1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.metroTile1.Location = new System.Drawing.Point(26, 85);
             this.metroTile1.Name = "metroTile1";
+            this.metroTile1.PaintTileCount = false;
             this.metroTile1.Size = new System.Drawing.Size(80, 81);
             this.metroTile1.TabIndex = 4;
             this.metroTile1.Text = "Add User";
             this.metroTile1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.metroTile1.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile1.TileImage")));
-            this.metroTile1.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.metroTile1.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile1.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
             this.metroTile1.UseSelectable = true;
             this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
             // 

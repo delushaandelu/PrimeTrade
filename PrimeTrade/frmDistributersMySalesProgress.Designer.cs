@@ -59,7 +59,7 @@
             this.chartSales.Legends.Add(legend1);
             this.chartSales.Location = new System.Drawing.Point(41, 138);
             this.chartSales.Name = "chartSales";
-            this.chartSales.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SemiTransparent;
+            this.chartSales.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Main Item Qty";

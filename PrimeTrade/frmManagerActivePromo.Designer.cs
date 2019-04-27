@@ -49,14 +49,14 @@
             this.txtid = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.btnRefresh = new MetroFramework.Controls.MetroButton();
             this.listView2 = new System.Windows.Forms.ListView();
-            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.materialRaisedButton3 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.SuspendLayout();
             // 
@@ -188,6 +188,8 @@
             // btnaddstock
             // 
             this.btnaddstock.Depth = 0;
+            this.btnaddstock.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnaddstock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnaddstock.Location = new System.Drawing.Point(993, 135);
             this.btnaddstock.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnaddstock.Name = "btnaddstock";
@@ -301,20 +303,6 @@
             this.listView2.View = System.Windows.Forms.View.Details;
             this.listView2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listView2_MouseClick);
             // 
-            // materialLabel6
-            // 
-            this.materialLabel6.AutoSize = true;
-            this.materialLabel6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.materialLabel6.Depth = 0;
-            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel6.Location = new System.Drawing.Point(17, 305);
-            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel6.Name = "materialLabel6";
-            this.materialLabel6.Size = new System.Drawing.Size(188, 19);
-            this.materialLabel6.TabIndex = 74;
-            this.materialLabel6.Text = "All Active promotion Plans";
-            // 
             // columnHeader9
             // 
             this.columnHeader9.Text = "Active Promotion Plan Code";
@@ -340,6 +328,24 @@
             this.columnHeader13.Text = "Comments";
             this.columnHeader13.Width = 120;
             // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "promoid";
+            // 
+            // materialLabel6
+            // 
+            this.materialLabel6.AutoSize = true;
+            this.materialLabel6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.materialLabel6.Depth = 0;
+            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel6.Location = new System.Drawing.Point(17, 305);
+            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel6.Name = "materialLabel6";
+            this.materialLabel6.Size = new System.Drawing.Size(188, 19);
+            this.materialLabel6.TabIndex = 74;
+            this.materialLabel6.Text = "All Active promotion Plans";
+            // 
             // metroButton1
             // 
             this.metroButton1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -350,10 +356,6 @@
             this.metroButton1.TabIndex = 76;
             this.metroButton1.UseSelectable = true;
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "promoid";
             // 
             // materialRaisedButton3
             // 

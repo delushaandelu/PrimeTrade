@@ -163,7 +163,9 @@ namespace PrimeTrade
             }
             else if (window == "Node17")
             {
-                string x = "x";
+                frmManagerViewPromotionByState form = new frmManagerViewPromotionByState();
+                form.MdiParent = this;
+                form.Show();
             }
             else if (window == "Node18")
             {
@@ -209,5 +211,11 @@ namespace PrimeTrade
             }
         }
 
+        private void btnSearchTeacher_Click(object sender, EventArgs e)
+        {
+            ManagerViewPromotionByDistributers form = new ManagerViewPromotionByDistributers();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

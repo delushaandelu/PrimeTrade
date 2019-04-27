@@ -34,15 +34,18 @@
             this.txtpassword = new MetroFramework.Controls.MetroTextBox();
             this.cmbusertype = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(149, 63);
+            this.pictureBox1.Location = new System.Drawing.Point(476, 123);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(92, 82);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -55,7 +58,7 @@
             // 
             // 
             this.txtusername.CustomButton.Image = null;
-            this.txtusername.CustomButton.Location = new System.Drawing.Point(174, 2);
+            this.txtusername.CustomButton.Location = new System.Drawing.Point(228, 2);
             this.txtusername.CustomButton.Name = "";
             this.txtusername.CustomButton.Size = new System.Drawing.Size(25, 25);
             this.txtusername.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -64,7 +67,7 @@
             this.txtusername.CustomButton.UseSelectable = true;
             this.txtusername.CustomButton.Visible = false;
             this.txtusername.Lines = new string[0];
-            this.txtusername.Location = new System.Drawing.Point(102, 181);
+            this.txtusername.Location = new System.Drawing.Point(502, 210);
             this.txtusername.MaxLength = 32767;
             this.txtusername.Name = "txtusername";
             this.txtusername.PasswordChar = '\0';
@@ -74,7 +77,7 @@
             this.txtusername.SelectionLength = 0;
             this.txtusername.SelectionStart = 0;
             this.txtusername.ShortcutsEnabled = true;
-            this.txtusername.Size = new System.Drawing.Size(202, 30);
+            this.txtusername.Size = new System.Drawing.Size(256, 30);
             this.txtusername.TabIndex = 2;
             this.txtusername.Tag = "";
             this.txtusername.UseSelectable = true;
@@ -88,7 +91,7 @@
             // 
             // 
             this.txtpassword.CustomButton.Image = null;
-            this.txtpassword.CustomButton.Location = new System.Drawing.Point(174, 2);
+            this.txtpassword.CustomButton.Location = new System.Drawing.Point(228, 2);
             this.txtpassword.CustomButton.Name = "";
             this.txtpassword.CustomButton.Size = new System.Drawing.Size(25, 25);
             this.txtpassword.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -97,7 +100,7 @@
             this.txtpassword.CustomButton.UseSelectable = true;
             this.txtpassword.CustomButton.Visible = false;
             this.txtpassword.Lines = new string[0];
-            this.txtpassword.Location = new System.Drawing.Point(102, 220);
+            this.txtpassword.Location = new System.Drawing.Point(502, 246);
             this.txtpassword.MaxLength = 32767;
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.PasswordChar = '*';
@@ -107,7 +110,7 @@
             this.txtpassword.SelectionLength = 0;
             this.txtpassword.SelectionStart = 0;
             this.txtpassword.ShortcutsEnabled = true;
-            this.txtpassword.Size = new System.Drawing.Size(202, 30);
+            this.txtpassword.Size = new System.Drawing.Size(256, 30);
             this.txtpassword.TabIndex = 4;
             this.txtpassword.UseSelectable = true;
             this.txtpassword.WaterMark = "Password";
@@ -124,9 +127,9 @@
             "SYSTEM ADMIN",
             "SALES",
             "DISTRIBUTER"});
-            this.cmbusertype.Location = new System.Drawing.Point(102, 273);
+            this.cmbusertype.Location = new System.Drawing.Point(502, 302);
             this.cmbusertype.Name = "cmbusertype";
-            this.cmbusertype.Size = new System.Drawing.Size(202, 29);
+            this.cmbusertype.Size = new System.Drawing.Size(256, 29);
             this.cmbusertype.TabIndex = 5;
             this.cmbusertype.UseSelectable = true;
             // 
@@ -134,27 +137,16 @@
             // 
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Small;
-            this.metroLabel3.Location = new System.Drawing.Point(102, 255);
+            this.metroLabel3.Location = new System.Drawing.Point(502, 284);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(56, 15);
             this.metroLabel3.TabIndex = 6;
             this.metroLabel3.Text = "User Type";
             // 
-            // metroButton1
-            // 
-            this.metroButton1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.metroButton1.Location = new System.Drawing.Point(306, 431);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(69, 24);
-            this.metroButton1.TabIndex = 8;
-            this.metroButton1.Text = "Cancel";
-            this.metroButton1.UseSelectable = true;
-            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
-            // 
             // metroTile1
             // 
             this.metroTile1.ActiveControl = null;
-            this.metroTile1.Location = new System.Drawing.Point(149, 331);
+            this.metroTile1.Location = new System.Drawing.Point(636, 337);
             this.metroTile1.Name = "metroTile1";
             this.metroTile1.Size = new System.Drawing.Size(122, 38);
             this.metroTile1.TabIndex = 9;
@@ -164,14 +156,46 @@
             this.metroTile1.UseSelectable = true;
             this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(2, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(426, 479);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(563, 139);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(120, 19);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "PRIME TRADE";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(563, 158);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(189, 16);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Empowering Business Process";
+            // 
             // frmUserlogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(398, 467);
+            this.ClientSize = new System.Drawing.Size(841, 482);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.metroTile1);
-            this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.cmbusertype);
             this.Controls.Add(this.txtpassword);
@@ -184,6 +208,7 @@
             this.ShadowType = MetroFramework.Forms.MetroFormShadowType.None;
             this.Text = "PRIME TRADE";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,7 +221,9 @@
         private MetroFramework.Controls.MetroTextBox txtpassword;
         private MetroFramework.Controls.MetroComboBox cmbusertype;
         private MetroFramework.Controls.MetroLabel metroLabel3;
-        private MetroFramework.Controls.MetroButton metroButton1;
         private MetroFramework.Controls.MetroTile metroTile1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
