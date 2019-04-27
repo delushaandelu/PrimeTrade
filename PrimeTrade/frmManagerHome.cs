@@ -21,6 +21,10 @@ namespace PrimeTrade
         {
             InitializeComponent();
 
+            frmManagerDashboard form = new frmManagerDashboard();
+            form.MdiParent = this;
+            form.Show();
+
             foreach (Control ctl in this.Controls)
             {
                 try

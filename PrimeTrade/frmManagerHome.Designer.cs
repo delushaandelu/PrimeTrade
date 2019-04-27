@@ -118,7 +118,7 @@
             this.fileToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(20, 90);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(1211, 24);
+            this.menuStrip.Size = new System.Drawing.Size(1423, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
             // 
@@ -165,9 +165,9 @@
             // 
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblstatus});
-            this.statusStrip.Location = new System.Drawing.Point(20, 927);
+            this.statusStrip.Location = new System.Drawing.Point(20, 834);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(1211, 22);
+            this.statusStrip.Size = new System.Drawing.Size(1423, 22);
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "StatusStrip";
             // 
@@ -240,7 +240,7 @@
             treeNode17,
             treeNode24});
             this.treeView1.SelectedImageKey = "tab.png";
-            this.treeView1.Size = new System.Drawing.Size(223, 781);
+            this.treeView1.Size = new System.Drawing.Size(223, 688);
             this.treeView1.TabIndex = 10;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             // 
@@ -259,7 +259,7 @@
             this.tabControl1.Location = new System.Drawing.Point(20, 114);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(237, 813);
+            this.tabControl1.Size = new System.Drawing.Size(237, 720);
             this.tabControl1.TabIndex = 12;
             // 
             // tabPage1
@@ -503,7 +503,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(229, 787);
+            this.tabPage2.Size = new System.Drawing.Size(229, 694);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Navigator";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -542,7 +542,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1251, 969);
+            this.ClientSize = new System.Drawing.Size(1463, 876);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox1);
