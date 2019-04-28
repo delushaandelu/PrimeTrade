@@ -106,5 +106,10 @@ namespace PrimeTrade
             }
 
         }
+
+        private void buttonAdv2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

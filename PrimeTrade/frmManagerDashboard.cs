@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework;
 using MetroFramework.Fonts;
 using MetroFramework.Forms;
 using MySql.Data.MySqlClient;
@@ -31,7 +32,7 @@ namespace PrimeTrade
             getStockRage();
             getDistributers();
             getAreaCount();
-            getSalesRate();
+            //etSalesRate();
         }
 
         public void viewPromotions()
@@ -159,37 +160,215 @@ namespace PrimeTrade
             tileArea.Text = item2.ToString();
         }
 
-        private void getSalesRate()
+        //private void getSalesRate()
+        //{
+        //    double range = 0;
+        //    int total = 0;
+        //    int count = 0;
+
+        //    MySqlCommand command = new MySqlCommand();
+        //    connect.Open();
+        //    command.Connection = connect;
+
+        //    command.CommandText = "get_sales_rate";
+        //    command.CommandType = CommandType.StoredProcedure;
+
+        //    command.Parameters.AddWithValue("@total", MySqlDbType.String);
+        //    command.Parameters["@total"].Direction = ParameterDirection.Output;
+
+        //    command.Parameters.AddWithValue("@counts", MySqlDbType.String);
+        //    command.Parameters["@counts"].Direction = ParameterDirection.Output;
+
+        //    command.ExecuteNonQuery();
+
+        //    int.TryParse(command.Parameters["@total"].Value.ToString(), out total);
+        //    int.TryParse(command.Parameters["@counts"].Value.ToString(), out count);
+
+        //    connect.Close();
+
+        //    range = (total / count) / 100;
+
+        //    tileSalesRate.Text = range.ToString();
+
+
+        //}
+
+        ////AI calculation
+
+        //private void GetBestProduct()
+        //{
+        //    double range = 0;
+        //    int total = 0;
+        //    int count = 0;
+
+        //    MySqlCommand command = new MySqlCommand();
+        //    connect.Open();
+        //    command.Connection = connect;
+
+        //    command.CommandText = "GetBestProduct";
+        //    command.CommandType = CommandType.StoredProcedure;
+
+        //    command.Parameters.AddWithValue("@total", MySqlDbType.String);
+        //    command.Parameters["@total"].Direction = ParameterDirection.Output;
+
+        //    command.Parameters.AddWithValue("@counts", MySqlDbType.String);
+        //    command.Parameters["@counts"].Direction = ParameterDirection.Output;
+
+        //    command.ExecuteNonQuery();
+
+        //    int.TryParse(command.Parameters["@total"].Value.ToString(), out total);
+        //    int.TryParse(command.Parameters["@counts"].Value.ToString(), out count);
+
+        //    connect.Close();
+
+        //}
+
+        //private void GetFinaceData()
+        //{
+        //    double range = 0;
+        //    int total = 0;
+        //    int count = 0;
+
+        //    MySqlCommand command = new MySqlCommand();
+        //    connect.Open();
+        //    command.Connection = connect;
+
+        //    command.CommandText = "GetFinaceData";
+        //    command.CommandType = CommandType.StoredProcedure;
+
+        //    command.Parameters.AddWithValue("@total", MySqlDbType.String);
+        //    command.Parameters["@total"].Direction = ParameterDirection.Output;
+
+        //    command.Parameters.AddWithValue("@counts", MySqlDbType.String);
+        //    command.Parameters["@counts"].Direction = ParameterDirection.Output;
+
+        //    command.ExecuteNonQuery();
+
+        //    int.TryParse(command.Parameters["@total"].Value.ToString(), out total);
+        //    int.TryParse(command.Parameters["@counts"].Value.ToString(), out count);
+
+        //    connect.Close();
+
+        //}
+
+        //private void GenerateRemainingStock()
+        //{
+        //    double range = 0;
+        //    int total = 0;
+        //    int count = 0;
+
+        //    MySqlCommand command = new MySqlCommand();
+        //    connect.Open();
+        //    command.Connection = connect;
+
+        //    command.CommandText = "GenerateRemainingStock";
+        //    command.CommandType = CommandType.StoredProcedure;
+
+        //    command.Parameters.AddWithValue("@total", MySqlDbType.String);
+        //    command.Parameters["@total"].Direction = ParameterDirection.Output;
+
+        //    command.Parameters.AddWithValue("@counts", MySqlDbType.String);
+        //    command.Parameters["@counts"].Direction = ParameterDirection.Output;
+
+        //    command.ExecuteNonQuery();
+
+        //    int.TryParse(command.Parameters["@total"].Value.ToString(), out total);
+        //    int.TryParse(command.Parameters["@counts"].Value.ToString(), out count);
+
+        //    connect.Close();
+
+        //}
+
+        //private void GenerateRemainindays()
+        //{
+        //    double range = 0;
+        //    int total = 0;
+        //    int count = 0;
+
+        //    MySqlCommand command = new MySqlCommand();
+        //    connect.Open();
+        //    command.Connection = connect;
+
+        //    command.CommandText = "GenerateRemainindays";
+        //    command.CommandType = CommandType.StoredProcedure;
+
+        //    command.Parameters.AddWithValue("@total", MySqlDbType.String);
+        //    command.Parameters["@total"].Direction = ParameterDirection.Output;
+
+        //    command.Parameters.AddWithValue("@counts", MySqlDbType.String);
+        //    command.Parameters["@counts"].Direction = ParameterDirection.Output;
+
+        //    command.ExecuteNonQuery();
+
+        //    int.TryParse(command.Parameters["@total"].Value.ToString(), out total);
+        //    int.TryParse(command.Parameters["@counts"].Value.ToString(), out count);
+
+        //    connect.Close();
+
+        //}
+
+        //private void AutoCalculate()
+        //{
+        //    double range = 0;
+        //    int total = 0;
+        //    int count = 0;
+
+        //    MySqlCommand command = new MySqlCommand();
+        //    connect.Open();
+        //    command.Connection = connect;
+
+        //    command.CommandText = "AutoCalculate";
+        //    command.CommandType = CommandType.StoredProcedure;
+
+        //    command.Parameters.AddWithValue("@total", MySqlDbType.String);
+        //    command.Parameters["@total"].Direction = ParameterDirection.Output;
+
+        //    command.Parameters.AddWithValue("@counts", MySqlDbType.String);
+        //    command.Parameters["@counts"].Direction = ParameterDirection.Output;
+
+        //    command.ExecuteNonQuery();
+
+        //    int.TryParse(command.Parameters["@total"].Value.ToString(), out total);
+        //    int.TryParse(command.Parameters["@counts"].Value.ToString(), out count);
+
+        //    connect.Close();
+
+        //}
+
+        //private void GetLineChartData()
+        //{
+        //    double range = 0;
+        //    int total = 0;
+        //    int count = 0;
+
+        //    MySqlCommand command = new MySqlCommand();
+        //    connect.Open();
+        //    command.Connection = connect;
+
+        //    command.CommandText = "GetLineChartData";
+        //    command.CommandType = CommandType.StoredProcedure;
+
+        //    command.Parameters.AddWithValue("@total", MySqlDbType.String);
+        //    command.Parameters["@total"].Direction = ParameterDirection.Output;
+
+        //    command.Parameters.AddWithValue("@counts", MySqlDbType.String);
+        //    command.Parameters["@counts"].Direction = ParameterDirection.Output;
+
+        //    command.ExecuteNonQuery();
+
+        //    int.TryParse(command.Parameters["@total"].Value.ToString(), out total);
+        //    int.TryParse(command.Parameters["@counts"].Value.ToString(), out count);
+
+        //    connect.Close();
+
+        //}
+
+        private void metroButton2_Click(object sender, EventArgs e)
         {
-            double range = 0;
-            int total = 0;
-            int count = 0;
-
-            MySqlCommand command = new MySqlCommand();
-            connect.Open();
-            command.Connection = connect;
-
-            command.CommandText = "get_sales_rate";
-            command.CommandType = CommandType.StoredProcedure;
-
-            command.Parameters.AddWithValue("@total", MySqlDbType.String);
-            command.Parameters["@total"].Direction = ParameterDirection.Output;
-
-            command.Parameters.AddWithValue("@counts", MySqlDbType.String);
-            command.Parameters["@counts"].Direction = ParameterDirection.Output;
-
-            command.ExecuteNonQuery();
-
-            int.TryParse(command.Parameters["@total"].Value.ToString(), out total);
-            int.TryParse(command.Parameters["@counts"].Value.ToString(), out count);
-
-            connect.Close();
-
-            range = (total / count) / 100;
-
-            tileSalesRate.Text = range.ToString();
-
-
+          MetroMessageBox.Show(this, "No Any lates Notification Found.", "Notification !", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
+
+    
+

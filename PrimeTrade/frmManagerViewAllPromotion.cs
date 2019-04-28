@@ -10,11 +10,14 @@ using System.Windows.Forms;
 using MaterialSkin.Controls;
 using MaterialSkin.Animations;
 using System.Configuration;
+using MetroFramework;
+using MetroFramework.Fonts;
 using MySql.Data.MySqlClient;
+using MetroFramework.Forms;
 
 namespace PrimeTrade
 {
-    public partial class frmManagerViewAllPromotion : MaterialForm
+    public partial class frmManagerViewAllPromotion : MetroForm
     {
         MySqlConnection connect = new MySqlConnection(connections.classConnection.ConnectNow("GoogleCloude"));
         public frmManagerViewAllPromotion()
@@ -52,6 +55,11 @@ namespace PrimeTrade
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             viewAllPromotion();
+        }
+
+        private void buttonAdv2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

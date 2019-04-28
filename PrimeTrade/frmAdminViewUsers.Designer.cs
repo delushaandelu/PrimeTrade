@@ -42,14 +42,18 @@
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnRefresh = new MetroFramework.Controls.MetroButton();
             this.txtsearch = new MetroFramework.Controls.MetroTextBox();
             this.cntDeleteUser = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.removeUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contectActiveStatus = new System.Windows.Forms.ToolStripMenuItem();
-            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label1 = new System.Windows.Forms.Label();
+            this.splashPanel1 = new Syncfusion.Windows.Forms.Tools.SplashPanel();
+            this.buttonAdv2 = new Syncfusion.Windows.Forms.ButtonAdv();
             this.cntDeleteUser.SuspendLayout();
+            this.splashPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // listView1
@@ -69,7 +73,7 @@
             this.columnHeader11});
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
-            this.listView1.Location = new System.Drawing.Point(34, 114);
+            this.listView1.Location = new System.Drawing.Point(34, 135);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(1035, 310);
             this.listView1.TabIndex = 17;
@@ -131,10 +135,14 @@
             // 
             this.columnHeader9.Text = "user";
             // 
+            // columnHeader11
+            // 
+            this.columnHeader11.Text = "password";
+            // 
             // btnRefresh
             // 
             this.btnRefresh.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRefresh.BackgroundImage")));
-            this.btnRefresh.Location = new System.Drawing.Point(1021, 76);
+            this.btnRefresh.Location = new System.Drawing.Point(1021, 97);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(32, 32);
             this.btnRefresh.TabIndex = 18;
@@ -156,7 +164,7 @@
             this.txtsearch.CustomButton.UseSelectable = true;
             this.txtsearch.CustomButton.Visible = false;
             this.txtsearch.Lines = new string[0];
-            this.txtsearch.Location = new System.Drawing.Point(410, 76);
+            this.txtsearch.Location = new System.Drawing.Point(410, 97);
             this.txtsearch.MaxLength = 32767;
             this.txtsearch.Name = "txtsearch";
             this.txtsearch.PasswordChar = '\0';
@@ -205,15 +213,59 @@
             this.contectActiveStatus.Text = "Active Status";
             this.contectActiveStatus.Click += new System.EventHandler(this.contectActiveStatus_Click);
             // 
-            // columnHeader11
+            // label1
             // 
-            this.columnHeader11.Text = "password";
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(3, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(420, 45);
+            this.label1.TabIndex = 137;
+            this.label1.Text = "PRIME TRADE : ALL USERS";
+            // 
+            // splashPanel1
+            // 
+            this.splashPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.ForwardDiagonal, System.Drawing.Color.MediumOrchid, System.Drawing.Color.RoyalBlue);
+            this.splashPanel1.BeforeTouchSize = new System.Drawing.Size(1100, 63);
+            this.splashPanel1.Controls.Add(this.label1);
+            this.splashPanel1.DesktopAlignment = Syncfusion.Windows.Forms.Tools.SplashAlignment.LeftTop;
+            this.splashPanel1.DiscreetLocation = new System.Drawing.Point(0, 0);
+            this.splashPanel1.Location = new System.Drawing.Point(0, 4);
+            this.splashPanel1.Name = "splashPanel1";
+            this.splashPanel1.Size = new System.Drawing.Size(1100, 63);
+            this.splashPanel1.TabIndex = 132;
+            this.splashPanel1.Text = "splashPanel1";
+            // 
+            // buttonAdv2
+            // 
+            this.buttonAdv2.BeforeTouchSize = new System.Drawing.Size(73, 41);
+            this.buttonAdv2.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
+            this.buttonAdv2.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Browse;
+            this.buttonAdv2.Image = global::PrimeTrade.Properties.Resources.error;
+            this.buttonAdv2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAdv2.IsBackStageButton = false;
+            this.buttonAdv2.Location = new System.Drawing.Point(996, 451);
+            this.buttonAdv2.MetroColor = System.Drawing.Color.Aqua;
+            this.buttonAdv2.Name = "buttonAdv2";
+            this.buttonAdv2.OverrideFormManagedColor = true;
+            this.buttonAdv2.PushButton = true;
+            this.buttonAdv2.Size = new System.Drawing.Size(73, 41);
+            this.buttonAdv2.TabIndex = 137;
+            this.buttonAdv2.Text = "Exit";
+            this.buttonAdv2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonAdv2.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonAdv2.UseVisualStyle = false;
+            this.buttonAdv2.Click += new System.EventHandler(this.buttonAdv2_Click);
             // 
             // frmAdminViewUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1103, 465);
+            this.ClientSize = new System.Drawing.Size(1103, 503);
+            this.Controls.Add(this.buttonAdv2);
+            this.Controls.Add(this.splashPanel1);
             this.Controls.Add(this.txtsearch);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.listView1);
@@ -222,6 +274,8 @@
             this.ShadowType = MetroFramework.Forms.MetroFormShadowType.AeroShadow;
             this.Text = "PRIME TRADE : ALL USERS";
             this.cntDeleteUser.ResumeLayout(false);
+            this.splashPanel1.ResumeLayout(false);
+            this.splashPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -247,5 +301,8 @@
         private System.Windows.Forms.ToolStripMenuItem contectActiveStatus;
         private System.Windows.Forms.ToolStripMenuItem updateUserToolStripMenuItem;
         private System.Windows.Forms.ColumnHeader columnHeader11;
+        private System.Windows.Forms.Label label1;
+        private Syncfusion.Windows.Forms.Tools.SplashPanel splashPanel1;
+        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv2;
     }
 }

@@ -73,6 +73,7 @@
             treeNode22,
             treeNode23});
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmManagerHome));
+            Syncfusion.Windows.Forms.Tools.TreeNavigator.HeaderCollection headerCollection1 = new Syncfusion.Windows.Forms.Tools.TreeNavigator.HeaderCollection();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reconnectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -104,12 +105,35 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.treeNavigator1 = new Syncfusion.Windows.Forms.Tools.TreeNavigator();
+            this.treeMenuItem2 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.treeMenuItem3 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.treeMenuItem4 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.treeMenuItem5 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.treeMenuItem6 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.treeMenuItem7 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.treeMenuItem8 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.treeMenuItem9 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.treeMenuItem10 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.treeMenuItem11 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.treeMenuItem12 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.treeMenuItem13 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.treeMenuItem14 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.treeMenuItem1 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.treeMenuItem15 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.treeMenuItem16 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.treeMenuItem17 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.treeMenuItem18 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip
@@ -255,6 +279,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.tabControl1.Location = new System.Drawing.Point(20, 114);
             this.tabControl1.Name = "tabControl1";
@@ -281,7 +306,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(229, 787);
+            this.tabPage1.Size = new System.Drawing.Size(229, 694);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Shortcuts";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -538,11 +563,230 @@
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.treeNavigator1);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(229, 694);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // treeNavigator1
+            // 
+            headerCollection1.Font = new System.Drawing.Font("Arial", 8F);
+            this.treeNavigator1.Header = headerCollection1;
+            this.treeNavigator1.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeNavigator1.Items.Add(this.treeMenuItem2);
+            this.treeNavigator1.Items.Add(this.treeMenuItem3);
+            this.treeNavigator1.Items.Add(this.treeMenuItem4);
+            this.treeNavigator1.Items.Add(this.treeMenuItem5);
+            this.treeNavigator1.Items.Add(this.treeMenuItem6);
+            this.treeNavigator1.Items.Add(this.treeMenuItem7);
+            this.treeNavigator1.Items.Add(this.treeMenuItem8);
+            this.treeNavigator1.Items.Add(this.treeMenuItem9);
+            this.treeNavigator1.Items.Add(this.treeMenuItem10);
+            this.treeNavigator1.Items.Add(this.treeMenuItem11);
+            this.treeNavigator1.Items.Add(this.treeMenuItem12);
+            this.treeNavigator1.Items.Add(this.treeMenuItem13);
+            this.treeNavigator1.Location = new System.Drawing.Point(3, 6);
+            this.treeNavigator1.MinimumSize = new System.Drawing.Size(150, 150);
+            this.treeNavigator1.Name = "treeNavigator1";
+            this.treeNavigator1.NavigationMode = Syncfusion.Windows.Forms.Tools.NavigationMode.Default;
+            this.treeNavigator1.Size = new System.Drawing.Size(226, 711);
+            this.treeNavigator1.TabIndex = 127;
+            this.treeNavigator1.Text = "treeNavigator1";
+            // 
+            // treeMenuItem2
+            // 
+            this.treeMenuItem2.BackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem2.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem2.Items.Add(this.treeMenuItem1);
+            this.treeMenuItem2.Location = new System.Drawing.Point(0, 0);
+            this.treeMenuItem2.Name = "treeMenuItem2";
+            this.treeMenuItem2.Size = new System.Drawing.Size(224, 50);
+            this.treeMenuItem2.TabIndex = 1;
+            this.treeMenuItem2.Text = "treeMenuItem2";
+            // 
+            // treeMenuItem3
+            // 
+            this.treeMenuItem3.BackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem3.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem3.Items.Add(this.treeMenuItem15);
+            this.treeMenuItem3.Items.Add(this.treeMenuItem16);
+            this.treeMenuItem3.Location = new System.Drawing.Point(0, 52);
+            this.treeMenuItem3.Name = "treeMenuItem3";
+            this.treeMenuItem3.Size = new System.Drawing.Size(224, 50);
+            this.treeMenuItem3.TabIndex = 1;
+            this.treeMenuItem3.Text = "treeMenuItem3";
+            // 
+            // treeMenuItem4
+            // 
+            this.treeMenuItem4.BackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem4.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem4.Items.Add(this.treeMenuItem17);
+            this.treeMenuItem4.Location = new System.Drawing.Point(0, 104);
+            this.treeMenuItem4.Name = "treeMenuItem4";
+            this.treeMenuItem4.Size = new System.Drawing.Size(224, 50);
+            this.treeMenuItem4.TabIndex = 1;
+            this.treeMenuItem4.Text = "treeMenuItem4";
+            // 
+            // treeMenuItem5
+            // 
+            this.treeMenuItem5.BackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem5.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem5.Items.Add(this.treeMenuItem18);
+            this.treeMenuItem5.Location = new System.Drawing.Point(0, 156);
+            this.treeMenuItem5.Name = "treeMenuItem5";
+            this.treeMenuItem5.Size = new System.Drawing.Size(224, 50);
+            this.treeMenuItem5.TabIndex = 1;
+            this.treeMenuItem5.Text = "treeMenuItem5";
+            // 
+            // treeMenuItem6
+            // 
+            this.treeMenuItem6.BackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem6.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem6.Location = new System.Drawing.Point(0, 208);
+            this.treeMenuItem6.Name = "treeMenuItem6";
+            this.treeMenuItem6.Size = new System.Drawing.Size(224, 50);
+            this.treeMenuItem6.TabIndex = 1;
+            this.treeMenuItem6.Text = "treeMenuItem6";
+            // 
+            // treeMenuItem7
+            // 
+            this.treeMenuItem7.BackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem7.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem7.Location = new System.Drawing.Point(0, 260);
+            this.treeMenuItem7.Name = "treeMenuItem7";
+            this.treeMenuItem7.Size = new System.Drawing.Size(224, 50);
+            this.treeMenuItem7.TabIndex = 1;
+            this.treeMenuItem7.Text = "treeMenuItem7";
+            // 
+            // treeMenuItem8
+            // 
+            this.treeMenuItem8.BackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem8.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem8.Location = new System.Drawing.Point(0, 312);
+            this.treeMenuItem8.Name = "treeMenuItem8";
+            this.treeMenuItem8.Size = new System.Drawing.Size(224, 50);
+            this.treeMenuItem8.TabIndex = 1;
+            this.treeMenuItem8.Text = "treeMenuItem8";
+            // 
+            // treeMenuItem9
+            // 
+            this.treeMenuItem9.BackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem9.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem9.Location = new System.Drawing.Point(0, 364);
+            this.treeMenuItem9.Name = "treeMenuItem9";
+            this.treeMenuItem9.Size = new System.Drawing.Size(224, 50);
+            this.treeMenuItem9.TabIndex = 1;
+            this.treeMenuItem9.Text = "treeMenuItem9";
+            // 
+            // treeMenuItem10
+            // 
+            this.treeMenuItem10.BackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem10.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem10.Location = new System.Drawing.Point(0, 416);
+            this.treeMenuItem10.Name = "treeMenuItem10";
+            this.treeMenuItem10.Size = new System.Drawing.Size(224, 50);
+            this.treeMenuItem10.TabIndex = 1;
+            this.treeMenuItem10.Text = "treeMenuItem10";
+            // 
+            // treeMenuItem11
+            // 
+            this.treeMenuItem11.BackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem11.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem11.Location = new System.Drawing.Point(0, 468);
+            this.treeMenuItem11.Name = "treeMenuItem11";
+            this.treeMenuItem11.Size = new System.Drawing.Size(224, 50);
+            this.treeMenuItem11.TabIndex = 1;
+            this.treeMenuItem11.Text = "treeMenuItem11";
+            // 
+            // treeMenuItem12
+            // 
+            this.treeMenuItem12.BackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem12.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem12.Location = new System.Drawing.Point(0, 520);
+            this.treeMenuItem12.Name = "treeMenuItem12";
+            this.treeMenuItem12.Size = new System.Drawing.Size(224, 50);
+            this.treeMenuItem12.TabIndex = 1;
+            this.treeMenuItem12.Text = "treeMenuItem12";
+            // 
+            // treeMenuItem13
+            // 
+            this.treeMenuItem13.BackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem13.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem13.Location = new System.Drawing.Point(0, 572);
+            this.treeMenuItem13.Name = "treeMenuItem13";
+            this.treeMenuItem13.Size = new System.Drawing.Size(224, 50);
+            this.treeMenuItem13.TabIndex = 1;
+            this.treeMenuItem13.Text = "treeMenuItem13";
+            // 
+            // treeMenuItem14
+            // 
+            this.treeMenuItem14.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem14.Location = new System.Drawing.Point(0, 0);
+            this.treeMenuItem14.Name = "treeMenuItem14";
+            this.treeMenuItem14.Size = new System.Drawing.Size(0, 0);
+            this.treeMenuItem14.TabIndex = 0;
+            // 
+            // treeMenuItem1
+            // 
+            this.treeMenuItem1.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem1.Location = new System.Drawing.Point(0, 0);
+            this.treeMenuItem1.Name = "treeMenuItem1";
+            this.treeMenuItem1.Size = new System.Drawing.Size(0, 0);
+            this.treeMenuItem1.TabIndex = 0;
+            // 
+            // treeMenuItem15
+            // 
+            this.treeMenuItem15.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem15.Location = new System.Drawing.Point(0, 0);
+            this.treeMenuItem15.Name = "treeMenuItem15";
+            this.treeMenuItem15.Size = new System.Drawing.Size(0, 0);
+            this.treeMenuItem15.TabIndex = 0;
+            // 
+            // treeMenuItem16
+            // 
+            this.treeMenuItem16.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem16.Location = new System.Drawing.Point(0, 0);
+            this.treeMenuItem16.Name = "treeMenuItem16";
+            this.treeMenuItem16.Size = new System.Drawing.Size(0, 0);
+            this.treeMenuItem16.TabIndex = 0;
+            // 
+            // treeMenuItem17
+            // 
+            this.treeMenuItem17.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem17.Location = new System.Drawing.Point(0, 0);
+            this.treeMenuItem17.Name = "treeMenuItem17";
+            this.treeMenuItem17.Size = new System.Drawing.Size(0, 0);
+            this.treeMenuItem17.TabIndex = 0;
+            // 
+            // treeMenuItem18
+            // 
+            this.treeMenuItem18.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem18.Location = new System.Drawing.Point(0, 0);
+            this.treeMenuItem18.Name = "treeMenuItem18";
+            this.treeMenuItem18.Size = new System.Drawing.Size(0, 0);
+            this.treeMenuItem18.TabIndex = 0;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(121, 11);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(186, 33);
+            this.pictureBox2.TabIndex = 20;
+            this.pictureBox2.TabStop = false;
+            // 
             // frmManagerHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1463, 876);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox1);
@@ -563,6 +807,8 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -601,6 +847,27 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.TabPage tabPage3;
+        private Syncfusion.Windows.Forms.Tools.TreeNavigator treeNavigator1;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem2;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem1;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem3;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem15;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem4;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem5;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem6;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem7;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem8;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem9;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem10;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem11;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem12;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem13;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem14;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem16;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem17;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem18;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

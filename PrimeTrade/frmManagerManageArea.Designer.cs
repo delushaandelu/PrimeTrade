@@ -28,19 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.cmbprov = new System.Windows.Forms.ComboBox();
             this.txtarea = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.btnReset = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.btndeletearea = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.btnupdatearea = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.btnaddarea = new MaterialSkin.Controls.MaterialRaisedButton();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.txtareaid = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.splashPanel1 = new Syncfusion.Windows.Forms.Tools.SplashPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.materialRaisedButton3 = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.materialRaisedButton2 = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.materialRaisedButton1 = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.buttonAdv2 = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.btnaddstock = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.splashPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmbprov
@@ -104,58 +109,6 @@
             this.materialLabel2.TabIndex = 38;
             this.materialLabel2.Text = "Area Name";
             // 
-            // btnReset
-            // 
-            this.btnReset.Depth = 0;
-            this.btnReset.Location = new System.Drawing.Point(480, 136);
-            this.btnReset.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Primary = true;
-            this.btnReset.Size = new System.Drawing.Size(107, 25);
-            this.btnReset.TabIndex = 47;
-            this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = true;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
-            // 
-            // btndeletearea
-            // 
-            this.btndeletearea.Depth = 0;
-            this.btndeletearea.Location = new System.Drawing.Point(367, 136);
-            this.btndeletearea.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btndeletearea.Name = "btndeletearea";
-            this.btndeletearea.Primary = true;
-            this.btndeletearea.Size = new System.Drawing.Size(107, 25);
-            this.btndeletearea.TabIndex = 46;
-            this.btndeletearea.Text = "Delete Area";
-            this.btndeletearea.UseVisualStyleBackColor = true;
-            this.btndeletearea.Click += new System.EventHandler(this.btndeletearea_Click);
-            // 
-            // btnupdatearea
-            // 
-            this.btnupdatearea.Depth = 0;
-            this.btnupdatearea.Location = new System.Drawing.Point(480, 98);
-            this.btnupdatearea.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnupdatearea.Name = "btnupdatearea";
-            this.btnupdatearea.Primary = true;
-            this.btnupdatearea.Size = new System.Drawing.Size(107, 25);
-            this.btnupdatearea.TabIndex = 45;
-            this.btnupdatearea.Text = "UPDATE Area";
-            this.btnupdatearea.UseVisualStyleBackColor = true;
-            this.btnupdatearea.Click += new System.EventHandler(this.btnupdatearea_Click);
-            // 
-            // btnaddarea
-            // 
-            this.btnaddarea.Depth = 0;
-            this.btnaddarea.Location = new System.Drawing.Point(367, 98);
-            this.btnaddarea.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnaddarea.Name = "btnaddarea";
-            this.btnaddarea.Primary = true;
-            this.btnaddarea.Size = new System.Drawing.Size(107, 25);
-            this.btnaddarea.TabIndex = 44;
-            this.btnaddarea.Text = "Add Area";
-            this.btnaddarea.UseVisualStyleBackColor = true;
-            this.btnaddarea.Click += new System.EventHandler(this.btnaddarea_Click);
-            // 
             // listView1
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -202,23 +155,165 @@
             this.txtareaid.UseSystemPasswordChar = false;
             this.txtareaid.Visible = false;
             // 
+            // splashPanel1
+            // 
+            this.splashPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.ForwardDiagonal, System.Drawing.Color.MediumOrchid, System.Drawing.Color.RoyalBlue);
+            this.splashPanel1.BeforeTouchSize = new System.Drawing.Size(661, 63);
+            this.splashPanel1.Controls.Add(this.label1);
+            this.splashPanel1.DesktopAlignment = Syncfusion.Windows.Forms.Tools.SplashAlignment.LeftTop;
+            this.splashPanel1.DiscreetLocation = new System.Drawing.Point(0, 0);
+            this.splashPanel1.Location = new System.Drawing.Point(0, 5);
+            this.splashPanel1.Name = "splashPanel1";
+            this.splashPanel1.Size = new System.Drawing.Size(661, 63);
+            this.splashPanel1.TabIndex = 139;
+            this.splashPanel1.Text = "splashPanel1";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(0, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(540, 32);
+            this.label1.TabIndex = 137;
+            this.label1.Text = "PRIME TRADE :MANAGE DISTRIBUTION AREA";
+            // 
+            // materialRaisedButton3
+            // 
+            this.materialRaisedButton3.BeforeTouchSize = new System.Drawing.Size(124, 41);
+            this.materialRaisedButton3.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
+            this.materialRaisedButton3.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Browse;
+            this.materialRaisedButton3.Image = global::PrimeTrade.Properties.Resources.reset;
+            this.materialRaisedButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.materialRaisedButton3.IsBackStageButton = false;
+            this.materialRaisedButton3.Location = new System.Drawing.Point(416, 252);
+            this.materialRaisedButton3.MetroColor = System.Drawing.Color.Aqua;
+            this.materialRaisedButton3.Name = "materialRaisedButton3";
+            this.materialRaisedButton3.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Black;
+            this.materialRaisedButton3.OverrideFormManagedColor = true;
+            this.materialRaisedButton3.PushButton = true;
+            this.materialRaisedButton3.Size = new System.Drawing.Size(124, 41);
+            this.materialRaisedButton3.TabIndex = 148;
+            this.materialRaisedButton3.Text = "RESET";
+            this.materialRaisedButton3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.materialRaisedButton3.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.materialRaisedButton3.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.materialRaisedButton3.UseVisualStyle = false;
+            this.materialRaisedButton3.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // materialRaisedButton2
+            // 
+            this.materialRaisedButton2.BeforeTouchSize = new System.Drawing.Size(124, 41);
+            this.materialRaisedButton2.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
+            this.materialRaisedButton2.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Browse;
+            this.materialRaisedButton2.Image = global::PrimeTrade.Properties.Resources.remove;
+            this.materialRaisedButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.materialRaisedButton2.IsBackStageButton = false;
+            this.materialRaisedButton2.Location = new System.Drawing.Point(416, 205);
+            this.materialRaisedButton2.MetroColor = System.Drawing.Color.Aqua;
+            this.materialRaisedButton2.Name = "materialRaisedButton2";
+            this.materialRaisedButton2.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Black;
+            this.materialRaisedButton2.OverrideFormManagedColor = true;
+            this.materialRaisedButton2.PushButton = true;
+            this.materialRaisedButton2.Size = new System.Drawing.Size(124, 41);
+            this.materialRaisedButton2.TabIndex = 147;
+            this.materialRaisedButton2.Text = "REMOVE AREA";
+            this.materialRaisedButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.materialRaisedButton2.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.materialRaisedButton2.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.materialRaisedButton2.UseVisualStyle = false;
+            this.materialRaisedButton2.Click += new System.EventHandler(this.btndeletearea_Click);
+            // 
+            // materialRaisedButton1
+            // 
+            this.materialRaisedButton1.BeforeTouchSize = new System.Drawing.Size(124, 41);
+            this.materialRaisedButton1.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
+            this.materialRaisedButton1.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Browse;
+            this.materialRaisedButton1.Image = global::PrimeTrade.Properties.Resources.update;
+            this.materialRaisedButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.materialRaisedButton1.IsBackStageButton = false;
+            this.materialRaisedButton1.Location = new System.Drawing.Point(416, 158);
+            this.materialRaisedButton1.MetroColor = System.Drawing.Color.Aqua;
+            this.materialRaisedButton1.Name = "materialRaisedButton1";
+            this.materialRaisedButton1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Black;
+            this.materialRaisedButton1.OverrideFormManagedColor = true;
+            this.materialRaisedButton1.PushButton = true;
+            this.materialRaisedButton1.Size = new System.Drawing.Size(124, 41);
+            this.materialRaisedButton1.TabIndex = 146;
+            this.materialRaisedButton1.Text = "UPDATE AREA";
+            this.materialRaisedButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.materialRaisedButton1.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.materialRaisedButton1.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.materialRaisedButton1.UseVisualStyle = false;
+            this.materialRaisedButton1.Click += new System.EventHandler(this.btnupdatearea_Click);
+            // 
+            // buttonAdv2
+            // 
+            this.buttonAdv2.BeforeTouchSize = new System.Drawing.Size(73, 41);
+            this.buttonAdv2.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
+            this.buttonAdv2.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Browse;
+            this.buttonAdv2.Image = global::PrimeTrade.Properties.Resources.error;
+            this.buttonAdv2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAdv2.IsBackStageButton = false;
+            this.buttonAdv2.Location = new System.Drawing.Point(467, 299);
+            this.buttonAdv2.MetroColor = System.Drawing.Color.Aqua;
+            this.buttonAdv2.Name = "buttonAdv2";
+            this.buttonAdv2.OverrideFormManagedColor = true;
+            this.buttonAdv2.PushButton = true;
+            this.buttonAdv2.Size = new System.Drawing.Size(73, 41);
+            this.buttonAdv2.TabIndex = 145;
+            this.buttonAdv2.Text = "Exit";
+            this.buttonAdv2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonAdv2.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonAdv2.UseVisualStyle = false;
+            this.buttonAdv2.Click += new System.EventHandler(this.buttonAdv2_Click);
+            // 
+            // btnaddstock
+            // 
+            this.btnaddstock.BeforeTouchSize = new System.Drawing.Size(124, 41);
+            this.btnaddstock.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
+            this.btnaddstock.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Browse;
+            this.btnaddstock.Image = global::PrimeTrade.Properties.Resources.add;
+            this.btnaddstock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnaddstock.IsBackStageButton = false;
+            this.btnaddstock.Location = new System.Drawing.Point(416, 111);
+            this.btnaddstock.MetroColor = System.Drawing.Color.Aqua;
+            this.btnaddstock.Name = "btnaddstock";
+            this.btnaddstock.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Black;
+            this.btnaddstock.OverrideFormManagedColor = true;
+            this.btnaddstock.PushButton = true;
+            this.btnaddstock.Size = new System.Drawing.Size(124, 41);
+            this.btnaddstock.TabIndex = 144;
+            this.btnaddstock.Text = "ADD AREA";
+            this.btnaddstock.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnaddstock.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnaddstock.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnaddstock.UseVisualStyle = false;
+            this.btnaddstock.Click += new System.EventHandler(this.btnaddarea_Click);
+            // 
             // frmManagerManageArea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(619, 378);
+            this.ClientSize = new System.Drawing.Size(566, 378);
+            this.Controls.Add(this.materialRaisedButton3);
+            this.Controls.Add(this.materialRaisedButton2);
+            this.Controls.Add(this.materialRaisedButton1);
+            this.Controls.Add(this.buttonAdv2);
+            this.Controls.Add(this.btnaddstock);
+            this.Controls.Add(this.splashPanel1);
             this.Controls.Add(this.txtareaid);
             this.Controls.Add(this.listView1);
-            this.Controls.Add(this.btnReset);
-            this.Controls.Add(this.btndeletearea);
-            this.Controls.Add(this.btnupdatearea);
-            this.Controls.Add(this.btnaddarea);
             this.Controls.Add(this.cmbprov);
             this.Controls.Add(this.txtarea);
             this.Controls.Add(this.materialLabel3);
             this.Controls.Add(this.materialLabel2);
             this.Name = "frmManagerManageArea";
             this.Text = "Manage Distribution Area";
+            this.splashPanel1.ResumeLayout(false);
+            this.splashPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -230,14 +325,17 @@
         private MaterialSkin.Controls.MaterialSingleLineTextField txtarea;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
-        private MaterialSkin.Controls.MaterialRaisedButton btnReset;
-        private MaterialSkin.Controls.MaterialRaisedButton btndeletearea;
-        private MaterialSkin.Controls.MaterialRaisedButton btnupdatearea;
-        private MaterialSkin.Controls.MaterialRaisedButton btnaddarea;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ColumnHeader columnHeader8;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtareaid;
+        private Syncfusion.Windows.Forms.Tools.SplashPanel splashPanel1;
+        private System.Windows.Forms.Label label1;
+        private Syncfusion.Windows.Forms.ButtonAdv materialRaisedButton3;
+        private Syncfusion.Windows.Forms.ButtonAdv materialRaisedButton2;
+        private Syncfusion.Windows.Forms.ButtonAdv materialRaisedButton1;
+        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv2;
+        private Syncfusion.Windows.Forms.ButtonAdv btnaddstock;
     }
 }

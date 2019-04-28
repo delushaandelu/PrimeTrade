@@ -10,11 +10,14 @@ using System.Windows.Forms;
 using MaterialSkin.Controls;
 using MaterialSkin.Animations;
 using System.Configuration;
+using MetroFramework;
+using MetroFramework.Fonts;
 using MySql.Data.MySqlClient;
+using MetroFramework.Forms;
 
 namespace PrimeTrade
 {
-    public partial class frmManagerViewPromotionByState : MaterialForm
+    public partial class frmManagerViewPromotionByState : MetroForm
     {
         public frmManagerViewPromotionByState()
         {
@@ -147,6 +150,11 @@ namespace PrimeTrade
         private void cmbState_SelectedIndexChanged(object sender, EventArgs e)
         {
             viewAllPromotionDetails();
+        }
+
+        private void buttonAdv2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

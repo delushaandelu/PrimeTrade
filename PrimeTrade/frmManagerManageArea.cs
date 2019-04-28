@@ -10,11 +10,14 @@ using System.Windows.Forms;
 using MaterialSkin.Controls;
 using MaterialSkin.Animations;
 using System.Configuration;
+using MetroFramework;
+using MetroFramework.Fonts;
 using MySql.Data.MySqlClient;
+using MetroFramework.Forms;
 
 namespace PrimeTrade
 {
-    public partial class frmManagerManageArea : MaterialForm
+    public partial class frmManagerManageArea : MetroForm
     {
         public frmManagerManageArea()
         {
@@ -185,6 +188,11 @@ namespace PrimeTrade
                     MessageBox.Show("Can not delete area details.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void buttonAdv2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

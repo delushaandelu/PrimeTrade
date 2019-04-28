@@ -48,7 +48,11 @@
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.approveRequestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.splashPanel1 = new Syncfusion.Windows.Forms.Tools.SplashPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.buttonAdv2 = new Syncfusion.Windows.Forms.ButtonAdv();
             this.contextMenuStrip1.SuspendLayout();
+            this.splashPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // listView6
@@ -159,7 +163,7 @@
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(206, 19);
             this.metroLabel5.TabIndex = 132;
-            this.metroLabel5.Text = "New Approvel list For Distribution";
+            this.metroLabel5.Text = "New Approval list For Distribution";
             // 
             // contextMenuStrip1
             // 
@@ -171,20 +175,70 @@
             // approveRequestToolStripMenuItem
             // 
             this.approveRequestToolStripMenuItem.Name = "approveRequestToolStripMenuItem";
-            this.approveRequestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.approveRequestToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.approveRequestToolStripMenuItem.Text = "Approve Request";
             this.approveRequestToolStripMenuItem.Click += new System.EventHandler(this.approveRequestToolStripMenuItem_Click);
+            // 
+            // splashPanel1
+            // 
+            this.splashPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.ForwardDiagonal, System.Drawing.Color.MediumOrchid, System.Drawing.Color.RoyalBlue);
+            this.splashPanel1.BeforeTouchSize = new System.Drawing.Size(1278, 63);
+            this.splashPanel1.Controls.Add(this.label1);
+            this.splashPanel1.DesktopAlignment = Syncfusion.Windows.Forms.Tools.SplashAlignment.LeftTop;
+            this.splashPanel1.DiscreetLocation = new System.Drawing.Point(0, 0);
+            this.splashPanel1.Location = new System.Drawing.Point(0, 4);
+            this.splashPanel1.Name = "splashPanel1";
+            this.splashPanel1.Size = new System.Drawing.Size(1278, 63);
+            this.splashPanel1.TabIndex = 133;
+            this.splashPanel1.Text = "splashPanel1";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(3, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(649, 40);
+            this.label1.TabIndex = 137;
+            this.label1.Text = "PRIME TRADE : APPROVAL FOR DISTRIBUTERS";
+            // 
+            // buttonAdv2
+            // 
+            this.buttonAdv2.BeforeTouchSize = new System.Drawing.Size(73, 41);
+            this.buttonAdv2.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
+            this.buttonAdv2.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Browse;
+            this.buttonAdv2.Image = global::PrimeTrade.Properties.Resources.error;
+            this.buttonAdv2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAdv2.IsBackStageButton = false;
+            this.buttonAdv2.Location = new System.Drawing.Point(1191, 600);
+            this.buttonAdv2.MetroColor = System.Drawing.Color.Aqua;
+            this.buttonAdv2.Name = "buttonAdv2";
+            this.buttonAdv2.OverrideFormManagedColor = true;
+            this.buttonAdv2.PushButton = true;
+            this.buttonAdv2.Size = new System.Drawing.Size(73, 41);
+            this.buttonAdv2.TabIndex = 135;
+            this.buttonAdv2.Text = "Exit";
+            this.buttonAdv2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonAdv2.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonAdv2.UseVisualStyle = false;
+            this.buttonAdv2.Click += new System.EventHandler(this.buttonAdv2_Click);
             // 
             // frmFinaceApproveStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1276, 622);
+            this.ClientSize = new System.Drawing.Size(1279, 658);
+            this.Controls.Add(this.buttonAdv2);
+            this.Controls.Add(this.splashPanel1);
             this.Controls.Add(this.metroLabel5);
             this.Controls.Add(this.listView6);
             this.Name = "frmFinaceApproveStock";
             this.Text = "Approve Promotion Stock";
             this.contextMenuStrip1.ResumeLayout(false);
+            this.splashPanel1.ResumeLayout(false);
+            this.splashPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,5 +265,8 @@
         private MetroFramework.Controls.MetroLabel metroLabel5;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem approveRequestToolStripMenuItem;
+        private Syncfusion.Windows.Forms.Tools.SplashPanel splashPanel1;
+        private System.Windows.Forms.Label label1;
+        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv2;
     }
 }

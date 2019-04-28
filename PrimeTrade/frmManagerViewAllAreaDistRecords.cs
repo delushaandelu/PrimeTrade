@@ -10,11 +10,14 @@ using System.Windows.Forms;
 using MaterialSkin.Controls;
 using MaterialSkin.Animations;
 using System.Configuration;
+using MetroFramework;
+using MetroFramework.Fonts;
 using MySql.Data.MySqlClient;
+using MetroFramework.Forms;
 
 namespace PrimeTrade
 {
-    public partial class frmManagerViewAllAreaDistRecords : MaterialForm
+    public partial class frmManagerViewAllAreaDistRecords : MetroForm
     {
         public frmManagerViewAllAreaDistRecords()
         {
@@ -201,6 +204,11 @@ namespace PrimeTrade
                 listItem.SubItems.Add(dRow["joindate"].ToString());
                 listView3.Items.Add(listItem);
             }
+        }
+
+        private void buttonAdv2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

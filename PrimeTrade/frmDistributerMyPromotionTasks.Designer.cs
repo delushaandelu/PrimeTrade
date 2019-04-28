@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lbluserid = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.listView4 = new System.Windows.Forms.ListView();
@@ -48,6 +49,10 @@
             this.columnHeader42 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader43 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.splashPanel1 = new Syncfusion.Windows.Forms.Tools.SplashPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.buttonAdv2 = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.splashPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbluserid
@@ -62,7 +67,7 @@
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(23, 90);
+            this.metroLabel2.Location = new System.Drawing.Point(23, 77);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(164, 19);
             this.metroLabel2.TabIndex = 103;
@@ -90,9 +95,9 @@
             this.columnHeader16});
             this.listView4.FullRowSelect = true;
             this.listView4.GridLines = true;
-            this.listView4.Location = new System.Drawing.Point(23, 112);
+            this.listView4.Location = new System.Drawing.Point(23, 99);
             this.listView4.Name = "listView4";
-            this.listView4.Size = new System.Drawing.Size(1217, 501);
+            this.listView4.Size = new System.Drawing.Size(1217, 473);
             this.listView4.TabIndex = 104;
             this.listView4.UseCompatibleStateImageBehavior = false;
             this.listView4.View = System.Windows.Forms.View.Details;
@@ -177,16 +182,66 @@
             this.columnHeader16.Text = "Track State";
             this.columnHeader16.Width = 80;
             // 
+            // splashPanel1
+            // 
+            this.splashPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.ForwardDiagonal, System.Drawing.Color.MediumOrchid, System.Drawing.Color.RoyalBlue);
+            this.splashPanel1.BeforeTouchSize = new System.Drawing.Size(1263, 63);
+            this.splashPanel1.Controls.Add(this.label1);
+            this.splashPanel1.DesktopAlignment = Syncfusion.Windows.Forms.Tools.SplashAlignment.LeftTop;
+            this.splashPanel1.DiscreetLocation = new System.Drawing.Point(0, 0);
+            this.splashPanel1.Location = new System.Drawing.Point(0, 5);
+            this.splashPanel1.Name = "splashPanel1";
+            this.splashPanel1.Size = new System.Drawing.Size(1263, 63);
+            this.splashPanel1.TabIndex = 132;
+            this.splashPanel1.Text = "splashPanel1";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(3, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(805, 37);
+            this.label1.TabIndex = 137;
+            this.label1.Text = "PRIME TRADE : MY APPROVED ONGOING PROMOTION TASKS";
+            // 
+            // buttonAdv2
+            // 
+            this.buttonAdv2.BeforeTouchSize = new System.Drawing.Size(73, 41);
+            this.buttonAdv2.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
+            this.buttonAdv2.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Browse;
+            this.buttonAdv2.Image = global::PrimeTrade.Properties.Resources.error;
+            this.buttonAdv2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAdv2.IsBackStageButton = false;
+            this.buttonAdv2.Location = new System.Drawing.Point(1167, 578);
+            this.buttonAdv2.MetroColor = System.Drawing.Color.Aqua;
+            this.buttonAdv2.Name = "buttonAdv2";
+            this.buttonAdv2.OverrideFormManagedColor = true;
+            this.buttonAdv2.PushButton = true;
+            this.buttonAdv2.Size = new System.Drawing.Size(73, 41);
+            this.buttonAdv2.TabIndex = 137;
+            this.buttonAdv2.Text = "Exit";
+            this.buttonAdv2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonAdv2.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonAdv2.UseVisualStyle = false;
+            this.buttonAdv2.Click += new System.EventHandler(this.buttonAdv2_Click);
+            // 
             // frmDistributerMyPromotionTasks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 639);
+            this.ClientSize = new System.Drawing.Size(1264, 636);
+            this.Controls.Add(this.buttonAdv2);
+            this.Controls.Add(this.splashPanel1);
             this.Controls.Add(this.listView4);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.lbluserid);
             this.Name = "frmDistributerMyPromotionTasks";
             this.Text = "My Approved Ongoing Promotion Tasks";
+            this.splashPanel1.ResumeLayout(false);
+            this.splashPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,5 +269,8 @@
         private System.Windows.Forms.ColumnHeader columnHeader42;
         private System.Windows.Forms.ColumnHeader columnHeader43;
         private System.Windows.Forms.ColumnHeader columnHeader16;
+        private Syncfusion.Windows.Forms.Tools.SplashPanel splashPanel1;
+        private System.Windows.Forms.Label label1;
+        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv2;
     }
 }

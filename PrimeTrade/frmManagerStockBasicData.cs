@@ -10,11 +10,15 @@ using System.Windows.Forms;
 using MaterialSkin.Controls;
 using MaterialSkin.Animations;
 using System.Configuration;
+using MetroFramework;
+using MetroFramework.Fonts;
 using MySql.Data.MySqlClient;
+using MetroFramework.Forms;
+
 
 namespace PrimeTrade
 {
-    public partial class frmManagerStockBasicData : MaterialForm
+    public partial class frmManagerStockBasicData : MetroForm
     {
         public frmManagerStockBasicData()
         {
@@ -446,6 +450,11 @@ namespace PrimeTrade
                 connect.Close();
                 MessageBox.Show("Can not delete stock Manufactor item.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void buttonAdv7_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

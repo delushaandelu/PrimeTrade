@@ -10,11 +10,15 @@ using System.Windows.Forms;
 using MaterialSkin.Controls;
 using MaterialSkin.Animations;
 using System.Configuration;
+using MetroFramework;
+using MetroFramework.Fonts;
 using MySql.Data.MySqlClient;
+using MetroFramework.Forms;
+
 
 namespace PrimeTrade
 {
-    public partial class frmPromotionsToDistributers : MaterialForm
+    public partial class frmPromotionsToDistributers : MetroForm
     {
         public frmPromotionsToDistributers()
         {
@@ -695,6 +699,11 @@ namespace PrimeTrade
                 listItem.SubItems.Add(dRow["state"].ToString());
                 listView6.Items.Add(listItem);
             }
+        }
+
+        private void buttonAdv2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

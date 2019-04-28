@@ -28,6 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.toolstripitem1 = new Syncfusion.Windows.Forms.Tools.toolstripitem();
+            this.toolstripitem2 = new Syncfusion.Windows.Forms.Tools.toolstripitem();
+            this.toolstripitem3 = new Syncfusion.Windows.Forms.Tools.toolstripitem();
+            this.toolstripitem4 = new Syncfusion.Windows.Forms.Tools.toolstripitem();
+            this.toolstripitem5 = new Syncfusion.Windows.Forms.Tools.toolstripitem();
+            this.toolstripitem6 = new Syncfusion.Windows.Forms.Tools.toolstripitem();
+            this.toolstripitem7 = new Syncfusion.Windows.Forms.Tools.toolstripitem();
+            this.toolstripitem8 = new Syncfusion.Windows.Forms.Tools.toolstripitem();
             this.txtpromo = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
@@ -42,7 +51,6 @@
             this.txtmainattached = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             this.txtmaincode2 = new MetroFramework.Controls.MetroTextBox();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             this.txtseller = new MetroFramework.Controls.MetroTextBox();
             this.lbluser = new MetroFramework.Controls.MetroLabel();
@@ -72,7 +80,62 @@
             this.txtprice2 = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel12 = new MetroFramework.Controls.MetroLabel();
             this.txtprice1 = new MetroFramework.Controls.MetroTextBox();
+            this.splashPanel1 = new Syncfusion.Windows.Forms.Tools.SplashPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.miniToolBar1 = new Syncfusion.Windows.Forms.Tools.MiniToolBar();
+            this.skinManager1 = new Syncfusion.Windows.Forms.SkinManager(this.components);
+            this.buttonAdv2 = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.buttonAdv1 = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.splashPanel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // toolstripitem1
+            // 
+            this.toolstripitem1.Name = "toolstripitem1";
+            this.toolstripitem1.Size = new System.Drawing.Size(23, 23);
+            this.toolstripitem1.Text = "toolstripitem1";
+            // 
+            // toolstripitem2
+            // 
+            this.toolstripitem2.Name = "toolstripitem2";
+            this.toolstripitem2.Size = new System.Drawing.Size(23, 23);
+            this.toolstripitem2.Text = "toolstripitem2";
+            // 
+            // toolstripitem3
+            // 
+            this.toolstripitem3.Name = "toolstripitem3";
+            this.toolstripitem3.Size = new System.Drawing.Size(23, 23);
+            this.toolstripitem3.Text = "toolstripitem3";
+            // 
+            // toolstripitem4
+            // 
+            this.toolstripitem4.Name = "toolstripitem4";
+            this.toolstripitem4.Size = new System.Drawing.Size(23, 23);
+            this.toolstripitem4.Text = "toolstripitem4";
+            // 
+            // toolstripitem5
+            // 
+            this.toolstripitem5.Name = "toolstripitem5";
+            this.toolstripitem5.Size = new System.Drawing.Size(23, 23);
+            this.toolstripitem5.Text = "toolstripitem5";
+            // 
+            // toolstripitem6
+            // 
+            this.toolstripitem6.Name = "toolstripitem6";
+            this.toolstripitem6.Size = new System.Drawing.Size(23, 23);
+            this.toolstripitem6.Text = "toolstripitem6";
+            // 
+            // toolstripitem7
+            // 
+            this.toolstripitem7.Name = "toolstripitem7";
+            this.toolstripitem7.Size = new System.Drawing.Size(23, 23);
+            this.toolstripitem7.Text = "toolstripitem7";
+            // 
+            // toolstripitem8
+            // 
+            this.toolstripitem8.Name = "toolstripitem8";
+            this.toolstripitem8.Size = new System.Drawing.Size(23, 23);
+            this.toolstripitem8.Text = "toolstripitem8";
             // 
             // txtpromo
             // 
@@ -90,7 +153,7 @@
             this.txtpromo.CustomButton.Visible = false;
             this.txtpromo.Enabled = false;
             this.txtpromo.Lines = new string[0];
-            this.txtpromo.Location = new System.Drawing.Point(251, 361);
+            this.txtpromo.Location = new System.Drawing.Point(258, 361);
             this.txtpromo.MaxLength = 32767;
             this.txtpromo.Name = "txtpromo";
             this.txtpromo.PasswordChar = '\0';
@@ -99,7 +162,7 @@
             this.txtpromo.SelectionLength = 0;
             this.txtpromo.SelectionStart = 0;
             this.txtpromo.ShortcutsEnabled = true;
-            this.txtpromo.Size = new System.Drawing.Size(158, 23);
+            this.txtpromo.Size = new System.Drawing.Size(197, 23);
             this.txtpromo.TabIndex = 99;
             this.txtpromo.UseSelectable = true;
             this.txtpromo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -108,7 +171,7 @@
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(138, 361);
+            this.metroLabel1.Location = new System.Drawing.Point(145, 361);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(86, 19);
             this.metroLabel1.TabIndex = 100;
@@ -117,7 +180,7 @@
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(138, 411);
+            this.metroLabel2.Location = new System.Drawing.Point(145, 411);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(104, 19);
             this.metroLabel2.TabIndex = 102;
@@ -139,7 +202,7 @@
             this.txtmaincode1.CustomButton.Visible = false;
             this.txtmaincode1.Enabled = false;
             this.txtmaincode1.Lines = new string[0];
-            this.txtmaincode1.Location = new System.Drawing.Point(251, 411);
+            this.txtmaincode1.Location = new System.Drawing.Point(258, 411);
             this.txtmaincode1.MaxLength = 32767;
             this.txtmaincode1.Name = "txtmaincode1";
             this.txtmaincode1.PasswordChar = '\0';
@@ -148,7 +211,7 @@
             this.txtmaincode1.SelectionLength = 0;
             this.txtmaincode1.SelectionStart = 0;
             this.txtmaincode1.ShortcutsEnabled = true;
-            this.txtmaincode1.Size = new System.Drawing.Size(158, 23);
+            this.txtmaincode1.Size = new System.Drawing.Size(197, 23);
             this.txtmaincode1.TabIndex = 101;
             this.txtmaincode1.UseSelectable = true;
             this.txtmaincode1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -157,7 +220,7 @@
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(138, 440);
+            this.metroLabel3.Location = new System.Drawing.Point(145, 440);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(75, 19);
             this.metroLabel3.TabIndex = 104;
@@ -179,7 +242,7 @@
             this.txtmainname.CustomButton.Visible = false;
             this.txtmainname.Enabled = false;
             this.txtmainname.Lines = new string[0];
-            this.txtmainname.Location = new System.Drawing.Point(251, 440);
+            this.txtmainname.Location = new System.Drawing.Point(258, 440);
             this.txtmainname.MaxLength = 32767;
             this.txtmainname.Name = "txtmainname";
             this.txtmainname.PasswordChar = '\0';
@@ -188,7 +251,7 @@
             this.txtmainname.SelectionLength = 0;
             this.txtmainname.SelectionStart = 0;
             this.txtmainname.ShortcutsEnabled = true;
-            this.txtmainname.Size = new System.Drawing.Size(158, 23);
+            this.txtmainname.Size = new System.Drawing.Size(197, 23);
             this.txtmainname.TabIndex = 103;
             this.txtmainname.UseSelectable = true;
             this.txtmainname.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -197,7 +260,7 @@
             // metroLabel4
             // 
             this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(138, 469);
+            this.metroLabel4.Location = new System.Drawing.Point(145, 469);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(73, 19);
             this.metroLabel4.TabIndex = 106;
@@ -218,7 +281,7 @@
             this.txtitemqty1.CustomButton.UseSelectable = true;
             this.txtitemqty1.CustomButton.Visible = false;
             this.txtitemqty1.Lines = new string[0];
-            this.txtitemqty1.Location = new System.Drawing.Point(251, 469);
+            this.txtitemqty1.Location = new System.Drawing.Point(258, 469);
             this.txtitemqty1.MaxLength = 32767;
             this.txtitemqty1.Name = "txtitemqty1";
             this.txtitemqty1.PasswordChar = '\0';
@@ -227,7 +290,7 @@
             this.txtitemqty1.SelectionLength = 0;
             this.txtitemqty1.SelectionStart = 0;
             this.txtitemqty1.ShortcutsEnabled = true;
-            this.txtitemqty1.Size = new System.Drawing.Size(158, 23);
+            this.txtitemqty1.Size = new System.Drawing.Size(197, 23);
             this.txtitemqty1.TabIndex = 105;
             this.txtitemqty1.UseSelectable = true;
             this.txtitemqty1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -236,7 +299,7 @@
             // metroLabel5
             // 
             this.metroLabel5.AutoSize = true;
-            this.metroLabel5.Location = new System.Drawing.Point(460, 469);
+            this.metroLabel5.Location = new System.Drawing.Point(467, 469);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(73, 19);
             this.metroLabel5.TabIndex = 112;
@@ -257,7 +320,7 @@
             this.txtitemqty2.CustomButton.UseSelectable = true;
             this.txtitemqty2.CustomButton.Visible = false;
             this.txtitemqty2.Lines = new string[0];
-            this.txtitemqty2.Location = new System.Drawing.Point(593, 469);
+            this.txtitemqty2.Location = new System.Drawing.Point(600, 469);
             this.txtitemqty2.MaxLength = 32767;
             this.txtitemqty2.Name = "txtitemqty2";
             this.txtitemqty2.PasswordChar = '\0';
@@ -266,7 +329,7 @@
             this.txtitemqty2.SelectionLength = 0;
             this.txtitemqty2.SelectionStart = 0;
             this.txtitemqty2.ShortcutsEnabled = true;
-            this.txtitemqty2.Size = new System.Drawing.Size(158, 23);
+            this.txtitemqty2.Size = new System.Drawing.Size(197, 23);
             this.txtitemqty2.TabIndex = 111;
             this.txtitemqty2.UseSelectable = true;
             this.txtitemqty2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -275,7 +338,7 @@
             // metroLabel6
             // 
             this.metroLabel6.AutoSize = true;
-            this.metroLabel6.Location = new System.Drawing.Point(460, 440);
+            this.metroLabel6.Location = new System.Drawing.Point(467, 440);
             this.metroLabel6.Name = "metroLabel6";
             this.metroLabel6.Size = new System.Drawing.Size(75, 19);
             this.metroLabel6.TabIndex = 110;
@@ -297,7 +360,7 @@
             this.txtmainattached.CustomButton.Visible = false;
             this.txtmainattached.Enabled = false;
             this.txtmainattached.Lines = new string[0];
-            this.txtmainattached.Location = new System.Drawing.Point(593, 440);
+            this.txtmainattached.Location = new System.Drawing.Point(600, 440);
             this.txtmainattached.MaxLength = 32767;
             this.txtmainattached.Name = "txtmainattached";
             this.txtmainattached.PasswordChar = '\0';
@@ -306,7 +369,7 @@
             this.txtmainattached.SelectionLength = 0;
             this.txtmainattached.SelectionStart = 0;
             this.txtmainattached.ShortcutsEnabled = true;
-            this.txtmainattached.Size = new System.Drawing.Size(158, 23);
+            this.txtmainattached.Size = new System.Drawing.Size(197, 23);
             this.txtmainattached.TabIndex = 109;
             this.txtmainattached.UseSelectable = true;
             this.txtmainattached.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -315,7 +378,7 @@
             // metroLabel7
             // 
             this.metroLabel7.AutoSize = true;
-            this.metroLabel7.Location = new System.Drawing.Point(460, 411);
+            this.metroLabel7.Location = new System.Drawing.Point(467, 411);
             this.metroLabel7.Name = "metroLabel7";
             this.metroLabel7.Size = new System.Drawing.Size(127, 19);
             this.metroLabel7.TabIndex = 108;
@@ -337,7 +400,7 @@
             this.txtmaincode2.CustomButton.Visible = false;
             this.txtmaincode2.Enabled = false;
             this.txtmaincode2.Lines = new string[0];
-            this.txtmaincode2.Location = new System.Drawing.Point(593, 411);
+            this.txtmaincode2.Location = new System.Drawing.Point(600, 411);
             this.txtmaincode2.MaxLength = 32767;
             this.txtmaincode2.Name = "txtmaincode2";
             this.txtmaincode2.PasswordChar = '\0';
@@ -346,26 +409,16 @@
             this.txtmaincode2.SelectionLength = 0;
             this.txtmaincode2.SelectionStart = 0;
             this.txtmaincode2.ShortcutsEnabled = true;
-            this.txtmaincode2.Size = new System.Drawing.Size(158, 23);
+            this.txtmaincode2.Size = new System.Drawing.Size(197, 23);
             this.txtmaincode2.TabIndex = 107;
             this.txtmaincode2.UseSelectable = true;
             this.txtmaincode2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtmaincode2.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // metroButton1
-            // 
-            this.metroButton1.Location = new System.Drawing.Point(800, 361);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(107, 33);
-            this.metroButton1.TabIndex = 113;
-            this.metroButton1.Text = "Supply for Sale";
-            this.metroButton1.UseSelectable = true;
-            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
-            // 
             // metroLabel8
             // 
             this.metroLabel8.AutoSize = true;
-            this.metroLabel8.Location = new System.Drawing.Point(460, 361);
+            this.metroLabel8.Location = new System.Drawing.Point(467, 361);
             this.metroLabel8.Name = "metroLabel8";
             this.metroLabel8.Size = new System.Drawing.Size(41, 19);
             this.metroLabel8.TabIndex = 115;
@@ -386,7 +439,7 @@
             this.txtseller.CustomButton.UseSelectable = true;
             this.txtseller.CustomButton.Visible = false;
             this.txtseller.Lines = new string[0];
-            this.txtseller.Location = new System.Drawing.Point(593, 361);
+            this.txtseller.Location = new System.Drawing.Point(600, 361);
             this.txtseller.MaxLength = 32767;
             this.txtseller.Name = "txtseller";
             this.txtseller.PasswordChar = '\0';
@@ -395,7 +448,7 @@
             this.txtseller.SelectionLength = 0;
             this.txtseller.SelectionStart = 0;
             this.txtseller.ShortcutsEnabled = true;
-            this.txtseller.Size = new System.Drawing.Size(158, 23);
+            this.txtseller.Size = new System.Drawing.Size(197, 23);
             this.txtseller.TabIndex = 114;
             this.txtseller.UseSelectable = true;
             this.txtseller.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -430,9 +483,10 @@
             this.columnHeader42,
             this.columnHeader43,
             this.columnHeader16});
+            this.listView.Font = new System.Drawing.Font("Bookman Old Style", 9F);
             this.listView.FullRowSelect = true;
             this.listView.GridLines = true;
-            this.listView.Location = new System.Drawing.Point(23, 72);
+            this.listView.Location = new System.Drawing.Point(20, 79);
             this.listView.Name = "listView";
             this.listView.Size = new System.Drawing.Size(1002, 256);
             this.listView.TabIndex = 117;
@@ -523,7 +577,7 @@
             // metroLabel9
             // 
             this.metroLabel9.AutoSize = true;
-            this.metroLabel9.Location = new System.Drawing.Point(251, 495);
+            this.metroLabel9.Location = new System.Drawing.Point(258, 495);
             this.metroLabel9.Name = "metroLabel9";
             this.metroLabel9.Size = new System.Drawing.Size(69, 19);
             this.metroLabel9.TabIndex = 118;
@@ -532,7 +586,7 @@
             // metroLabel10
             // 
             this.metroLabel10.AutoSize = true;
-            this.metroLabel10.Location = new System.Drawing.Point(593, 495);
+            this.metroLabel10.Location = new System.Drawing.Point(600, 495);
             this.metroLabel10.Name = "metroLabel10";
             this.metroLabel10.Size = new System.Drawing.Size(69, 19);
             this.metroLabel10.TabIndex = 119;
@@ -541,7 +595,7 @@
             // lblonhand1
             // 
             this.lblonhand1.AutoSize = true;
-            this.lblonhand1.Location = new System.Drawing.Point(326, 495);
+            this.lblonhand1.Location = new System.Drawing.Point(333, 495);
             this.lblonhand1.Name = "lblonhand1";
             this.lblonhand1.Size = new System.Drawing.Size(0, 0);
             this.lblonhand1.TabIndex = 120;
@@ -549,7 +603,7 @@
             // lblonhand2
             // 
             this.lblonhand2.AutoSize = true;
-            this.lblonhand2.Location = new System.Drawing.Point(668, 495);
+            this.lblonhand2.Location = new System.Drawing.Point(675, 495);
             this.lblonhand2.Name = "lblonhand2";
             this.lblonhand2.Size = new System.Drawing.Size(0, 0);
             this.lblonhand2.TabIndex = 121;
@@ -557,7 +611,7 @@
             // metroLabel11
             // 
             this.metroLabel11.AutoSize = true;
-            this.metroLabel11.Location = new System.Drawing.Point(460, 517);
+            this.metroLabel11.Location = new System.Drawing.Point(467, 517);
             this.metroLabel11.Name = "metroLabel11";
             this.metroLabel11.Size = new System.Drawing.Size(81, 19);
             this.metroLabel11.TabIndex = 125;
@@ -578,7 +632,7 @@
             this.txtprice2.CustomButton.UseSelectable = true;
             this.txtprice2.CustomButton.Visible = false;
             this.txtprice2.Lines = new string[0];
-            this.txtprice2.Location = new System.Drawing.Point(593, 517);
+            this.txtprice2.Location = new System.Drawing.Point(600, 517);
             this.txtprice2.MaxLength = 32767;
             this.txtprice2.Name = "txtprice2";
             this.txtprice2.PasswordChar = '\0';
@@ -587,7 +641,7 @@
             this.txtprice2.SelectionLength = 0;
             this.txtprice2.SelectionStart = 0;
             this.txtprice2.ShortcutsEnabled = true;
-            this.txtprice2.Size = new System.Drawing.Size(158, 23);
+            this.txtprice2.Size = new System.Drawing.Size(197, 23);
             this.txtprice2.TabIndex = 124;
             this.txtprice2.UseSelectable = true;
             this.txtprice2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -596,7 +650,7 @@
             // metroLabel12
             // 
             this.metroLabel12.AutoSize = true;
-            this.metroLabel12.Location = new System.Drawing.Point(138, 517);
+            this.metroLabel12.Location = new System.Drawing.Point(145, 517);
             this.metroLabel12.Name = "metroLabel12";
             this.metroLabel12.Size = new System.Drawing.Size(81, 19);
             this.metroLabel12.TabIndex = 123;
@@ -617,7 +671,7 @@
             this.txtprice1.CustomButton.UseSelectable = true;
             this.txtprice1.CustomButton.Visible = false;
             this.txtprice1.Lines = new string[0];
-            this.txtprice1.Location = new System.Drawing.Point(251, 517);
+            this.txtprice1.Location = new System.Drawing.Point(258, 517);
             this.txtprice1.MaxLength = 32767;
             this.txtprice1.Name = "txtprice1";
             this.txtprice1.PasswordChar = '\0';
@@ -626,17 +680,99 @@
             this.txtprice1.SelectionLength = 0;
             this.txtprice1.SelectionStart = 0;
             this.txtprice1.ShortcutsEnabled = true;
-            this.txtprice1.Size = new System.Drawing.Size(158, 23);
+            this.txtprice1.Size = new System.Drawing.Size(197, 23);
             this.txtprice1.TabIndex = 122;
             this.txtprice1.UseSelectable = true;
             this.txtprice1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtprice1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
+            // splashPanel1
+            // 
+            this.splashPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.ForwardDiagonal, System.Drawing.Color.MediumOrchid, System.Drawing.Color.RoyalBlue);
+            this.splashPanel1.BeforeTouchSize = new System.Drawing.Size(1050, 63);
+            this.splashPanel1.Controls.Add(this.label1);
+            this.splashPanel1.DesktopAlignment = Syncfusion.Windows.Forms.Tools.SplashAlignment.LeftTop;
+            this.splashPanel1.DiscreetLocation = new System.Drawing.Point(0, 0);
+            this.splashPanel1.Location = new System.Drawing.Point(-1, 5);
+            this.splashPanel1.Name = "splashPanel1";
+            this.splashPanel1.Size = new System.Drawing.Size(1050, 63);
+            this.splashPanel1.TabIndex = 130;
+            this.splashPanel1.Text = "splashPanel1";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(3, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(594, 45);
+            this.label1.TabIndex = 137;
+            this.label1.Text = "PRIME TRADE : SALES MANAGEMENT";
+            // 
+            // miniToolBar1
+            // 
+            this.miniToolBar1.Name = "miniToolBar1";
+            this.miniToolBar1.Size = new System.Drawing.Size(24, 24);
+            // 
+            // skinManager1
+            // 
+            this.skinManager1.Controls = null;
+            this.skinManager1.VisualTheme = Syncfusion.Windows.Forms.VisualTheme.Managed;
+            // 
+            // buttonAdv2
+            // 
+            this.buttonAdv2.BeforeTouchSize = new System.Drawing.Size(73, 41);
+            this.buttonAdv2.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
+            this.buttonAdv2.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Browse;
+            this.buttonAdv2.Image = global::PrimeTrade.Properties.Resources.error;
+            this.buttonAdv2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAdv2.IsBackStageButton = false;
+            this.buttonAdv2.Location = new System.Drawing.Point(566, 561);
+            this.buttonAdv2.MetroColor = System.Drawing.Color.Aqua;
+            this.buttonAdv2.Name = "buttonAdv2";
+            this.buttonAdv2.OverrideFormManagedColor = true;
+            this.buttonAdv2.PushButton = true;
+            this.buttonAdv2.Size = new System.Drawing.Size(73, 41);
+            this.buttonAdv2.TabIndex = 134;
+            this.buttonAdv2.Text = "Exit";
+            this.buttonAdv2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonAdv2.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonAdv2.UseVisualStyle = false;
+            this.buttonAdv2.Click += new System.EventHandler(this.buttonAdv2_Click);
+            // 
+            // buttonAdv1
+            // 
+            this.buttonAdv1.BeforeTouchSize = new System.Drawing.Size(127, 41);
+            this.buttonAdv1.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
+            this.buttonAdv1.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Browse;
+            this.buttonAdv1.Image = global::PrimeTrade.Properties.Resources.success;
+            this.buttonAdv1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAdv1.IsBackStageButton = false;
+            this.buttonAdv1.Location = new System.Drawing.Point(396, 561);
+            this.buttonAdv1.MetroColor = System.Drawing.Color.Aqua;
+            this.buttonAdv1.Name = "buttonAdv1";
+            this.buttonAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Black;
+            this.buttonAdv1.OverrideFormManagedColor = true;
+            this.buttonAdv1.PushButton = true;
+            this.buttonAdv1.Size = new System.Drawing.Size(127, 41);
+            this.buttonAdv1.TabIndex = 133;
+            this.buttonAdv1.Text = "Supply for Sales";
+            this.buttonAdv1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonAdv1.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonAdv1.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonAdv1.UseVisualStyle = false;
+            this.buttonAdv1.Click += new System.EventHandler(this.buttonAdv1_Click);
+            // 
             // frmDistributersSales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1048, 627);
+            this.ClientSize = new System.Drawing.Size(1048, 652);
+            this.Controls.Add(this.buttonAdv2);
+            this.Controls.Add(this.buttonAdv1);
+            this.Controls.Add(this.splashPanel1);
             this.Controls.Add(this.metroLabel11);
             this.Controls.Add(this.txtprice2);
             this.Controls.Add(this.metroLabel12);
@@ -649,7 +785,6 @@
             this.Controls.Add(this.lbluser);
             this.Controls.Add(this.metroLabel8);
             this.Controls.Add(this.txtseller);
-            this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroLabel5);
             this.Controls.Add(this.txtitemqty2);
             this.Controls.Add(this.metroLabel6);
@@ -666,6 +801,8 @@
             this.Controls.Add(this.txtpromo);
             this.Name = "frmDistributersSales";
             this.Text = "PRIME TRADE : SALES";
+            this.splashPanel1.ResumeLayout(false);
+            this.splashPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -686,7 +823,6 @@
         private MetroFramework.Controls.MetroTextBox txtmainattached;
         private MetroFramework.Controls.MetroLabel metroLabel7;
         private MetroFramework.Controls.MetroTextBox txtmaincode2;
-        private MetroFramework.Controls.MetroButton metroButton1;
         private MetroFramework.Controls.MetroLabel metroLabel8;
         private MetroFramework.Controls.MetroTextBox txtseller;
         private MetroFramework.Controls.MetroLabel lbluser;
@@ -716,5 +852,19 @@
         private MetroFramework.Controls.MetroTextBox txtprice2;
         private MetroFramework.Controls.MetroLabel metroLabel12;
         private MetroFramework.Controls.MetroTextBox txtprice1;
+        private Syncfusion.Windows.Forms.Tools.SplashPanel splashPanel1;
+        private Syncfusion.Windows.Forms.Tools.MiniToolBar miniToolBar1;
+        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv1;
+        private Syncfusion.Windows.Forms.SkinManager skinManager1;
+        private Syncfusion.Windows.Forms.Tools.toolstripitem toolstripitem1;
+        private Syncfusion.Windows.Forms.Tools.toolstripitem toolstripitem2;
+        private Syncfusion.Windows.Forms.Tools.toolstripitem toolstripitem3;
+        private Syncfusion.Windows.Forms.Tools.toolstripitem toolstripitem4;
+        private Syncfusion.Windows.Forms.Tools.toolstripitem toolstripitem5;
+        private Syncfusion.Windows.Forms.Tools.toolstripitem toolstripitem6;
+        private Syncfusion.Windows.Forms.Tools.toolstripitem toolstripitem7;
+        private Syncfusion.Windows.Forms.Tools.toolstripitem toolstripitem8;
+        private System.Windows.Forms.Label label1;
+        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv2;
     }
 }

@@ -11,10 +11,11 @@ using MaterialSkin.Controls;
 using MaterialSkin.Animations;
 using System.Configuration;
 using MySql.Data.MySqlClient;
+using MetroFramework.Forms;
 
 namespace PrimeTrade
 {
-    public partial class frmFinaceApproveStock : MaterialForm
+    public partial class frmFinaceApproveStock : MetroForm
     {
         public frmFinaceApproveStock()
         {
@@ -128,6 +129,11 @@ namespace PrimeTrade
                 connect.Close();
                 MessageBox.Show("Can not allocate stock for the promotion..", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void buttonAdv2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

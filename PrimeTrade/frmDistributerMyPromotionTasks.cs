@@ -15,7 +15,7 @@ using MetroFramework.Forms;
 
 namespace PrimeTrade
 {
-    public partial class frmDistributerMyPromotionTasks : MaterialForm
+    public partial class frmDistributerMyPromotionTasks : MetroForm
     {
         public frmDistributerMyPromotionTasks(string userid)
         {
@@ -84,6 +84,11 @@ namespace PrimeTrade
                 listItem.SubItems.Add(dRow["state"].ToString());
                 listView4.Items.Add(listItem);
             }
+        }
+
+        private void buttonAdv2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

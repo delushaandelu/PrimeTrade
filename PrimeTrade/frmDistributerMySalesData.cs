@@ -15,7 +15,7 @@ using MySql.Data.MySqlClient;
 using PrimeTrade.connections;
 namespace PrimeTrade
 {
-    public partial class frmDistributerMySalesData : MaterialForm
+    public partial class frmDistributerMySalesData : MetroForm
     {
         public frmDistributerMySalesData(string userid)
         {
@@ -54,6 +54,11 @@ namespace PrimeTrade
                 listItem.SubItems.Add(dRow["salesdate"].ToString());
                 listView4.Items.Add(listItem);
             }
+        }
+
+        private void buttonAdv2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

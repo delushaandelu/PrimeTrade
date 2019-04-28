@@ -10,11 +10,14 @@ using System.Windows.Forms;
 using MaterialSkin.Controls;
 using MaterialSkin.Animations;
 using System.Configuration;
+using MetroFramework;
+using MetroFramework.Fonts;
 using MySql.Data.MySqlClient;
+using MetroFramework.Forms;
 
 namespace PrimeTrade
 {
-    public partial class frmManagerViewStock : MaterialForm
+    public partial class frmManagerViewStock : MetroForm
     {
         public frmManagerViewStock()
         {
@@ -54,6 +57,11 @@ namespace PrimeTrade
 
                 listView1.Items.Add(listItem);
             }
+        }
+
+        private void buttonAdv2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

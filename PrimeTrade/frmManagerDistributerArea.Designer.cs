@@ -42,7 +42,6 @@
             this.txtdistid = new MaterialSkin.Controls.MaterialLabel();
             this.txtdistributer = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
-            this.btnaddarea = new MaterialSkin.Controls.MaterialRaisedButton();
             this.txtdis = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.listView2 = new System.Windows.Forms.ListView();
             this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -53,10 +52,8 @@
             this.txtareaname = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtprov = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.btnreset = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.listView3 = new System.Windows.Forms.ListView();
-            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.columnHeader20 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader21 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader22 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -64,11 +61,17 @@
             this.columnHeader24 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader25 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader26 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.btnRefresh = new MetroFramework.Controls.MetroButton();
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.removeCombinationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.splashPanel1 = new Syncfusion.Windows.Forms.Tools.SplashPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnaddarea = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.btnreset = new Syncfusion.Windows.Forms.ButtonAdv();
             this.contextMenuStrip1.SuspendLayout();
+            this.splashPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // listView1
@@ -175,19 +178,6 @@
             this.materialLabel11.Size = new System.Drawing.Size(83, 19);
             this.materialLabel11.TabIndex = 52;
             this.materialLabel11.Text = "Distributer ";
-            // 
-            // btnaddarea
-            // 
-            this.btnaddarea.Depth = 0;
-            this.btnaddarea.Location = new System.Drawing.Point(691, 323);
-            this.btnaddarea.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnaddarea.Name = "btnaddarea";
-            this.btnaddarea.Primary = true;
-            this.btnaddarea.Size = new System.Drawing.Size(107, 25);
-            this.btnaddarea.TabIndex = 51;
-            this.btnaddarea.Text = "Assign Area";
-            this.btnaddarea.UseVisualStyleBackColor = true;
-            this.btnaddarea.Click += new System.EventHandler(this.btnaddarea_Click);
             // 
             // txtdis
             // 
@@ -313,19 +303,6 @@
             this.materialLabel2.TabIndex = 59;
             this.materialLabel2.Text = "Province";
             // 
-            // btnreset
-            // 
-            this.btnreset.Depth = 0;
-            this.btnreset.Location = new System.Drawing.Point(691, 364);
-            this.btnreset.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnreset.Name = "btnreset";
-            this.btnreset.Primary = true;
-            this.btnreset.Size = new System.Drawing.Size(107, 25);
-            this.btnreset.TabIndex = 61;
-            this.btnreset.Text = "Reset Fields";
-            this.btnreset.UseVisualStyleBackColor = true;
-            this.btnreset.Click += new System.EventHandler(this.btnreset_Click);
-            // 
             // materialLabel3
             // 
             this.materialLabel3.AutoSize = true;
@@ -359,20 +336,6 @@
             this.listView3.UseCompatibleStateImageBehavior = false;
             this.listView3.View = System.Windows.Forms.View.Details;
             this.listView3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listView3_MouseClick);
-            // 
-            // materialLabel4
-            // 
-            this.materialLabel4.AutoSize = true;
-            this.materialLabel4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.materialLabel4.Depth = 0;
-            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(23, 507);
-            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(245, 19);
-            this.materialLabel4.TabIndex = 64;
-            this.materialLabel4.Text = "All Distubuters with assigned areas";
             // 
             // columnHeader20
             // 
@@ -409,6 +372,20 @@
             this.columnHeader26.Text = "Joined Date";
             this.columnHeader26.Width = 120;
             // 
+            // materialLabel4
+            // 
+            this.materialLabel4.AutoSize = true;
+            this.materialLabel4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel4.Location = new System.Drawing.Point(23, 507);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(245, 19);
+            this.materialLabel4.TabIndex = 64;
+            this.materialLabel4.Text = "All Distubuters with assigned areas";
+            // 
             // btnRefresh
             // 
             this.btnRefresh.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -425,12 +402,12 @@
             this.materialLabel5.AutoSize = true;
             this.materialLabel5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.materialLabel5.Depth = 0;
-            this.materialLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.materialLabel5.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel5.Location = new System.Drawing.Point(448, 713);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
-            this.materialLabel5.Size = new System.Drawing.Size(256, 15);
+            this.materialLabel5.Size = new System.Drawing.Size(318, 19);
             this.materialLabel5.TabIndex = 77;
             this.materialLabel5.Text = "RIght Mouse Click on record to remove record";
             // 
@@ -448,17 +425,90 @@
             this.removeCombinationToolStripMenuItem.Text = "Remove Combination";
             this.removeCombinationToolStripMenuItem.Click += new System.EventHandler(this.removeCombinationToolStripMenuItem_Click);
             // 
+            // splashPanel1
+            // 
+            this.splashPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.ForwardDiagonal, System.Drawing.Color.MediumOrchid, System.Drawing.Color.RoyalBlue);
+            this.splashPanel1.BeforeTouchSize = new System.Drawing.Size(855, 63);
+            this.splashPanel1.Controls.Add(this.label1);
+            this.splashPanel1.DesktopAlignment = Syncfusion.Windows.Forms.Tools.SplashAlignment.LeftTop;
+            this.splashPanel1.DiscreetLocation = new System.Drawing.Point(0, 0);
+            this.splashPanel1.Location = new System.Drawing.Point(0, 5);
+            this.splashPanel1.Name = "splashPanel1";
+            this.splashPanel1.Size = new System.Drawing.Size(855, 63);
+            this.splashPanel1.TabIndex = 139;
+            this.splashPanel1.Text = "splashPanel1";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(3, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(685, 40);
+            this.label1.TabIndex = 137;
+            this.label1.Text = "PRIME TRADE : ASSIGN AREAS TO DISTRIBUTERS";
+            // 
+            // btnaddarea
+            // 
+            this.btnaddarea.BeforeTouchSize = new System.Drawing.Size(124, 41);
+            this.btnaddarea.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
+            this.btnaddarea.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Browse;
+            this.btnaddarea.Image = global::PrimeTrade.Properties.Resources.add;
+            this.btnaddarea.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnaddarea.IsBackStageButton = false;
+            this.btnaddarea.Location = new System.Drawing.Point(684, 342);
+            this.btnaddarea.MetroColor = System.Drawing.Color.Aqua;
+            this.btnaddarea.Name = "btnaddarea";
+            this.btnaddarea.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Black;
+            this.btnaddarea.OverrideFormManagedColor = true;
+            this.btnaddarea.PushButton = true;
+            this.btnaddarea.Size = new System.Drawing.Size(124, 41);
+            this.btnaddarea.TabIndex = 140;
+            this.btnaddarea.Text = "ADD ROMO";
+            this.btnaddarea.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnaddarea.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnaddarea.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnaddarea.UseVisualStyle = false;
+            this.btnaddarea.Click += new System.EventHandler(this.btnaddarea_Click);
+            // 
+            // btnreset
+            // 
+            this.btnreset.BeforeTouchSize = new System.Drawing.Size(124, 41);
+            this.btnreset.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
+            this.btnreset.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Browse;
+            this.btnreset.Image = global::PrimeTrade.Properties.Resources.reset;
+            this.btnreset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnreset.IsBackStageButton = false;
+            this.btnreset.Location = new System.Drawing.Point(684, 390);
+            this.btnreset.MetroColor = System.Drawing.Color.Aqua;
+            this.btnreset.Name = "btnreset";
+            this.btnreset.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Black;
+            this.btnreset.OverrideFormManagedColor = true;
+            this.btnreset.PushButton = true;
+            this.btnreset.Size = new System.Drawing.Size(124, 41);
+            this.btnreset.TabIndex = 144;
+            this.btnreset.Text = "RESET";
+            this.btnreset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnreset.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnreset.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnreset.UseVisualStyle = false;
+            this.btnreset.Click += new System.EventHandler(this.btnreset_Click);
+            // 
             // frmManagerDistributerArea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(849, 737);
+            this.Controls.Add(this.btnreset);
+            this.Controls.Add(this.btnaddarea);
+            this.Controls.Add(this.splashPanel1);
             this.Controls.Add(this.materialLabel5);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.materialLabel4);
             this.Controls.Add(this.listView3);
             this.Controls.Add(this.materialLabel3);
-            this.Controls.Add(this.btnreset);
             this.Controls.Add(this.txtprov);
             this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.txtareaname);
@@ -468,12 +518,13 @@
             this.Controls.Add(this.txtdis);
             this.Controls.Add(this.txtdistributer);
             this.Controls.Add(this.materialLabel11);
-            this.Controls.Add(this.btnaddarea);
             this.Controls.Add(this.txtdistid);
             this.Controls.Add(this.listView1);
             this.Name = "frmManagerDistributerArea";
             this.Text = "Assign ares to distributers";
             this.contextMenuStrip1.ResumeLayout(false);
+            this.splashPanel1.ResumeLayout(false);
+            this.splashPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -493,7 +544,6 @@
         private MaterialSkin.Controls.MaterialLabel txtdistid;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtdistributer;
         private MaterialSkin.Controls.MaterialLabel materialLabel11;
-        private MaterialSkin.Controls.MaterialRaisedButton btnaddarea;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtdis;
         private System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.ColumnHeader columnHeader17;
@@ -504,7 +554,6 @@
         private MaterialSkin.Controls.MaterialSingleLineTextField txtareaname;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtprov;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
-        private MaterialSkin.Controls.MaterialRaisedButton btnreset;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private System.Windows.Forms.ListView listView3;
         private System.Windows.Forms.ColumnHeader columnHeader20;
@@ -519,5 +568,9 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel5;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem removeCombinationToolStripMenuItem;
+        private Syncfusion.Windows.Forms.Tools.SplashPanel splashPanel1;
+        private System.Windows.Forms.Label label1;
+        private Syncfusion.Windows.Forms.ButtonAdv btnaddarea;
+        private Syncfusion.Windows.Forms.ButtonAdv btnreset;
     }
 }

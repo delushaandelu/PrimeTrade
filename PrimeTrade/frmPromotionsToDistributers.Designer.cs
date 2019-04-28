@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPromotionsToDistributers));
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.btndeliver = new Syncfusion.Windows.Forms.ButtonAdv();
             this.lblstate1 = new System.Windows.Forms.Label();
             this.lblstate = new System.Windows.Forms.Label();
             this.btnRefresh = new MetroFramework.Controls.MetroButton();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.cmbdist = new MetroFramework.Controls.MetroComboBox();
-            this.btndeliver = new MaterialSkin.Controls.MaterialRaisedButton();
             this.cmbitem2 = new MetroFramework.Controls.MetroComboBox();
             this.cmbitem1 = new MetroFramework.Controls.MetroComboBox();
             this.txtprice2 = new MaterialSkin.Controls.MaterialSingleLineTextField();
@@ -81,6 +82,7 @@
             this.columnHeader43 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
+            this.btnaddstock = new Syncfusion.Windows.Forms.ButtonAdv();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.cmbDistributers = new MetroFramework.Controls.MetroComboBox();
             this.listView3 = new System.Windows.Forms.ListView();
@@ -91,7 +93,6 @@
             this.columnHeader28 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader29 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader30 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnaddarea = new MaterialSkin.Controls.MaterialRaisedButton();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -135,20 +136,24 @@
             this.columnHeader60 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader61 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader62 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label1 = new System.Windows.Forms.Label();
+            this.splashPanel1 = new Syncfusion.Windows.Forms.Tools.SplashPanel();
+            this.buttonAdv2 = new Syncfusion.Windows.Forms.ButtonAdv();
             this.metroTabPage2.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage3.SuspendLayout();
+            this.splashPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroTabPage2
             // 
+            this.metroTabPage2.Controls.Add(this.btndeliver);
             this.metroTabPage2.Controls.Add(this.lblstate1);
             this.metroTabPage2.Controls.Add(this.lblstate);
             this.metroTabPage2.Controls.Add(this.btnRefresh);
             this.metroTabPage2.Controls.Add(this.metroLabel4);
             this.metroTabPage2.Controls.Add(this.cmbdist);
-            this.metroTabPage2.Controls.Add(this.btndeliver);
             this.metroTabPage2.Controls.Add(this.cmbitem2);
             this.metroTabPage2.Controls.Add(this.cmbitem1);
             this.metroTabPage2.Controls.Add(this.txtprice2);
@@ -179,6 +184,30 @@
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.VerticalScrollbarSize = 10;
+            // 
+            // btndeliver
+            // 
+            this.btndeliver.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btndeliver.BeforeTouchSize = new System.Drawing.Size(124, 41);
+            this.btndeliver.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
+            this.btndeliver.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Browse;
+            this.btndeliver.Image = global::PrimeTrade.Properties.Resources.add;
+            this.btndeliver.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btndeliver.IsBackStageButton = false;
+            this.btndeliver.Location = new System.Drawing.Point(180, 474);
+            this.btndeliver.MetroColor = System.Drawing.Color.Aqua;
+            this.btndeliver.Name = "btndeliver";
+            this.btndeliver.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Black;
+            this.btndeliver.OverrideFormManagedColor = true;
+            this.btndeliver.PushButton = true;
+            this.btndeliver.Size = new System.Drawing.Size(124, 41);
+            this.btndeliver.TabIndex = 146;
+            this.btndeliver.Text = "DELIVER TO DISTRIBUTER";
+            this.btndeliver.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btndeliver.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btndeliver.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btndeliver.UseVisualStyle = false;
+            this.btndeliver.Click += new System.EventHandler(this.btndeliver_Click);
             // 
             // lblstate1
             // 
@@ -232,19 +261,6 @@
             this.cmbdist.TabIndex = 127;
             this.cmbdist.UseSelectable = true;
             this.cmbdist.SelectedIndexChanged += new System.EventHandler(this.cmbdist_SelectedIndexChanged);
-            // 
-            // btndeliver
-            // 
-            this.btndeliver.Depth = 0;
-            this.btndeliver.Location = new System.Drawing.Point(113, 483);
-            this.btndeliver.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btndeliver.Name = "btndeliver";
-            this.btndeliver.Primary = true;
-            this.btndeliver.Size = new System.Drawing.Size(222, 38);
-            this.btndeliver.TabIndex = 126;
-            this.btndeliver.Text = "Deliver for Distributers";
-            this.btndeliver.UseVisualStyleBackColor = true;
-            this.btndeliver.Click += new System.EventHandler(this.btndeliver_Click);
             // 
             // cmbitem2
             // 
@@ -648,10 +664,10 @@
             // 
             // metroTabPage1
             // 
+            this.metroTabPage1.Controls.Add(this.btnaddstock);
             this.metroTabPage1.Controls.Add(this.metroLabel1);
             this.metroTabPage1.Controls.Add(this.cmbDistributers);
             this.metroTabPage1.Controls.Add(this.listView3);
-            this.metroTabPage1.Controls.Add(this.btnaddarea);
             this.metroTabPage1.Controls.Add(this.listView1);
             this.metroTabPage1.Controls.Add(this.txtdistributer);
             this.metroTabPage1.Controls.Add(this.materialLabel3);
@@ -671,6 +687,30 @@
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.VerticalScrollbarSize = 10;
+            // 
+            // btnaddstock
+            // 
+            this.btnaddstock.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnaddstock.BeforeTouchSize = new System.Drawing.Size(124, 41);
+            this.btnaddstock.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
+            this.btnaddstock.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Browse;
+            this.btnaddstock.Image = global::PrimeTrade.Properties.Resources.add;
+            this.btnaddstock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnaddstock.IsBackStageButton = false;
+            this.btnaddstock.Location = new System.Drawing.Point(180, 400);
+            this.btnaddstock.MetroColor = System.Drawing.Color.Aqua;
+            this.btnaddstock.Name = "btnaddstock";
+            this.btnaddstock.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Black;
+            this.btnaddstock.OverrideFormManagedColor = true;
+            this.btnaddstock.PushButton = true;
+            this.btnaddstock.Size = new System.Drawing.Size(124, 41);
+            this.btnaddstock.TabIndex = 145;
+            this.btnaddstock.Text = "ASSIGN DISTRIBUTER";
+            this.btnaddstock.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnaddstock.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnaddstock.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnaddstock.UseVisualStyle = false;
+            this.btnaddstock.Click += new System.EventHandler(this.btnaddarea_Click);
             // 
             // metroLabel1
             // 
@@ -745,19 +785,6 @@
             // 
             this.columnHeader30.Text = "Comments";
             this.columnHeader30.Width = 90;
-            // 
-            // btnaddarea
-            // 
-            this.btnaddarea.Depth = 0;
-            this.btnaddarea.Location = new System.Drawing.Point(145, 406);
-            this.btnaddarea.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnaddarea.Name = "btnaddarea";
-            this.btnaddarea.Primary = true;
-            this.btnaddarea.Size = new System.Drawing.Size(160, 25);
-            this.btnaddarea.TabIndex = 94;
-            this.btnaddarea.Text = "Assign Distributer";
-            this.btnaddarea.UseVisualStyleBackColor = true;
-            this.btnaddarea.Click += new System.EventHandler(this.btnaddarea_Click);
             // 
             // listView1
             // 
@@ -841,12 +868,12 @@
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.materialLabel3.Depth = 0;
-            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel3.Location = new System.Drawing.Point(639, 20);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(302, 19);
+            this.materialLabel3.Size = new System.Drawing.Size(292, 18);
             this.materialLabel3.TabIndex = 91;
             this.materialLabel3.Text = "Select a Distributer to assing the promotion";
             // 
@@ -855,12 +882,12 @@
             this.txtdistid.AutoSize = true;
             this.txtdistid.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtdistid.Depth = 0;
-            this.txtdistid.Font = new System.Drawing.Font("Roboto", 11F);
+            this.txtdistid.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.txtdistid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.txtdistid.Location = new System.Drawing.Point(6, 20);
             this.txtdistid.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtdistid.Name = "txtdistid";
-            this.txtdistid.Size = new System.Drawing.Size(333, 19);
+            this.txtdistid.Size = new System.Drawing.Size(324, 18);
             this.txtdistid.TabIndex = 90;
             this.txtdistid.Text = "Select a Promotion code to assign to Distributer";
             // 
@@ -869,12 +896,12 @@
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel1.Location = new System.Drawing.Point(7, 358);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(118, 19);
+            this.materialLabel1.Size = new System.Drawing.Size(115, 18);
             this.materialLabel1.TabIndex = 89;
             this.materialLabel1.Text = "Distributer Code";
             // 
@@ -899,12 +926,12 @@
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel2.Location = new System.Drawing.Point(6, 311);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(119, 19);
+            this.materialLabel2.Size = new System.Drawing.Size(118, 18);
             this.materialLabel2.TabIndex = 87;
             this.materialLabel2.Text = "Promotion Code";
             // 
@@ -1113,11 +1140,59 @@
             this.columnHeader62.Text = "Track State";
             this.columnHeader62.Width = 80;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(8, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(663, 32);
+            this.label1.TabIndex = 137;
+            this.label1.Text = "PRIME TRADE :EXECUITE PROMOTION TO DISTRIBUTERS";
+            // 
+            // splashPanel1
+            // 
+            this.splashPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.ForwardDiagonal, System.Drawing.Color.MediumOrchid, System.Drawing.Color.RoyalBlue);
+            this.splashPanel1.BeforeTouchSize = new System.Drawing.Size(1304, 63);
+            this.splashPanel1.Controls.Add(this.label1);
+            this.splashPanel1.DesktopAlignment = Syncfusion.Windows.Forms.Tools.SplashAlignment.LeftTop;
+            this.splashPanel1.DiscreetLocation = new System.Drawing.Point(0, 0);
+            this.splashPanel1.Location = new System.Drawing.Point(1, 5);
+            this.splashPanel1.Name = "splashPanel1";
+            this.splashPanel1.Size = new System.Drawing.Size(1304, 63);
+            this.splashPanel1.TabIndex = 140;
+            this.splashPanel1.Text = "splashPanel1";
+            // 
+            // buttonAdv2
+            // 
+            this.buttonAdv2.BeforeTouchSize = new System.Drawing.Size(73, 41);
+            this.buttonAdv2.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
+            this.buttonAdv2.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Browse;
+            this.buttonAdv2.Image = global::PrimeTrade.Properties.Resources.error;
+            this.buttonAdv2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAdv2.IsBackStageButton = false;
+            this.buttonAdv2.Location = new System.Drawing.Point(1200, 665);
+            this.buttonAdv2.MetroColor = System.Drawing.Color.Aqua;
+            this.buttonAdv2.Name = "buttonAdv2";
+            this.buttonAdv2.OverrideFormManagedColor = true;
+            this.buttonAdv2.PushButton = true;
+            this.buttonAdv2.Size = new System.Drawing.Size(73, 41);
+            this.buttonAdv2.TabIndex = 146;
+            this.buttonAdv2.Text = "Exit";
+            this.buttonAdv2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonAdv2.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonAdv2.UseVisualStyle = false;
+            this.buttonAdv2.Click += new System.EventHandler(this.buttonAdv2_Click);
+            // 
             // frmPromotionsToDistributers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1304, 698);
+            this.ClientSize = new System.Drawing.Size(1304, 725);
+            this.Controls.Add(this.buttonAdv2);
+            this.Controls.Add(this.splashPanel1);
             this.Controls.Add(this.metroTabControl1);
             this.Name = "frmPromotionsToDistributers";
             this.Text = "Exicute Promotions to Distributers";
@@ -1128,6 +1203,8 @@
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage3.ResumeLayout(false);
             this.metroTabPage3.PerformLayout();
+            this.splashPanel1.ResumeLayout(false);
+            this.splashPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1136,7 +1213,6 @@
 
         private MetroFramework.Controls.MetroTabPage metroTabPage2;
         private MetroFramework.Controls.MetroTabPage metroTabPage1;
-        private MaterialSkin.Controls.MaterialRaisedButton btnaddarea;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader9;
@@ -1215,7 +1291,6 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel10;
         private MetroFramework.Controls.MetroComboBox cmbitem2;
         private MetroFramework.Controls.MetroComboBox cmbitem1;
-        private MaterialSkin.Controls.MaterialRaisedButton btndeliver;
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private MetroFramework.Controls.MetroComboBox cmbdist;
         private MetroFramework.Controls.MetroButton btnRefresh;
@@ -1240,5 +1315,10 @@
         private System.Windows.Forms.ColumnHeader columnHeader60;
         private System.Windows.Forms.ColumnHeader columnHeader61;
         private System.Windows.Forms.ColumnHeader columnHeader62;
+        private System.Windows.Forms.Label label1;
+        private Syncfusion.Windows.Forms.Tools.SplashPanel splashPanel1;
+        private Syncfusion.Windows.Forms.ButtonAdv btnaddstock;
+        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv2;
+        private Syncfusion.Windows.Forms.ButtonAdv btndeliver;
     }
 }

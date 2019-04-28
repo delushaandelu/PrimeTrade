@@ -12,6 +12,7 @@ using MetroFramework.Fonts;
 using MetroFramework.Forms;
 using MySql.Data.MySqlClient;
 using PrimeTrade.connections;
+using Syncfusion;
 
 namespace PrimeTrade
 {
@@ -103,7 +104,25 @@ namespace PrimeTrade
             lblonhand2.Text = listView.SelectedItems[0].SubItems[10].Text;
         }
 
-        private void metroButton1_Click(object sender, EventArgs e)
+       
+        private void clearFields()
+        {
+            txtpromo.ResetText();
+            txtitemqty1.ResetText();
+            txtitemqty2.ResetText();
+            txtmainattached.ResetText();
+            txtmaincode1.ResetText();
+            txtmaincode2.ResetText();
+            txtmainname.ResetText();
+            txtpromo.ResetText();
+            txtseller.ResetText();
+            lblonhand1.ResetText();
+            lblonhand2.ResetText();
+            txtprice1.ResetText();
+            txtprice2.ResetText();
+        }
+
+        private void buttonAdv1_Click(object sender, EventArgs e)
         {
             if (txtitemqty1.Text == "" || txtitemqty2.Text == "" || txtseller.Text == "" || txtpromo.Text == "" || txtprice1.Text == "" || txtprice2.Text == "")
             {
@@ -112,7 +131,7 @@ namespace PrimeTrade
             }
             else
             {
-               MySqlCommand command = new MySqlCommand();
+                MySqlCommand command = new MySqlCommand();
                 connect.Open();
                 command.Connection = connect;
 
@@ -168,21 +187,9 @@ namespace PrimeTrade
             }
         }
 
-        private void clearFields()
+        private void buttonAdv2_Click(object sender, EventArgs e)
         {
-            txtpromo.ResetText();
-            txtitemqty1.ResetText();
-            txtitemqty2.ResetText();
-            txtmainattached.ResetText();
-            txtmaincode1.ResetText();
-            txtmaincode2.ResetText();
-            txtmainname.ResetText();
-            txtpromo.ResetText();
-            txtseller.ResetText();
-            lblonhand1.ResetText();
-            lblonhand2.ResetText();
-            txtprice1.ResetText();
-            txtprice2.ResetText();
+            this.Close();
         }
     }
 }

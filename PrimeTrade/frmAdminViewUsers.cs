@@ -219,5 +219,10 @@ namespace PrimeTrade
             form.MdiParent = frmAdminHome.ActiveForm;
             form.Show();
         }
+
+        private void buttonAdv2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

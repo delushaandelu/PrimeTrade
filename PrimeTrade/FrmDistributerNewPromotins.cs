@@ -11,10 +11,11 @@ using MaterialSkin.Controls;
 using MaterialSkin.Animations;
 using System.Configuration;
 using MySql.Data.MySqlClient;
+using MetroFramework.Forms;
 
 namespace PrimeTrade
 {
-    public partial class FrmDistributerNewPromotins : MaterialForm
+    public partial class FrmDistributerNewPromotins : MetroForm
     {
         public FrmDistributerNewPromotins(string userid)
         {
@@ -120,6 +121,11 @@ namespace PrimeTrade
                 connect.Close();
                 MessageBox.Show("Can not accept the promotion work", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void buttonAdv2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

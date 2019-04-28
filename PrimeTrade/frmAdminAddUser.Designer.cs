@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
@@ -47,17 +48,21 @@
             this.txtusername = new MetroFramework.Controls.MetroTextBox();
             this.chkstate = new MetroFramework.Controls.MetroToggle();
             this.dtpjoineddate = new MetroFramework.Controls.MetroDateTime();
-            this.btnAddUser = new MetroFramework.Controls.MetroButton();
             this.cmbRole = new MetroFramework.Controls.MetroComboBox();
-            this.btnUpdateUser = new MetroFramework.Controls.MetroButton();
             this.txtuserid = new MetroFramework.Controls.MetroTextBox();
             this.txtpass = new MetroFramework.Controls.MetroTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.splashPanel1 = new Syncfusion.Windows.Forms.Tools.SplashPanel();
+            this.btnUpdateUser = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.buttonAdv2 = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.btnAddUser = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.splashPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(34, 94);
+            this.metroLabel1.Location = new System.Drawing.Point(39, 97);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(73, 19);
             this.metroLabel1.TabIndex = 0;
@@ -66,7 +71,7 @@
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(376, 94);
+            this.metroLabel2.Location = new System.Drawing.Point(381, 97);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(68, 19);
             this.metroLabel2.TabIndex = 1;
@@ -75,7 +80,7 @@
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(34, 143);
+            this.metroLabel3.Location = new System.Drawing.Point(39, 146);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(92, 19);
             this.metroLabel3.TabIndex = 2;
@@ -84,7 +89,7 @@
             // metroLabel4
             // 
             this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(34, 190);
+            this.metroLabel4.Location = new System.Drawing.Point(39, 193);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(56, 19);
             this.metroLabel4.TabIndex = 3;
@@ -93,7 +98,7 @@
             // metroLabel5
             // 
             this.metroLabel5.AutoSize = true;
-            this.metroLabel5.Location = new System.Drawing.Point(376, 143);
+            this.metroLabel5.Location = new System.Drawing.Point(381, 146);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(68, 19);
             this.metroLabel5.TabIndex = 4;
@@ -102,7 +107,7 @@
             // metroLabel6
             // 
             this.metroLabel6.AutoSize = true;
-            this.metroLabel6.Location = new System.Drawing.Point(378, 190);
+            this.metroLabel6.Location = new System.Drawing.Point(383, 193);
             this.metroLabel6.Name = "metroLabel6";
             this.metroLabel6.Size = new System.Drawing.Size(60, 19);
             this.metroLabel6.TabIndex = 5;
@@ -111,7 +116,7 @@
             // metroLabel7
             // 
             this.metroLabel7.AutoSize = true;
-            this.metroLabel7.Location = new System.Drawing.Point(34, 239);
+            this.metroLabel7.Location = new System.Drawing.Point(39, 242);
             this.metroLabel7.Name = "metroLabel7";
             this.metroLabel7.Size = new System.Drawing.Size(78, 19);
             this.metroLabel7.TabIndex = 6;
@@ -120,7 +125,7 @@
             // metroLabel8
             // 
             this.metroLabel8.AutoSize = true;
-            this.metroLabel8.Location = new System.Drawing.Point(380, 236);
+            this.metroLabel8.Location = new System.Drawing.Point(385, 239);
             this.metroLabel8.Name = "metroLabel8";
             this.metroLabel8.Size = new System.Drawing.Size(31, 19);
             this.metroLabel8.TabIndex = 7;
@@ -129,7 +134,7 @@
             // metroLabel9
             // 
             this.metroLabel9.AutoSize = true;
-            this.metroLabel9.Location = new System.Drawing.Point(34, 288);
+            this.metroLabel9.Location = new System.Drawing.Point(39, 291);
             this.metroLabel9.Name = "metroLabel9";
             this.metroLabel9.Size = new System.Drawing.Size(68, 19);
             this.metroLabel9.TabIndex = 8;
@@ -138,7 +143,7 @@
             // lblactive
             // 
             this.lblactive.AutoSize = true;
-            this.lblactive.Location = new System.Drawing.Point(380, 288);
+            this.lblactive.Location = new System.Drawing.Point(385, 291);
             this.lblactive.Name = "lblactive";
             this.lblactive.Size = new System.Drawing.Size(77, 19);
             this.lblactive.TabIndex = 9;
@@ -159,7 +164,7 @@
             this.txtfirstname.CustomButton.UseSelectable = true;
             this.txtfirstname.CustomButton.Visible = false;
             this.txtfirstname.Lines = new string[0];
-            this.txtfirstname.Location = new System.Drawing.Point(146, 94);
+            this.txtfirstname.Location = new System.Drawing.Point(151, 97);
             this.txtfirstname.MaxLength = 32767;
             this.txtfirstname.Name = "txtfirstname";
             this.txtfirstname.PasswordChar = '\0';
@@ -189,7 +194,7 @@
             this.txtlastname.CustomButton.UseSelectable = true;
             this.txtlastname.CustomButton.Visible = false;
             this.txtlastname.Lines = new string[0];
-            this.txtlastname.Location = new System.Drawing.Point(488, 94);
+            this.txtlastname.Location = new System.Drawing.Point(493, 97);
             this.txtlastname.MaxLength = 32767;
             this.txtlastname.Name = "txtlastname";
             this.txtlastname.PasswordChar = '\0';
@@ -219,7 +224,7 @@
             this.txtemail.CustomButton.UseSelectable = true;
             this.txtemail.CustomButton.Visible = false;
             this.txtemail.Lines = new string[0];
-            this.txtemail.Location = new System.Drawing.Point(146, 143);
+            this.txtemail.Location = new System.Drawing.Point(151, 146);
             this.txtemail.MaxLength = 32767;
             this.txtemail.Name = "txtemail";
             this.txtemail.PasswordChar = '\0';
@@ -249,7 +254,7 @@
             this.txtaddress.CustomButton.UseSelectable = true;
             this.txtaddress.CustomButton.Visible = false;
             this.txtaddress.Lines = new string[0];
-            this.txtaddress.Location = new System.Drawing.Point(146, 190);
+            this.txtaddress.Location = new System.Drawing.Point(151, 193);
             this.txtaddress.MaxLength = 32767;
             this.txtaddress.Name = "txtaddress";
             this.txtaddress.PasswordChar = '\0';
@@ -279,7 +284,7 @@
             this.txttelephone.CustomButton.UseSelectable = true;
             this.txttelephone.CustomButton.Visible = false;
             this.txttelephone.Lines = new string[0];
-            this.txttelephone.Location = new System.Drawing.Point(488, 143);
+            this.txttelephone.Location = new System.Drawing.Point(493, 146);
             this.txttelephone.MaxLength = 32767;
             this.txttelephone.Name = "txttelephone";
             this.txttelephone.PasswordChar = '\0';
@@ -309,7 +314,7 @@
             this.txtnic.CustomButton.UseSelectable = true;
             this.txtnic.CustomButton.Visible = false;
             this.txtnic.Lines = new string[0];
-            this.txtnic.Location = new System.Drawing.Point(490, 236);
+            this.txtnic.Location = new System.Drawing.Point(495, 239);
             this.txtnic.MaxLength = 32767;
             this.txtnic.Name = "txtnic";
             this.txtnic.PasswordChar = '\0';
@@ -339,7 +344,7 @@
             this.txtusername.CustomButton.UseSelectable = true;
             this.txtusername.CustomButton.Visible = false;
             this.txtusername.Lines = new string[0];
-            this.txtusername.Location = new System.Drawing.Point(146, 288);
+            this.txtusername.Location = new System.Drawing.Point(151, 291);
             this.txtusername.MaxLength = 32767;
             this.txtusername.Name = "txtusername";
             this.txtusername.PasswordChar = '\0';
@@ -359,7 +364,7 @@
             this.chkstate.AutoSize = true;
             this.chkstate.Checked = true;
             this.chkstate.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkstate.Location = new System.Drawing.Point(492, 290);
+            this.chkstate.Location = new System.Drawing.Point(497, 293);
             this.chkstate.Name = "chkstate";
             this.chkstate.Size = new System.Drawing.Size(80, 17);
             this.chkstate.TabIndex = 19;
@@ -368,21 +373,11 @@
             // 
             // dtpjoineddate
             // 
-            this.dtpjoineddate.Location = new System.Drawing.Point(146, 236);
+            this.dtpjoineddate.Location = new System.Drawing.Point(151, 239);
             this.dtpjoineddate.MinimumSize = new System.Drawing.Size(0, 29);
             this.dtpjoineddate.Name = "dtpjoineddate";
             this.dtpjoineddate.Size = new System.Drawing.Size(187, 29);
             this.dtpjoineddate.TabIndex = 20;
-            // 
-            // btnAddUser
-            // 
-            this.btnAddUser.Location = new System.Drawing.Point(737, 94);
-            this.btnAddUser.Name = "btnAddUser";
-            this.btnAddUser.Size = new System.Drawing.Size(85, 31);
-            this.btnAddUser.TabIndex = 21;
-            this.btnAddUser.Text = "Add User";
-            this.btnAddUser.UseSelectable = true;
-            this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
             // 
             // cmbRole
             // 
@@ -394,21 +389,11 @@
             "FINANCE",
             "DISTRIBUTER",
             "SALES"});
-            this.cmbRole.Location = new System.Drawing.Point(488, 186);
+            this.cmbRole.Location = new System.Drawing.Point(493, 189);
             this.cmbRole.Name = "cmbRole";
             this.cmbRole.Size = new System.Drawing.Size(189, 29);
             this.cmbRole.TabIndex = 22;
             this.cmbRole.UseSelectable = true;
-            // 
-            // btnUpdateUser
-            // 
-            this.btnUpdateUser.Location = new System.Drawing.Point(737, 94);
-            this.btnUpdateUser.Name = "btnUpdateUser";
-            this.btnUpdateUser.Size = new System.Drawing.Size(85, 31);
-            this.btnUpdateUser.TabIndex = 23;
-            this.btnUpdateUser.Text = "Update User";
-            this.btnUpdateUser.UseSelectable = true;
-            this.btnUpdateUser.Click += new System.EventHandler(this.btnUpdateUser_Click);
             // 
             // txtuserid
             // 
@@ -456,7 +441,7 @@
             this.txtpass.CustomButton.UseSelectable = true;
             this.txtpass.CustomButton.Visible = false;
             this.txtpass.Lines = new string[0];
-            this.txtpass.Location = new System.Drawing.Point(737, 50);
+            this.txtpass.Location = new System.Drawing.Point(737, 43);
             this.txtpass.MaxLength = 32767;
             this.txtpass.Name = "txtpass";
             this.txtpass.PasswordChar = '\0';
@@ -472,16 +457,110 @@
             this.txtpass.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtpass.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(92, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(418, 45);
+            this.label1.TabIndex = 137;
+            this.label1.Text = "PRIME TRADE : ADD USER";
+            // 
+            // splashPanel1
+            // 
+            this.splashPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.ForwardDiagonal, System.Drawing.Color.MediumOrchid, System.Drawing.Color.RoyalBlue);
+            this.splashPanel1.BeforeTouchSize = new System.Drawing.Size(1050, 63);
+            this.splashPanel1.Controls.Add(this.label1);
+            this.splashPanel1.DesktopAlignment = Syncfusion.Windows.Forms.Tools.SplashAlignment.LeftTop;
+            this.splashPanel1.DiscreetLocation = new System.Drawing.Point(0, 0);
+            this.splashPanel1.Location = new System.Drawing.Point(-86, 4);
+            this.splashPanel1.Name = "splashPanel1";
+            this.splashPanel1.Size = new System.Drawing.Size(1050, 63);
+            this.splashPanel1.TabIndex = 131;
+            this.splashPanel1.Text = "splashPanel1";
+            // 
+            // btnUpdateUser
+            // 
+            this.btnUpdateUser.BeforeTouchSize = new System.Drawing.Size(127, 41);
+            this.btnUpdateUser.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
+            this.btnUpdateUser.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Browse;
+            this.btnUpdateUser.Image = global::PrimeTrade.Properties.Resources.update;
+            this.btnUpdateUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdateUser.IsBackStageButton = false;
+            this.btnUpdateUser.Location = new System.Drawing.Point(711, 98);
+            this.btnUpdateUser.MetroColor = System.Drawing.Color.Aqua;
+            this.btnUpdateUser.Name = "btnUpdateUser";
+            this.btnUpdateUser.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Black;
+            this.btnUpdateUser.OverrideFormManagedColor = true;
+            this.btnUpdateUser.PushButton = true;
+            this.btnUpdateUser.Size = new System.Drawing.Size(127, 41);
+            this.btnUpdateUser.TabIndex = 137;
+            this.btnUpdateUser.Text = "UPDATE";
+            this.btnUpdateUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUpdateUser.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnUpdateUser.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnUpdateUser.UseVisualStyle = false;
+            this.btnUpdateUser.Click += new System.EventHandler(this.btnUpdateUser_Click);
+            // 
+            // buttonAdv2
+            // 
+            this.buttonAdv2.BeforeTouchSize = new System.Drawing.Size(73, 41);
+            this.buttonAdv2.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
+            this.buttonAdv2.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Browse;
+            this.buttonAdv2.Image = global::PrimeTrade.Properties.Resources.error;
+            this.buttonAdv2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAdv2.IsBackStageButton = false;
+            this.buttonAdv2.Location = new System.Drawing.Point(711, 146);
+            this.buttonAdv2.MetroColor = System.Drawing.Color.Aqua;
+            this.buttonAdv2.Name = "buttonAdv2";
+            this.buttonAdv2.OverrideFormManagedColor = true;
+            this.buttonAdv2.PushButton = true;
+            this.buttonAdv2.Size = new System.Drawing.Size(73, 41);
+            this.buttonAdv2.TabIndex = 136;
+            this.buttonAdv2.Text = "Exit";
+            this.buttonAdv2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonAdv2.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonAdv2.UseVisualStyle = false;
+            this.buttonAdv2.Click += new System.EventHandler(this.buttonAdv2_Click);
+            // 
+            // btnAddUser
+            // 
+            this.btnAddUser.BeforeTouchSize = new System.Drawing.Size(127, 41);
+            this.btnAddUser.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
+            this.btnAddUser.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Browse;
+            this.btnAddUser.Image = global::PrimeTrade.Properties.Resources.add;
+            this.btnAddUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddUser.IsBackStageButton = false;
+            this.btnAddUser.Location = new System.Drawing.Point(711, 97);
+            this.btnAddUser.MetroColor = System.Drawing.Color.Aqua;
+            this.btnAddUser.Name = "btnAddUser";
+            this.btnAddUser.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Black;
+            this.btnAddUser.OverrideFormManagedColor = true;
+            this.btnAddUser.PushButton = true;
+            this.btnAddUser.Size = new System.Drawing.Size(127, 41);
+            this.btnAddUser.TabIndex = 135;
+            this.btnAddUser.Text = "ADD USER";
+            this.btnAddUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAddUser.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnAddUser.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnAddUser.UseVisualStyle = false;
+            this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
+            // 
             // frmAdminAddUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(878, 370);
+            this.ClientSize = new System.Drawing.Size(878, 364);
+            this.Controls.Add(this.btnUpdateUser);
+            this.Controls.Add(this.buttonAdv2);
+            this.Controls.Add(this.btnAddUser);
+            this.Controls.Add(this.splashPanel1);
             this.Controls.Add(this.txtpass);
             this.Controls.Add(this.txtuserid);
-            this.Controls.Add(this.btnUpdateUser);
             this.Controls.Add(this.cmbRole);
-            this.Controls.Add(this.btnAddUser);
             this.Controls.Add(this.dtpjoineddate);
             this.Controls.Add(this.chkstate);
             this.Controls.Add(this.txtusername);
@@ -504,6 +583,8 @@
             this.Name = "frmAdminAddUser";
             this.Resizable = false;
             this.Text = "Manage User";
+            this.splashPanel1.ResumeLayout(false);
+            this.splashPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -530,10 +611,13 @@
         private MetroFramework.Controls.MetroTextBox txtusername;
         private MetroFramework.Controls.MetroToggle chkstate;
         private MetroFramework.Controls.MetroDateTime dtpjoineddate;
-        private MetroFramework.Controls.MetroButton btnAddUser;
         private MetroFramework.Controls.MetroComboBox cmbRole;
-        private MetroFramework.Controls.MetroButton btnUpdateUser;
         private MetroFramework.Controls.MetroTextBox txtuserid;
         private MetroFramework.Controls.MetroTextBox txtpass;
+        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv2;
+        private Syncfusion.Windows.Forms.ButtonAdv btnAddUser;
+        private Syncfusion.Windows.Forms.ButtonAdv btnUpdateUser;
+        private System.Windows.Forms.Label label1;
+        private Syncfusion.Windows.Forms.Tools.SplashPanel splashPanel1;
     }
 }
