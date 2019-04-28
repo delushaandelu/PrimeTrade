@@ -216,7 +216,7 @@
             // 
             // splashPanel1
             // 
-            this.splashPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.ForwardDiagonal, System.Drawing.Color.MediumOrchid, System.Drawing.Color.RoyalBlue);
+            this.splashPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.CornflowerBlue, System.Drawing.Color.RoyalBlue);
             this.splashPanel1.BeforeTouchSize = new System.Drawing.Size(661, 63);
             this.splashPanel1.Controls.Add(this.label1);
             this.splashPanel1.DesktopAlignment = Syncfusion.Windows.Forms.Tools.SplashAlignment.LeftTop;
@@ -232,7 +232,6 @@
             this.materialRaisedButton2.BeforeTouchSize = new System.Drawing.Size(124, 41);
             this.materialRaisedButton2.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
             this.materialRaisedButton2.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Browse;
-            this.materialRaisedButton2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.materialRaisedButton2.Image = global::PrimeTrade.Properties.Resources.remove;
             this.materialRaisedButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.materialRaisedButton2.IsBackStageButton = false;
@@ -256,7 +255,6 @@
             this.materialRaisedButton1.BeforeTouchSize = new System.Drawing.Size(124, 41);
             this.materialRaisedButton1.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
             this.materialRaisedButton1.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Browse;
-            this.materialRaisedButton1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.materialRaisedButton1.Image = global::PrimeTrade.Properties.Resources.update;
             this.materialRaisedButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.materialRaisedButton1.IsBackStageButton = false;
@@ -280,7 +278,6 @@
             this.buttonAdv2.BeforeTouchSize = new System.Drawing.Size(73, 41);
             this.buttonAdv2.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
             this.buttonAdv2.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Browse;
-            this.buttonAdv2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonAdv2.Image = global::PrimeTrade.Properties.Resources.error;
             this.buttonAdv2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAdv2.IsBackStageButton = false;
@@ -301,7 +298,6 @@
             this.btnaddstock.BeforeTouchSize = new System.Drawing.Size(124, 41);
             this.btnaddstock.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
             this.btnaddstock.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Browse;
-            this.btnaddstock.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnaddstock.Image = global::PrimeTrade.Properties.Resources.add;
             this.btnaddstock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnaddstock.IsBackStageButton = false;

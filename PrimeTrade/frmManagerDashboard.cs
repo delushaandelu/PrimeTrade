@@ -28,7 +28,6 @@ namespace PrimeTrade
         public void AutoStartMethod()
         {
             viewPromotions();
-            viewDistributers();
             getStockRage();
             getDistributers();
             getAreaCount();
@@ -56,39 +55,19 @@ namespace PrimeTrade
 
         }
 
-        public void viewDistributers()
-        {
-            connect.Open();
-
-            string query = "SELECT firstname FROM tbl_user WHERE status = 'On' AND role = 'DISTRIBUTER'";
-            using (var command = new MySqlCommand(query, connect))
-            {
-                using (var reader = command.ExecuteReader())
-                {
-                    //Iterate through the rows and add it to the combobox's items
-                    while (reader.Read())
-                    {
-                        cmbdistributer.Items.Add(reader.GetString("firstname"));
-                    }
-                }
-                connect.Close();
-            }
-        }
-
         private void metroButton1_Click(object sender, EventArgs e)
         {
             connect.Open();
             salesChart.ResetAutoValues();
 
             MySqlCommand cmd = connect.CreateCommand();
-            cmd.CommandText = "SELECT sum(`tb_sales`.`qty1`), sum(`tb_sales`.`qty2`),`tb_sales`.`salesdate` FROM `base`.`tb_sales` ,`base`.`tbl_user` where `tb_sales`.`distributer` = `tbl_user`.`idtbl_user` AND `tbl_user`.`firstname` = '"+cmbdistributer.SelectedItem+"' AND `tb_sales`.`promotionid` = '"+cmbpromotion.SelectedItem+"' group by `tb_sales`.`salesdate`";
+            cmd.CommandText = "SELECT sum(`tb_sales`.`qty1`) ,`tb_sales`.`salesdate` FROM `base`.`tb_sales` ,`base`.`tbl_user` where `tb_sales`.`distributer` = `tbl_user`.`idtbl_user` AND `tb_sales`.`promotionid` = '"+cmbpromotion.SelectedItem+"' group by `tb_sales`.`salesdate`";
             MySqlDataReader reader;
 
             reader = cmd.ExecuteReader();
             while (reader.Read())
             {
                 salesChart.Series["Main Item Qty"].Points.AddXY(reader.GetString("salesdate"), reader.GetInt32("sum(`tb_sales`.`qty1`)"));
-                salesChart.Series["Attached Item QTY"].Points.AddY(reader.GetInt32("sum(`tb_sales`.`qty2`)"));
             }
 
             connect.Close();
@@ -366,6 +345,11 @@ namespace PrimeTrade
         private void metroButton2_Click(object sender, EventArgs e)
         {
           MetroMessageBox.Show(this, "No Any lates Notification Found.", "Notification !", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

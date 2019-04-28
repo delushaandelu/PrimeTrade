@@ -49,9 +49,9 @@
             this.removeUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contectActiveStatus = new System.Windows.Forms.ToolStripMenuItem();
+            this.buttonAdv2 = new Syncfusion.Windows.Forms.ButtonAdv();
             this.label1 = new System.Windows.Forms.Label();
             this.splashPanel1 = new Syncfusion.Windows.Forms.Tools.SplashPanel();
-            this.buttonAdv2 = new Syncfusion.Windows.Forms.ButtonAdv();
             this.cntDeleteUser.SuspendLayout();
             this.splashPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -213,31 +213,6 @@
             this.contectActiveStatus.Text = "Active Status";
             this.contectActiveStatus.Click += new System.EventHandler(this.contectActiveStatus_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(3, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(420, 45);
-            this.label1.TabIndex = 137;
-            this.label1.Text = "PRIME TRADE : ALL USERS";
-            // 
-            // splashPanel1
-            // 
-            this.splashPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.ForwardDiagonal, System.Drawing.Color.MediumOrchid, System.Drawing.Color.RoyalBlue);
-            this.splashPanel1.BeforeTouchSize = new System.Drawing.Size(1100, 63);
-            this.splashPanel1.Controls.Add(this.label1);
-            this.splashPanel1.DesktopAlignment = Syncfusion.Windows.Forms.Tools.SplashAlignment.LeftTop;
-            this.splashPanel1.DiscreetLocation = new System.Drawing.Point(0, 0);
-            this.splashPanel1.Location = new System.Drawing.Point(0, 4);
-            this.splashPanel1.Name = "splashPanel1";
-            this.splashPanel1.Size = new System.Drawing.Size(1100, 63);
-            this.splashPanel1.TabIndex = 132;
-            this.splashPanel1.Text = "splashPanel1";
-            // 
             // buttonAdv2
             // 
             this.buttonAdv2.BeforeTouchSize = new System.Drawing.Size(73, 41);
@@ -258,6 +233,31 @@
             this.buttonAdv2.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.buttonAdv2.UseVisualStyle = false;
             this.buttonAdv2.Click += new System.EventHandler(this.buttonAdv2_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(3, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(420, 45);
+            this.label1.TabIndex = 137;
+            this.label1.Text = "PRIME TRADE : ALL USERS";
+            // 
+            // splashPanel1
+            // 
+            this.splashPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.CornflowerBlue, System.Drawing.Color.RoyalBlue);
+            this.splashPanel1.BeforeTouchSize = new System.Drawing.Size(1100, 63);
+            this.splashPanel1.Controls.Add(this.label1);
+            this.splashPanel1.DesktopAlignment = Syncfusion.Windows.Forms.Tools.SplashAlignment.LeftTop;
+            this.splashPanel1.DiscreetLocation = new System.Drawing.Point(0, 0);
+            this.splashPanel1.Location = new System.Drawing.Point(0, 4);
+            this.splashPanel1.Name = "splashPanel1";
+            this.splashPanel1.Size = new System.Drawing.Size(1100, 63);
+            this.splashPanel1.TabIndex = 132;
+            this.splashPanel1.Text = "splashPanel1";
             // 
             // frmAdminViewUsers
             // 
@@ -301,8 +301,8 @@
         private System.Windows.Forms.ToolStripMenuItem contectActiveStatus;
         private System.Windows.Forms.ToolStripMenuItem updateUserToolStripMenuItem;
         private System.Windows.Forms.ColumnHeader columnHeader11;
+        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv2;
         private System.Windows.Forms.Label label1;
         private Syncfusion.Windows.Forms.Tools.SplashPanel splashPanel1;
-        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv2;
     }
 }

@@ -143,7 +143,7 @@
             // 
             // 
             this.txtpromo.CustomButton.Image = null;
-            this.txtpromo.CustomButton.Location = new System.Drawing.Point(136, 1);
+            this.txtpromo.CustomButton.Location = new System.Drawing.Point(175, 1);
             this.txtpromo.CustomButton.Name = "";
             this.txtpromo.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtpromo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -192,7 +192,7 @@
             // 
             // 
             this.txtmaincode1.CustomButton.Image = null;
-            this.txtmaincode1.CustomButton.Location = new System.Drawing.Point(136, 1);
+            this.txtmaincode1.CustomButton.Location = new System.Drawing.Point(175, 1);
             this.txtmaincode1.CustomButton.Name = "";
             this.txtmaincode1.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtmaincode1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -232,7 +232,7 @@
             // 
             // 
             this.txtmainname.CustomButton.Image = null;
-            this.txtmainname.CustomButton.Location = new System.Drawing.Point(136, 1);
+            this.txtmainname.CustomButton.Location = new System.Drawing.Point(175, 1);
             this.txtmainname.CustomButton.Name = "";
             this.txtmainname.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtmainname.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -272,7 +272,7 @@
             // 
             // 
             this.txtitemqty1.CustomButton.Image = null;
-            this.txtitemqty1.CustomButton.Location = new System.Drawing.Point(136, 1);
+            this.txtitemqty1.CustomButton.Location = new System.Drawing.Point(175, 1);
             this.txtitemqty1.CustomButton.Name = "";
             this.txtitemqty1.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtitemqty1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -311,7 +311,7 @@
             // 
             // 
             this.txtitemqty2.CustomButton.Image = null;
-            this.txtitemqty2.CustomButton.Location = new System.Drawing.Point(136, 1);
+            this.txtitemqty2.CustomButton.Location = new System.Drawing.Point(175, 1);
             this.txtitemqty2.CustomButton.Name = "";
             this.txtitemqty2.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtitemqty2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -350,7 +350,7 @@
             // 
             // 
             this.txtmainattached.CustomButton.Image = null;
-            this.txtmainattached.CustomButton.Location = new System.Drawing.Point(136, 1);
+            this.txtmainattached.CustomButton.Location = new System.Drawing.Point(175, 1);
             this.txtmainattached.CustomButton.Name = "";
             this.txtmainattached.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtmainattached.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -390,7 +390,7 @@
             // 
             // 
             this.txtmaincode2.CustomButton.Image = null;
-            this.txtmaincode2.CustomButton.Location = new System.Drawing.Point(136, 1);
+            this.txtmaincode2.CustomButton.Location = new System.Drawing.Point(175, 1);
             this.txtmaincode2.CustomButton.Name = "";
             this.txtmaincode2.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtmaincode2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -430,7 +430,7 @@
             // 
             // 
             this.txtseller.CustomButton.Image = null;
-            this.txtseller.CustomButton.Location = new System.Drawing.Point(136, 1);
+            this.txtseller.CustomButton.Location = new System.Drawing.Point(175, 1);
             this.txtseller.CustomButton.Name = "";
             this.txtseller.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtseller.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -623,7 +623,7 @@
             // 
             // 
             this.txtprice2.CustomButton.Image = null;
-            this.txtprice2.CustomButton.Location = new System.Drawing.Point(136, 1);
+            this.txtprice2.CustomButton.Location = new System.Drawing.Point(175, 1);
             this.txtprice2.CustomButton.Name = "";
             this.txtprice2.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtprice2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -662,7 +662,7 @@
             // 
             // 
             this.txtprice1.CustomButton.Image = null;
-            this.txtprice1.CustomButton.Location = new System.Drawing.Point(136, 1);
+            this.txtprice1.CustomButton.Location = new System.Drawing.Point(175, 1);
             this.txtprice1.CustomButton.Name = "";
             this.txtprice1.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtprice1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -688,7 +688,7 @@
             // 
             // splashPanel1
             // 
-            this.splashPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.ForwardDiagonal, System.Drawing.Color.MediumOrchid, System.Drawing.Color.RoyalBlue);
+            this.splashPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.CornflowerBlue, System.Drawing.Color.RoyalBlue);
             this.splashPanel1.BeforeTouchSize = new System.Drawing.Size(1050, 63);
             this.splashPanel1.Controls.Add(this.label1);
             this.splashPanel1.DesktopAlignment = Syncfusion.Windows.Forms.Tools.SplashAlignment.LeftTop;

@@ -62,7 +62,10 @@
             this.chartSales.Legends.Add(legend1);
             this.chartSales.Location = new System.Drawing.Point(12, 137);
             this.chartSales.Name = "chartSales";
-            this.chartSales.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
+            this.chartSales.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
+            this.chartSales.PaletteCustomColors = new System.Drawing.Color[] {
+        System.Drawing.Color.RoyalBlue,
+        System.Drawing.Color.DeepSkyBlue};
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Main Item Qty";
@@ -121,7 +124,7 @@
             // 
             // splashPanel1
             // 
-            this.splashPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.ForwardDiagonal, System.Drawing.Color.MediumOrchid, System.Drawing.Color.RoyalBlue);
+            this.splashPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.CornflowerBlue, System.Drawing.Color.RoyalBlue);
             this.splashPanel1.BeforeTouchSize = new System.Drawing.Size(1413, 63);
             this.splashPanel1.Controls.Add(this.label1);
             this.splashPanel1.DesktopAlignment = Syncfusion.Windows.Forms.Tools.SplashAlignment.LeftTop;

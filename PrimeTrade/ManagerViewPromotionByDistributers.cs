@@ -10,11 +10,14 @@ using System.Windows.Forms;
 using MaterialSkin.Controls;
 using MaterialSkin.Animations;
 using System.Configuration;
+using MetroFramework;
+using MetroFramework.Fonts;
 using MySql.Data.MySqlClient;
+using MetroFramework.Forms;
 
 namespace PrimeTrade
 {
-    public partial class ManagerViewPromotionByDistributers : MaterialForm
+    public partial class ManagerViewPromotionByDistributers : MetroForm
     {
         public ManagerViewPromotionByDistributers()
         {

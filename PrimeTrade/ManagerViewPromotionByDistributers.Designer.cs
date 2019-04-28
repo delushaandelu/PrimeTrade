@@ -36,9 +36,12 @@
             this.columnHeader28 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader29 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader30 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cmbDistributers = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.splashPanel1 = new Syncfusion.Windows.Forms.Tools.SplashPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.splashPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // listView3
@@ -96,6 +99,11 @@
             this.columnHeader30.Text = "Comments";
             this.columnHeader30.Width = 120;
             // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Status";
+            this.columnHeader1.Width = 120;
+            // 
             // cmbDistributers
             // 
             this.cmbDistributers.FormattingEnabled = true;
@@ -116,21 +124,44 @@
             this.metroLabel1.TabIndex = 98;
             this.metroLabel1.Text = "Select a Distributer Code";
             // 
-            // columnHeader1
+            // splashPanel1
             // 
-            this.columnHeader1.Text = "Status";
-            this.columnHeader1.Width = 120;
+            this.splashPanel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.CornflowerBlue, System.Drawing.Color.RoyalBlue);
+            this.splashPanel1.BeforeTouchSize = new System.Drawing.Size(1044, 63);
+            this.splashPanel1.Controls.Add(this.label1);
+            this.splashPanel1.DesktopAlignment = Syncfusion.Windows.Forms.Tools.SplashAlignment.LeftTop;
+            this.splashPanel1.DiscreetLocation = new System.Drawing.Point(0, 0);
+            this.splashPanel1.Location = new System.Drawing.Point(0, 4);
+            this.splashPanel1.Name = "splashPanel1";
+            this.splashPanel1.Size = new System.Drawing.Size(1044, 63);
+            this.splashPanel1.TabIndex = 147;
+            this.splashPanel1.Text = "splashPanel1";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(3, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(674, 32);
+            this.label1.TabIndex = 137;
+            this.label1.Text = "PRIME TRADE :VIEW ALL PROMOTIONS BY DISTRIBUTERS";
             // 
             // ManagerViewPromotionByDistributers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1043, 708);
+            this.Controls.Add(this.splashPanel1);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.cmbDistributers);
             this.Controls.Add(this.listView3);
             this.Name = "ManagerViewPromotionByDistributers";
             this.Text = "View All promotions By Distributers";
+            this.splashPanel1.ResumeLayout(false);
+            this.splashPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -149,5 +180,7 @@
         private MetroFramework.Controls.MetroComboBox cmbDistributers;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
+        private Syncfusion.Windows.Forms.Tools.SplashPanel splashPanel1;
+        private System.Windows.Forms.Label label1;
     }
 }

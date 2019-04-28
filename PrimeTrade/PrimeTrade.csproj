@@ -63,6 +63,9 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AquaGauge">
+      <HintPath>..\..\..\..\Desktop\New folder (2)\AquaGauge_dll\AquaGauge.dll</HintPath>
+    </Reference>
     <Reference Include="CSharpTest.Net.BPlusTree, Version=2.14.126.467, Culture=neutral, PublicKeyToken=06aee00cce822474, processorArchitecture=MSIL">
       <HintPath>..\packages\CSharpTest.Net.BPlusTree.2.14.126.467\lib\net45\CSharpTest.Net.BPlusTree.dll</HintPath>
     </Reference>
@@ -490,6 +493,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\increasing-stocks-graphic-of-bars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\increasing-stocks-graphic-of-bars1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moving-truck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook-placeholder-for-locate-places-on-maps.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\increasing-stocks-graphic-of-bars2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\factory-stock-house.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\best-seller.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\best-seller %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\worldwide.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

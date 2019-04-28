@@ -42,6 +42,18 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AquaGauge.dll" size="28672">
+      <assemblyIdentity name="AquaGauge" version="1.0.2800.27798" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>kdQixVjdTp2sWeqNjYAKpKytos4AH9BjWpNETgjGQrY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CSharpTest.Net.BPlusTree.dll" size="118272">
       <assemblyIdentity name="CSharpTest.Net.BPlusTree" version="2.14.126.467" publicKeyToken="06AEE00CCE822474" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -138,14 +150,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PrimeTrade.exe" size="951736">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PrimeTrade.exe" size="994744">
       <assemblyIdentity name="PrimeTrade" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>+XI/4jmlqgsnJwjzRMpDRp8qW2/If4miARW+PjIcuT0=</dsig:DigestValue>
+        <dsig:DigestValue>1hvp302OlFDh2I8UJX5bLfpWTDoETLCxEJJ+gVfyLBc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
