@@ -46,7 +46,7 @@
             treeNode8});
             System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Promotion Plan");
             System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Active Promotion");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("View all Promotions");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Promotion History");
             System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Assign Promotion to Distributers");
             System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("View all Promotions by Distributers");
             System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("View Promotion By State");
@@ -73,7 +73,6 @@
             treeNode22,
             treeNode23});
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmManagerHome));
-            Syncfusion.Windows.Forms.Tools.TreeNavigator.HeaderCollection headerCollection1 = new Syncfusion.Windows.Forms.Tools.TreeNavigator.HeaderCollection();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reconnectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -88,9 +87,9 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.button5 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -102,20 +101,6 @@
             this.btnManageTeacher = new System.Windows.Forms.Button();
             this.btnTeacherAssignClass = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.treeNavigator1 = new Syncfusion.Windows.Forms.Tools.TreeNavigator();
-            this.treeMenuItem2 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
-            this.treeMenuItem3 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
-            this.treeMenuItem4 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
-            this.treeMenuItem5 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
-            this.treeMenuItem6 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
-            this.treeMenuItem7 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
-            this.treeMenuItem8 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
-            this.treeMenuItem9 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
-            this.treeMenuItem10 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
-            this.treeMenuItem11 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
-            this.treeMenuItem12 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
-            this.treeMenuItem13 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.treeMenuItem14 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
@@ -153,12 +138,22 @@
             this.treeMenuItem45 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.treeMenuItem3 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.treeMenuItem4 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.treeMenuItem5 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.treeMenuItem6 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.treeMenuItem7 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.treeMenuItem8 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.treeMenuItem9 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.treeMenuItem10 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.treeMenuItem11 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.treeMenuItem12 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.treeMenuItem13 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -169,7 +164,7 @@
             this.fileToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(20, 90);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(1423, 24);
+            this.menuStrip.Size = new System.Drawing.Size(1463, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
             // 
@@ -216,9 +211,9 @@
             // 
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblstatus});
-            this.statusStrip.Location = new System.Drawing.Point(20, 834);
+            this.statusStrip.Location = new System.Drawing.Point(20, 981);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(1423, 22);
+            this.statusStrip.Size = new System.Drawing.Size(1463, 22);
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "StatusStrip";
             // 
@@ -259,7 +254,7 @@
             treeNode11.Name = "Node13";
             treeNode11.Text = "Active Promotion";
             treeNode12.Name = "Node14";
-            treeNode12.Text = "View all Promotions";
+            treeNode12.Text = "Promotion History";
             treeNode13.Name = "Node15";
             treeNode13.Text = "Assign Promotion to Distributers";
             treeNode14.Name = "Node16";
@@ -291,7 +286,7 @@
             treeNode17,
             treeNode24});
             this.treeView1.SelectedImageKey = "tab.png";
-            this.treeView1.Size = new System.Drawing.Size(223, 688);
+            this.treeView1.Size = new System.Drawing.Size(222, 835);
             this.treeView1.TabIndex = 10;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             // 
@@ -306,20 +301,19 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.tabControl1.Location = new System.Drawing.Point(20, 114);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(237, 720);
+            this.tabControl1.Size = new System.Drawing.Size(236, 867);
             this.tabControl1.TabIndex = 12;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.button5);
+            this.tabPage1.Controls.Add(this.button8);
             this.tabPage1.Controls.Add(this.button6);
             this.tabPage1.Controls.Add(this.button7);
-            this.tabPage1.Controls.Add(this.button8);
             this.tabPage1.Controls.Add(this.button9);
             this.tabPage1.Controls.Add(this.button10);
             this.tabPage1.Controls.Add(this.button1);
@@ -333,25 +327,38 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(229, 694);
+            this.tabPage1.Size = new System.Drawing.Size(228, 841);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Shortcuts";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.button5.BackColor = System.Drawing.Color.RoyalBlue;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button5.Location = new System.Drawing.Point(116, 750);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(109, 123);
             this.button5.TabIndex = 35;
-            this.button5.Text = "View Classes by Teacher ";
+            this.button5.Text = "KPI BY TRANSACTIONS";
             this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button8.Location = new System.Drawing.Point(6, 750);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(109, 123);
+            this.button8.TabIndex = 34;
+            this.button8.Text = "KPI BY SALES";
+            this.button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button8.UseVisualStyleBackColor = false;
             // 
             // button6
             // 
@@ -359,12 +366,12 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button6.Location = new System.Drawing.Point(6, 626);
+            this.button6.Image = global::PrimeTrade.Properties.Resources.world_map;
+            this.button6.Location = new System.Drawing.Point(117, 378);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(109, 123);
             this.button6.TabIndex = 32;
-            this.button6.Text = "Search Teacher";
+            this.button6.Text = "Map Views";
             this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button6.UseVisualStyleBackColor = false;
             // 
@@ -374,29 +381,14 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button7.Image = global::PrimeTrade.Properties.Resources.notification;
             this.button7.Location = new System.Drawing.Point(116, 626);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(109, 123);
             this.button7.TabIndex = 33;
-            this.button7.Text = "Manage Teacher";
+            this.button7.Text = "Notifications";
             this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button7.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button8.Location = new System.Drawing.Point(6, 750);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(109, 123);
-            this.button8.TabIndex = 34;
-            this.button8.Text = "Assign Class for Teacher";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button8.UseVisualStyleBackColor = false;
             // 
             // button9
             // 
@@ -404,12 +396,12 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button9.Image = global::PrimeTrade.Properties.Resources.warehouse;
             this.button9.Location = new System.Drawing.Point(116, 502);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(109, 123);
             this.button9.TabIndex = 31;
-            this.button9.Text = "View Classes by Teacher ";
+            this.button9.Text = "Stock Summary";
             this.button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button9.UseVisualStyleBackColor = false;
             // 
@@ -419,12 +411,12 @@
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button10.Image = global::PrimeTrade.Properties.Resources.value__1_;
             this.button10.Location = new System.Drawing.Point(6, 502);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(109, 123);
             this.button10.TabIndex = 30;
-            this.button10.Text = "Assign Class for Teacher";
+            this.button10.Text = "Rewords and Points";
             this.button10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button10.UseVisualStyleBackColor = false;
             // 
@@ -434,12 +426,12 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(116, 378);
+            this.button1.Image = global::PrimeTrade.Properties.Resources.cash;
+            this.button1.Location = new System.Drawing.Point(6, 626);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 123);
             this.button1.TabIndex = 29;
-            this.button1.Text = "View Classes by Teacher ";
+            this.button1.Text = "Cash Flow";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -449,12 +441,12 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button2.Image = global::PrimeTrade.Properties.Resources.map_location;
             this.button2.Location = new System.Drawing.Point(6, 254);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(109, 123);
             this.button2.TabIndex = 26;
-            this.button2.Text = "Search Teacher";
+            this.button2.Text = "Promo By Region";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -464,12 +456,12 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button3.Image = global::PrimeTrade.Properties.Resources.shipped;
             this.button3.Location = new System.Drawing.Point(116, 254);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(109, 123);
             this.button3.TabIndex = 27;
-            this.button3.Text = "Manage Teacher";
+            this.button3.Text = "Promotion By Distributors";
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button3.UseVisualStyleBackColor = false;
             // 
@@ -479,12 +471,12 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button4.Image = global::PrimeTrade.Properties.Resources.newspaper;
             this.button4.Location = new System.Drawing.Point(6, 378);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(109, 123);
             this.button4.TabIndex = 28;
-            this.button4.Text = "Assign Class for Teacher";
+            this.button4.Text = "Generate Report";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button4.UseVisualStyleBackColor = false;
             // 
@@ -494,12 +486,12 @@
             this.btnViewAllAssignedClass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnViewAllAssignedClass.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewAllAssignedClass.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnViewAllAssignedClass.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnViewAllAssignedClass.Image = global::PrimeTrade.Properties.Resources.result1;
             this.btnViewAllAssignedClass.Location = new System.Drawing.Point(116, 130);
             this.btnViewAllAssignedClass.Name = "btnViewAllAssignedClass";
             this.btnViewAllAssignedClass.Size = new System.Drawing.Size(109, 123);
             this.btnViewAllAssignedClass.TabIndex = 25;
-            this.btnViewAllAssignedClass.Text = "View Classes by Teacher ";
+            this.btnViewAllAssignedClass.Text = "Production Data";
             this.btnViewAllAssignedClass.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnViewAllAssignedClass.UseVisualStyleBackColor = false;
             // 
@@ -509,12 +501,12 @@
             this.btnSearchTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearchTeacher.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearchTeacher.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSearchTeacher.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSearchTeacher.Image = global::PrimeTrade.Properties.Resources.product;
             this.btnSearchTeacher.Location = new System.Drawing.Point(6, 6);
             this.btnSearchTeacher.Name = "btnSearchTeacher";
             this.btnSearchTeacher.Size = new System.Drawing.Size(109, 123);
             this.btnSearchTeacher.TabIndex = 22;
-            this.btnSearchTeacher.Text = "Search Teacher";
+            this.btnSearchTeacher.Text = "Production Mix";
             this.btnSearchTeacher.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSearchTeacher.UseVisualStyleBackColor = false;
             this.btnSearchTeacher.Click += new System.EventHandler(this.btnSearchTeacher_Click);
@@ -525,12 +517,12 @@
             this.btnManageTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnManageTeacher.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageTeacher.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnManageTeacher.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnManageTeacher.Image = global::PrimeTrade.Properties.Resources.vision;
             this.btnManageTeacher.Location = new System.Drawing.Point(116, 6);
             this.btnManageTeacher.Name = "btnManageTeacher";
             this.btnManageTeacher.Size = new System.Drawing.Size(109, 123);
             this.btnManageTeacher.TabIndex = 23;
-            this.btnManageTeacher.Text = "Manage Teacher";
+            this.btnManageTeacher.Text = "On going Promotions";
             this.btnManageTeacher.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnManageTeacher.UseVisualStyleBackColor = false;
             // 
@@ -540,12 +532,12 @@
             this.btnTeacherAssignClass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTeacherAssignClass.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTeacherAssignClass.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnTeacherAssignClass.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnTeacherAssignClass.Image = global::PrimeTrade.Properties.Resources.plus_sign_in_a_black_circle1;
             this.btnTeacherAssignClass.Location = new System.Drawing.Point(6, 130);
             this.btnTeacherAssignClass.Name = "btnTeacherAssignClass";
             this.btnTeacherAssignClass.Size = new System.Drawing.Size(109, 123);
             this.btnTeacherAssignClass.TabIndex = 24;
-            this.btnTeacherAssignClass.Text = "Assign Class for Teacher";
+            this.btnTeacherAssignClass.Text = "New Promotion";
             this.btnTeacherAssignClass.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnTeacherAssignClass.UseVisualStyleBackColor = false;
             // 
@@ -555,193 +547,10 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(229, 694);
+            this.tabPage2.Size = new System.Drawing.Size(228, 841);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Navigator";
+            this.tabPage2.Text = "Tree View";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.treeNavigator1);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(229, 694);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // treeNavigator1
-            // 
-            headerCollection1.Font = new System.Drawing.Font("Arial", 8F);
-            this.treeNavigator1.Header = headerCollection1;
-            this.treeNavigator1.ItemBackColor = System.Drawing.SystemColors.Control;
-            this.treeNavigator1.Items.Add(this.treeMenuItem2);
-            this.treeNavigator1.Items.Add(this.treeMenuItem3);
-            this.treeNavigator1.Items.Add(this.treeMenuItem4);
-            this.treeNavigator1.Items.Add(this.treeMenuItem5);
-            this.treeNavigator1.Items.Add(this.treeMenuItem6);
-            this.treeNavigator1.Items.Add(this.treeMenuItem7);
-            this.treeNavigator1.Items.Add(this.treeMenuItem8);
-            this.treeNavigator1.Items.Add(this.treeMenuItem9);
-            this.treeNavigator1.Items.Add(this.treeMenuItem10);
-            this.treeNavigator1.Items.Add(this.treeMenuItem11);
-            this.treeNavigator1.Items.Add(this.treeMenuItem12);
-            this.treeNavigator1.Items.Add(this.treeMenuItem13);
-            this.treeNavigator1.Location = new System.Drawing.Point(3, 6);
-            this.treeNavigator1.MinimumSize = new System.Drawing.Size(150, 150);
-            this.treeNavigator1.Name = "treeNavigator1";
-            this.treeNavigator1.NavigationMode = Syncfusion.Windows.Forms.Tools.NavigationMode.Default;
-            this.treeNavigator1.Size = new System.Drawing.Size(226, 711);
-            this.treeNavigator1.TabIndex = 127;
-            this.treeNavigator1.Text = "treeNavigator1";
-            // 
-            // treeMenuItem2
-            // 
-            this.treeMenuItem2.BackColor = System.Drawing.SystemColors.Control;
-            this.treeMenuItem2.ItemBackColor = System.Drawing.SystemColors.Control;
-            this.treeMenuItem2.Items.Add(this.treeMenuItem19);
-            this.treeMenuItem2.Items.Add(this.treeMenuItem20);
-            this.treeMenuItem2.Items.Add(this.treeMenuItem21);
-            this.treeMenuItem2.Items.Add(this.treeMenuItem22);
-            this.treeMenuItem2.Items.Add(this.treeMenuItem23);
-            this.treeMenuItem2.Items.Add(this.treeMenuItem24);
-            this.treeMenuItem2.Items.Add(this.treeMenuItem25);
-            this.treeMenuItem2.Items.Add(this.treeMenuItem26);
-            this.treeMenuItem2.Items.Add(this.treeMenuItem27);
-            this.treeMenuItem2.Items.Add(this.treeMenuItem28);
-            this.treeMenuItem2.Location = new System.Drawing.Point(0, 0);
-            this.treeMenuItem2.Name = "treeMenuItem2";
-            this.treeMenuItem2.Size = new System.Drawing.Size(222, 50);
-            this.treeMenuItem2.TabIndex = 1;
-            this.treeMenuItem2.Text = "treeMenuItem2";
-            // 
-            // treeMenuItem3
-            // 
-            this.treeMenuItem3.BackColor = System.Drawing.SystemColors.Control;
-            this.treeMenuItem3.ItemBackColor = System.Drawing.SystemColors.Control;
-            this.treeMenuItem3.Items.Add(this.treeMenuItem29);
-            this.treeMenuItem3.Items.Add(this.treeMenuItem30);
-            this.treeMenuItem3.Items.Add(this.treeMenuItem31);
-            this.treeMenuItem3.Items.Add(this.treeMenuItem32);
-            this.treeMenuItem3.Items.Add(this.treeMenuItem33);
-            this.treeMenuItem3.Items.Add(this.treeMenuItem34);
-            this.treeMenuItem3.Items.Add(this.treeMenuItem35);
-            this.treeMenuItem3.Items.Add(this.treeMenuItem36);
-            this.treeMenuItem3.Items.Add(this.treeMenuItem37);
-            this.treeMenuItem3.Location = new System.Drawing.Point(0, 52);
-            this.treeMenuItem3.Name = "treeMenuItem3";
-            this.treeMenuItem3.Size = new System.Drawing.Size(222, 50);
-            this.treeMenuItem3.TabIndex = 1;
-            this.treeMenuItem3.Text = "treeMenuItem3";
-            // 
-            // treeMenuItem4
-            // 
-            this.treeMenuItem4.BackColor = System.Drawing.SystemColors.Control;
-            this.treeMenuItem4.ItemBackColor = System.Drawing.SystemColors.Control;
-            this.treeMenuItem4.Items.Add(this.treeMenuItem38);
-            this.treeMenuItem4.Items.Add(this.treeMenuItem39);
-            this.treeMenuItem4.Items.Add(this.treeMenuItem40);
-            this.treeMenuItem4.Items.Add(this.treeMenuItem41);
-            this.treeMenuItem4.Items.Add(this.treeMenuItem42);
-            this.treeMenuItem4.Items.Add(this.treeMenuItem43);
-            this.treeMenuItem4.Items.Add(this.treeMenuItem44);
-            this.treeMenuItem4.Items.Add(this.treeMenuItem45);
-            this.treeMenuItem4.Location = new System.Drawing.Point(0, 104);
-            this.treeMenuItem4.Name = "treeMenuItem4";
-            this.treeMenuItem4.Size = new System.Drawing.Size(222, 50);
-            this.treeMenuItem4.TabIndex = 1;
-            this.treeMenuItem4.Text = "treeMenuItem4";
-            // 
-            // treeMenuItem5
-            // 
-            this.treeMenuItem5.BackColor = System.Drawing.SystemColors.Control;
-            this.treeMenuItem5.ItemBackColor = System.Drawing.SystemColors.Control;
-            this.treeMenuItem5.Location = new System.Drawing.Point(0, 156);
-            this.treeMenuItem5.Name = "treeMenuItem5";
-            this.treeMenuItem5.Size = new System.Drawing.Size(222, 50);
-            this.treeMenuItem5.TabIndex = 1;
-            this.treeMenuItem5.Text = "treeMenuItem5";
-            // 
-            // treeMenuItem6
-            // 
-            this.treeMenuItem6.BackColor = System.Drawing.SystemColors.Control;
-            this.treeMenuItem6.ItemBackColor = System.Drawing.SystemColors.Control;
-            this.treeMenuItem6.Location = new System.Drawing.Point(0, 208);
-            this.treeMenuItem6.Name = "treeMenuItem6";
-            this.treeMenuItem6.Size = new System.Drawing.Size(222, 50);
-            this.treeMenuItem6.TabIndex = 1;
-            this.treeMenuItem6.Text = "treeMenuItem6";
-            // 
-            // treeMenuItem7
-            // 
-            this.treeMenuItem7.BackColor = System.Drawing.SystemColors.Control;
-            this.treeMenuItem7.ItemBackColor = System.Drawing.SystemColors.Control;
-            this.treeMenuItem7.Location = new System.Drawing.Point(0, 260);
-            this.treeMenuItem7.Name = "treeMenuItem7";
-            this.treeMenuItem7.Size = new System.Drawing.Size(222, 50);
-            this.treeMenuItem7.TabIndex = 1;
-            this.treeMenuItem7.Text = "treeMenuItem7";
-            // 
-            // treeMenuItem8
-            // 
-            this.treeMenuItem8.BackColor = System.Drawing.SystemColors.Control;
-            this.treeMenuItem8.ItemBackColor = System.Drawing.SystemColors.Control;
-            this.treeMenuItem8.Location = new System.Drawing.Point(0, 312);
-            this.treeMenuItem8.Name = "treeMenuItem8";
-            this.treeMenuItem8.Size = new System.Drawing.Size(222, 50);
-            this.treeMenuItem8.TabIndex = 1;
-            this.treeMenuItem8.Text = "treeMenuItem8";
-            // 
-            // treeMenuItem9
-            // 
-            this.treeMenuItem9.BackColor = System.Drawing.SystemColors.Control;
-            this.treeMenuItem9.ItemBackColor = System.Drawing.SystemColors.Control;
-            this.treeMenuItem9.Location = new System.Drawing.Point(0, 364);
-            this.treeMenuItem9.Name = "treeMenuItem9";
-            this.treeMenuItem9.Size = new System.Drawing.Size(222, 50);
-            this.treeMenuItem9.TabIndex = 1;
-            this.treeMenuItem9.Text = "treeMenuItem9";
-            // 
-            // treeMenuItem10
-            // 
-            this.treeMenuItem10.BackColor = System.Drawing.SystemColors.Control;
-            this.treeMenuItem10.ItemBackColor = System.Drawing.SystemColors.Control;
-            this.treeMenuItem10.Location = new System.Drawing.Point(0, 416);
-            this.treeMenuItem10.Name = "treeMenuItem10";
-            this.treeMenuItem10.Size = new System.Drawing.Size(222, 50);
-            this.treeMenuItem10.TabIndex = 1;
-            this.treeMenuItem10.Text = "treeMenuItem10";
-            // 
-            // treeMenuItem11
-            // 
-            this.treeMenuItem11.BackColor = System.Drawing.SystemColors.Control;
-            this.treeMenuItem11.ItemBackColor = System.Drawing.SystemColors.Control;
-            this.treeMenuItem11.Location = new System.Drawing.Point(0, 468);
-            this.treeMenuItem11.Name = "treeMenuItem11";
-            this.treeMenuItem11.Size = new System.Drawing.Size(222, 50);
-            this.treeMenuItem11.TabIndex = 1;
-            this.treeMenuItem11.Text = "treeMenuItem11";
-            // 
-            // treeMenuItem12
-            // 
-            this.treeMenuItem12.BackColor = System.Drawing.SystemColors.Control;
-            this.treeMenuItem12.ItemBackColor = System.Drawing.SystemColors.Control;
-            this.treeMenuItem12.Location = new System.Drawing.Point(0, 520);
-            this.treeMenuItem12.Name = "treeMenuItem12";
-            this.treeMenuItem12.Size = new System.Drawing.Size(222, 50);
-            this.treeMenuItem12.TabIndex = 1;
-            this.treeMenuItem12.Text = "treeMenuItem12";
-            // 
-            // treeMenuItem13
-            // 
-            this.treeMenuItem13.BackColor = System.Drawing.SystemColors.Control;
-            this.treeMenuItem13.ItemBackColor = System.Drawing.SystemColors.Control;
-            this.treeMenuItem13.Location = new System.Drawing.Point(0, 572);
-            this.treeMenuItem13.Name = "treeMenuItem13";
-            this.treeMenuItem13.Size = new System.Drawing.Size(222, 50);
-            this.treeMenuItem13.TabIndex = 1;
-            this.treeMenuItem13.Text = "treeMenuItem13";
             // 
             // label3
             // 
@@ -1073,11 +882,121 @@
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
+            // treeMenuItem3
+            // 
+            this.treeMenuItem3.BackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem3.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem3.Location = new System.Drawing.Point(0, 52);
+            this.treeMenuItem3.Name = "treeMenuItem3";
+            this.treeMenuItem3.Size = new System.Drawing.Size(222, 50);
+            this.treeMenuItem3.TabIndex = 1;
+            this.treeMenuItem3.Visible = false;
+            // 
+            // treeMenuItem4
+            // 
+            this.treeMenuItem4.BackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem4.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem4.Location = new System.Drawing.Point(0, 104);
+            this.treeMenuItem4.Name = "treeMenuItem4";
+            this.treeMenuItem4.Size = new System.Drawing.Size(222, 50);
+            this.treeMenuItem4.TabIndex = 1;
+            this.treeMenuItem4.Visible = false;
+            // 
+            // treeMenuItem5
+            // 
+            this.treeMenuItem5.BackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem5.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem5.Location = new System.Drawing.Point(0, 156);
+            this.treeMenuItem5.Name = "treeMenuItem5";
+            this.treeMenuItem5.Size = new System.Drawing.Size(222, 50);
+            this.treeMenuItem5.TabIndex = 1;
+            this.treeMenuItem5.Visible = false;
+            // 
+            // treeMenuItem6
+            // 
+            this.treeMenuItem6.BackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem6.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem6.Location = new System.Drawing.Point(0, 208);
+            this.treeMenuItem6.Name = "treeMenuItem6";
+            this.treeMenuItem6.Size = new System.Drawing.Size(222, 50);
+            this.treeMenuItem6.TabIndex = 1;
+            this.treeMenuItem6.Visible = false;
+            // 
+            // treeMenuItem7
+            // 
+            this.treeMenuItem7.BackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem7.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem7.Location = new System.Drawing.Point(0, 260);
+            this.treeMenuItem7.Name = "treeMenuItem7";
+            this.treeMenuItem7.Size = new System.Drawing.Size(222, 50);
+            this.treeMenuItem7.TabIndex = 1;
+            this.treeMenuItem7.Visible = false;
+            // 
+            // treeMenuItem8
+            // 
+            this.treeMenuItem8.BackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem8.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem8.Location = new System.Drawing.Point(0, 312);
+            this.treeMenuItem8.Name = "treeMenuItem8";
+            this.treeMenuItem8.Size = new System.Drawing.Size(222, 50);
+            this.treeMenuItem8.TabIndex = 1;
+            this.treeMenuItem8.Visible = false;
+            // 
+            // treeMenuItem9
+            // 
+            this.treeMenuItem9.BackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem9.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem9.Location = new System.Drawing.Point(0, 364);
+            this.treeMenuItem9.Name = "treeMenuItem9";
+            this.treeMenuItem9.Size = new System.Drawing.Size(222, 50);
+            this.treeMenuItem9.TabIndex = 1;
+            this.treeMenuItem9.Visible = false;
+            // 
+            // treeMenuItem10
+            // 
+            this.treeMenuItem10.BackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem10.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem10.Location = new System.Drawing.Point(0, 416);
+            this.treeMenuItem10.Name = "treeMenuItem10";
+            this.treeMenuItem10.Size = new System.Drawing.Size(222, 50);
+            this.treeMenuItem10.TabIndex = 1;
+            this.treeMenuItem10.Visible = false;
+            // 
+            // treeMenuItem11
+            // 
+            this.treeMenuItem11.BackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem11.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem11.Location = new System.Drawing.Point(0, 468);
+            this.treeMenuItem11.Name = "treeMenuItem11";
+            this.treeMenuItem11.Size = new System.Drawing.Size(222, 50);
+            this.treeMenuItem11.TabIndex = 1;
+            this.treeMenuItem11.Visible = false;
+            // 
+            // treeMenuItem12
+            // 
+            this.treeMenuItem12.BackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem12.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem12.Location = new System.Drawing.Point(0, 520);
+            this.treeMenuItem12.Name = "treeMenuItem12";
+            this.treeMenuItem12.Size = new System.Drawing.Size(222, 50);
+            this.treeMenuItem12.TabIndex = 1;
+            this.treeMenuItem12.Visible = false;
+            // 
+            // treeMenuItem13
+            // 
+            this.treeMenuItem13.BackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem13.ItemBackColor = System.Drawing.SystemColors.Control;
+            this.treeMenuItem13.Location = new System.Drawing.Point(0, 572);
+            this.treeMenuItem13.Name = "treeMenuItem13";
+            this.treeMenuItem13.Size = new System.Drawing.Size(222, 50);
+            this.treeMenuItem13.TabIndex = 1;
+            this.treeMenuItem13.Visible = false;
+            // 
             // frmManagerHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1463, 876);
+            this.ClientSize = new System.Drawing.Size(1503, 1023);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
@@ -1098,7 +1017,6 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -1133,28 +1051,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.TabPage tabPage3;
-        private Syncfusion.Windows.Forms.Tools.TreeNavigator treeNavigator1;
-        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem2;
         private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem1;
-        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem3;
         private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem15;
-        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem4;
-        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem5;
-        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem6;
-        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem7;
-        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem8;
-        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem9;
-        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem10;
-        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem11;
-        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem12;
-        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem13;
         private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem14;
         private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem16;
         private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem17;
@@ -1187,6 +1089,19 @@
         private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem43;
         private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem44;
         private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem45;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button8;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem3;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem4;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem5;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem6;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem7;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem8;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem9;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem10;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem11;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem12;
+        private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem13;
     }
 }
 

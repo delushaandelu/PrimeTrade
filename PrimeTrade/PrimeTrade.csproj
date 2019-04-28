@@ -536,5 +536,53 @@
   <ItemGroup>
     <None Include="Resources\worldwide.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\value %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vision.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-sign-in-a-black-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-sign-in-a-black-circle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\result.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\result %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\result1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\world-map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newspaper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

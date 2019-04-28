@@ -200,9 +200,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(3, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(649, 40);
+            this.label1.Size = new System.Drawing.Size(655, 40);
             this.label1.TabIndex = 137;
-            this.label1.Text = "PRIME TRADE : APPROVAL FOR DISTRIBUTERS";
+            this.label1.Text = "PRIME TRADE : APPROVAL FOR DISTRIBUTORS";
             // 
             // buttonAdv2
             // 
