@@ -213,6 +213,13 @@ namespace PrimeTrade
                 form.MdiParent = this;
                 form.Show();
             }
+            else if (window == "Node110")
+            {
+                FrmManagerViewStockRequest form = new FrmManagerViewStockRequest();
+                form.MdiParent = this;
+                form.Show();
+            }
+
         }
 
         private void btnSearchTeacher_Click(object sender, EventArgs e)
@@ -287,9 +294,7 @@ namespace PrimeTrade
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmManagerCashflow form = new frmManagerCashflow();
-            form.MdiParent = this;
-            form.Show();
+            MessageBox.Show("Less Data founded for Generate the Cash Flow","Data Not Enough!");
         }
 
         private void button7_Click(object sender, EventArgs e)

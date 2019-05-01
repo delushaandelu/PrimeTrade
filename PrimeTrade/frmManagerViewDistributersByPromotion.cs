@@ -50,7 +50,6 @@ namespace PrimeTrade
         private void cmbPromotion_SelectedIndexChanged(object sender, EventArgs e)
         {
             string promotion_id = cmbPromotion.SelectedItem.ToString();
-            MessageBox.Show(promotion_id);
             listView2.Items.Clear();
             listView2.View = View.Details;
 

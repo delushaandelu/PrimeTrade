@@ -93,5 +93,12 @@ namespace PrimeTrade
             form.MdiParent = this;
             form.Show();
         }
+
+        private void newStockRequestToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmManagerViewStockRequest form = new FrmManagerViewStockRequest();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

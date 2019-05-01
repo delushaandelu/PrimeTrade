@@ -29,49 +29,53 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Stock Basic Data");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Basic Data", new System.Windows.Forms.TreeNode[] {
-            treeNode1});
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Stock Management");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("View Stock");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Stock", new System.Windows.Forms.TreeNode[] {
-            treeNode3,
-            treeNode4});
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Manage Area");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Assign Areas to Distributers");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("View Areas by DIstributers");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Area", new System.Windows.Forms.TreeNode[] {
-            treeNode6,
-            treeNode7,
-            treeNode8});
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Promotion Plan");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Active Promotion");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Promotion History");
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Assign Promotion to Distributers");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("View all Promotions by Distributers");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("View Promotion By State");
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("View all Distributers by Promotions");
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Promotion", new System.Windows.Forms.TreeNode[] {
-            treeNode10,
-            treeNode11,
-            treeNode12,
-            treeNode13,
-            treeNode14,
-            treeNode15,
-            treeNode16});
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("View Stock");
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("View Area by Distributers");
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("View all Promotions");
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("View all Promotion by Distributers");
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("View all Promotion by State");
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("View all Distributers by Promotions");
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("View", new System.Windows.Forms.TreeNode[] {
-            treeNode18,
-            treeNode19,
-            treeNode20,
-            treeNode21,
-            treeNode22,
-            treeNode23});
+            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("Stock Basic Data");
+            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("Basic Data", new System.Windows.Forms.TreeNode[] {
+            treeNode27});
+            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("Stock Management");
+            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("View Stock");
+            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("Requested Stock");
+            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("New Stock Request");
+            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("Stock", new System.Windows.Forms.TreeNode[] {
+            treeNode29,
+            treeNode30,
+            treeNode31,
+            treeNode32});
+            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("Manage Area");
+            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("Assign Areas to Distributers");
+            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("View Areas by DIstributers");
+            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("Area", new System.Windows.Forms.TreeNode[] {
+            treeNode34,
+            treeNode35,
+            treeNode36});
+            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("Promotion Plan");
+            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("Active Promotion");
+            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("Promotion History");
+            System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("Assign Promotion to Distributers");
+            System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("View all Promotions by Distributers");
+            System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("View Promotion By State");
+            System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("View all Distributers by Promotions");
+            System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("Promotion", new System.Windows.Forms.TreeNode[] {
+            treeNode38,
+            treeNode39,
+            treeNode40,
+            treeNode41,
+            treeNode42,
+            treeNode43,
+            treeNode44});
+            System.Windows.Forms.TreeNode treeNode46 = new System.Windows.Forms.TreeNode("View Stock");
+            System.Windows.Forms.TreeNode treeNode47 = new System.Windows.Forms.TreeNode("View Area by Distributers");
+            System.Windows.Forms.TreeNode treeNode48 = new System.Windows.Forms.TreeNode("View all Promotions");
+            System.Windows.Forms.TreeNode treeNode49 = new System.Windows.Forms.TreeNode("View all Promotion by Distributers");
+            System.Windows.Forms.TreeNode treeNode50 = new System.Windows.Forms.TreeNode("View all Promotion by State");
+            System.Windows.Forms.TreeNode treeNode51 = new System.Windows.Forms.TreeNode("View all Distributers by Promotions");
+            System.Windows.Forms.TreeNode treeNode52 = new System.Windows.Forms.TreeNode("View", new System.Windows.Forms.TreeNode[] {
+            treeNode46,
+            treeNode47,
+            treeNode48,
+            treeNode49,
+            treeNode50,
+            treeNode51});
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmManagerHome));
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -135,6 +139,10 @@
             this.treeMenuItem11 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
             this.treeMenuItem12 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
             this.treeMenuItem13 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblloginuser = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button6 = new System.Windows.Forms.Button();
@@ -149,12 +157,12 @@
             this.btnSearchTeacher = new System.Windows.Forms.Button();
             this.btnManageTeacher = new System.Windows.Forms.Button();
             this.btnTeacherAssignClass = new System.Windows.Forms.Button();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -232,60 +240,64 @@
             this.treeView1.ImageList = this.imageList1;
             this.treeView1.Location = new System.Drawing.Point(3, 3);
             this.treeView1.Name = "treeView1";
-            treeNode1.Name = "Node6";
-            treeNode1.Text = "Stock Basic Data";
-            treeNode2.Name = "Node1";
-            treeNode2.Text = "Basic Data";
-            treeNode3.Name = "Node7";
-            treeNode3.Text = "Stock Management";
-            treeNode4.Name = "Node8";
-            treeNode4.Text = "View Stock";
-            treeNode5.Name = "Node2";
-            treeNode5.Text = "Stock";
-            treeNode6.Name = "Node9";
-            treeNode6.Text = "Manage Area";
-            treeNode7.Name = "Node10";
-            treeNode7.Text = "Assign Areas to Distributers";
-            treeNode8.Name = "Node11";
-            treeNode8.Text = "View Areas by DIstributers";
-            treeNode9.Name = "Node3";
-            treeNode9.Text = "Area";
-            treeNode10.Name = "Node12";
-            treeNode10.Text = "Promotion Plan";
-            treeNode11.Name = "Node13";
-            treeNode11.Text = "Active Promotion";
-            treeNode12.Name = "Node14";
-            treeNode12.Text = "Promotion History";
-            treeNode13.Name = "Node15";
-            treeNode13.Text = "Assign Promotion to Distributers";
-            treeNode14.Name = "Node16";
-            treeNode14.Text = "View all Promotions by Distributers";
-            treeNode15.Name = "Node17";
-            treeNode15.Text = "View Promotion By State";
-            treeNode16.Name = "nodedpro1";
-            treeNode16.Text = "View all Distributers by Promotions";
-            treeNode17.Name = "Node4";
-            treeNode17.Text = "Promotion";
-            treeNode18.Name = "Node18";
-            treeNode18.Text = "View Stock";
-            treeNode19.Name = "Node19";
-            treeNode19.Text = "View Area by Distributers";
-            treeNode20.Name = "Node20";
-            treeNode20.Text = "View all Promotions";
-            treeNode21.Name = "Node21";
-            treeNode21.Text = "View all Promotion by Distributers";
-            treeNode22.Name = "Node22";
-            treeNode22.Text = "View all Promotion by State";
-            treeNode23.Name = "nodedpro2";
-            treeNode23.Text = "View all Distributers by Promotions";
-            treeNode24.Name = "Node5";
-            treeNode24.Text = "View";
+            treeNode27.Name = "Node6";
+            treeNode27.Text = "Stock Basic Data";
+            treeNode28.Name = "Node1";
+            treeNode28.Text = "Basic Data";
+            treeNode29.Name = "Node7";
+            treeNode29.Text = "Stock Management";
+            treeNode30.Name = "Node8";
+            treeNode30.Text = "View Stock";
+            treeNode31.Name = "Node0";
+            treeNode31.Text = "Requested Stock";
+            treeNode32.Name = "Node110";
+            treeNode32.Text = "New Stock Request";
+            treeNode33.Name = "Node2";
+            treeNode33.Text = "Stock";
+            treeNode34.Name = "Node9";
+            treeNode34.Text = "Manage Area";
+            treeNode35.Name = "Node10";
+            treeNode35.Text = "Assign Areas to Distributers";
+            treeNode36.Name = "Node11";
+            treeNode36.Text = "View Areas by DIstributers";
+            treeNode37.Name = "Node3";
+            treeNode37.Text = "Area";
+            treeNode38.Name = "Node12";
+            treeNode38.Text = "Promotion Plan";
+            treeNode39.Name = "Node13";
+            treeNode39.Text = "Active Promotion";
+            treeNode40.Name = "Node14";
+            treeNode40.Text = "Promotion History";
+            treeNode41.Name = "Node15";
+            treeNode41.Text = "Assign Promotion to Distributers";
+            treeNode42.Name = "Node16";
+            treeNode42.Text = "View all Promotions by Distributers";
+            treeNode43.Name = "Node17";
+            treeNode43.Text = "View Promotion By State";
+            treeNode44.Name = "nodedpro1";
+            treeNode44.Text = "View all Distributers by Promotions";
+            treeNode45.Name = "Node4";
+            treeNode45.Text = "Promotion";
+            treeNode46.Name = "Node18";
+            treeNode46.Text = "View Stock";
+            treeNode47.Name = "Node19";
+            treeNode47.Text = "View Area by Distributers";
+            treeNode48.Name = "Node20";
+            treeNode48.Text = "View all Promotions";
+            treeNode49.Name = "Node21";
+            treeNode49.Text = "View all Promotion by Distributers";
+            treeNode50.Name = "Node22";
+            treeNode50.Text = "View all Promotion by State";
+            treeNode51.Name = "nodedpro2";
+            treeNode51.Text = "View all Distributers by Promotions";
+            treeNode52.Name = "Node5";
+            treeNode52.Text = "View";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode2,
-            treeNode5,
-            treeNode9,
-            treeNode17,
-            treeNode24});
+            treeNode28,
+            treeNode33,
+            treeNode37,
+            treeNode45,
+            treeNode52});
             this.treeView1.SelectedImageKey = "tab.png";
             this.treeView1.Size = new System.Drawing.Size(222, 835);
             this.treeView1.TabIndex = 10;
@@ -375,12 +387,12 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(118, 44);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(189, 16);
+            this.label3.Size = new System.Drawing.Size(152, 16);
             this.label3.TabIndex = 18;
-            this.label3.Text = "Empowering Business Process";
+            this.label3.Text = "Brand Manager Profile";
             // 
             // label4
             // 
@@ -793,6 +805,45 @@
             this.treeMenuItem13.TabIndex = 1;
             this.treeMenuItem13.Visible = false;
             // 
+            // metroButton1
+            // 
+            this.metroButton1.Location = new System.Drawing.Point(272, 90);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(107, 23);
+            this.metroButton1.TabIndex = 22;
+            this.metroButton1.Text = "Show Dashboard";
+            this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(144, 64);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 16);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "Login User: ";
+            // 
+            // lblloginuser
+            // 
+            this.lblloginuser.AutoSize = true;
+            this.lblloginuser.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblloginuser.Location = new System.Drawing.Point(213, 64);
+            this.lblloginuser.Name = "lblloginuser";
+            this.lblloginuser.Size = new System.Drawing.Size(69, 16);
+            this.lblloginuser.TabIndex = 30;
+            this.lblloginuser.Text = "manager 1";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(120, 60);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(27, 32);
+            this.pictureBox3.TabIndex = 29;
+            this.pictureBox3.TabStop = false;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
@@ -1004,21 +1055,14 @@
             this.btnTeacherAssignClass.UseVisualStyleBackColor = false;
             this.btnTeacherAssignClass.Click += new System.EventHandler(this.btnTeacherAssignClass_Click);
             // 
-            // metroButton1
-            // 
-            this.metroButton1.Location = new System.Drawing.Point(253, 93);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(107, 23);
-            this.metroButton1.TabIndex = 22;
-            this.metroButton1.Text = "Show Dashboard";
-            this.metroButton1.UseSelectable = true;
-            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
-            // 
             // frmManagerHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1503, 1023);
+            this.Controls.Add(this.lblloginuser);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label3);
@@ -1040,6 +1084,7 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -1126,6 +1171,9 @@
         private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem12;
         private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem13;
         private MetroFramework.Controls.MetroButton metroButton1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label lblloginuser;
     }
 }
 

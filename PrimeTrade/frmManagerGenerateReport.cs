@@ -16,5 +16,11 @@ namespace PrimeTrade
         {
             InitializeComponent();
         }
+
+        private void frmManagerGenerateReport_Load(object sender, EventArgs e)
+        {
+
+            this.reportViewer1.RefreshReport();
+        }
     }
 }

@@ -134,7 +134,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADU
-        BwAAAk1TRnQBSQFMAgEBAgEAAWABAQFgAQEBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        BwAAAk1TRnQBSQFMAgEBAgEAAYABAQGAAQEBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAARADAAEBAQABCAYAAQQYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -171,6 +171,24 @@
 </value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAG
+        RQAABkUBX6N/swAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAKgSURBVEhLjZXP
+        axNREMcXRPTkRUHxP/DWP8KLPQhKdyUEm01rg6g3rQcl9cXYQKVWEKSKpQX1YqFie/CgSFoVo9hWSIk2
+        1jQlpUm7+9YftOTQX+vMml1e3s4mHj6wOzPf7+y+nfdWsW07kNC53sNqhJ0EelSdjQEFwFKj7KWmJ+Ja
+        BzseDrMDlNaFDKrq6B5VT3SDWRWwm7CtRVgyFnu4l/LyBUDQAkwLBv/L9JmzyWOyX92NGkl0wnJsEWIb
+        luRnx6XbMwheUzVAFT1ET+8CuzsFkijUlfzxOZsvVLhli2AMc3J97QFb6hrg+kHQvyxRtv59aZnL5i6Y
+        wxqfDr3gO3oN8CMRRbZ+se8LZSyCNZQWh8RpgGMGgW1/AbOvxAffUqYiWENpgSqOuYKzTCQdunuaN8Aa
+        SusAe0jBDUMmgXhqeJIyFcEaSusAG1TBXUkmgTfvZ7OUqQjWUNoaY7ixLCnokZnN5SlTEayhtDUKDRvc
+        e/S86RIl+x+nKW2NDdi9bI5IOGjRhLG8Zm5SxsjHmdw81O3IOoEcvsGEFKzj2Yv0B8ocOX95IENpBCZw
+        irqIhEc41vttxTC3ZPN3n+a+wmbapTQubTq7oIRi7FDQAedCfeyrNx5MUbUCm6faUwedowJuhqSkQGI3
+        O18oyQ1Y30jw/ANw/Ax7ZxF2giA5TUHHBR50WjRwAjmujNcAgfU6DQnvTAp13iyOjk9mKHOXQmnl162B
+        J2lNZ39cHbADm7fN9fUaIJDUYTT5/ZHxqUbjKbNYKv9O3X2ado7uoB+OSy6/dKJiWouUUUNAAz+hVtmv
+        7salWCzuL3N+HYQbPiM/66ucX1tYsPdRXr6AiGmaRyucR+Dp7pS59RrM1oBVuH5Vsax+yLUbhnGE0v7D
+        Vv4C96EYds98OiIAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         R0lGODlhuAAfAPcAAAAAAAEBAQEFBwEQFwAZIwAdKgAeKwAeLAAeLAAeLAAeLAAeLAAeLAAeLAAeLAAe

@@ -84,6 +84,30 @@
     <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.12.0.2.2403\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.12.0.2.2403\lib\net40\Microsoft.ReportViewer.DataVisualization.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.12.0.2.2403\lib\net40\Microsoft.ReportViewer.Design.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.12.0.2.2403\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.12.0.2.2403\lib\net40\Microsoft.ReportViewer.WebDesign.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.12.0.2.2403\lib\net40\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.12.0.2.2403\lib\net40\Microsoft.ReportViewer.WinForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.12.0.2.2403\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data, Version=8.0.13.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Users\modelk\OneDrive - IFS\Documents\Visual Studio 2017\Projects\PrimerTrade\PrimeTrade\packages\MySql.Data.6.9.12\lib\net45\MySql.Data.dll</HintPath>
@@ -129,6 +153,11 @@
   <ItemGroup>
     <Compile Include="adminUser\classUser.cs" />
     <Compile Include="connections\classConnection.cs" />
+    <Compile Include="DataSetGoogle.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetGoogle.xsd</DependentUpon>
+    </Compile>
     <Compile Include="frmAdminAddUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +217,12 @@
     </Compile>
     <Compile Include="frmDistributersSales.Designer.cs">
       <DependentUpon>frmDistributersSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDistributorReqStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDistributorReqStock.Designer.cs">
+      <DependentUpon>frmDistributorReqStock.cs</DependentUpon>
     </Compile>
     <Compile Include="frmFinaceApproveStock.cs">
       <SubType>Form</SubType>
@@ -309,6 +344,12 @@
     <Compile Include="frmManagerViewStock.Designer.cs">
       <DependentUpon>frmManagerViewStock.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmManagerViewStockRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManagerViewStockRequest.Designer.cs">
+      <DependentUpon>FrmManagerViewStockRequest.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPromotionsToDistributers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -352,6 +393,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="frmAdminAddUser.resx">
       <DependentUpon>frmAdminAddUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -382,6 +424,9 @@
     <EmbeddedResource Include="frmDistributersSales.resx">
       <DependentUpon>frmDistributersSales.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDistributorReqStock.resx">
+      <DependentUpon>frmDistributorReqStock.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmFinaceApproveStock.resx">
       <DependentUpon>frmFinaceApproveStock.cs</DependentUpon>
     </EmbeddedResource>
@@ -397,11 +442,20 @@
     <EmbeddedResource Include="frmManagerDistributerArea.resx">
       <DependentUpon>frmManagerDistributerArea.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerGenerateReport.resx">
+      <DependentUpon>frmManagerGenerateReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmManagerManageArea.resx">
       <DependentUpon>frmManagerManageArea.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmManagerMap.resx">
       <DependentUpon>frmManagerMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerNotifications.resx">
+      <DependentUpon>frmManagerNotifications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerPoints.resx">
+      <DependentUpon>frmManagerPoints.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmManagerPromotion.resx">
       <DependentUpon>frmManagerPromotion.cs</DependentUpon>
@@ -429,6 +483,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmManagerViewStock.resx">
       <DependentUpon>frmManagerViewStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManagerViewStockRequest.resx">
+      <DependentUpon>FrmManagerViewStockRequest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPromotionsToDistributers.resx">
       <DependentUpon>frmPromotionsToDistributers.cs</DependentUpon>
@@ -459,6 +516,17 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="App.config" />
+    <None Include="DataSetGoogle.xsc">
+      <DependentUpon>DataSetGoogle.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetGoogle.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetGoogle.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetGoogle.xss">
+      <DependentUpon>DataSetGoogle.xsd</DependentUpon>
+    </None>
     <None Include="GoogleCloude.xsc">
       <DependentUpon>GoogleCloude.xsd</DependentUpon>
     </None>
@@ -616,6 +684,29 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\folder %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sale %282%29.png" />
+    <None Include="Resources\sale %281%29.png" />
+    <None Include="Resources\application.png" />
+    <None Include="Resources\new-user.png" />
+    <None Include="Resources\users-group.png" />
+    <None Include="Resources\speedometer-gif-1.gif" />
+    <None Include="Resources\68747470733a2f2f6c766368617274732e6e65742f436f6e74656e742f496d616765732f42616e6e65722f726573706f6e736976652e676966.gif" />
+    <None Include="Resources\X5leY.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

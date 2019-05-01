@@ -11,15 +11,40 @@ using MetroFramework.Fonts;
 using MetroFramework.Forms;
 using MaterialSkin.Controls;
 using MaterialSkin.Animations;
+using MySql.Data.MySqlClient;
+using PrimeTrade.connections;
 
 namespace PrimeTrade
 {
     public partial class FrmDistibuterHome : MetroForm
     {
+
+        MySqlConnection connect = new MySqlConnection(classConnection.ConnectNow("GoogleCloude"));
+
         public FrmDistibuterHome(string userid)
         {
             InitializeComponent();
             lblstatus.Text = userid;
+
+            MySqlCommand command = new MySqlCommand();
+            connect.Open();
+            command.Connection = connect;
+
+            command.CommandText = "get_naem_by_id";
+            command.CommandType = CommandType.StoredProcedure;
+
+            command.Parameters.Add(new MySqlParameter("@userid", userid));
+            command.Parameters["@userid"].Direction = ParameterDirection.Input;
+
+            command.Parameters.Add(new MySqlParameter("@username", MySqlDbType.VarChar));
+            command.Parameters["@username"].Direction = ParameterDirection.Output;
+
+            command.ExecuteNonQuery();
+
+            lblloginuser.Text = (string)command.Parameters["@username"].Value;
+
+            connect.Close();
+
         }
 
         private void approvedPromotionsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -90,6 +115,77 @@ namespace PrimeTrade
                 form.MdiParent = this;
                 form.Show();
             }
+            else if (window == "NodeNode12")
+            {
+                lblpath.Text = path;
+                frmDistributorReqStock form = new frmDistributorReqStock(lblstatus.Text);
+                form.MdiParent = this;
+                form.Show();
+            }
+        }
+
+        private void FrmDistibuterHome_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSearchTeacher_Click(object sender, EventArgs e)
+        {
+            FrmDistributerNewPromotins form = new FrmDistributerNewPromotins(lblstatus.Text);
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void btnManageTeacher_Click(object sender, EventArgs e)
+        {
+            frmDistributerMyPromotionTasks form = new frmDistributerMyPromotionTasks(lblstatus.Text);
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void btnTeacherAssignClass_Click(object sender, EventArgs e)
+        {
+            frmDistributersMySalesProgress form = new frmDistributersMySalesProgress(lblstatus.Text);
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void btnViewAllAssignedClass_Click(object sender, EventArgs e)
+        {
+            frmDistributerMySalesData from = new frmDistributerMySalesData(lblstatus.Text);
+            from.MdiParent = this;
+            from.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmDistributersMySalesProgress form = new frmDistributersMySalesProgress(lblstatus.Text);
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            frmDistributorReqStock form = new frmDistributorReqStock(lblstatus.Text);
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            frmManagerDashboard form = new frmManagerDashboard();
+            form.MdiParent = this;
+            form.Show();
         }
     }
 }

@@ -53,5 +53,26 @@ namespace PrimeTrade
             form.MdiParent = this;
             form.Show();
         }
+
+        private void btnSearchTeacher_Click(object sender, EventArgs e)
+        {
+            frmAdminAddUser form = new frmAdminAddUser("Add");
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void btnManageTeacher_Click(object sender, EventArgs e)
+        {
+            frmAdminViewUsers form = new frmAdminViewUsers();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            frmManagerDashboard form = new frmManagerDashboard();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }
