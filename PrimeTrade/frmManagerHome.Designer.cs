@@ -88,18 +88,6 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.button5 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.btnViewAllAssignedClass = new System.Windows.Forms.Button();
-            this.btnSearchTeacher = new System.Windows.Forms.Button();
-            this.btnManageTeacher = new System.Windows.Forms.Button();
-            this.btnTeacherAssignClass = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -136,8 +124,6 @@
             this.treeMenuItem43 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
             this.treeMenuItem44 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
             this.treeMenuItem45 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.treeMenuItem3 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
             this.treeMenuItem4 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
             this.treeMenuItem5 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
@@ -149,6 +135,21 @@
             this.treeMenuItem11 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
             this.treeMenuItem12 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
             this.treeMenuItem13 = new Syncfusion.Windows.Forms.Tools.TreeMenuItem();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.btnViewAllAssignedClass = new System.Windows.Forms.Button();
+            this.btnSearchTeacher = new System.Windows.Forms.Button();
+            this.btnManageTeacher = new System.Windows.Forms.Button();
+            this.btnTeacherAssignClass = new System.Windows.Forms.Button();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -359,187 +360,6 @@
             this.button8.Text = "KPI BY SALES";
             this.button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button6.Image = global::PrimeTrade.Properties.Resources.world_map;
-            this.button6.Location = new System.Drawing.Point(117, 378);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(109, 123);
-            this.button6.TabIndex = 32;
-            this.button6.Text = "Map Views";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button7.Image = global::PrimeTrade.Properties.Resources.notification;
-            this.button7.Location = new System.Drawing.Point(116, 626);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(109, 123);
-            this.button7.TabIndex = 33;
-            this.button7.Text = "Notifications";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button9.Image = global::PrimeTrade.Properties.Resources.warehouse;
-            this.button9.Location = new System.Drawing.Point(116, 502);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(109, 123);
-            this.button9.TabIndex = 31;
-            this.button9.Text = "Stock Summary";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button10.Image = global::PrimeTrade.Properties.Resources.value__1_;
-            this.button10.Location = new System.Drawing.Point(6, 502);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(109, 123);
-            this.button10.TabIndex = 30;
-            this.button10.Text = "Rewords and Points";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button10.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Image = global::PrimeTrade.Properties.Resources.cash;
-            this.button1.Location = new System.Drawing.Point(6, 626);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 123);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "Cash Flow";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Image = global::PrimeTrade.Properties.Resources.map_location;
-            this.button2.Location = new System.Drawing.Point(6, 254);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(109, 123);
-            this.button2.TabIndex = 26;
-            this.button2.Text = "Promo By Region";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Image = global::PrimeTrade.Properties.Resources.shipped;
-            this.button3.Location = new System.Drawing.Point(116, 254);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(109, 123);
-            this.button3.TabIndex = 27;
-            this.button3.Text = "Promotion By Distributors";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Image = global::PrimeTrade.Properties.Resources.newspaper;
-            this.button4.Location = new System.Drawing.Point(6, 378);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(109, 123);
-            this.button4.TabIndex = 28;
-            this.button4.Text = "Generate Report";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // btnViewAllAssignedClass
-            // 
-            this.btnViewAllAssignedClass.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnViewAllAssignedClass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewAllAssignedClass.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewAllAssignedClass.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnViewAllAssignedClass.Image = global::PrimeTrade.Properties.Resources.result1;
-            this.btnViewAllAssignedClass.Location = new System.Drawing.Point(116, 130);
-            this.btnViewAllAssignedClass.Name = "btnViewAllAssignedClass";
-            this.btnViewAllAssignedClass.Size = new System.Drawing.Size(109, 123);
-            this.btnViewAllAssignedClass.TabIndex = 25;
-            this.btnViewAllAssignedClass.Text = "Production Data";
-            this.btnViewAllAssignedClass.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnViewAllAssignedClass.UseVisualStyleBackColor = false;
-            // 
-            // btnSearchTeacher
-            // 
-            this.btnSearchTeacher.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnSearchTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearchTeacher.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchTeacher.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSearchTeacher.Image = global::PrimeTrade.Properties.Resources.product;
-            this.btnSearchTeacher.Location = new System.Drawing.Point(6, 6);
-            this.btnSearchTeacher.Name = "btnSearchTeacher";
-            this.btnSearchTeacher.Size = new System.Drawing.Size(109, 123);
-            this.btnSearchTeacher.TabIndex = 22;
-            this.btnSearchTeacher.Text = "Production Mix";
-            this.btnSearchTeacher.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSearchTeacher.UseVisualStyleBackColor = false;
-            this.btnSearchTeacher.Click += new System.EventHandler(this.btnSearchTeacher_Click);
-            // 
-            // btnManageTeacher
-            // 
-            this.btnManageTeacher.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnManageTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnManageTeacher.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManageTeacher.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnManageTeacher.Image = global::PrimeTrade.Properties.Resources.vision;
-            this.btnManageTeacher.Location = new System.Drawing.Point(116, 6);
-            this.btnManageTeacher.Name = "btnManageTeacher";
-            this.btnManageTeacher.Size = new System.Drawing.Size(109, 123);
-            this.btnManageTeacher.TabIndex = 23;
-            this.btnManageTeacher.Text = "On going Promotions";
-            this.btnManageTeacher.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnManageTeacher.UseVisualStyleBackColor = false;
-            // 
-            // btnTeacherAssignClass
-            // 
-            this.btnTeacherAssignClass.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnTeacherAssignClass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTeacherAssignClass.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTeacherAssignClass.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnTeacherAssignClass.Image = global::PrimeTrade.Properties.Resources.plus_sign_in_a_black_circle1;
-            this.btnTeacherAssignClass.Location = new System.Drawing.Point(6, 130);
-            this.btnTeacherAssignClass.Name = "btnTeacherAssignClass";
-            this.btnTeacherAssignClass.Size = new System.Drawing.Size(109, 123);
-            this.btnTeacherAssignClass.TabIndex = 24;
-            this.btnTeacherAssignClass.Text = "New Promotion";
-            this.btnTeacherAssignClass.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnTeacherAssignClass.UseVisualStyleBackColor = false;
             // 
             // tabPage2
             // 
@@ -863,25 +683,6 @@
             this.treeMenuItem45.TabIndex = 1;
             this.treeMenuItem45.Text = "treeMenuItem45";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(121, 11);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(186, 33);
-            this.pictureBox2.TabIndex = 20;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(20, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(92, 82);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
-            // 
             // treeMenuItem3
             // 
             this.treeMenuItem3.BackColor = System.Drawing.SystemColors.Control;
@@ -992,11 +793,233 @@
             this.treeMenuItem13.TabIndex = 1;
             this.treeMenuItem13.Visible = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(121, 11);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(186, 33);
+            this.pictureBox2.TabIndex = 20;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(20, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(92, 82);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button6.Image = global::PrimeTrade.Properties.Resources.world_map;
+            this.button6.Location = new System.Drawing.Point(117, 378);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(109, 123);
+            this.button6.TabIndex = 32;
+            this.button6.Text = "Map Views";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button7.Image = global::PrimeTrade.Properties.Resources.notification;
+            this.button7.Location = new System.Drawing.Point(116, 626);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(109, 123);
+            this.button7.TabIndex = 33;
+            this.button7.Text = "Notifications";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button9.Image = global::PrimeTrade.Properties.Resources.warehouse;
+            this.button9.Location = new System.Drawing.Point(116, 502);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(109, 123);
+            this.button9.TabIndex = 31;
+            this.button9.Text = "Stock Summary";
+            this.button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button10.Image = global::PrimeTrade.Properties.Resources.value__1_;
+            this.button10.Location = new System.Drawing.Point(6, 502);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(109, 123);
+            this.button10.TabIndex = 30;
+            this.button10.Text = "Rewords and Points";
+            this.button10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Image = global::PrimeTrade.Properties.Resources.cash;
+            this.button1.Location = new System.Drawing.Point(6, 626);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(109, 123);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "Cash Flow";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Image = global::PrimeTrade.Properties.Resources.map_location;
+            this.button2.Location = new System.Drawing.Point(6, 254);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(109, 123);
+            this.button2.TabIndex = 26;
+            this.button2.Text = "Promo By Region";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Image = global::PrimeTrade.Properties.Resources.shipped;
+            this.button3.Location = new System.Drawing.Point(116, 254);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(109, 123);
+            this.button3.TabIndex = 27;
+            this.button3.Text = "Promotion By Distributors";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button4.Image = global::PrimeTrade.Properties.Resources.newspaper;
+            this.button4.Location = new System.Drawing.Point(6, 378);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(109, 123);
+            this.button4.TabIndex = 28;
+            this.button4.Text = "Generate Report";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // btnViewAllAssignedClass
+            // 
+            this.btnViewAllAssignedClass.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnViewAllAssignedClass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewAllAssignedClass.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewAllAssignedClass.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnViewAllAssignedClass.Image = global::PrimeTrade.Properties.Resources.result1;
+            this.btnViewAllAssignedClass.Location = new System.Drawing.Point(116, 130);
+            this.btnViewAllAssignedClass.Name = "btnViewAllAssignedClass";
+            this.btnViewAllAssignedClass.Size = new System.Drawing.Size(109, 123);
+            this.btnViewAllAssignedClass.TabIndex = 25;
+            this.btnViewAllAssignedClass.Text = "Production Data";
+            this.btnViewAllAssignedClass.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnViewAllAssignedClass.UseVisualStyleBackColor = false;
+            this.btnViewAllAssignedClass.Click += new System.EventHandler(this.btnViewAllAssignedClass_Click);
+            // 
+            // btnSearchTeacher
+            // 
+            this.btnSearchTeacher.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnSearchTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchTeacher.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchTeacher.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSearchTeacher.Image = global::PrimeTrade.Properties.Resources.product;
+            this.btnSearchTeacher.Location = new System.Drawing.Point(6, 6);
+            this.btnSearchTeacher.Name = "btnSearchTeacher";
+            this.btnSearchTeacher.Size = new System.Drawing.Size(109, 123);
+            this.btnSearchTeacher.TabIndex = 22;
+            this.btnSearchTeacher.Text = "Active Promotion";
+            this.btnSearchTeacher.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSearchTeacher.UseVisualStyleBackColor = false;
+            this.btnSearchTeacher.Click += new System.EventHandler(this.btnSearchTeacher_Click);
+            // 
+            // btnManageTeacher
+            // 
+            this.btnManageTeacher.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnManageTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnManageTeacher.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManageTeacher.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnManageTeacher.Image = global::PrimeTrade.Properties.Resources.vision;
+            this.btnManageTeacher.Location = new System.Drawing.Point(116, 6);
+            this.btnManageTeacher.Name = "btnManageTeacher";
+            this.btnManageTeacher.Size = new System.Drawing.Size(109, 123);
+            this.btnManageTeacher.TabIndex = 23;
+            this.btnManageTeacher.Text = "On going Promotions";
+            this.btnManageTeacher.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnManageTeacher.UseVisualStyleBackColor = false;
+            this.btnManageTeacher.Click += new System.EventHandler(this.btnManageTeacher_Click);
+            // 
+            // btnTeacherAssignClass
+            // 
+            this.btnTeacherAssignClass.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnTeacherAssignClass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTeacherAssignClass.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTeacherAssignClass.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnTeacherAssignClass.Image = global::PrimeTrade.Properties.Resources.plus_sign_in_a_black_circle1;
+            this.btnTeacherAssignClass.Location = new System.Drawing.Point(6, 130);
+            this.btnTeacherAssignClass.Name = "btnTeacherAssignClass";
+            this.btnTeacherAssignClass.Size = new System.Drawing.Size(109, 123);
+            this.btnTeacherAssignClass.TabIndex = 24;
+            this.btnTeacherAssignClass.Text = "New Promotion";
+            this.btnTeacherAssignClass.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnTeacherAssignClass.UseVisualStyleBackColor = false;
+            this.btnTeacherAssignClass.Click += new System.EventHandler(this.btnTeacherAssignClass_Click);
+            // 
+            // metroButton1
+            // 
+            this.metroButton1.Location = new System.Drawing.Point(253, 93);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(107, 23);
+            this.metroButton1.TabIndex = 22;
+            this.metroButton1.Text = "Show Dashboard";
+            this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            // 
             // frmManagerHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1503, 1023);
+            this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
@@ -1102,6 +1125,7 @@
         private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem11;
         private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem12;
         private Syncfusion.Windows.Forms.Tools.TreeMenuItem treeMenuItem13;
+        private MetroFramework.Controls.MetroButton metroButton1;
     }
 }
 

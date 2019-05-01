@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.listView3 = new System.Windows.Forms.ListView();
             this.columnHeader24 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader25 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -41,6 +42,7 @@
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.splashPanel1 = new Syncfusion.Windows.Forms.Tools.SplashPanel();
             this.label1 = new System.Windows.Forms.Label();
+            this.buttonAdv2 = new Syncfusion.Windows.Forms.ButtonAdv();
             this.splashPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -149,11 +151,32 @@
             this.label1.TabIndex = 137;
             this.label1.Text = "PRIME TRADE :VIEW ALL PROMOTIONS BY DISTRIBUTERS";
             // 
+            // buttonAdv2
+            // 
+            this.buttonAdv2.BeforeTouchSize = new System.Drawing.Size(73, 41);
+            this.buttonAdv2.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
+            this.buttonAdv2.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Browse;
+            this.buttonAdv2.Image = global::PrimeTrade.Properties.Resources.error;
+            this.buttonAdv2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAdv2.IsBackStageButton = false;
+            this.buttonAdv2.Location = new System.Drawing.Point(930, 680);
+            this.buttonAdv2.MetroColor = System.Drawing.Color.Aqua;
+            this.buttonAdv2.Name = "buttonAdv2";
+            this.buttonAdv2.OverrideFormManagedColor = true;
+            this.buttonAdv2.PushButton = true;
+            this.buttonAdv2.Size = new System.Drawing.Size(73, 41);
+            this.buttonAdv2.TabIndex = 148;
+            this.buttonAdv2.Text = "Exit";
+            this.buttonAdv2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonAdv2.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonAdv2.UseVisualStyle = false;
+            // 
             // ManagerViewPromotionByDistributers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1043, 708);
+            this.ClientSize = new System.Drawing.Size(1043, 738);
+            this.Controls.Add(this.buttonAdv2);
             this.Controls.Add(this.splashPanel1);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.cmbDistributers);
@@ -182,5 +205,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private Syncfusion.Windows.Forms.Tools.SplashPanel splashPanel1;
         private System.Windows.Forms.Label label1;
+        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv2;
     }
 }

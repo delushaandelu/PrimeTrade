@@ -868,12 +868,12 @@
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.materialLabel3.Depth = 0;
-            this.materialLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel3.Location = new System.Drawing.Point(639, 20);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(292, 18);
+            this.materialLabel3.Size = new System.Drawing.Size(302, 19);
             this.materialLabel3.TabIndex = 91;
             this.materialLabel3.Text = "Select a Distributer to assing the promotion";
             // 
@@ -882,12 +882,12 @@
             this.txtdistid.AutoSize = true;
             this.txtdistid.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtdistid.Depth = 0;
-            this.txtdistid.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.txtdistid.Font = new System.Drawing.Font("Roboto", 11F);
             this.txtdistid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.txtdistid.Location = new System.Drawing.Point(6, 20);
             this.txtdistid.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtdistid.Name = "txtdistid";
-            this.txtdistid.Size = new System.Drawing.Size(324, 18);
+            this.txtdistid.Size = new System.Drawing.Size(333, 19);
             this.txtdistid.TabIndex = 90;
             this.txtdistid.Text = "Select a Promotion code to assign to Distributer";
             // 
@@ -896,12 +896,12 @@
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel1.Location = new System.Drawing.Point(7, 358);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(115, 18);
+            this.materialLabel1.Size = new System.Drawing.Size(118, 19);
             this.materialLabel1.TabIndex = 89;
             this.materialLabel1.Text = "Distributer Code";
             // 
@@ -926,12 +926,12 @@
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel2.Location = new System.Drawing.Point(6, 311);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(118, 18);
+            this.materialLabel2.Size = new System.Drawing.Size(119, 19);
             this.materialLabel2.TabIndex = 87;
             this.materialLabel2.Text = "Promotion Code";
             // 
@@ -945,6 +945,7 @@
             this.columnHeader6,
             this.columnHeader7,
             this.columnHeader8});
+            this.listView2.Font = new System.Drawing.Font("Bookman Old Style", 9F);
             this.listView2.FullRowSelect = true;
             this.listView2.GridLines = true;
             this.listView2.Location = new System.Drawing.Point(3, 42);
@@ -999,7 +1000,7 @@
             this.metroTabControl1.FontSize = MetroFramework.MetroTabControlSize.Tall;
             this.metroTabControl1.Location = new System.Drawing.Point(26, 85);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 1;
+            this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.Size = new System.Drawing.Size(1254, 574);
             this.metroTabControl1.TabIndex = 86;
             this.metroTabControl1.UseSelectable = true;

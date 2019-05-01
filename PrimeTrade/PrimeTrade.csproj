@@ -207,6 +207,12 @@
     <Compile Include="frmManagerActivePromo.Designer.cs">
       <DependentUpon>frmManagerActivePromo.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmManagerCashflow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerCashflow.Designer.cs">
+      <DependentUpon>frmManagerCashflow.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmManagerDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -219,11 +225,35 @@
     <Compile Include="frmManagerDistributerArea.Designer.cs">
       <DependentUpon>frmManagerDistributerArea.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmManagerGenerateReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerGenerateReport.Designer.cs">
+      <DependentUpon>frmManagerGenerateReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmManagerManageArea.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmManagerManageArea.Designer.cs">
       <DependentUpon>frmManagerManageArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManagerMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerMap.Designer.cs">
+      <DependentUpon>frmManagerMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManagerNotifications.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerNotifications.Designer.cs">
+      <DependentUpon>frmManagerNotifications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManagerPoints.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerPoints.Designer.cs">
+      <DependentUpon>frmManagerPoints.cs</DependentUpon>
     </Compile>
     <Compile Include="frmManagerPromotion.cs">
       <SubType>Form</SubType>
@@ -369,6 +399,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmManagerManageArea.resx">
       <DependentUpon>frmManagerManageArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerMap.resx">
+      <DependentUpon>frmManagerMap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmManagerPromotion.resx">
       <DependentUpon>frmManagerPromotion.cs</DependentUpon>

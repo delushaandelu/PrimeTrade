@@ -217,9 +217,98 @@ namespace PrimeTrade
 
         private void btnSearchTeacher_Click(object sender, EventArgs e)
         {
-            ManagerViewPromotionByDistributers form = new ManagerViewPromotionByDistributers();
+            frmManagerActivePromo form = new frmManagerActivePromo();
             form.MdiParent = this;
             form.Show();
+        }
+
+        private void btnManageTeacher_Click(object sender, EventArgs e)
+        {
+            frmManagerViewAllPromotion form = new frmManagerViewAllPromotion();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void btnTeacherAssignClass_Click(object sender, EventArgs e)
+        {
+            frmPromotionsToDistributers form = new frmPromotionsToDistributers();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void btnViewAllAssignedClass_Click(object sender, EventArgs e)
+        {
+            frmManagerViewStock form = new frmManagerViewStock();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmManagerManageArea form = new frmManagerManageArea();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            frmManagerViewDistributersByPromotion form = new frmManagerViewDistributersByPromotion();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            frmManagerGenerateReport form = new frmManagerGenerateReport();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            frmManagerMap form = new frmManagerMap();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            frmManagerPoints form = new frmManagerPoints();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            frmManagerViewStock form = new frmManagerViewStock();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmManagerCashflow form = new frmManagerCashflow();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            frmManagerNotifications form = new frmManagerNotifications();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            frmManagerDashboard form = new frmManagerDashboard();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void metroButton2_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

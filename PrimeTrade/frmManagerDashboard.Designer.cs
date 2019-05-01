@@ -28,23 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint5 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 40D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint6 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 50D);
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint7 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 40D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint8 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 50D);
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea22 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend22 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series25 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea23 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend23 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series26 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series27 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea24 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend24 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series28 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint31 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 40D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint32 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 50D);
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea25 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend25 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series29 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint33 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 40D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint34 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 50D);
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea26 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend26 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series30 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint35 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 40D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint36 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 50D);
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea27 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend27 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series31 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint37 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 40D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint38 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 50D);
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea28 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend28 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series32 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint39 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 40D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint40 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 50D);
             this.salesChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.cmbpromotion = new MetroFramework.Controls.MetroComboBox();
@@ -67,7 +82,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -103,55 +117,61 @@
             this.tileDistributer = new System.Windows.Forms.Button();
             this.tileStockRange = new System.Windows.Forms.Button();
             this.btnSearchTeacher = new System.Windows.Forms.Button();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart4 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart5 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)(this.salesChart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tileDistributers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart5)).BeginInit();
             this.SuspendLayout();
             // 
             // salesChart
             // 
             this.salesChart.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.DarkVertical;
-            chartArea5.Name = "ChartArea1";
-            this.salesChart.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.salesChart.Legends.Add(legend5);
+            chartArea22.Name = "ChartArea1";
+            this.salesChart.ChartAreas.Add(chartArea22);
+            legend22.Name = "Legend1";
+            this.salesChart.Legends.Add(legend22);
             this.salesChart.Location = new System.Drawing.Point(43, 102);
             this.salesChart.Name = "salesChart";
             this.salesChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
             this.salesChart.PaletteCustomColors = new System.Drawing.Color[] {
-        System.Drawing.Color.MediumSlateBlue};
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.SplineArea;
-            series6.Legend = "Legend1";
-            series6.MarkerBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            series6.MarkerColor = System.Drawing.Color.Blue;
-            series6.Name = "Main Item Qty";
-            this.salesChart.Series.Add(series6);
+        System.Drawing.Color.RoyalBlue};
+            series25.ChartArea = "ChartArea1";
+            series25.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.SplineArea;
+            series25.Legend = "Legend1";
+            series25.MarkerBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            series25.MarkerColor = System.Drawing.Color.Blue;
+            series25.Name = "Main Item Qty";
+            this.salesChart.Series.Add(series25);
             this.salesChart.Size = new System.Drawing.Size(659, 405);
             this.salesChart.TabIndex = 0;
             this.salesChart.Text = "chart1";
             // 
             // chart2
             // 
-            chartArea6.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chart2.Legends.Add(legend6);
+            chartArea23.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea23);
+            legend23.Name = "Legend1";
+            this.chart2.Legends.Add(legend23);
             this.chart2.Location = new System.Drawing.Point(43, 545);
             this.chart2.Name = "chart2";
             this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series7.Legend = "Legend1";
-            series7.Name = "Series1";
-            series7.YValuesPerPoint = 2;
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series8.Legend = "Legend1";
-            series8.Name = "Series3";
-            this.chart2.Series.Add(series7);
-            this.chart2.Series.Add(series8);
+            series26.ChartArea = "ChartArea1";
+            series26.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series26.Legend = "Legend1";
+            series26.Name = "Series1";
+            series26.YValuesPerPoint = 2;
+            series27.ChartArea = "ChartArea1";
+            series27.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series27.Legend = "Legend1";
+            series27.Name = "Series3";
+            this.chart2.Series.Add(series26);
+            this.chart2.Series.Add(series27);
             this.chart2.Size = new System.Drawing.Size(659, 303);
             this.chart2.TabIndex = 1;
             this.chart2.Text = "chart2";
@@ -177,30 +197,30 @@
             // 
             // tileDistributers
             // 
-            chartArea7.Name = "ChartArea1";
-            this.tileDistributers.ChartAreas.Add(chartArea7);
-            legend7.Name = "Legend1";
-            this.tileDistributers.Legends.Add(legend7);
-            this.tileDistributers.Location = new System.Drawing.Point(708, 425);
+            chartArea24.Name = "ChartArea1";
+            this.tileDistributers.ChartAreas.Add(chartArea24);
+            legend24.Name = "Legend1";
+            this.tileDistributers.Legends.Add(legend24);
+            this.tileDistributers.Location = new System.Drawing.Point(725, 276);
             this.tileDistributers.Name = "tileDistributers";
             this.tileDistributers.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
             this.tileDistributers.PaletteCustomColors = new System.Drawing.Color[] {
         System.Drawing.Color.MediumSlateBlue,
         System.Drawing.Color.SandyBrown};
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series9.Legend = "Legend1";
-            series9.Name = "Days";
-            series9.Points.Add(dataPoint5);
-            series9.Points.Add(dataPoint6);
-            this.tileDistributers.Series.Add(series9);
-            this.tileDistributers.Size = new System.Drawing.Size(234, 210);
+            series28.ChartArea = "ChartArea1";
+            series28.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series28.Legend = "Legend1";
+            series28.Name = "Days";
+            series28.Points.Add(dataPoint31);
+            series28.Points.Add(dataPoint32);
+            this.tileDistributers.Series.Add(series28);
+            this.tileDistributers.Size = new System.Drawing.Size(231, 128);
             this.tileDistributers.TabIndex = 33;
             this.tileDistributers.Text = "Quick View";
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(489, 84);
+            this.metroButton1.Location = new System.Drawing.Point(344, 49);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(75, 23);
             this.metroButton1.TabIndex = 34;
@@ -214,7 +234,7 @@
             this.label1.BackColor = System.Drawing.Color.RoyalBlue;
             this.label1.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(708, 12);
+            this.label1.Location = new System.Drawing.Point(695, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 19);
             this.label1.TabIndex = 35;
@@ -226,7 +246,7 @@
             this.label9.BackColor = System.Drawing.Color.RoyalBlue;
             this.label9.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(823, 12);
+            this.label9.Location = new System.Drawing.Point(810, 12);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(47, 19);
             this.label9.TabIndex = 48;
@@ -238,7 +258,7 @@
             this.label2.BackColor = System.Drawing.Color.RoyalBlue;
             this.label2.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(940, 12);
+            this.label2.Location = new System.Drawing.Point(927, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 19);
             this.label2.TabIndex = 49;
@@ -250,7 +270,7 @@
             this.label10.BackColor = System.Drawing.Color.RoyalBlue;
             this.label10.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(1053, 12);
+            this.label10.Location = new System.Drawing.Point(1040, 12);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(65, 19);
             this.label10.TabIndex = 50;
@@ -262,7 +282,7 @@
             this.label11.BackColor = System.Drawing.Color.RoyalBlue;
             this.label11.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Location = new System.Drawing.Point(1168, 12);
+            this.label11.Location = new System.Drawing.Point(1155, 12);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(80, 19);
             this.label11.TabIndex = 51;
@@ -274,7 +294,7 @@
             this.label12.BackColor = System.Drawing.Color.RoyalBlue;
             this.label12.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label12.Location = new System.Drawing.Point(1283, 12);
+            this.label12.Location = new System.Drawing.Point(1270, 12);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(99, 19);
             this.label12.TabIndex = 52;
@@ -286,7 +306,7 @@
             this.label13.BackColor = System.Drawing.Color.RoyalBlue;
             this.label13.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label13.Location = new System.Drawing.Point(1398, 12);
+            this.label13.Location = new System.Drawing.Point(1385, 12);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(82, 19);
             this.label13.TabIndex = 53;
@@ -298,7 +318,7 @@
             this.label14.BackColor = System.Drawing.Color.RoyalBlue;
             this.label14.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label14.Location = new System.Drawing.Point(1513, 12);
+            this.label14.Location = new System.Drawing.Point(1500, 12);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(91, 19);
             this.label14.TabIndex = 54;
@@ -310,7 +330,7 @@
             this.label3.BackColor = System.Drawing.Color.RoyalBlue;
             this.label3.Font = new System.Drawing.Font("Gadugi", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(709, 31);
+            this.label3.Location = new System.Drawing.Point(696, 31);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 12);
             this.label3.TabIndex = 55;
@@ -322,7 +342,7 @@
             this.label4.BackColor = System.Drawing.Color.RoyalBlue;
             this.label4.Font = new System.Drawing.Font("Gadugi", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(825, 34);
+            this.label4.Location = new System.Drawing.Point(812, 34);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(79, 12);
             this.label4.TabIndex = 56;
@@ -334,7 +354,7 @@
             this.label5.BackColor = System.Drawing.Color.RoyalBlue;
             this.label5.Font = new System.Drawing.Font("Gadugi", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(942, 31);
+            this.label5.Location = new System.Drawing.Point(929, 31);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(99, 12);
             this.label5.TabIndex = 57;
@@ -346,7 +366,7 @@
             this.label6.BackColor = System.Drawing.Color.RoyalBlue;
             this.label6.Font = new System.Drawing.Font("Gadugi", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(1055, 31);
+            this.label6.Location = new System.Drawing.Point(1042, 31);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(88, 12);
             this.label6.TabIndex = 58;
@@ -358,7 +378,7 @@
             this.label7.BackColor = System.Drawing.Color.RoyalBlue;
             this.label7.Font = new System.Drawing.Font("Gadugi", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(1170, 31);
+            this.label7.Location = new System.Drawing.Point(1157, 31);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(85, 12);
             this.label7.TabIndex = 59;
@@ -370,7 +390,7 @@
             this.label8.BackColor = System.Drawing.Color.RoyalBlue;
             this.label8.Font = new System.Drawing.Font("Gadugi", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(1285, 31);
+            this.label8.Location = new System.Drawing.Point(1272, 31);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(84, 12);
             this.label8.TabIndex = 60;
@@ -382,7 +402,7 @@
             this.label15.BackColor = System.Drawing.Color.RoyalBlue;
             this.label15.Font = new System.Drawing.Font("Gadugi", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label15.Location = new System.Drawing.Point(1400, 31);
+            this.label15.Location = new System.Drawing.Point(1387, 31);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(41, 12);
             this.label15.TabIndex = 61;
@@ -394,33 +414,19 @@
             this.label16.BackColor = System.Drawing.Color.RoyalBlue;
             this.label16.Font = new System.Drawing.Font("Gadugi", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label16.Location = new System.Drawing.Point(1515, 31);
+            this.label16.Location = new System.Drawing.Point(1502, 31);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(83, 12);
             this.label16.TabIndex = 62;
             this.label16.Text = "Sales Transactions";
             // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button8.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button8.Location = new System.Drawing.Point(708, 160);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(914, 144);
-            this.button8.TabIndex = 31;
-            this.button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button8.UseVisualStyleBackColor = false;
-            // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label17.BackColor = System.Drawing.Color.White;
             this.label17.Font = new System.Drawing.Font("Gadugi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label17.Location = new System.Drawing.Point(720, 186);
+            this.label17.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label17.Location = new System.Drawing.Point(720, 161);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(311, 25);
             this.label17.TabIndex = 63;
@@ -429,10 +435,10 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label18.BackColor = System.Drawing.Color.White;
             this.label18.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label18.Location = new System.Drawing.Point(734, 222);
+            this.label18.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label18.Location = new System.Drawing.Point(734, 197);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(60, 19);
             this.label18.TabIndex = 64;
@@ -442,10 +448,10 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label19.BackColor = System.Drawing.Color.White;
             this.label19.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label19.Location = new System.Drawing.Point(840, 222);
+            this.label19.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label19.Location = new System.Drawing.Point(840, 197);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(92, 19);
             this.label19.TabIndex = 65;
@@ -454,10 +460,10 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label20.BackColor = System.Drawing.Color.White;
             this.label20.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label20.Location = new System.Drawing.Point(961, 222);
+            this.label20.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label20.Location = new System.Drawing.Point(961, 197);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(90, 19);
             this.label20.TabIndex = 66;
@@ -474,10 +480,10 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label21.BackColor = System.Drawing.Color.White;
             this.label21.Font = new System.Drawing.Font("Gadugi", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label21.Location = new System.Drawing.Point(715, 211);
+            this.label21.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label21.Location = new System.Drawing.Point(715, 186);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(35, 56);
             this.label21.TabIndex = 68;
@@ -486,10 +492,10 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label22.BackColor = System.Drawing.Color.White;
             this.label22.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label22.Location = new System.Drawing.Point(735, 241);
+            this.label22.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label22.Location = new System.Drawing.Point(735, 216);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(79, 16);
             this.label22.TabIndex = 69;
@@ -498,10 +504,10 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label23.BackColor = System.Drawing.Color.White;
             this.label23.Font = new System.Drawing.Font("Gadugi", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label23.Location = new System.Drawing.Point(813, 211);
+            this.label23.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label23.Location = new System.Drawing.Point(813, 186);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(35, 56);
             this.label23.TabIndex = 70;
@@ -510,10 +516,10 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label24.BackColor = System.Drawing.Color.White;
             this.label24.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label24.Location = new System.Drawing.Point(841, 241);
+            this.label24.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label24.Location = new System.Drawing.Point(841, 216);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(79, 16);
             this.label24.TabIndex = 71;
@@ -522,10 +528,10 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label25.BackColor = System.Drawing.Color.White;
             this.label25.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label25.Location = new System.Drawing.Point(962, 241);
+            this.label25.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label25.Location = new System.Drawing.Point(962, 216);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(89, 16);
             this.label25.TabIndex = 73;
@@ -534,10 +540,10 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label26.BackColor = System.Drawing.Color.White;
             this.label26.Font = new System.Drawing.Font("Gadugi", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label26.Location = new System.Drawing.Point(934, 211);
+            this.label26.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label26.Location = new System.Drawing.Point(934, 186);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(35, 56);
             this.label26.TabIndex = 72;
@@ -546,10 +552,10 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label27.BackColor = System.Drawing.Color.White;
             this.label27.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label27.Location = new System.Drawing.Point(1351, 222);
+            this.label27.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label27.Location = new System.Drawing.Point(1351, 197);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(90, 19);
             this.label27.TabIndex = 77;
@@ -558,10 +564,10 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label28.BackColor = System.Drawing.Color.White;
             this.label28.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label28.Location = new System.Drawing.Point(1352, 241);
+            this.label28.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label28.Location = new System.Drawing.Point(1352, 216);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(89, 16);
             this.label28.TabIndex = 83;
@@ -570,10 +576,10 @@
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label29.BackColor = System.Drawing.Color.White;
             this.label29.Font = new System.Drawing.Font("Gadugi", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label29.Location = new System.Drawing.Point(1324, 211);
+            this.label29.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label29.Location = new System.Drawing.Point(1324, 186);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(35, 56);
             this.label29.TabIndex = 82;
@@ -582,10 +588,10 @@
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label30.BackColor = System.Drawing.Color.White;
             this.label30.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label30.Location = new System.Drawing.Point(1231, 241);
+            this.label30.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label30.Location = new System.Drawing.Point(1231, 216);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(79, 16);
             this.label30.TabIndex = 81;
@@ -594,10 +600,10 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label31.BackColor = System.Drawing.Color.White;
             this.label31.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label31.Location = new System.Drawing.Point(1230, 222);
+            this.label31.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label31.Location = new System.Drawing.Point(1230, 197);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(92, 19);
             this.label31.TabIndex = 76;
@@ -606,10 +612,10 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label32.BackColor = System.Drawing.Color.White;
             this.label32.Font = new System.Drawing.Font("Gadugi", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label32.Location = new System.Drawing.Point(1203, 211);
+            this.label32.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label32.Location = new System.Drawing.Point(1203, 186);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(35, 56);
             this.label32.TabIndex = 80;
@@ -618,10 +624,10 @@
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label33.BackColor = System.Drawing.Color.White;
             this.label33.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label33.Location = new System.Drawing.Point(1125, 241);
+            this.label33.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label33.Location = new System.Drawing.Point(1125, 216);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(79, 16);
             this.label33.TabIndex = 79;
@@ -630,10 +636,10 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label34.BackColor = System.Drawing.Color.White;
             this.label34.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label34.Location = new System.Drawing.Point(1124, 222);
+            this.label34.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label34.Location = new System.Drawing.Point(1124, 197);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(60, 19);
             this.label34.TabIndex = 75;
@@ -642,10 +648,10 @@
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label35.BackColor = System.Drawing.Color.White;
             this.label35.Font = new System.Drawing.Font("Gadugi", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label35.Location = new System.Drawing.Point(1105, 211);
+            this.label35.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label35.Location = new System.Drawing.Point(1105, 186);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(35, 56);
             this.label35.TabIndex = 78;
@@ -654,10 +660,10 @@
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label36.BackColor = System.Drawing.Color.White;
             this.label36.Font = new System.Drawing.Font("Gadugi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label36.Location = new System.Drawing.Point(1110, 186);
+            this.label36.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label36.Location = new System.Drawing.Point(1110, 161);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(323, 25);
             this.label36.TabIndex = 74;
@@ -666,10 +672,10 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label37.BackColor = System.Drawing.Color.White;
             this.label37.Font = new System.Drawing.Font("Gadugi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label37.Location = new System.Drawing.Point(1475, 186);
+            this.label37.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label37.Location = new System.Drawing.Point(1475, 161);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(52, 25);
             this.label37.TabIndex = 86;
@@ -678,10 +684,10 @@
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label38.BackColor = System.Drawing.Color.White;
             this.label38.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label38.Location = new System.Drawing.Point(1486, 222);
+            this.label38.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label38.Location = new System.Drawing.Point(1486, 197);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(47, 19);
             this.label38.TabIndex = 87;
@@ -690,10 +696,10 @@
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label39.BackColor = System.Drawing.Color.White;
             this.label39.Font = new System.Drawing.Font("Gadugi", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label39.Location = new System.Drawing.Point(1458, 211);
+            this.label39.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label39.Location = new System.Drawing.Point(1458, 186);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(35, 56);
             this.label39.TabIndex = 88;
@@ -705,7 +711,7 @@
             this.label40.BackColor = System.Drawing.Color.DarkViolet;
             this.label40.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label40.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label40.Location = new System.Drawing.Point(762, 616);
+            this.label40.Location = new System.Drawing.Point(762, 832);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(170, 19);
             this.label40.TabIndex = 89;
@@ -725,24 +731,23 @@
             // 
             // chart3
             // 
-            chartArea8.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea8);
-            legend8.Name = "Legend1";
-            this.chart3.Legends.Add(legend8);
-            this.chart3.Location = new System.Drawing.Point(1007, 434);
+            chartArea25.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea25);
+            legend25.Name = "Legend1";
+            this.chart3.Legends.Add(legend25);
+            this.chart3.Location = new System.Drawing.Point(1057, 410);
             this.chart3.Name = "chart3";
-            this.chart3.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            this.chart3.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
             this.chart3.PaletteCustomColors = new System.Drawing.Color[] {
-        System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192))))),
-        System.Drawing.Color.SandyBrown};
-            series10.ChartArea = "ChartArea1";
-            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedBar;
-            series10.Legend = "Legend1";
-            series10.Name = "Days";
-            series10.Points.Add(dataPoint7);
-            series10.Points.Add(dataPoint8);
-            this.chart3.Series.Add(series10);
-            this.chart3.Size = new System.Drawing.Size(615, 417);
+        System.Drawing.Color.RoyalBlue};
+            series29.ChartArea = "ChartArea1";
+            series29.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedBar;
+            series29.Legend = "Legend1";
+            series29.Name = "Days";
+            series29.Points.Add(dataPoint33);
+            series29.Points.Add(dataPoint34);
+            this.chart3.Series.Add(series29);
+            this.chart3.Size = new System.Drawing.Size(565, 454);
             this.chart3.TabIndex = 115;
             this.chart3.Text = "Quick View";
             // 
@@ -754,7 +759,7 @@
             this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button7.Image = global::PrimeTrade.Properties.Resources.sale;
             this.button7.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.button7.Location = new System.Drawing.Point(1513, 12);
+            this.button7.Location = new System.Drawing.Point(1500, 12);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(109, 123);
             this.button7.TabIndex = 30;
@@ -768,7 +773,7 @@
             this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button6.Image = global::PrimeTrade.Properties.Resources.best_seller__1_;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.button6.Location = new System.Drawing.Point(1398, 12);
+            this.button6.Location = new System.Drawing.Point(1385, 12);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(109, 123);
             this.button6.TabIndex = 29;
@@ -782,7 +787,7 @@
             this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button5.Image = global::PrimeTrade.Properties.Resources.best_seller;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.button5.Location = new System.Drawing.Point(1283, 12);
+            this.button5.Location = new System.Drawing.Point(1270, 12);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(109, 123);
             this.button5.TabIndex = 28;
@@ -796,7 +801,7 @@
             this.tileSalesRate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tileSalesRate.Image = global::PrimeTrade.Properties.Resources.increasing_stocks_graphic_of_bars2;
             this.tileSalesRate.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.tileSalesRate.Location = new System.Drawing.Point(1168, 12);
+            this.tileSalesRate.Location = new System.Drawing.Point(1155, 12);
             this.tileSalesRate.Name = "tileSalesRate";
             this.tileSalesRate.Size = new System.Drawing.Size(109, 123);
             this.tileSalesRate.TabIndex = 27;
@@ -810,7 +815,7 @@
             this.tileArea.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tileArea.Image = global::PrimeTrade.Properties.Resources.worldwide;
             this.tileArea.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.tileArea.Location = new System.Drawing.Point(1053, 12);
+            this.tileArea.Location = new System.Drawing.Point(1040, 12);
             this.tileArea.Name = "tileArea";
             this.tileArea.Size = new System.Drawing.Size(109, 123);
             this.tileArea.TabIndex = 26;
@@ -824,7 +829,7 @@
             this.tileDistributer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tileDistributer.Image = global::PrimeTrade.Properties.Resources.moving_truck;
             this.tileDistributer.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.tileDistributer.Location = new System.Drawing.Point(938, 12);
+            this.tileDistributer.Location = new System.Drawing.Point(925, 12);
             this.tileDistributer.Name = "tileDistributer";
             this.tileDistributer.Size = new System.Drawing.Size(109, 123);
             this.tileDistributer.TabIndex = 25;
@@ -838,7 +843,7 @@
             this.tileStockRange.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tileStockRange.Image = global::PrimeTrade.Properties.Resources.factory_stock_house;
             this.tileStockRange.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.tileStockRange.Location = new System.Drawing.Point(823, 12);
+            this.tileStockRange.Location = new System.Drawing.Point(810, 12);
             this.tileStockRange.Name = "tileStockRange";
             this.tileStockRange.Size = new System.Drawing.Size(109, 123);
             this.tileStockRange.TabIndex = 24;
@@ -853,18 +858,90 @@
             this.btnSearchTeacher.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnSearchTeacher.Image = global::PrimeTrade.Properties.Resources.money2;
             this.btnSearchTeacher.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.btnSearchTeacher.Location = new System.Drawing.Point(708, 12);
+            this.btnSearchTeacher.Location = new System.Drawing.Point(695, 12);
             this.btnSearchTeacher.Name = "btnSearchTeacher";
             this.btnSearchTeacher.Size = new System.Drawing.Size(109, 123);
             this.btnSearchTeacher.TabIndex = 23;
             this.btnSearchTeacher.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSearchTeacher.UseVisualStyleBackColor = false;
             // 
+            // chart1
+            // 
+            chartArea26.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea26);
+            legend26.Name = "Legend1";
+            this.chart1.Legends.Add(legend26);
+            this.chart1.Location = new System.Drawing.Point(1057, 276);
+            this.chart1.Name = "chart1";
+            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
+            this.chart1.PaletteCustomColors = new System.Drawing.Color[] {
+        System.Drawing.Color.MediumSlateBlue,
+        System.Drawing.Color.SandyBrown};
+            series30.ChartArea = "ChartArea1";
+            series30.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series30.Legend = "Legend1";
+            series30.Name = "Days";
+            series30.Points.Add(dataPoint35);
+            series30.Points.Add(dataPoint36);
+            this.chart1.Series.Add(series30);
+            this.chart1.Size = new System.Drawing.Size(231, 128);
+            this.chart1.TabIndex = 116;
+            this.chart1.Text = "Quick View";
+            // 
+            // chart4
+            // 
+            chartArea27.Name = "ChartArea1";
+            this.chart4.ChartAreas.Add(chartArea27);
+            legend27.Name = "Legend1";
+            this.chart4.Legends.Add(legend27);
+            this.chart4.Location = new System.Drawing.Point(1391, 276);
+            this.chart4.Name = "chart4";
+            this.chart4.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
+            this.chart4.PaletteCustomColors = new System.Drawing.Color[] {
+        System.Drawing.Color.MediumSlateBlue,
+        System.Drawing.Color.SandyBrown};
+            series31.ChartArea = "ChartArea1";
+            series31.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series31.Legend = "Legend1";
+            series31.Name = "Days";
+            series31.Points.Add(dataPoint37);
+            series31.Points.Add(dataPoint38);
+            this.chart4.Series.Add(series31);
+            this.chart4.Size = new System.Drawing.Size(231, 128);
+            this.chart4.TabIndex = 117;
+            this.chart4.Text = "Quick View";
+            // 
+            // chart5
+            // 
+            chartArea28.Name = "ChartArea1";
+            this.chart5.ChartAreas.Add(chartArea28);
+            legend28.Name = "Legend1";
+            this.chart5.Legends.Add(legend28);
+            this.chart5.Location = new System.Drawing.Point(711, 410);
+            this.chart5.Name = "chart5";
+            this.chart5.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
+            this.chart5.PaletteCustomColors = new System.Drawing.Color[] {
+        System.Drawing.Color.MediumSlateBlue,
+        System.Drawing.Color.SandyBrown};
+            series32.ChartArea = "ChartArea1";
+            series32.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series32.Legend = "Legend1";
+            series32.Name = "Days";
+            series32.Points.Add(dataPoint39);
+            series32.Points.Add(dataPoint40);
+            this.chart5.Series.Add(series32);
+            this.chart5.Size = new System.Drawing.Size(340, 419);
+            this.chart5.TabIndex = 118;
+            this.chart5.Text = "Quick View";
+            // 
             // frmManagerDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1640, 871);
+            this.Controls.Add(this.chart5);
+            this.Controls.Add(this.chart4);
+            this.Controls.Add(this.chart1);
             this.Controls.Add(this.chart3);
             this.Controls.Add(this.label61);
             this.Controls.Add(this.label40);
@@ -910,7 +987,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.tileDistributers);
-            this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -933,6 +1009,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tileDistributers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -970,7 +1049,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
@@ -998,5 +1076,8 @@
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart3;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart4;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart5;
     }
 }
