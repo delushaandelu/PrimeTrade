@@ -46,6 +46,10 @@
             System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint5 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 40D);
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint6 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 50D);
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.salesChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.cmbpromotion = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
@@ -97,7 +101,6 @@
             this.chart4 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button7 = new System.Windows.Forms.Button();
@@ -108,14 +111,14 @@
             this.tileDistributer = new System.Windows.Forms.Button();
             this.tileStockRange = new System.Windows.Forms.Button();
             this.btnSearchTeacher = new System.Windows.Forms.Button();
-            this.label43 = new System.Windows.Forms.Label();
+            this.chartSales = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)(this.salesChart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tileDistributers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartSales)).BeginInit();
             this.SuspendLayout();
             // 
             // salesChart
@@ -763,15 +766,6 @@
             this.label42.TabIndex = 122;
             this.label42.Text = "Overall income for last week days";
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::PrimeTrade.Properties.Resources.X5leY;
-            this.pictureBox3.Location = new System.Drawing.Point(119, 533);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(399, 241);
-            this.pictureBox3.TabIndex = 123;
-            this.pictureBox3.TabStop = false;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::PrimeTrade.Properties.Resources._68747470733a2f2f6c766368617274732e6e65742f436f6e74656e742f496d616765732f42616e6e65722f726573706f6e736976652e676966;
@@ -905,25 +899,40 @@
             this.btnSearchTeacher.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSearchTeacher.UseVisualStyleBackColor = false;
             // 
-            // label43
+            // chartSales
             // 
-            this.label43.AutoSize = true;
-            this.label43.BackColor = System.Drawing.Color.RoyalBlue;
-            this.label43.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label43.Location = new System.Drawing.Point(273, 798);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(95, 19);
-            this.label43.TabIndex = 124;
-            this.label43.Text = "Weekly Split";
+            chartArea5.Name = "ChartArea1";
+            this.chartSales.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chartSales.Legends.Add(legend5);
+            this.chartSales.Location = new System.Drawing.Point(60, 513);
+            this.chartSales.Name = "chartSales";
+            this.chartSales.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
+            this.chartSales.PaletteCustomColors = new System.Drawing.Color[] {
+        System.Drawing.Color.RoyalBlue,
+        System.Drawing.Color.DeepSkyBlue};
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series5.Legend = "Legend1";
+            series5.Name = "Actual";
+            series5.YValuesPerPoint = 2;
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series6.Legend = "Legend1";
+            series6.Name = "Prediction";
+            series6.YValuesPerPoint = 2;
+            this.chartSales.Series.Add(series5);
+            this.chartSales.Series.Add(series6);
+            this.chartSales.Size = new System.Drawing.Size(642, 338);
+            this.chartSales.TabIndex = 172;
+            this.chartSales.Text = "chart1";
             // 
             // frmManagerDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1640, 871);
-            this.Controls.Add(this.label43);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.chartSales);
             this.Controls.Add(this.label42);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -995,9 +1004,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.tileDistributers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartSales)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1066,7 +1075,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartSales;
     }
 }

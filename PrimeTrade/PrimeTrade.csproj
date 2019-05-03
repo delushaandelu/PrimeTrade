@@ -362,6 +362,12 @@
     <Compile Include="FrmManagerViewStockRequest.Designer.cs">
       <DependentUpon>FrmManagerViewStockRequest.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmManagerWeeklySplit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerWeeklySplit.Designer.cs">
+      <DependentUpon>frmManagerWeeklySplit.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPromotionsToDistributers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -504,6 +510,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmManagerViewStockRequest.resx">
       <DependentUpon>FrmManagerViewStockRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerWeeklySplit.resx">
+      <DependentUpon>frmManagerWeeklySplit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPromotionsToDistributers.resx">
       <DependentUpon>frmPromotionsToDistributers.cs</DependentUpon>

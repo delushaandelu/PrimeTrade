@@ -31,8 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.splashPanel1 = new Syncfusion.Windows.Forms.Tools.SplashPanel();
-            this.cmbPromotion = new MetroFramework.Controls.MetroComboBox();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.txtmachanism = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtproductmix = new MaterialSkin.Controls.MaterialSingleLineTextField();
@@ -47,6 +45,8 @@
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.buttonAdv2 = new Syncfusion.Windows.Forms.ButtonAdv();
             this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.cmbPromotion = new MetroFramework.Controls.MetroComboBox();
             this.splashPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,31 +74,6 @@
             this.splashPanel1.Size = new System.Drawing.Size(800, 63);
             this.splashPanel1.TabIndex = 150;
             this.splashPanel1.Text = "INTRODUICE PROMOTION";
-            // 
-            // cmbPromotion
-            // 
-            this.cmbPromotion.FormattingEnabled = true;
-            this.cmbPromotion.ItemHeight = 23;
-            this.cmbPromotion.Location = new System.Drawing.Point(253, 99);
-            this.cmbPromotion.Name = "cmbPromotion";
-            this.cmbPromotion.Size = new System.Drawing.Size(399, 29);
-            this.cmbPromotion.TabIndex = 152;
-            this.cmbPromotion.UseSelectable = true;
-            this.cmbPromotion.SelectedIndexChanged += new System.EventHandler(this.cmbPromotion_SelectedIndexChanged);
-            // 
-            // materialLabel1
-            // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(137, 104);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(98, 19);
-            this.materialLabel1.TabIndex = 151;
-            this.materialLabel1.Text = "Promotion ID";
             // 
             // materialLabel3
             // 
@@ -310,6 +285,31 @@
             this.materialLabel9.Text = "Following predictions will be the best solution for futre higher profit next 6 mo" +
     "nths";
             // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.Location = new System.Drawing.Point(137, 104);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(98, 19);
+            this.materialLabel1.TabIndex = 151;
+            this.materialLabel1.Text = "Promotion ID";
+            // 
+            // cmbPromotion
+            // 
+            this.cmbPromotion.FormattingEnabled = true;
+            this.cmbPromotion.ItemHeight = 23;
+            this.cmbPromotion.Location = new System.Drawing.Point(253, 99);
+            this.cmbPromotion.Name = "cmbPromotion";
+            this.cmbPromotion.Size = new System.Drawing.Size(399, 29);
+            this.cmbPromotion.TabIndex = 152;
+            this.cmbPromotion.UseSelectable = true;
+            this.cmbPromotion.SelectedIndexChanged += new System.EventHandler(this.cmbPromotion_SelectedIndexChanged);
+            // 
             // frmManagerBestAreaMix
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -344,8 +344,6 @@
 
         private System.Windows.Forms.Label label1;
         private Syncfusion.Windows.Forms.Tools.SplashPanel splashPanel1;
-        private MetroFramework.Controls.MetroComboBox cmbPromotion;
-        private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtmachanism;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtproductmix;
@@ -360,5 +358,7 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel8;
         private Syncfusion.Windows.Forms.ButtonAdv buttonAdv2;
         private MaterialSkin.Controls.MaterialLabel materialLabel9;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private MetroFramework.Controls.MetroComboBox cmbPromotion;
     }
 }
