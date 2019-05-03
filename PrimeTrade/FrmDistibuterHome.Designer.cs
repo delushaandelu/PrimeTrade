@@ -40,12 +40,14 @@
             treeNode4});
             System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("View my Sales");
             System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("View my Sales Proress");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("My Sales", new System.Windows.Forms.TreeNode[] {
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("View Weekly Split");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("My Sales", new System.Windows.Forms.TreeNode[] {
             treeNode6,
-            treeNode7});
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Request");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Request Stock", new System.Windows.Forms.TreeNode[] {
-            treeNode9});
+            treeNode7,
+            treeNode8});
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Request");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Request Stock", new System.Windows.Forms.TreeNode[] {
+            treeNode10});
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.menuStrip = new System.Windows.Forms.MenuStrip();
@@ -171,17 +173,19 @@
             treeNode6.Text = "View my Sales";
             treeNode7.Name = "Node7";
             treeNode7.Text = "View my Sales Proress";
-            treeNode8.Name = "Node5";
-            treeNode8.Text = "My Sales";
-            treeNode9.Name = "Node12";
-            treeNode9.Text = "Request";
-            treeNode10.Name = "Node0";
-            treeNode10.Text = "Request Stock";
+            treeNode8.Name = "Node120";
+            treeNode8.Text = "View Weekly Split";
+            treeNode9.Name = "Node5";
+            treeNode9.Text = "My Sales";
+            treeNode10.Name = "Node12";
+            treeNode10.Text = "Request";
+            treeNode11.Name = "Node0";
+            treeNode11.Text = "Request Stock";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode3,
             treeNode5,
-            treeNode8,
-            treeNode10});
+            treeNode9,
+            treeNode11});
             this.treeView1.SelectedImageIndex = 1;
             this.treeView1.Size = new System.Drawing.Size(218, 617);
             this.treeView1.TabIndex = 5;

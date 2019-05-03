@@ -189,3 +189,4 @@ C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmM
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.csprojAssemblyReference.cache
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmManagerPastData.resources
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmManagerWeeklySplit.resources
+C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmDistributerWeeklySplit.resources

@@ -122,6 +122,13 @@ namespace PrimeTrade
                 form.MdiParent = this;
                 form.Show();
             }
+            else if (window == "Node120")
+            {
+                lblpath.Text = path;
+                frmDistributerWeeklySplit form = new frmDistributerWeeklySplit(lblstatus.Text);
+                form.MdiParent = this;
+                form.Show();
+            }
         }
 
         private void FrmDistibuterHome_Load(object sender, EventArgs e)

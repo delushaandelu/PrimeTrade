@@ -218,6 +218,12 @@
     <Compile Include="frmDistributersSales.Designer.cs">
       <DependentUpon>frmDistributersSales.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDistributerWeeklySplit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDistributerWeeklySplit.Designer.cs">
+      <DependentUpon>frmDistributerWeeklySplit.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDistributorReqStock.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -441,6 +447,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDistributersSales.resx">
       <DependentUpon>frmDistributersSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDistributerWeeklySplit.resx">
+      <DependentUpon>frmDistributerWeeklySplit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDistributorReqStock.resx">
       <DependentUpon>frmDistributorReqStock.cs</DependentUpon>
