@@ -92,7 +92,7 @@
             this.btnSearchTeacher.Name = "btnSearchTeacher";
             this.btnSearchTeacher.Size = new System.Drawing.Size(109, 123);
             this.btnSearchTeacher.TabIndex = 25;
-            this.btnSearchTeacher.Text = "Active Promotion";
+            this.btnSearchTeacher.Text = "Add User";
             this.btnSearchTeacher.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSearchTeacher.UseVisualStyleBackColor = false;
             this.btnSearchTeacher.Click += new System.EventHandler(this.btnSearchTeacher_Click);

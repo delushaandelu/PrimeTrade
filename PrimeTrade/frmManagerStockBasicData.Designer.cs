@@ -246,6 +246,7 @@
             this.txtcatagory.Size = new System.Drawing.Size(155, 23);
             this.txtcatagory.TabIndex = 23;
             this.txtcatagory.UseSystemPasswordChar = false;
+            this.txtcatagory.Enter += new System.EventHandler(this.txtcatagory_Enter);
             // 
             // materialLabel2
             // 

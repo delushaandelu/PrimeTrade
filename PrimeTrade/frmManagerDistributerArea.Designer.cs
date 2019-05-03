@@ -70,6 +70,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnaddarea = new Syncfusion.Windows.Forms.ButtonAdv();
             this.btnreset = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.buttonAdv2 = new Syncfusion.Windows.Forms.ButtonAdv();
             this.contextMenuStrip1.SuspendLayout();
             this.splashPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -496,11 +497,33 @@
             this.btnreset.UseVisualStyle = false;
             this.btnreset.Click += new System.EventHandler(this.btnreset_Click);
             // 
+            // buttonAdv2
+            // 
+            this.buttonAdv2.BeforeTouchSize = new System.Drawing.Size(73, 41);
+            this.buttonAdv2.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
+            this.buttonAdv2.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Browse;
+            this.buttonAdv2.Image = global::PrimeTrade.Properties.Resources.error;
+            this.buttonAdv2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAdv2.IsBackStageButton = false;
+            this.buttonAdv2.Location = new System.Drawing.Point(735, 437);
+            this.buttonAdv2.MetroColor = System.Drawing.Color.Aqua;
+            this.buttonAdv2.Name = "buttonAdv2";
+            this.buttonAdv2.OverrideFormManagedColor = true;
+            this.buttonAdv2.PushButton = true;
+            this.buttonAdv2.Size = new System.Drawing.Size(73, 41);
+            this.buttonAdv2.TabIndex = 151;
+            this.buttonAdv2.Text = "Exit";
+            this.buttonAdv2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonAdv2.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonAdv2.UseVisualStyle = false;
+            this.buttonAdv2.Click += new System.EventHandler(this.buttonAdv2_Click);
+            // 
             // frmManagerDistributerArea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(849, 737);
+            this.Controls.Add(this.buttonAdv2);
             this.Controls.Add(this.btnreset);
             this.Controls.Add(this.btnaddarea);
             this.Controls.Add(this.splashPanel1);
@@ -572,5 +595,6 @@
         private System.Windows.Forms.Label label1;
         private Syncfusion.Windows.Forms.ButtonAdv btnaddarea;
         private Syncfusion.Windows.Forms.ButtonAdv btnreset;
+        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv2;
     }
 }

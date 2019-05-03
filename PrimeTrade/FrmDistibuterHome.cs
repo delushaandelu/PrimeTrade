@@ -155,7 +155,7 @@ namespace PrimeTrade
 
         private void btnTeacherAssignClass_Click(object sender, EventArgs e)
         {
-            frmDistributersMySalesProgress form = new frmDistributersMySalesProgress(lblstatus.Text);
+            frmDistributersSales form = new frmDistributersSales(lblstatus.Text);
             form.MdiParent = this;
             form.Show();
         }

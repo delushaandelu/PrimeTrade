@@ -216,6 +216,11 @@ namespace PrimeTrade
                 MessageBox.Show("Can not delete the record.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void buttonAdv2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
 

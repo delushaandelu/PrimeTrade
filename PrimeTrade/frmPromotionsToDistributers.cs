@@ -367,7 +367,7 @@ namespace PrimeTrade
         private void cmbitem1_SelectedIndexChanged(object sender, EventArgs e)
         {
             txtqty1.Enabled = true;
-            listView5.Items[2].Selected = true;
+          //listView5.Items[2].Selected = true;
 
             string itemid = cmbitem1.SelectedItem.ToString();
             int output = 0;
@@ -416,7 +416,7 @@ namespace PrimeTrade
             listView4.Items.Clear();
             listView4.View = View.Details;
 
-            MySqlDataAdapter dAdpter = new MySqlDataAdapter("SELECT distinct `tb_promo_distributer`.`idtb_promo_distributer`,`tbl_user`.`firstname`,`tb_promotion`.`promoname`,`tb_promotion`.`promomach`,`tb_promotion`.`promodes`,`tb_promo_distributer`.`itemone`,`tb_promo_distributer`.`itemoneqty`,`tb_promo_distributer`.`itemtwo`,`tb_promo_distributer`.`itemtwoqty`,`tb_promotion_active`.`fromdate`,`tb_promotion_active`.`untildate`,`tb_promotion_active`.`Comments`, `tb_promo_distributer`.`state` FROM `base`.`tb_promotion`,`base`.`tb_promo_distributer`,`base`.`tb_promotion_active`, `base`.`tbl_user` WHERE `tb_promotion_active`.`idtb_promotion_active` = `tb_promo_distributer`.`promo_id` AND `tbl_user`.`status` = 'On' AND `tbl_user`.`role` = 'DISTRIBUTER' AND `tb_promo_distributer`.`dist_id` =`tbl_user`.`idtbl_user` AND `tbl_user`.`firstname` = '" + cmbdist.Text+ "' ; ", connect);
+            MySqlDataAdapter dAdpter = new MySqlDataAdapter("SELECT distinct `tb_promo_distributer`.`idtb_promo_distributer`,`tbl_user`.`firstname`,`tb_promotion`.`promoname`,`tb_promotion`.`promomach`,`tb_promotion`.`promodes`,`tb_promo_distributer`.`itemone`,`tb_promo_distributer`.`itemoneqty`,`tb_promo_distributer`.`itemtwo`,`tb_promo_distributer`.`itemtwoqty`,`tb_promotion_active`.`fromdate`,`tb_promotion_active`.`untildate`,`tb_promotion_active`.`Comments`, `tb_promo_distributer`.`state` FROM `base`.`tb_promotion`,`base`.`tb_promo_distributer`,`base`.`tb_promotion_active`, `base`.`tbl_user` WHERE `tb_promotion_active`.`idtb_promotion_active` = `tb_promo_distributer`.`promo_id` AND  `tb_promotion_active`.`promoid` = `tb_promotion`.`idtb_promotion` AND `tbl_user`.`status` = 'On'  AND `tbl_user`.`role` = 'DISTRIBUTER'  AND `tb_promo_distributer`.`dist_id` =`tbl_user`.`idtbl_user` AND `tbl_user`.`firstname` = '" + cmbdist.Text+ "' ; ", connect);
 
             DataTable dTable = new DataTable();
             dAdpter.Fill(dTable);
@@ -586,9 +586,7 @@ namespace PrimeTrade
             }
             else
             {
-                txtqty1.Text = "12";
-                txtqty2.Text = "12";
-
+               
                 MySqlCommand command = new MySqlCommand();
                 connect.Open();
                 command.Connection = connect;

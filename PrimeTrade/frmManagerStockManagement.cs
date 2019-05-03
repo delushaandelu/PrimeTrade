@@ -301,7 +301,7 @@ namespace PrimeTrade
         {
             connect.Open();
 
-            string query = "SELECT idtb_stock_brand FROM tb_stock_brand";
+            string query = "SELECT brand FROM tb_stock_brand";
             using (var command = new MySqlCommand(query, connect))
             {
                 using (var reader = command.ExecuteReader())
@@ -309,7 +309,7 @@ namespace PrimeTrade
                     //Iterate through the rows and add it to the combobox's items
                     while (reader.Read())
                     {
-                        cmbbrand.Items.Add(reader.GetString("idtb_stock_brand"));
+                        cmbbrand.Items.Add(reader.GetString("brand"));
                     }
                 }
                 connect.Close();

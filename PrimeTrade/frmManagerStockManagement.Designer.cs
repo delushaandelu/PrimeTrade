@@ -117,9 +117,9 @@
             this.materialLabel7.Location = new System.Drawing.Point(50, 285);
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel7.Name = "materialLabel7";
-            this.materialLabel7.Size = new System.Drawing.Size(44, 19);
+            this.materialLabel7.Size = new System.Drawing.Size(52, 19);
             this.materialLabel7.TabIndex = 18;
-            this.materialLabel7.Text = "State";
+            this.materialLabel7.Text = "Status";
             // 
             // materialLabel8
             // 
@@ -173,9 +173,9 @@
             this.materialLabel5.Location = new System.Drawing.Point(50, 241);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
-            this.materialLabel5.Size = new System.Drawing.Size(86, 19);
+            this.materialLabel5.Size = new System.Drawing.Size(98, 19);
             this.materialLabel5.TabIndex = 14;
-            this.materialLabel5.Text = "Manufactor";
+            this.materialLabel5.Text = "Manufacturer";
             // 
             // materialLabel4
             // 
@@ -350,7 +350,8 @@
             // 
             this.cmbstate.FormattingEnabled = true;
             this.cmbstate.Items.AddRange(new object[] {
-            "Default "});
+            "New",
+            "Damaged"});
             this.cmbstate.Location = new System.Drawing.Point(162, 286);
             this.cmbstate.Name = "cmbstate";
             this.cmbstate.Size = new System.Drawing.Size(195, 21);
@@ -724,7 +725,7 @@
             this.materialRaisedButton2.PushButton = true;
             this.materialRaisedButton2.Size = new System.Drawing.Size(124, 41);
             this.materialRaisedButton2.TabIndex = 152;
-            this.materialRaisedButton2.Text = "REMOVE AREA";
+            this.materialRaisedButton2.Text = "REMOVE ITEM";
             this.materialRaisedButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.materialRaisedButton2.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.materialRaisedButton2.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -747,7 +748,7 @@
             this.materialRaisedButton1.PushButton = true;
             this.materialRaisedButton1.Size = new System.Drawing.Size(124, 41);
             this.materialRaisedButton1.TabIndex = 151;
-            this.materialRaisedButton1.Text = "UPDATE AREA";
+            this.materialRaisedButton1.Text = "UPDATE ITEM";
             this.materialRaisedButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.materialRaisedButton1.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.materialRaisedButton1.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -791,7 +792,7 @@
             this.buttonAdv1.PushButton = true;
             this.buttonAdv1.Size = new System.Drawing.Size(124, 41);
             this.buttonAdv1.TabIndex = 149;
-            this.buttonAdv1.Text = "ADD AREA";
+            this.buttonAdv1.Text = "ADD ITEM";
             this.buttonAdv1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonAdv1.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.buttonAdv1.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));

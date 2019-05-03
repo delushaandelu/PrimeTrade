@@ -66,7 +66,7 @@
             this.webBrowser1.Location = new System.Drawing.Point(16, 76);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(1061, 537);
+            this.webBrowser1.Size = new System.Drawing.Size(1061, 747);
             this.webBrowser1.TabIndex = 141;
             this.webBrowser1.Url = new System.Uri("https://www.google.com/maps/@7.9202136,80.2170684,8.25z", System.UriKind.Absolute);
             // 
@@ -78,7 +78,7 @@
             this.buttonAdv2.Image = global::PrimeTrade.Properties.Resources.error;
             this.buttonAdv2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAdv2.IsBackStageButton = false;
-            this.buttonAdv2.Location = new System.Drawing.Point(1004, 619);
+            this.buttonAdv2.Location = new System.Drawing.Point(991, 838);
             this.buttonAdv2.MetroColor = System.Drawing.Color.Aqua;
             this.buttonAdv2.Name = "buttonAdv2";
             this.buttonAdv2.OverrideFormManagedColor = true;
@@ -95,7 +95,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1100, 683);
+            this.ClientSize = new System.Drawing.Size(1100, 893);
             this.Controls.Add(this.buttonAdv2);
             this.Controls.Add(this.splashPanel1);
             this.Controls.Add(this.webBrowser1);

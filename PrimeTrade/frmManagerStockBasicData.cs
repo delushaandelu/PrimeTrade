@@ -456,5 +456,45 @@ namespace PrimeTrade
         {
             this.Close();
         }
+
+        private void txtcatagory_Enter(object sender, EventArgs e)
+        {
+            if (txtcatagory.Text == "")
+            {
+                MessageBox.Show("Please fill up all the fields.", "Empty Fields Detected !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            else
+            {
+                MySqlParameter[] pera = new MySqlParameter[2];
+                pera[0] = new MySqlParameter("cat", MySqlDbType.VarChar);
+                pera[0].Value = txtcatagory.Text;
+
+                pera[1] = new MySqlParameter("state", MySqlDbType.VarChar);
+                pera[1].Value = chkstate.Text;
+
+                MySqlCommand command = new MySqlCommand();
+                command.Connection = connect;
+                command.CommandType = CommandType.StoredProcedure;
+                command.CommandText = "stock_cat_new";
+
+                command.Parameters.AddRange(pera);
+                connect.Open();
+
+                if (command.ExecuteNonQuery() == 1)
+                {
+                    connect.Close();
+                    MessageBox.Show("New stock catagory item added.", "Success !", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    clearCatogory();
+                    //load table data
+                    viewCatogory();
+                }
+                else
+                {
+                    connect.Close();
+                    MessageBox.Show("Can not add new stock catagory item.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }
