@@ -30,22 +30,22 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDistibuterHome));
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Approve Promotions");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("My Promotion Tasks");
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Promotions", new System.Windows.Forms.TreeNode[] {
-            treeNode11,
-            treeNode12});
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Supply Goods");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Distribution", new System.Windows.Forms.TreeNode[] {
-            treeNode14});
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("View my Sales");
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("View my Sales Proress");
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("My Sales", new System.Windows.Forms.TreeNode[] {
-            treeNode16,
-            treeNode17});
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Request");
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Request Stock", new System.Windows.Forms.TreeNode[] {
-            treeNode19});
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Approve Promotions");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("My Promotion Tasks");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Promotions", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2});
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Supply Goods");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Distribution", new System.Windows.Forms.TreeNode[] {
+            treeNode4});
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("View my Sales");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("View my Sales Proress");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("My Sales", new System.Windows.Forms.TreeNode[] {
+            treeNode6,
+            treeNode7});
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Request");
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Request Stock", new System.Windows.Forms.TreeNode[] {
+            treeNode9});
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.menuStrip = new System.Windows.Forms.MenuStrip();
@@ -57,13 +57,13 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.btnViewAllAssignedClass = new System.Windows.Forms.Button();
             this.btnSearchTeacher = new System.Windows.Forms.Button();
             this.btnManageTeacher = new System.Windows.Forms.Button();
             this.btnTeacherAssignClass = new System.Windows.Forms.Button();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -157,34 +157,35 @@
             this.treeView1.ImageList = this.imageList1;
             this.treeView1.Location = new System.Drawing.Point(3, 3);
             this.treeView1.Name = "treeView1";
-            treeNode11.Name = "Node1";
-            treeNode11.Text = "Approve Promotions";
-            treeNode12.Name = "Node2";
-            treeNode12.Text = "My Promotion Tasks";
-            treeNode13.Name = "Node0";
-            treeNode13.Text = "Promotions";
-            treeNode14.Name = "Node4";
-            treeNode14.Text = "Supply Goods";
-            treeNode15.Name = "Node3";
-            treeNode15.Text = "Distribution";
-            treeNode16.Name = "Node6";
-            treeNode16.Text = "View my Sales";
-            treeNode17.Name = "Node7";
-            treeNode17.Text = "View my Sales Proress";
-            treeNode18.Name = "Node5";
-            treeNode18.Text = "My Sales";
-            treeNode19.Name = "Node12";
-            treeNode19.Text = "Request";
-            treeNode20.Name = "Node0";
-            treeNode20.Text = "Request Stock";
+            treeNode1.Name = "Node1";
+            treeNode1.Text = "Approve Promotions";
+            treeNode2.Name = "Node2";
+            treeNode2.Text = "My Promotion Tasks";
+            treeNode3.Name = "Node0";
+            treeNode3.Text = "Promotions";
+            treeNode4.Name = "Node4";
+            treeNode4.Text = "Supply Goods";
+            treeNode5.Name = "Node3";
+            treeNode5.Text = "Distribution";
+            treeNode6.Name = "Node6";
+            treeNode6.Text = "View my Sales";
+            treeNode7.Name = "Node7";
+            treeNode7.Text = "View my Sales Proress";
+            treeNode8.Name = "Node5";
+            treeNode8.Text = "My Sales";
+            treeNode9.Name = "Node12";
+            treeNode9.Text = "Request";
+            treeNode10.Name = "Node0";
+            treeNode10.Text = "Request Stock";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode13,
-            treeNode15,
-            treeNode18,
-            treeNode20});
+            treeNode3,
+            treeNode5,
+            treeNode8,
+            treeNode10});
             this.treeView1.SelectedImageIndex = 1;
             this.treeView1.Size = new System.Drawing.Size(218, 617);
             this.treeView1.TabIndex = 5;
+            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             // 
             // tabPage1
             // 
@@ -201,17 +202,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Shortcuts";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tabControl1.Location = new System.Drawing.Point(20, 114);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(232, 649);
-            this.tabControl1.TabIndex = 24;
             // 
             // button2
             // 
@@ -308,6 +298,17 @@
             this.btnTeacherAssignClass.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnTeacherAssignClass.UseVisualStyleBackColor = false;
             this.btnTeacherAssignClass.Click += new System.EventHandler(this.btnTeacherAssignClass_Click);
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tabControl1.Location = new System.Drawing.Point(20, 114);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(232, 649);
+            this.tabControl1.TabIndex = 24;
             // 
             // pictureBox2
             // 

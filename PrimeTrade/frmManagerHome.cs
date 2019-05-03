@@ -219,6 +219,18 @@ namespace PrimeTrade
                 form.MdiParent = this;
                 form.Show();
             }
+            else if (window == "Node129")
+            {
+                frmManagerBestAreaMix form = new frmManagerBestAreaMix();
+                form.MdiParent = this;
+                form.Show();
+            }
+            else if (window == "Node130")
+            {
+                frmManagerPastData form = new frmManagerPastData();
+                form.MdiParent = this;
+                form.Show();
+            }
 
         }
 

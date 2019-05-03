@@ -290,6 +290,12 @@
     <Compile Include="frmManagerNotifications.Designer.cs">
       <DependentUpon>frmManagerNotifications.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmManagerPastData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerPastData.Designer.cs">
+      <DependentUpon>frmManagerPastData.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmManagerPoints.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -462,6 +468,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmManagerNotifications.resx">
       <DependentUpon>frmManagerNotifications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerPastData.resx">
+      <DependentUpon>frmManagerPastData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmManagerPoints.resx">
       <DependentUpon>frmManagerPoints.cs</DependentUpon>
