@@ -242,6 +242,12 @@
     <Compile Include="frmManagerActivePromo.Designer.cs">
       <DependentUpon>frmManagerActivePromo.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmManagerBestAreaMix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerBestAreaMix.Designer.cs">
+      <DependentUpon>frmManagerBestAreaMix.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmManagerCashflow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -435,6 +441,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmManagerActivePromo.resx">
       <DependentUpon>frmManagerActivePromo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerBestAreaMix.resx">
+      <DependentUpon>frmManagerBestAreaMix.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmManagerDashboard.resx">
       <DependentUpon>frmManagerDashboard.cs</DependentUpon>
