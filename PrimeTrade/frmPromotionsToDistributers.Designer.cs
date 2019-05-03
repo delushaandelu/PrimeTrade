@@ -395,6 +395,7 @@
             this.columnHeader45,
             this.columnHeader50,
             this.columnHeader51});
+            this.listView5.Font = new System.Drawing.Font("Bookman Old Style", 9F);
             this.listView5.FullRowSelect = true;
             this.listView5.GridLines = true;
             this.listView5.Location = new System.Drawing.Point(427, 306);
@@ -580,6 +581,7 @@
             this.columnHeader42,
             this.columnHeader43,
             this.columnHeader16});
+            this.listView4.Font = new System.Drawing.Font("Bookman Old Style", 9F);
             this.listView4.FullRowSelect = true;
             this.listView4.GridLines = true;
             this.listView4.Location = new System.Drawing.Point(0, 73);
@@ -742,6 +744,7 @@
             this.columnHeader28,
             this.columnHeader29,
             this.columnHeader30});
+            this.listView3.Font = new System.Drawing.Font("Bookman Old Style", 9F);
             this.listView3.FullRowSelect = true;
             this.listView3.GridLines = true;
             this.listView3.Location = new System.Drawing.Point(643, 349);
@@ -797,6 +800,7 @@
             this.columnHeader13,
             this.columnHeader14,
             this.columnHeader15});
+            this.listView1.Font = new System.Drawing.Font("Bookman Old Style", 9F);
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.Location = new System.Drawing.Point(643, 42);
@@ -1000,7 +1004,7 @@
             this.metroTabControl1.FontSize = MetroFramework.MetroTabControlSize.Tall;
             this.metroTabControl1.Location = new System.Drawing.Point(26, 85);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.SelectedIndex = 2;
             this.metroTabControl1.Size = new System.Drawing.Size(1254, 574);
             this.metroTabControl1.TabIndex = 86;
             this.metroTabControl1.UseSelectable = true;
@@ -1060,6 +1064,7 @@
             this.columnHeader60,
             this.columnHeader61,
             this.columnHeader62});
+            this.listView6.Font = new System.Drawing.Font("Bookman Old Style", 9F);
             this.listView6.FullRowSelect = true;
             this.listView6.GridLines = true;
             this.listView6.Location = new System.Drawing.Point(0, 62);
