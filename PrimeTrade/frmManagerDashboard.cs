@@ -62,7 +62,7 @@ namespace PrimeTrade
             reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-                chartSales.Series["Actual"].Points.AddXY(reader.GetString("DATE_ADD(STR_TO_DATE(`tb_sales`.`salesdate`,'%d/%m/%Y'), INTERVAL 15 DAY)"), reader.GetInt32("sum(`tb_sales`.`qty1`)*1.3"));
+                chartSales.Series["Actual"].Points.AddXY(reader.GetString("DATE_ADD(STR_TO_DATE(`tb_sales`.`salesdate`,'%d/%m/%Y'), INTERVAL 15 DAY)"),0);
                 chartSales.Series["Prediction"].Points.AddY(reader.GetInt32("sum(`tb_sales`.`qty2`)*1.5"));
             }
 
