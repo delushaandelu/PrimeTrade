@@ -16,7 +16,7 @@ namespace PrimeTrade
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmManagerRewords());
+            Application.Run(new frmStartup());
         }
     }
 }
