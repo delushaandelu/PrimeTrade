@@ -332,6 +332,12 @@
     <Compile Include="frmManagerStockManagement.Designer.cs">
       <DependentUpon>frmManagerStockManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmManagerSystemSuggestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerSystemSuggestion.Designer.cs">
+      <DependentUpon>frmManagerSystemSuggestion.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmManagerViewAllAreaDistRecords.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -501,6 +507,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmManagerStockManagement.resx">
       <DependentUpon>frmManagerStockManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerSystemSuggestion.resx">
+      <DependentUpon>frmManagerSystemSuggestion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmManagerViewAllAreaDistRecords.resx">
       <DependentUpon>frmManagerViewAllAreaDistRecords.cs</DependentUpon>
