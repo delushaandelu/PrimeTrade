@@ -72,7 +72,6 @@ namespace PrimeTrade
         private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
             loadchartPast();
-            loadchartFuture();
         }
     }
 }

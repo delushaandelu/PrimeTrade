@@ -170,6 +170,7 @@
             this.buttonAdv2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonAdv2.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.buttonAdv2.UseVisualStyle = false;
+            this.buttonAdv2.Click += new System.EventHandler(this.buttonAdv2_Click);
             // 
             // ManagerViewPromotionByDistributers
             // 

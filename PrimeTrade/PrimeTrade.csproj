@@ -320,6 +320,12 @@
     <Compile Include="frmManagerReceiveStock.Designer.cs">
       <DependentUpon>frmManagerReceiveStock.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmManagerRewords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerRewords.Designer.cs">
+      <DependentUpon>frmManagerRewords.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmManagerStockBasicData.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -501,6 +507,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmManagerReceiveStock.resx">
       <DependentUpon>frmManagerReceiveStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerRewords.resx">
+      <DependentUpon>frmManagerRewords.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmManagerStockBasicData.resx">
       <DependentUpon>frmManagerStockBasicData.cs</DependentUpon>

@@ -57,7 +57,8 @@
             System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("View all Distributers by Promotions");
             System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Weekly Split");
             System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Distributer Sawip");
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Promotion", new System.Windows.Forms.TreeNode[] {
+            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("DIstributor Rewords");
+            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("Promotion", new System.Windows.Forms.TreeNode[] {
             treeNode12,
             treeNode13,
             treeNode14,
@@ -66,24 +67,25 @@
             treeNode17,
             treeNode18,
             treeNode19,
-            treeNode20});
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("View Stock");
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("View Area by Distributers");
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("View all Promotions");
-            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("View all Promotion by Distributers");
-            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("View all Promotion by State");
-            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("View all Distributers by Promotions");
-            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("View Future Predictions");
-            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("View Best Mix Informations");
-            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("View", new System.Windows.Forms.TreeNode[] {
-            treeNode22,
+            treeNode20,
+            treeNode21});
+            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("View Stock");
+            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("View Area by Distributers");
+            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("View all Promotions");
+            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("View all Promotion by Distributers");
+            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("View all Promotion by State");
+            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("View all Distributers by Promotions");
+            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("View Future Predictions");
+            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("View Best Mix Informations");
+            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("View", new System.Windows.Forms.TreeNode[] {
             treeNode23,
             treeNode24,
             treeNode25,
             treeNode26,
             treeNode27,
             treeNode28,
-            treeNode29});
+            treeNode29,
+            treeNode30});
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmManagerHome));
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -288,32 +290,34 @@
             treeNode19.Text = "Weekly Split";
             treeNode20.Name = "Node132";
             treeNode20.Text = "Distributer Sawip";
-            treeNode21.Name = "Node4";
-            treeNode21.Text = "Promotion";
-            treeNode22.Name = "Node18";
-            treeNode22.Text = "View Stock";
-            treeNode23.Name = "Node19";
-            treeNode23.Text = "View Area by Distributers";
-            treeNode24.Name = "Node20";
-            treeNode24.Text = "View all Promotions";
-            treeNode25.Name = "Node21";
-            treeNode25.Text = "View all Promotion by Distributers";
-            treeNode26.Name = "Node22";
-            treeNode26.Text = "View all Promotion by State";
-            treeNode27.Name = "nodedpro2";
-            treeNode27.Text = "View all Distributers by Promotions";
-            treeNode28.Name = "Node129";
-            treeNode28.Text = "View Future Predictions";
-            treeNode29.Name = "Node130";
-            treeNode29.Text = "View Best Mix Informations";
-            treeNode30.Name = "Node5";
-            treeNode30.Text = "View";
+            treeNode21.Name = "Node135";
+            treeNode21.Text = "DIstributor Rewords";
+            treeNode22.Name = "Node4";
+            treeNode22.Text = "Promotion";
+            treeNode23.Name = "Node18";
+            treeNode23.Text = "View Stock";
+            treeNode24.Name = "Node19";
+            treeNode24.Text = "View Area by Distributers";
+            treeNode25.Name = "Node20";
+            treeNode25.Text = "View all Promotions";
+            treeNode26.Name = "Node21";
+            treeNode26.Text = "View all Promotion by Distributers";
+            treeNode27.Name = "Node22";
+            treeNode27.Text = "View all Promotion by State";
+            treeNode28.Name = "nodedpro2";
+            treeNode28.Text = "View all Distributers by Promotions";
+            treeNode29.Name = "Node129";
+            treeNode29.Text = "View Future Predictions";
+            treeNode30.Name = "Node130";
+            treeNode30.Text = "View Best Mix Informations";
+            treeNode31.Name = "Node5";
+            treeNode31.Text = "View";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode2,
             treeNode7,
             treeNode11,
-            treeNode21,
-            treeNode30});
+            treeNode22,
+            treeNode31});
             this.treeView1.SelectedImageKey = "tab.png";
             this.treeView1.Size = new System.Drawing.Size(222, 835);
             this.treeView1.TabIndex = 10;

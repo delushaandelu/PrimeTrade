@@ -32,7 +32,7 @@ namespace PrimeTrade
             listView3.Items.Clear();
             listView3.View = View.Details;
             
-            MySqlDataAdapter dAdpter = new MySqlDataAdapter("SELECT `tbl_user`.`firstname`,`tb_promotion`.`promoname`,`tb_promotion`.`promomach`,`tb_promotion`.`promodes`,`tb_promotion_active`.`fromdate`,`tb_promotion_active`.`untildate`,`tb_promotion_active`.`Comments` FROM `base`.`tb_promotion`,`base`.`tb_promo_distributer`,`base`.`tb_promotion_active`, `base`.`tbl_user` WHERE `tb_promotion_active`.`idtb_promotion_active` = `tb_promo_distributer`.`promo_id` AND `tbl_user`.`status` = 'On' AND `tbl_user`.`role` = 'DISTRIBUTER' AND `tb_promo_distributer`.`dist_id` =`tbl_user`.`idtbl_user` AND `tb_promo_distributer`.`dist_id` = '" + userid + "';", connect);
+            MySqlDataAdapter dAdpter = new MySqlDataAdapter("SELECT `tbl_user`.`firstname`,`tb_promotion`.`promoname`,`tb_promotion`.`promomach`,`tb_promotion`.`promodes`,`tb_promotion_active`.`fromdate`,`tb_promotion_active`.`untildate`,`tb_promotion_active`.`Comments` FROM `base`.`tb_promotion`,`base`.`tb_promo_distributer`,`base`.`tb_promotion_active`, `base`.`tbl_user` WHERE `tb_promotion`.`idtb_promotion` = `tb_promo_distributer`.`promo_id` AND `tb_promotion_active`.`idtb_promotion_active` = `tb_promo_distributer`.`promo_id` AND `tbl_user`.`status` = 'On' AND `tbl_user`.`role` = 'DISTRIBUTER' AND `tb_promo_distributer`.`dist_id` =`tbl_user`.`idtbl_user` AND `tb_promo_distributer`.`dist_id` = '" + userid + "';", connect);
 
             DataTable dTable = new DataTable();
             dAdpter.Fill(dTable);
@@ -97,6 +97,11 @@ namespace PrimeTrade
         {
             string userid = cmbDistributers.SelectedItem.ToString();
             viewAllPromotionByDIstributers(userid);
+        }
+
+        private void buttonAdv2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

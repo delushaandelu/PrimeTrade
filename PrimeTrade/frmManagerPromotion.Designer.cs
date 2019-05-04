@@ -218,22 +218,22 @@
             // 
             // materialRaisedButton2
             // 
-            this.materialRaisedButton2.BeforeTouchSize = new System.Drawing.Size(124, 41);
+            this.materialRaisedButton2.BeforeTouchSize = new System.Drawing.Size(140, 41);
             this.materialRaisedButton2.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
             this.materialRaisedButton2.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Browse;
-            this.materialRaisedButton2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.materialRaisedButton2.ForeColor = System.Drawing.Color.Black;
             this.materialRaisedButton2.Image = global::PrimeTrade.Properties.Resources.remove;
             this.materialRaisedButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.materialRaisedButton2.IsBackStageButton = false;
-            this.materialRaisedButton2.Location = new System.Drawing.Point(340, 221);
+            this.materialRaisedButton2.Location = new System.Drawing.Point(324, 221);
             this.materialRaisedButton2.MetroColor = System.Drawing.Color.Aqua;
             this.materialRaisedButton2.Name = "materialRaisedButton2";
             this.materialRaisedButton2.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Black;
             this.materialRaisedButton2.OverrideFormManagedColor = true;
             this.materialRaisedButton2.PushButton = true;
-            this.materialRaisedButton2.Size = new System.Drawing.Size(124, 41);
+            this.materialRaisedButton2.Size = new System.Drawing.Size(140, 41);
             this.materialRaisedButton2.TabIndex = 152;
-            this.materialRaisedButton2.Text = "REMOVE AREA";
+            this.materialRaisedButton2.Text = "REMOVE PROMO";
             this.materialRaisedButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.materialRaisedButton2.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.materialRaisedButton2.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -242,22 +242,22 @@
             // 
             // materialRaisedButton1
             // 
-            this.materialRaisedButton1.BeforeTouchSize = new System.Drawing.Size(124, 41);
+            this.materialRaisedButton1.BeforeTouchSize = new System.Drawing.Size(141, 41);
             this.materialRaisedButton1.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
             this.materialRaisedButton1.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Browse;
             this.materialRaisedButton1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.materialRaisedButton1.Image = global::PrimeTrade.Properties.Resources.update;
             this.materialRaisedButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.materialRaisedButton1.IsBackStageButton = false;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(194, 221);
+            this.materialRaisedButton1.Location = new System.Drawing.Point(177, 221);
             this.materialRaisedButton1.MetroColor = System.Drawing.Color.Aqua;
             this.materialRaisedButton1.Name = "materialRaisedButton1";
             this.materialRaisedButton1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Black;
             this.materialRaisedButton1.OverrideFormManagedColor = true;
             this.materialRaisedButton1.PushButton = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(124, 41);
+            this.materialRaisedButton1.Size = new System.Drawing.Size(141, 41);
             this.materialRaisedButton1.TabIndex = 151;
-            this.materialRaisedButton1.Text = "UPDATE AREA";
+            this.materialRaisedButton1.Text = "UPDATE PROMO";
             this.materialRaisedButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.materialRaisedButton1.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.materialRaisedButton1.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -269,7 +269,6 @@
             this.buttonAdv2.BeforeTouchSize = new System.Drawing.Size(73, 41);
             this.buttonAdv2.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
             this.buttonAdv2.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Browse;
-            this.buttonAdv2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonAdv2.Image = global::PrimeTrade.Properties.Resources.error;
             this.buttonAdv2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAdv2.IsBackStageButton = false;
@@ -314,7 +313,7 @@
             this.btnaddstock.PushButton = true;
             this.btnaddstock.Size = new System.Drawing.Size(124, 41);
             this.btnaddstock.TabIndex = 149;
-            this.btnaddstock.Text = "ADD AREA";
+            this.btnaddstock.Text = "ADD PROMO";
             this.btnaddstock.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnaddstock.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnaddstock.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));

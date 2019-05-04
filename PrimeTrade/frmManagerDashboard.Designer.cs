@@ -711,7 +711,7 @@
             series3.ChartArea = "ChartArea1";
             series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedBar;
             series3.Legend = "Legend1";
-            series3.Name = "Days";
+            series3.Name = "Distributors";
             series3.Points.Add(dataPoint3);
             series3.Points.Add(dataPoint4);
             this.chart3.Series.Add(series3);

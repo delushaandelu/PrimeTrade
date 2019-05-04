@@ -22,6 +22,7 @@ namespace PrimeTrade
             InitializeComponent();
             AutoStartMethod();
             loadWeeklySplit();
+            BarChartCatogary();
         }
 
         MySqlConnection connect = new MySqlConnection(classConnection.ConnectNow("GoogleCloude"));
@@ -30,7 +31,7 @@ namespace PrimeTrade
         public void loadWeeklySplit()
         {
             loadchartPast();
-            loadchartFuture();
+            //loadchartFuture();
         }
 
         public void loadchartPast()
@@ -56,13 +57,13 @@ namespace PrimeTrade
             connect.Open();
 
             MySqlCommand cmd = connect.CreateCommand();
-            cmd.CommandText = "SELECT sum(`tb_sales`.`qty1`)*1.3, sum(`tb_sales`.`qty2`)*1.5,DATE_ADD(STR_TO_DATE(`tb_sales`.`salesdate`,'%d/%m/%Y'), INTERVAL 15 DAY) FROM `base`.`tb_sales`  group by DATE_ADD(STR_TO_DATE(`tb_sales`.`salesdate`,'%d/%m/%Y'), INTERVAL 15 DAY)";
+            cmd.CommandText = "SELECT sum(`tb_sales`.`qty1`)*1.3, sum(`tb_sales`.`qty2`)*1.5,DATE_ADD(`tb_sales`.`salesdate`, INTERVAL 15 DAY) FROM `base`.`tb_sales`  group by DATE_ADD(STR_TO_DATE(`tb_sales`.`salesdate`,'%d/%m/%Y'), INTERVAL 15 DAY)";
             MySqlDataReader reader;
 
             reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-                chartSales.Series["Actual"].Points.AddXY(reader.GetString("DATE_ADD(STR_TO_DATE(`tb_sales`.`salesdate`,'%d/%m/%Y'), INTERVAL 15 DAY)"),0);
+                chartSales.Series["Actual"].Points.AddXY(reader.GetString("DATE_ADD(`tb_sales`.`salesdate`, INTERVAL 15 DAY)"),0);
                 chartSales.Series["Prediction"].Points.AddY(reader.GetInt32("sum(`tb_sales`.`qty2`)*1.5"));
             }
 
@@ -98,6 +99,24 @@ namespace PrimeTrade
                 connect.Close();
             }
 
+        }
+
+        private void BarChartCatogary()
+        {
+            connect.Open();
+            salesChart.ResetAutoValues();
+
+            MySqlCommand cmd = connect.CreateCommand();
+            cmd.CommandText = "SELECT  `tbl_user`.`firstname`, SUM( `tb_promo_distributer`.`itemoneqty`) FROM `base`.`tb_promo_distributer`, `base`.`tbl_user` WHERE `tbl_user`.`idtbl_user` = `tb_promo_distributer`.`idtb_promo_distributer` AND `tb_promo_distributer`.`state` in('APPROVED','ONSALES') GROUP BY `tbl_user`.`firstname`;";
+            MySqlDataReader reader;
+
+            reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                chart3.Series["Distributors"].Points.AddXY(reader.GetString("firstname"), reader.GetInt32("SUM( `tb_promo_distributer`.`itemoneqty`)"));
+            }
+
+            connect.Close();
         }
 
         private void metroButton1_Click(object sender, EventArgs e)

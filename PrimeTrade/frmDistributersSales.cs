@@ -174,7 +174,7 @@ namespace PrimeTrade
                     command.Parameters.AddWithValue("@buyer", txtseller.Text);
                     command.Parameters["@buyer"].Direction = ParameterDirection.Input;
 
-                    command.Parameters.AddWithValue("@salesdate", DateTime.Now.ToString("d/MM/yyyy"));
+                    command.Parameters.AddWithValue("@salesdate", metroDateTime1.Text);
                     command.Parameters["@salesdate"].Direction = ParameterDirection.Input;
 
                     command.Parameters.AddWithValue("@distributer", lbluser.Text);
@@ -207,6 +207,21 @@ namespace PrimeTrade
         private void buttonAdv2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void metroDateTime1_ValueChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void metroDateTime1_ValueChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

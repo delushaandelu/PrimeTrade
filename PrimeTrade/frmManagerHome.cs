@@ -243,6 +243,12 @@ namespace PrimeTrade
                 form.MdiParent = this;
                 form.Show();
             }
+            else if (window == "Node135") 
+            {
+                frmManagerRewords form = new frmManagerRewords();
+                form.MdiParent = this;
+                form.Show();
+            }
         }
 
         private void btnSearchTeacher_Click(object sender, EventArgs e)
