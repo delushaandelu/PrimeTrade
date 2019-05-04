@@ -33,10 +33,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cmbPromotion = new MetroFramework.Controls.MetroComboBox();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.buttonAdv2 = new Syncfusion.Windows.Forms.ButtonAdv();
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.buttonAdv2 = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.splashPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,7 +81,8 @@
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader4,
-            this.columnHeader5});
+            this.columnHeader5,
+            this.columnHeader1});
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.Location = new System.Drawing.Point(92, 131);
@@ -89,6 +91,16 @@
             this.listView1.TabIndex = 141;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Distributer Name";
+            this.columnHeader4.Width = 300;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "User ID";
+            this.columnHeader5.Width = 150;
             // 
             // materialLabel1
             // 
@@ -125,15 +137,10 @@
             this.buttonAdv2.UseVisualStyle = false;
             this.buttonAdv2.Click += new System.EventHandler(this.buttonAdv2_Click);
             // 
-            // columnHeader4
+            // columnHeader1
             // 
-            this.columnHeader4.Text = "Distributer Name";
-            this.columnHeader4.Width = 300;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "User ID";
-            this.columnHeader5.Width = 150;
+            this.columnHeader1.Text = "Points";
+            this.columnHeader1.Width = 120;
             // 
             // frmManagerRewords
             // 
@@ -164,5 +171,6 @@
         private Syncfusion.Windows.Forms.ButtonAdv buttonAdv2;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
     }
 }

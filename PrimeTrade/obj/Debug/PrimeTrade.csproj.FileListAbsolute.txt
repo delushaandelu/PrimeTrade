@@ -192,3 +192,12 @@ C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\Syncfusion.Spel
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\Syncfusion.Tools.Base.dll
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\Syncfusion.Tools.Windows.dll
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmManagerRewords.resources
+C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\LiveCharts.dll
+C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\LiveCharts.pdb
+C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\LiveCharts.xml
+C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\LiveCharts.Wpf.xml

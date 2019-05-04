@@ -20,7 +20,7 @@ namespace PrimeTrade
         public frmManagerHome()
         {
             InitializeComponent();
-
+           
             frmManagerDashboard form = new frmManagerDashboard();
             form.MdiParent = this;
             form.Show();
@@ -30,16 +30,15 @@ namespace PrimeTrade
                 try
                 {
                     System.Windows.Forms.Control Mdi = (MdiClient)ctl;
-
                     Mdi.BackColor = System.Drawing.Color.Gray;
                 }
                 catch (Exception a)
                 {
                 }
             }
-
         }
 
+       
         private void ShowNewForm(object sender, EventArgs e)
         {
             Form childForm = new Form();
@@ -328,9 +327,21 @@ namespace PrimeTrade
 
         private void button7_Click(object sender, EventArgs e)
         {
+            Notification();
+
             frmManagerNotifications form = new frmManagerNotifications();
             form.MdiParent = this;
             form.Show();
+        }
+
+        public void Notification()
+        {
+            MetroFramework.MetroMessageBox.Show(this, "SUGGESTED QTY", "NOTIFICATION", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MetroFramework.MetroMessageBox.Show(this, "LOW SALES", "NOTIFICATION", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MetroFramework.MetroMessageBox.Show(this, "RE ALLOCATE QTY", "NOTIFICATION", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MetroFramework.MetroMessageBox.Show(this, "DO YOU RECOMMAND TO REALLOCATED THE STOCK BETWEEK DISTRIBUTORS", "NOTIFICATION", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            MetroFramework.MetroMessageBox.Show(this, "STOP PROMOTION ID 27, REGARDING THE FUTURE LOSE", "NOTIFICATION", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
         }
 
         private void metroButton1_Click(object sender, EventArgs e)

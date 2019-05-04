@@ -23,10 +23,29 @@ namespace PrimeTrade
             AutoStartMethod();
             loadWeeklySplit();
             BarChartCatogary();
+            speederMeter();
+            salesGraph();
         }
 
         MySqlConnection connect = new MySqlConnection(classConnection.ConnectNow("GoogleCloude"));
 
+        public void speederMeter()
+        {
+            MySqlCommand command = new MySqlCommand();
+            connect.Open();
+            command.Connection = connect;
+
+            command.CommandText = "get_overall_kpi";
+            command.CommandType = CommandType.StoredProcedure;
+
+            command.Parameters.Add(new MySqlParameter("@kpi", MySqlDbType.VarChar));
+            command.Parameters["@kpi"].Direction = ParameterDirection.Output;
+
+            command.ExecuteNonQuery();
+
+            solidGauge1.Value = Math.Round(Convert.ToDouble((string)command.Parameters["@kpi"].Value),3);
+            connect.Close();
+        }
 
         public void loadWeeklySplit()
         {
@@ -114,6 +133,24 @@ namespace PrimeTrade
             while (reader.Read())
             {
                 chart3.Series["Distributors"].Points.AddXY(reader.GetString("firstname"), reader.GetInt32("SUM( `tb_promo_distributer`.`itemoneqty`)"));
+            }
+
+            connect.Close();
+        }
+
+        private void salesGraph()
+        {
+            connect.Open();
+            salesChart.ResetAutoValues();
+
+            MySqlCommand cmd = connect.CreateCommand();
+            cmd.CommandText = "SELECT sum(`tb_sales`.`qty1`) ,`tb_sales`.`salesdate` FROM `base`.`tb_sales` ,`base`.`tbl_user` where `tb_sales`.`distributer` = `tbl_user`.`idtbl_user`  group by `tb_sales`.`salesdate`";
+            MySqlDataReader reader;
+
+            reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                salesChart.Series["Main Item Qty"].Points.AddXY(reader.GetString("salesdate"), reader.GetInt32("sum(`tb_sales`.`qty1`)"));
             }
 
             connect.Close();

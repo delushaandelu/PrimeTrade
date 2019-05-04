@@ -52,7 +52,6 @@ namespace PrimeTrade
 
         }
 
-
         private void viewAllPromotionDetails()
         {
             listView1.Items.Clear();
