@@ -208,10 +208,7 @@ namespace PrimeTrade
           MetroMessageBox.Show(this, "No Any lates Notification Found.", "Notification !", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void label18_Click(object sender, EventArgs e)
-        {
-
-        }
+ 
     }
 }
 

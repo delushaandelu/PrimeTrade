@@ -411,7 +411,6 @@
             this.label18.Size = new System.Drawing.Size(60, 19);
             this.label18.TabIndex = 64;
             this.label18.Text = "TODAY";
-            this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // label19
             // 
