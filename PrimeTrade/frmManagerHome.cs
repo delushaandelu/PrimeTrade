@@ -231,9 +231,15 @@ namespace PrimeTrade
                 form.MdiParent = this;
                 form.Show();
             }
-            else if (window == "Node131")
+            else if (window == "Node131") 
             {
                 frmManagerWeeklySplit form = new frmManagerWeeklySplit();
+                form.MdiParent = this;
+                form.Show();
+            }
+             else if (window == "Node132") 
+            {
+                frmManagerSystemSuggestion form = new frmManagerSystemSuggestion();
                 form.MdiParent = this;
                 form.Show();
             }

@@ -7,10 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using MaterialSkin.Controls;
+using MaterialSkin.Animations;
+using System.Configuration;
+using MySql.Data.MySqlClient;
+using MetroFramework.Forms;
+using MetroFramework;
 namespace PrimeTrade
 {
-    public partial class frmManagerGenerateReport : Form
+    public partial class frmManagerGenerateReport : MetroForm
     {
         public frmManagerGenerateReport()
         {
@@ -20,7 +25,12 @@ namespace PrimeTrade
         private void frmManagerGenerateReport_Load(object sender, EventArgs e)
         {
 
-            this.reportViewer1.RefreshReport();
+            
+        }
+
+        private void buttonAdv2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

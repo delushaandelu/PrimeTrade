@@ -71,6 +71,7 @@
             this.splashPanel1.Size = new System.Drawing.Size(1263, 63);
             this.splashPanel1.TabIndex = 138;
             this.splashPanel1.Text = "splashPanel1";
+            this.splashPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splashPanel1_Paint);
             // 
             // label1
             // 
@@ -80,9 +81,10 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(3, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(508, 37);
+            this.label1.Size = new System.Drawing.Size(481, 37);
             this.label1.TabIndex = 137;
-            this.label1.Text = "PRIME TRADE : SYSTEM SUGGESTIONS";
+            this.label1.Text = "PRIME TRADE : DISTRIBUTER SAWIP";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // materialLabel9
             // 
@@ -98,6 +100,7 @@
             this.materialLabel9.TabIndex = 186;
             this.materialLabel9.Text = "Select a Promotion to get the system suggested decision to over come from Future " +
     "Loses";
+            this.materialLabel9.Click += new System.EventHandler(this.materialLabel9_Click);
             // 
             // cmbPromotion
             // 
@@ -123,6 +126,7 @@
             this.materialLabel1.Size = new System.Drawing.Size(98, 19);
             this.materialLabel1.TabIndex = 187;
             this.materialLabel1.Text = "Promotion ID";
+            this.materialLabel1.Click += new System.EventHandler(this.materialLabel1_Click);
             // 
             // frmManagerSystemSuggestion
             // 
