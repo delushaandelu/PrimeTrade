@@ -676,9 +676,9 @@
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label40.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label40.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label40.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label40.Location = new System.Drawing.Point(770, 787);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(215, 19);
@@ -745,9 +745,9 @@
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label41.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label41.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label41.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label41.Location = new System.Drawing.Point(751, 407);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(87, 19);
@@ -757,9 +757,9 @@
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label42.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label42.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label42.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label42.Location = new System.Drawing.Point(1040, 407);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(243, 19);
