@@ -46,22 +46,6 @@ C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\MaterialSkin.dl
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\MetroFramework.Design.dll
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\MetroFramework.dll
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\MetroFramework.Fonts.dll
-C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\Microsoft.ReportViewer.Common.dll
-C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\Microsoft.ReportViewer.DataVisualization.DLL
-C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\Microsoft.ReportViewer.Design.DLL
-C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
-C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\Microsoft.ReportViewer.WebDesign.DLL
-C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
-C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
-C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\Microsoft.SqlServer.Types.dll
-C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\Syncfusion.Grid.Base.dll
-C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\Syncfusion.Grid.Windows.dll
-C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\Syncfusion.Licensing.dll
-C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\Syncfusion.Shared.Base.dll
-C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\Syncfusion.Shared.Windows.dll
-C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\Syncfusion.SpellChecker.Base.dll
-C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\Syncfusion.Tools.Base.dll
-C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\Syncfusion.Tools.Windows.dll
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\EnvDTE.dll
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
@@ -190,3 +174,4 @@ C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmM
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmManagerWeeklySplit.resources
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmDistributerWeeklySplit.resources
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmManagerSystemSuggestion.resources
+C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.csprojAssemblyReference.cache
