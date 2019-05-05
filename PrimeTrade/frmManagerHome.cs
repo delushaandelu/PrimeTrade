@@ -9,13 +9,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetroFramework.Fonts;
 using MetroFramework.Forms;
-
+using MySql.Data.MySqlClient;
+using PrimeTrade.connections;
 
 namespace PrimeTrade
 {
     public partial class frmManagerHome : MetroForm
     {
         private int childFormNumber = 0;
+
+        MySqlConnection connect = new MySqlConnection(classConnection.ConnectNow("GoogleCloude"));
 
         public frmManagerHome()
         {
@@ -37,7 +40,6 @@ namespace PrimeTrade
                 }
             }
         }
-
        
         private void ShowNewForm(object sender, EventArgs e)
         {
@@ -89,7 +91,6 @@ namespace PrimeTrade
         {
             MessageBox.Show("System has updated from Github reposotory. Please restart", "Success !", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-
 
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
@@ -336,11 +337,34 @@ namespace PrimeTrade
 
         public void Notification()
         {
-            MetroFramework.MetroMessageBox.Show(this, "SUGGESTED QTY", "NOTIFICATION", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            MetroFramework.MetroMessageBox.Show(this, "LOW SALES", "NOTIFICATION", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            MetroFramework.MetroMessageBox.Show(this, "RE ALLOCATE QTY", "NOTIFICATION", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            requestStockNotfication(); 
             MetroFramework.MetroMessageBox.Show(this, "DO YOU RECOMMAND TO REALLOCATED THE STOCK BETWEEK DISTRIBUTORS", "NOTIFICATION", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             MetroFramework.MetroMessageBox.Show(this, "STOP PROMOTION ID 27, REGARDING THE FUTURE LOSE", "NOTIFICATION", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+        }
+
+        public void requestStockNotfication()
+        {
+ 
+            connect.Open();
+
+            string query = "SELECT `tb_req_stock`.`stock`,`tb_req_stock`.`qty`,`tb_req_stock`.`fordate`, `tb_req_stock`.`status`,`tb_req_stock`.`comment`, `tb_req_stock`.`distid` FROM `base`.`tb_req_stock`;";
+            using (var command = new MySqlCommand(query, connect))
+            {
+                using (var reader = command.ExecuteReader())
+                {
+                    //Iterate through the rows and add it to the combobox's items
+                    while (reader.Read())
+                    {
+                        string message = "The Distributor '"+ reader.GetString("distid") + "' is Requesting '" + reader.GetString("qty") + "' No of of stock from the stock '"+ reader.GetString("stock") + "' for the date of '"+ reader.GetString("fordate") + "'. Added Comments '"+ reader.GetString("comment") + "'" ;
+
+                        MetroFramework.MetroMessageBox.Show(this, message, "NEW STOCK REQUEST FROM THE DISTRIBUTOR...", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+                connect.Close(); 
+            }
+
+
 
         }
 
