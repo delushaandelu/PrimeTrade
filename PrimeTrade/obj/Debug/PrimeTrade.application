@@ -7,14 +7,14 @@
     <framework targetVersion="4.5.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="PrimeTrade.exe.manifest" size="74758">
+    <dependentAssembly dependencyType="install" codebase="PrimeTrade.exe.manifest" size="74759">
       <assemblyIdentity name="PrimeTrade.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>9YDrF6VJ5Cb/e4aDazDRKXznfBHUGC41H03JTh4BuY0=</dsig:DigestValue>
+        <dsig:DigestValue>b6lwWqLXMXsEPLC3ZWWMVzxUwYMLOrVv5+ByOgP2WnA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

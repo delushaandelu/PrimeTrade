@@ -67,9 +67,16 @@ namespace PrimeTrade
 
                 DataRow dRow = dTable.Rows[i];
                 ListViewItem listItem = new ListViewItem(dRow["firstname"].ToString());             
-                listItem.SubItems.Add(dRow["idtbl_user"].ToString());
+                listItem.SubItems.Add(dRow["idtbl_user"].ToString()); 
+                listItem.SubItems.Add((RandomNumber(7, 10)).ToString());
                 listView1.Items.Add(listItem);
             }
+        }
+
+        public int RandomNumber(int min, int max)
+        {
+            Random random = new Random();
+            return random.Next(min, max);
         }
 
         private void cmbPromotion_SelectedIndexChanged(object sender, EventArgs e)

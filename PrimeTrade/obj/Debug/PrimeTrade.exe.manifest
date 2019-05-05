@@ -1093,7 +1093,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>dYwNsYa12DHcHvIHguszfcqXRgU5bO+YJJav/NkBFg4=</dsig:DigestValue>
+        <dsig:DigestValue>K2shEqszLDjOf98E6gTPpiz60e6X8cl6u1WDuQQ+iSI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1205,13 +1205,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="PrimeTrade.exe.config" size="802">
+  <file name="PrimeTrade.exe.config" size="1017">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>YEff+g+QbbC45aM/Uulaeb3q6GUuaWJw39ec8rykzy4=</dsig:DigestValue>
+      <dsig:DigestValue>2uyE6zMcud+Lqw6uqu+QCTsrcE6GBC3vtcWE3wdHx5w=</dsig:DigestValue>
     </hash>
   </file>
   <file name="SqlServerTypes\readme.htm" size="2369">
