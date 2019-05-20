@@ -447,9 +447,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(3, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(685, 40);
+            this.label1.Size = new System.Drawing.Size(675, 40);
             this.label1.TabIndex = 137;
-            this.label1.Text = "PRIME TRADE : ASSIGN AREAS TO DISTRIBUTERS";
+            this.label1.Text = "PRIME TRADE : ASSIGN AREAS TO DISTRIBUTOR";
             // 
             // btnaddarea
             // 

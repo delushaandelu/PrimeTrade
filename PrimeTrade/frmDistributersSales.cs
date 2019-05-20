@@ -125,7 +125,6 @@ namespace PrimeTrade
         private void buttonAdv1_Click(object sender, EventArgs e)
         {
             
-
             if (txtitemqty1.Text == "" || txtitemqty2.Text == "" || txtseller.Text == "" || txtpromo.Text == "" || txtprice1.Text == "" || txtprice2.Text == "")
             {
                 MessageBox.Show("Please fill up all the fields.", "Empty Fields Detected !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -190,8 +189,41 @@ namespace PrimeTrade
                     {
                         connect.Close();
                         MetroMessageBox.Show(frmDistributersSales.ActiveForm, "Stock Allocated Sent to Finance Department for Approval.", "Success !", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        clearFields();
+                        
                         viewAllPromotionDetails();
+                        
+                        MySqlCommand command1 = new MySqlCommand();
+                        connect.Open();
+                        command1.Connection = connect;
+
+                        command1.CommandText = "strock_reduice_qty";
+                        command1.CommandType = CommandType.StoredProcedure;
+
+                        command1.Parameters.AddWithValue("@stockid", txtmaincode1.Text);
+                        command1.Parameters["@stockid"].Direction = ParameterDirection.Input;
+
+                        command1.Parameters.AddWithValue("@qty", txtitemqty1.Text);
+                        command1.Parameters["@qty"].Direction = ParameterDirection.Input;
+                        command1.ExecuteNonQuery();
+                        connect.Close();
+
+                        MySqlCommand command2 = new MySqlCommand();
+                        connect.Open();
+                        command2.Connection = connect;
+
+                        command2.CommandText = "strock_reduice_qty";
+                        command2.CommandType = CommandType.StoredProcedure;
+
+                        command2.Parameters.AddWithValue("@stockid", txtmaincode2.Text);
+                        command2.Parameters["@stockid"].Direction = ParameterDirection.Input;
+
+                        command2.Parameters.AddWithValue("@qty", txtitemqty2.Text);
+                        command2.Parameters["@qty"].Direction = ParameterDirection.Input;
+                        command2.ExecuteNonQuery();
+                        connect.Close();
+                        viewAllPromotionDetails();
+                        clearFields();
+
                     }
                     else
                     {
@@ -199,6 +231,7 @@ namespace PrimeTrade
                         MetroMessageBox.Show(frmDistributersSales.ActiveForm, "Can not allocate stock for the promotion..", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         clearFields();
                     }
+                                                                                          
                 }
                 
             }

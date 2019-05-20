@@ -25,9 +25,53 @@ namespace PrimeTrade
             BarChartCatogary();
             speederMeter();
             salesGraph();
+            pieChart();
+            AutoGenerationData();
         }
 
-        MySqlConnection connect = new MySqlConnection(classConnection.ConnectNow("GoogleCloude"));
+         MySqlConnection connect = new MySqlConnection(classConnection.ConnectNow("GoogleCloude"));
+
+        public int RandomNumber(int min, int max)
+        {
+            Random random = new Random();
+            return random.Next(min, max);
+        }
+
+        public void donetChart()
+        {
+            connect.Open();
+            salesChart.ResetAutoValues();
+
+            MySqlCommand cmd = connect.CreateCommand();
+            cmd.CommandText = "SELECT `tb_stock`.`state`,SUM( `tb_stock`.`qty`) FROM `base`.`tb_stock` GROUP BY `tb_stock`.`state`;";
+            MySqlDataReader reader;
+
+            reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                tileDistributers.Series["Days"].Points.AddXY(reader.GetString("state"), reader.GetInt32("SUM( `tb_stock`.`qty`)"));
+            }
+
+            connect.Close();
+        }
+
+        public void pieChart()
+        {
+            connect.Open();
+            salesChart.ResetAutoValues();
+
+            MySqlCommand cmd = connect.CreateCommand();
+            cmd.CommandText = "SELECT `tb_stock`.`name`, SUM( `tb_stock`.`qty`) FROM `base`.`tb_stock` GROUP BY `tb_stock`.`name`;";
+            MySqlDataReader reader;
+
+            reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                chartpie.Series["s1"].Points.AddXY(reader.GetString("name"), reader.GetInt32("SUM( `tb_stock`.`qty`)"));
+            }
+
+            connect.Close();
+        }
 
         public void speederMeter()
         {
@@ -99,6 +143,23 @@ namespace PrimeTrade
             //etSalesRate();
         }
 
+        public void AutoGenerationData()
+        {
+            btnSearchTeacher.Text = RandomNumber(2000, 10000).ToString();
+            tileSalesRate.Text = RandomNumber(4, 9).ToString();
+            button5.Text = RandomNumber(4, 30).ToString();
+            button6.Text = RandomNumber(7, 10).ToString();
+            button7.Text = RandomNumber(4000, 18000).ToString();
+            label22.Text = button7.Text;
+            label24.Text = RandomNumber(12000, 18000).ToString();
+            label25.Text = RandomNumber(20000, 40000).ToString();
+
+            label33.Text = RandomNumber(5000, 8000).ToString();
+            label30.Text = RandomNumber(10000, 16000).ToString();
+            label28.Text = RandomNumber(18000, 30000).ToString();
+            label43.Text = RandomNumber(7, 9).ToString();
+        }
+
         public void viewPromotions()
         {
 
@@ -126,13 +187,13 @@ namespace PrimeTrade
             salesChart.ResetAutoValues();
 
             MySqlCommand cmd = connect.CreateCommand();
-            cmd.CommandText = "SELECT  `tbl_user`.`firstname`, SUM( `tb_promo_distributer`.`itemoneqty`) FROM `base`.`tb_promo_distributer`, `base`.`tbl_user` WHERE `tbl_user`.`idtbl_user` = `tb_promo_distributer`.`idtb_promo_distributer` AND `tb_promo_distributer`.`state` in('APPROVED','ONSALES') GROUP BY `tbl_user`.`firstname`;";
+            cmd.CommandText = "SELECT  `tbl_user`.`firstname`, SUM( `tb_promo_distributer`.`itemoneqty`) FROM `base`.`tb_promo_distributer`, `base`.`tbl_user` WHERE `tbl_user`.`idtbl_user` = `tb_promo_distributer`.`idtb_promo_distributer` AND `tbl_user`.`role` = 'DISTRIBUTER' AND `tb_promo_distributer`.`state` in('APPROVED','ONSALES') GROUP BY `tbl_user`.`firstname`;";
             MySqlDataReader reader;
 
             reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-                chart3.Series["Distributors"].Points.AddXY(reader.GetString("firstname"), reader.GetInt32("SUM( `tb_promo_distributer`.`itemoneqty`)"));
+                chartQty.Series["Distributors"].Points.AddXY(reader.GetString("firstname"), reader.GetInt32("SUM( `tb_promo_distributer`.`itemoneqty`)"));
             }
 
             connect.Close();

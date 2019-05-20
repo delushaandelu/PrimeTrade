@@ -1004,7 +1004,7 @@
             this.metroTabControl1.FontSize = MetroFramework.MetroTabControlSize.Tall;
             this.metroTabControl1.Location = new System.Drawing.Point(26, 85);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 2;
+            this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.Size = new System.Drawing.Size(1254, 574);
             this.metroTabControl1.TabIndex = 86;
             this.metroTabControl1.UseSelectable = true;
@@ -1154,9 +1154,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(8, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(663, 32);
+            this.label1.Size = new System.Drawing.Size(654, 32);
             this.label1.TabIndex = 137;
-            this.label1.Text = "PRIME TRADE :EXECUITE PROMOTION TO DISTRIBUTERS";
+            this.label1.Text = "PRIME TRADE :EXECUITE PROMOTION TO DISTRIBUTOR";
             // 
             // splashPanel1
             // 

@@ -218,9 +218,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(0, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(533, 32);
+            this.label1.Size = new System.Drawing.Size(524, 32);
             this.label1.TabIndex = 137;
-            this.label1.Text = "PRIME TRADE :ALL DISTRIBUTERS AND AREA";
+            this.label1.Text = "PRIME TRADE :ALL DISTRIBUTOR AND AREA";
             // 
             // frmManagerViewAllAreaDistRecords
             // 

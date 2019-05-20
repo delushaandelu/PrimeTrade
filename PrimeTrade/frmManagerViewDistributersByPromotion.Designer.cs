@@ -227,9 +227,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(3, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(674, 32);
+            this.label1.Size = new System.Drawing.Size(665, 32);
             this.label1.TabIndex = 137;
-            this.label1.Text = "PRIME TRADE :VIEW ALL DISTRIBUTIORS BY PROMOTION";
+            this.label1.Text = "PRIME TRADE :VIEW ALL DISTRIBUTORS BY PROMOTION";
             // 
             // buttonAdv2
             // 
