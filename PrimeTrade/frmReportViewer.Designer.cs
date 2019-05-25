@@ -95,7 +95,6 @@
             this.Controls.Add(this.btnPrint);
             this.Name = "frmReportViewer";
             this.Text = "Print Users";
-            this.Load += new System.EventHandler(this.frmReportViewer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataSetGoogleBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetGoogle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.baseDataSet)).EndInit();

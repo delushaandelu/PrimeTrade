@@ -175,6 +175,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>baseDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ClassImportPdfReport.cs" />
     <Compile Include="connections\classConnection.cs" />
     <Compile Include="DataSetGoogle.Designer.cs">
       <AutoGen>True</AutoGen>
