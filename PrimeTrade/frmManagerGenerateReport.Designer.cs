@@ -95,12 +95,14 @@
             "SALES TRANSACTIONS",
             "POINTS SUMMARY",
             "LATEST NOTIFICATIONS",
-            "LATEST SYSTEM SUGGESTIONS"});
+            "LATEST SYSTEM SUGGESTIONS",
+            "VIEW USERS"});
             this.cmbPromotion.Location = new System.Drawing.Point(265, 169);
             this.cmbPromotion.Name = "cmbPromotion";
             this.cmbPromotion.Size = new System.Drawing.Size(399, 29);
             this.cmbPromotion.TabIndex = 193;
             this.cmbPromotion.UseSelectable = true;
+            this.cmbPromotion.SelectedIndexChanged += new System.EventHandler(this.cmbPromotion_SelectedIndexChanged);
             // 
             // materialLabel1
             // 

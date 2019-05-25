@@ -122,6 +122,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Users\modelk\OneDrive - IFS\Documents\Visual Studio 2017\Projects\PrimerTrade\PrimeTrade\packages\MySql.Data.6.9.12\lib\net45\MySql.Data.dll</HintPath>
     </Reference>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="Syncfusion.Grid.Base, Version=17.1451.0.42, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
@@ -167,12 +170,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="adminUser\classUser.cs" />
+    <Compile Include="baseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>baseDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="connections\classConnection.cs" />
     <Compile Include="DataSetGoogle.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetGoogle.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DGVPrinter.cs" />
     <Compile Include="frmAdminAddUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -594,6 +603,17 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="App.config" />
+    <None Include="baseDataSet.xsc">
+      <DependentUpon>baseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="baseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>baseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="baseDataSet.xss">
+      <DependentUpon>baseDataSet.xsd</DependentUpon>
+    </None>
     <None Include="DataSetGoogle.xsc">
       <DependentUpon>DataSetGoogle.xsd</DependentUpon>
     </None>
@@ -618,6 +638,7 @@
     </None>
     <None Include="packages.config" />
     <None Include="PrimeTrade_TemporaryKey.pfx" />
+    <None Include="Properties\DataSources\frmReportViewer.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

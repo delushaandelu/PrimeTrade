@@ -28,34 +28,91 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
+            this.btnPrint = new MetroFramework.Controls.MetroButton();
+            this.dataSetGoogleBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSetGoogle = new PrimeTrade.DataSetGoogle();
+            this.baseDataSet = new PrimeTrade.baseDataSet();
+            this.viewallusersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.view_all_usersTableAdapter = new PrimeTrade.baseDataSetTableAdapters.view_all_usersTableAdapter();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetGoogleBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetGoogle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.baseDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewallusersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnPrint
             // 
-            this.button1.Location = new System.Drawing.Point(254, 198);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(178, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Export PDF";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnPrint.Location = new System.Drawing.Point(731, 452);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(75, 23);
+            this.btnPrint.TabIndex = 0;
+            this.btnPrint.Text = "Print";
+            this.btnPrint.UseSelectable = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
+            // dataSetGoogleBindingSource
+            // 
+            this.dataSetGoogleBindingSource.DataSource = this.dataSetGoogle;
+            this.dataSetGoogleBindingSource.Position = 0;
+            // 
+            // dataSetGoogle
+            // 
+            this.dataSetGoogle.DataSetName = "DataSetGoogle";
+            this.dataSetGoogle.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // baseDataSet
+            // 
+            this.baseDataSet.DataSetName = "baseDataSet";
+            this.baseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // viewallusersBindingSource
+            // 
+            this.viewallusersBindingSource.DataMember = "view_all_users";
+            this.viewallusersBindingSource.DataSource = this.baseDataSet;
+            // 
+            // view_all_usersTableAdapter
+            // 
+            this.view_all_usersTableAdapter.ClearBeforeFill = true;
+            // 
+            // dataGridView
+            // 
+            this.dataGridView.AllowUserToAddRows = false;
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Location = new System.Drawing.Point(40, 79);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.Size = new System.Drawing.Size(776, 351);
+            this.dataGridView.TabIndex = 1;
             // 
             // frmReportViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(839, 485);
+            this.Controls.Add(this.dataGridView);
+            this.Controls.Add(this.btnPrint);
             this.Name = "frmReportViewer";
-            this.Text = "frmReportViewer";
+            this.Text = "Print Users";
             this.Load += new System.EventHandler(this.frmReportViewer_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetGoogleBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetGoogle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.baseDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewallusersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private MetroFramework.Controls.MetroButton btnPrint;
+        private System.Windows.Forms.BindingSource dataSetGoogleBindingSource;
+        private DataSetGoogle dataSetGoogle;
+        private baseDataSet baseDataSet;
+        private System.Windows.Forms.BindingSource viewallusersBindingSource;
+        private baseDataSetTableAdapters.view_all_usersTableAdapter view_all_usersTableAdapter;
+        private System.Windows.Forms.DataGridView dataGridView;
     }
 }

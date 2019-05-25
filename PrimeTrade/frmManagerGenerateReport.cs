@@ -32,5 +32,14 @@ namespace PrimeTrade
         {
             this.Close();
         }
+
+        private void cmbPromotion_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbPromotion.Text == "VIEW USERS")
+            {
+                frmReportViewer rep = new frmReportViewer();
+                rep.Show();
+            }
+        }
     }
 }

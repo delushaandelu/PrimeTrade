@@ -174,7 +174,6 @@ C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmM
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmManagerWeeklySplit.resources
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmDistributerWeeklySplit.resources
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmManagerSystemSuggestion.resources
-C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.csprojAssemblyReference.cache
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\Microsoft.ReportViewer.Common.dll
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\Microsoft.ReportViewer.DataVisualization.DLL
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\Microsoft.ReportViewer.Design.DLL
@@ -374,3 +373,10 @@ C:\Users\modelk\Desktop\PrimeTrade-master\PrimeTrade-master\PrimeTrade-master\Pr
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.frmReportViewer.resources
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\itextsharp.dll
 C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\itextsharp.xml
+C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\MySql.Data.dll
+C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\Google.Protobuf.dll
+C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\MySql.Data.xml
+C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\PagedList.dll
+C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\bin\Debug\PagedList.xml
+C:\Users\modelk\Documents\Github\PrimeTrade\PrimeTrade\obj\Debug\PrimeTrade.csprojAssemblyReference.cache
