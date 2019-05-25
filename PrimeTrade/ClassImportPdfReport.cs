@@ -59,7 +59,7 @@ namespace PrimeTrade
             {
                 using (FileStream stream = new FileStream(saveFiledialog.FileName, FileMode.Create))
                 {
-                    Document pdfdoc = new Document(PageSize.A4, 10f, 10f, 10f, 0f);
+                    Document pdfdoc = new Document(PageSize.A4.Rotate(), 10f, 10f, 10f, 0f);
                     PdfWriter.GetInstance(pdfdoc, stream);
                     pdfdoc.Open();
                     pdfdoc.Add(pdftable);

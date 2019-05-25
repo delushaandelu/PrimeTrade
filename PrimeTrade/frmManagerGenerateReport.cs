@@ -22,11 +22,7 @@ namespace PrimeTrade
             InitializeComponent();
         }
 
-        private void frmManagerGenerateReport_Load(object sender, EventArgs e)
-        {
-
-            
-        }
+        MySqlConnection connect = new MySqlConnection(connections.classConnection.ConnectNow("GoogleCloude"));
 
         private void buttonAdv2_Click(object sender, EventArgs e)
         {
@@ -37,8 +33,47 @@ namespace PrimeTrade
         {
             if (cmbPromotion.Text == "VIEW USERS")
             {
-                frmReportViewer rep = new frmReportViewer();
-                rep.Show();
+                using (connect)
+                {
+                    connect.Open();
+                    MySqlDataAdapter dataAdpter = new MySqlDataAdapter("SELECT * FROM base.tbl_user", connect);
+                    DataTable dtpTable = new DataTable();
+                    dataAdpter.Fill(dtpTable);
+
+                    dataGridView.DataSource = dtpTable;
+                    connect.Close();
+                }
+            }
+            else if (cmbPromotion.Text == "STOCK SUMMARY")
+            {
+                using (connect)
+                {
+                    connect.Open();
+                    MySqlDataAdapter dataAdpter = new MySqlDataAdapter("SELECT * FROM base.tb_stock", connect);
+                    DataTable dtpTable = new DataTable();
+                    dataAdpter.Fill(dtpTable);
+
+                    dataGridView.DataSource = dtpTable;
+                    connect.Close();
+                }
+            }
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            if (cmbPromotion.Text == "VIEW USERS")
+            {
+                string nowtime = DateTime.Now.ToString("yyyyMMddThhmmss");
+                string filename = nowtime + "_" + "UserRecords";
+                ClassImportPdfReport importReport = new ClassImportPdfReport();
+                importReport.exportGridtoPdf(dataGridView, filename);
+            }
+            else if (cmbPromotion.Text == "STOCK SUMMARY")
+            {
+                string nowtime = DateTime.Now.ToString("yyyyMMddThhmmss");
+                string filename = nowtime + "_" + "StockRecords";
+                ClassImportPdfReport importReport = new ClassImportPdfReport();
+                importReport.exportGridtoPdf(dataGridView, filename);
             }
         }
     }

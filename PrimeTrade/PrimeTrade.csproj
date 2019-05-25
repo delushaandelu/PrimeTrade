@@ -417,12 +417,6 @@
     <Compile Include="frmPromotionsToDistributers.Designer.cs">
       <DependentUpon>frmPromotionsToDistributers.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmReportViewer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmReportViewer.Designer.cs">
-      <DependentUpon>frmReportViewer.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmSalesHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -574,9 +568,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPromotionsToDistributers.resx">
       <DependentUpon>frmPromotionsToDistributers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmReportViewer.resx">
-      <DependentUpon>frmReportViewer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSalesHome.resx">
       <DependentUpon>frmSalesHome.cs</DependentUpon>

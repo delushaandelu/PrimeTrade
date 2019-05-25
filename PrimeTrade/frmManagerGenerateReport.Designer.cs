@@ -35,7 +35,10 @@
             this.cmbPromotion = new MetroFramework.Controls.MetroComboBox();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.btnPrint = new MetroFramework.Controls.MetroButton();
             this.splashPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonAdv2
@@ -46,7 +49,7 @@
             this.buttonAdv2.Image = global::PrimeTrade.Properties.Resources.error;
             this.buttonAdv2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAdv2.IsBackStageButton = false;
-            this.buttonAdv2.Location = new System.Drawing.Point(375, 236);
+            this.buttonAdv2.Location = new System.Drawing.Point(676, 639);
             this.buttonAdv2.MetroColor = System.Drawing.Color.Aqua;
             this.buttonAdv2.Name = "buttonAdv2";
             this.buttonAdv2.OverrideFormManagedColor = true;
@@ -114,9 +117,9 @@
             this.materialLabel1.Location = new System.Drawing.Point(149, 174);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(98, 19);
+            this.materialLabel1.Size = new System.Drawing.Size(89, 19);
             this.materialLabel1.TabIndex = 192;
-            this.materialLabel1.Text = "Promotion ID";
+            this.materialLabel1.Text = "Report Type";
             // 
             // materialLabel9
             // 
@@ -133,11 +136,32 @@
             this.materialLabel9.Text = "Select a Promotion to get the system suggested decision to over come from Future " +
     "Loses";
             // 
+            // dataGridView
+            // 
+            this.dataGridView.AllowUserToAddRows = false;
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Location = new System.Drawing.Point(58, 224);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.Size = new System.Drawing.Size(691, 351);
+            this.dataGridView.TabIndex = 194;
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.Location = new System.Drawing.Point(674, 598);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(75, 23);
+            this.btnPrint.TabIndex = 195;
+            this.btnPrint.Text = "Print";
+            this.btnPrint.UseSelectable = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
             // frmManagerGenerateReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 349);
+            this.ClientSize = new System.Drawing.Size(801, 703);
+            this.Controls.Add(this.btnPrint);
+            this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.buttonAdv2);
             this.Controls.Add(this.splashPanel1);
             this.Controls.Add(this.cmbPromotion);
@@ -145,9 +169,9 @@
             this.Controls.Add(this.materialLabel9);
             this.Name = "frmManagerGenerateReport";
             this.Text = "frmManagerGenerateReport";
-            this.Load += new System.EventHandler(this.frmManagerGenerateReport_Load);
             this.splashPanel1.ResumeLayout(false);
             this.splashPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,5 +185,7 @@
         private MetroFramework.Controls.MetroComboBox cmbPromotion;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialLabel materialLabel9;
+        private System.Windows.Forms.DataGridView dataGridView;
+        private MetroFramework.Controls.MetroButton btnPrint;
     }
 }
