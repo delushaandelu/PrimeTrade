@@ -40,6 +40,7 @@
             this.manageStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stockBasicDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newStockRequestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.promotionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.activeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,7 +48,6 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.newStockRequestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -84,28 +84,28 @@
             // reconnectToolStripMenuItem
             // 
             this.reconnectToolStripMenuItem.Name = "reconnectToolStripMenuItem";
-            this.reconnectToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.reconnectToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.reconnectToolStripMenuItem.Text = "Reconnect ";
             this.reconnectToolStripMenuItem.Click += new System.EventHandler(this.reconnectToolStripMenuItem_Click);
             // 
             // updateSystemToolStripMenuItem
             // 
             this.updateSystemToolStripMenuItem.Name = "updateSystemToolStripMenuItem";
-            this.updateSystemToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.updateSystemToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.updateSystemToolStripMenuItem.Text = "Update System";
             this.updateSystemToolStripMenuItem.Click += new System.EventHandler(this.updateSystemToolStripMenuItem_Click);
             // 
             // restartToolStripMenuItem
             // 
             this.restartToolStripMenuItem.Name = "restartToolStripMenuItem";
-            this.restartToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.restartToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.restartToolStripMenuItem.Text = "Restart";
             this.restartToolStripMenuItem.Click += new System.EventHandler(this.restartToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -123,23 +123,30 @@
             // manageStockToolStripMenuItem
             // 
             this.manageStockToolStripMenuItem.Name = "manageStockToolStripMenuItem";
-            this.manageStockToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.manageStockToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.manageStockToolStripMenuItem.Text = "Manage Stock";
             this.manageStockToolStripMenuItem.Click += new System.EventHandler(this.manageStockToolStripMenuItem_Click);
             // 
             // viewStockToolStripMenuItem
             // 
             this.viewStockToolStripMenuItem.Name = "viewStockToolStripMenuItem";
-            this.viewStockToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewStockToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.viewStockToolStripMenuItem.Text = "View Stock";
             this.viewStockToolStripMenuItem.Click += new System.EventHandler(this.viewStockToolStripMenuItem_Click);
             // 
             // stockBasicDataToolStripMenuItem
             // 
             this.stockBasicDataToolStripMenuItem.Name = "stockBasicDataToolStripMenuItem";
-            this.stockBasicDataToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.stockBasicDataToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.stockBasicDataToolStripMenuItem.Text = "Stock Basic Data";
             this.stockBasicDataToolStripMenuItem.Click += new System.EventHandler(this.stockBasicDataToolStripMenuItem_Click);
+            // 
+            // newStockRequestToolStripMenuItem
+            // 
+            this.newStockRequestToolStripMenuItem.Name = "newStockRequestToolStripMenuItem";
+            this.newStockRequestToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.newStockRequestToolStripMenuItem.Text = "New Stock Request";
+            this.newStockRequestToolStripMenuItem.Click += new System.EventHandler(this.newStockRequestToolStripMenuItem_Click);
             // 
             // promotionToolStripMenuItem
             // 
@@ -162,6 +169,7 @@
             this.activeToolStripMenuItem.Name = "activeToolStripMenuItem";
             this.activeToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.activeToolStripMenuItem.Text = "Active ";
+            this.activeToolStripMenuItem.Click += new System.EventHandler(this.activeToolStripMenuItem_Click);
             // 
             // aprovePromotionStockToolStripMenuItem
             // 
@@ -185,13 +193,6 @@
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
             this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
             this.toolStripStatusLabel.Text = "Status";
-            // 
-            // newStockRequestToolStripMenuItem
-            // 
-            this.newStockRequestToolStripMenuItem.Name = "newStockRequestToolStripMenuItem";
-            this.newStockRequestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.newStockRequestToolStripMenuItem.Text = "New Stock Request";
-            this.newStockRequestToolStripMenuItem.Click += new System.EventHandler(this.newStockRequestToolStripMenuItem_Click);
             // 
             // pictureBox2
             // 

@@ -30,27 +30,27 @@
         {
             this.components = new System.ComponentModel.Container();
             this.listView6 = new System.Windows.Forms.ListView();
-            this.columnHeader46 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader47 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader48 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader49 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader52 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader53 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader54 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader55 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader56 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader57 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader58 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader59 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader60 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader61 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader62 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.approveRequestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splashPanel1 = new Syncfusion.Windows.Forms.Tools.SplashPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonAdv2 = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.contextMenuStrip1.SuspendLayout();
             this.splashPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -58,21 +58,21 @@
             // listView6
             // 
             this.listView6.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader46,
-            this.columnHeader47,
-            this.columnHeader48,
-            this.columnHeader49,
-            this.columnHeader52,
-            this.columnHeader53,
-            this.columnHeader54,
-            this.columnHeader55,
-            this.columnHeader56,
-            this.columnHeader57,
-            this.columnHeader58,
-            this.columnHeader59,
-            this.columnHeader60,
-            this.columnHeader61,
-            this.columnHeader62});
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6,
+            this.columnHeader7,
+            this.columnHeader8,
+            this.columnHeader9,
+            this.columnHeader10,
+            this.columnHeader11,
+            this.columnHeader12,
+            this.columnHeader13,
+            this.columnHeader14,
+            this.columnHeader15});
             this.listView6.FullRowSelect = true;
             this.listView6.GridLines = true;
             this.listView6.Location = new System.Drawing.Point(18, 117);
@@ -82,79 +82,6 @@
             this.listView6.UseCompatibleStateImageBehavior = false;
             this.listView6.View = System.Windows.Forms.View.Details;
             this.listView6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listView6_MouseClick);
-            // 
-            // columnHeader46
-            // 
-            this.columnHeader46.Text = "PROMO CODE";
-            this.columnHeader46.Width = 80;
-            // 
-            // columnHeader47
-            // 
-            this.columnHeader47.Text = "Distributer";
-            this.columnHeader47.Width = 80;
-            // 
-            // columnHeader48
-            // 
-            this.columnHeader48.Text = "Promotion Name";
-            this.columnHeader48.Width = 100;
-            // 
-            // columnHeader49
-            // 
-            this.columnHeader49.Text = "Promo Machanisum";
-            this.columnHeader49.Width = 100;
-            // 
-            // columnHeader52
-            // 
-            this.columnHeader52.Text = "Promo Dec";
-            this.columnHeader52.Width = 100;
-            // 
-            // columnHeader53
-            // 
-            this.columnHeader53.Text = "Main Item";
-            this.columnHeader53.Width = 80;
-            // 
-            // columnHeader54
-            // 
-            this.columnHeader54.Text = "Reqest QTY";
-            this.columnHeader54.Width = 63;
-            // 
-            // columnHeader55
-            // 
-            this.columnHeader55.Text = "Attaced Item";
-            this.columnHeader55.Width = 80;
-            // 
-            // columnHeader56
-            // 
-            this.columnHeader56.Text = "Reqest QTY";
-            // 
-            // columnHeader57
-            // 
-            this.columnHeader57.Text = "From Date";
-            this.columnHeader57.Width = 80;
-            // 
-            // columnHeader58
-            // 
-            this.columnHeader58.Text = "Until Date";
-            this.columnHeader58.Width = 80;
-            // 
-            // columnHeader59
-            // 
-            this.columnHeader59.Text = "Comments";
-            this.columnHeader59.Width = 100;
-            // 
-            // columnHeader60
-            // 
-            this.columnHeader60.Text = "Active State";
-            this.columnHeader60.Width = 100;
-            // 
-            // columnHeader61
-            // 
-            this.columnHeader61.Text = "Left Days";
-            // 
-            // columnHeader62
-            // 
-            this.columnHeader62.Text = "Track State";
-            this.columnHeader62.Width = 80;
             // 
             // metroLabel5
             // 
@@ -225,6 +152,81 @@
             this.buttonAdv2.UseVisualStyle = false;
             this.buttonAdv2.Click += new System.EventHandler(this.buttonAdv2_Click);
             // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Transaction ID";
+            this.columnHeader1.Width = 120;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Distributer ";
+            this.columnHeader2.Width = 120;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Promotion Name";
+            this.columnHeader3.Width = 120;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Promo Mach";
+            this.columnHeader4.Width = 120;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Promo Des";
+            this.columnHeader5.Width = 120;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "From Date";
+            this.columnHeader6.Width = 120;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Until Date";
+            this.columnHeader7.Width = 120;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Comments";
+            this.columnHeader8.Width = 120;
+            // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Text = "Item One";
+            this.columnHeader9.Width = 120;
+            // 
+            // columnHeader10
+            // 
+            this.columnHeader10.Text = "Item One Qty";
+            this.columnHeader10.Width = 120;
+            // 
+            // columnHeader11
+            // 
+            this.columnHeader11.Text = "Item One Price";
+            this.columnHeader11.Width = 120;
+            // 
+            // columnHeader12
+            // 
+            this.columnHeader12.Text = "item two";
+            this.columnHeader12.Width = 120;
+            // 
+            // columnHeader13
+            // 
+            this.columnHeader13.Text = "Item Two Qty";
+            this.columnHeader13.Width = 120;
+            // 
+            // columnHeader14
+            // 
+            this.columnHeader14.Text = "ItemTwo Price";
+            this.columnHeader14.Width = 120;
+            // 
+            // columnHeader15
+            // 
+            this.columnHeader15.Text = "State";
+            this.columnHeader15.Width = 120;
+            // 
             // frmFinaceApproveStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -247,26 +249,26 @@
         #endregion
 
         private System.Windows.Forms.ListView listView6;
-        private System.Windows.Forms.ColumnHeader columnHeader46;
-        private System.Windows.Forms.ColumnHeader columnHeader47;
-        private System.Windows.Forms.ColumnHeader columnHeader48;
-        private System.Windows.Forms.ColumnHeader columnHeader49;
-        private System.Windows.Forms.ColumnHeader columnHeader52;
-        private System.Windows.Forms.ColumnHeader columnHeader53;
-        private System.Windows.Forms.ColumnHeader columnHeader54;
-        private System.Windows.Forms.ColumnHeader columnHeader55;
-        private System.Windows.Forms.ColumnHeader columnHeader56;
-        private System.Windows.Forms.ColumnHeader columnHeader57;
-        private System.Windows.Forms.ColumnHeader columnHeader58;
-        private System.Windows.Forms.ColumnHeader columnHeader59;
-        private System.Windows.Forms.ColumnHeader columnHeader60;
-        private System.Windows.Forms.ColumnHeader columnHeader61;
-        private System.Windows.Forms.ColumnHeader columnHeader62;
         private MetroFramework.Controls.MetroLabel metroLabel5;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem approveRequestToolStripMenuItem;
         private Syncfusion.Windows.Forms.Tools.SplashPanel splashPanel1;
         private System.Windows.Forms.Label label1;
         private Syncfusion.Windows.Forms.ButtonAdv buttonAdv2;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
+        private System.Windows.Forms.ColumnHeader columnHeader9;
+        private System.Windows.Forms.ColumnHeader columnHeader10;
+        private System.Windows.Forms.ColumnHeader columnHeader11;
+        private System.Windows.Forms.ColumnHeader columnHeader12;
+        private System.Windows.Forms.ColumnHeader columnHeader13;
+        private System.Windows.Forms.ColumnHeader columnHeader14;
+        private System.Windows.Forms.ColumnHeader columnHeader15;
     }
 }

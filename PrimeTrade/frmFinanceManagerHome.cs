@@ -100,5 +100,10 @@ namespace PrimeTrade
             form.MdiParent = this;
             form.Show();
         }
+
+        private void activeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
