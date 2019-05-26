@@ -55,6 +55,26 @@ namespace PrimeTrade
             connect.Close();
         }
 
+        public void stockChart()
+        {
+            connect.Open();
+            salesChart.ResetAutoValues();
+
+            MySqlCommand cmd = connect.CreateCommand();
+            cmd.CommandText = "SELECT sum(`tb_sales`.`qty1`),sum(`tb_sales`.`qty2`) FROM `base`.`tb_sales` WHERE `tb_sales`.`promotionid` = '"+ cmbpromotion.Text + "'  GROUP BY `tb_sales`.`promotionid`;";
+            MySqlDataReader reader;
+            
+            reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                tileDistributers.Series["Series1"].Points.AddXY(reader.GetString("sum(`tb_sales`.`qty1`)"), reader.GetInt32("sum(`tb_sales`.`qty2`)"));
+                //.Series["Series2"].Points.AddXY(reader.GetString("2"), reader.GetInt32("sum( `tb_sales`.`qty2`)"));
+            }
+
+            connect.Close();
+        }
+
+
         public void pieChart()
         {
             connect.Open();
@@ -233,6 +253,8 @@ namespace PrimeTrade
             }
 
             connect.Close();
+
+            stockChart();
         }
 
         private void getStockRage()

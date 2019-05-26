@@ -100,10 +100,75 @@ namespace PrimeTrade
             txtmainname.Text = listView.SelectedItems[0].SubItems[6].Text;
             txtmaincode2.Text = listView.SelectedItems[0].SubItems[8].Text;
             txtmainattached.Text = listView.SelectedItems[0].SubItems[9].Text;
-            lblonhand1.Text = listView.SelectedItems[0].SubItems[7].Text;
-            lblonhand2.Text = listView.SelectedItems[0].SubItems[10].Text;
+            lbltot1.Text = listView.SelectedItems[0].SubItems[7].Text;
+            lbltot2.Text = listView.SelectedItems[0].SubItems[10].Text;
+
+            getSoldStock(txtpromo.Text, lbluser.Text, listView.SelectedItems[0].SubItems[7].Text, listView.SelectedItems[0].SubItems[10].Text);
+
+            int total1 = Int32.Parse(lbltot1.Text);
+            int sold1  = Int32.Parse(lblsold1.Text);
+
+            int total2 = Int32.Parse(lbltot2.Text);
+            int sold2 = Int32.Parse(lblsold2.Text);
+
+            if (sold1 >= total1)
+            {
+                DialogResult dialogResult = MessageBox.Show("You can not do the sales for this promotion, Regarding less Onhand Stock on stock id '" + txtmaincode1.Text + "'. Do you want to send a stock reqeust atomaticaly to you Brand Manager?", "Qty not enough !", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (dialogResult == DialogResult.Yes)
+                {
+                    MessageBox.Show("over due stock");
+                }
+            }
+            else if (sold2 >= total2)
+            {
+                DialogResult dialogResult = MessageBox.Show("You can not do the sales for this promotion, Regarding less Onhand Stock on stock id '" + txtmaincode1.Text + "'. Do you want to send a stock reqeust atomaticaly to you Brand Manager?", "Qty not enough !", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (dialogResult == DialogResult.Yes)
+                {
+                    MessageBox.Show("over due stock2");
+                }
+            }
+
         }
 
+        public void getSoldStock(string promoId, string distId, string total1, string total2)
+        {
+            MySqlCommand command = new MySqlCommand();
+            connect.Open();
+            command.Connection = connect;
+
+            command.CommandText = "get_sold_stock";
+            command.CommandType = CommandType.StoredProcedure;
+
+            command.Parameters.Add(new MySqlParameter("@dist_id", distId));
+            command.Parameters["@dist_id"].Direction = ParameterDirection.Input;
+
+            command.Parameters.Add(new MySqlParameter("@promo_id", promoId));
+            command.Parameters["@promo_id"].Direction = ParameterDirection.Input;
+
+            command.Parameters.Add(new MySqlParameter("@stock1", MySqlDbType.VarChar));
+            command.Parameters["@stock1"].Direction = ParameterDirection.Output;
+
+            command.Parameters.Add(new MySqlParameter("@stock2", MySqlDbType.VarChar));
+            command.Parameters["@stock2"].Direction = ParameterDirection.Output;
+
+            command.ExecuteNonQuery();
+
+            int stock1 = Int32.Parse((string)command.Parameters["@stock1"].Value);
+            int stock2 = Int32.Parse((string)command.Parameters["@stock2"].Value);
+
+            lblsold1.Text = (string)command.Parameters["@stock1"].Value;
+            lblsold2.Text = (string)command.Parameters["@stock2"].Value;
+
+            int totalStock1 = Int32.Parse(total1);
+            int totalstrok2 = Int32.Parse(total2);
+
+            lblonhand1.Text = (totalStock1 - stock1).ToString();
+            lblonhand2.Text = (totalstrok2 - stock2).ToString();
+
+            connect.Close();
+        }
        
         private void clearFields()
         {
@@ -124,137 +189,182 @@ namespace PrimeTrade
 
         private void buttonAdv1_Click(object sender, EventArgs e)
         {
-            
+            int tot1 = Int32.Parse(lbltot1.Text);
+            int hand1 = Int32.Parse(lblonhand1.Text);
+
+            int tot2 = Int32.Parse(lbltot2.Text);
+            int hand2 = Int32.Parse(lblonhand2.Text);
+
+            int sales1 = Int32.Parse(txtitemqty1.Text);
+            int sales2 = Int32.Parse(txtitemqty2.Text);
+
             if (txtitemqty1.Text == "" || txtitemqty2.Text == "" || txtseller.Text == "" || txtpromo.Text == "" || txtprice1.Text == "" || txtprice2.Text == "")
             {
                 MessageBox.Show("Please fill up all the fields.", "Empty Fields Detected !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            else
+            else if (tot1 < hand1)
             {
-                int qty1 = Int32.Parse(txtitemqty1.Text);
-                int handqty1 = Int32.Parse(lblonhand1.Text);
 
-                int qty2 = Int32.Parse(txtitemqty2.Text);
-                int handqty2 = Int32.Parse(lblonhand2.Text);
+                DialogResult dialogResult = MessageBox.Show("You can not do the sales for this promotion, Regarding less Onhand Stock on stock id '" + txtmaincode1.Text + "'. Do you want to send a stock reqeust atomaticaly to you Brand Manager?", "Qty not enough !", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-                if (qty1 > handqty1 || qty2 > handqty2)
+                if (dialogResult == DialogResult.Yes)
                 {
-                    MessageBox.Show("On Hand stock is not enough for this transaction please reorder qty.", "Qty not enough !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
+                    MessageBox.Show("over due stock");
                 }
-                else
+
+            }
+
+            else if (hand1 < sales1)
+            {
+                DialogResult dialogResult = MessageBox.Show("You can not do the sales for this promotion, Regarding less Onhand Stock on stock id '" + txtmaincode1.Text + "'. Do you want to send a stock reqeust atomaticaly to you Brand Manager?", "Qty not enough !", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (dialogResult == DialogResult.Yes)
                 {
                     MySqlCommand command = new MySqlCommand();
                     connect.Open();
                     command.Connection = connect;
 
-                    command.CommandText = "sales_new";
+                    command.CommandText = "request_new_stock";
                     command.CommandType = CommandType.StoredProcedure;
 
-                    command.Parameters.AddWithValue("@promotionid", txtpromo.Text);
-                    command.Parameters["@promotionid"].Direction = ParameterDirection.Input;
+                    command.Parameters.Add(new MySqlParameter("@stock", txtmaincode1.Text));
+                    command.Parameters["@stock"].Direction = ParameterDirection.Input;
 
-                    command.Parameters.AddWithValue("@item1", txtmaincode1.Text);
-                    command.Parameters["@item1"].Direction = ParameterDirection.Input;
+                    command.Parameters.Add(new MySqlParameter("@qty", tot1));
+                    command.Parameters["@qty"].Direction = ParameterDirection.Input;
 
-                    command.Parameters.AddWithValue("@qty1", txtitemqty1.Text);
-                    command.Parameters["@qty1"].Direction = ParameterDirection.Input;
+                    command.Parameters.Add(new MySqlParameter("@fordate", DateTime.Now.ToString("M/d/yyyy")));
+                    command.Parameters["@fordate"].Direction = ParameterDirection.Input;
 
-                    command.Parameters.AddWithValue("@item2", txtmaincode2.Text);
-                    command.Parameters["@item2"].Direction = ParameterDirection.Input;
+                    command.Parameters.Add(new MySqlParameter("@state", "NEW"));
+                    command.Parameters["@state"].Direction = ParameterDirection.Input;
 
-                    command.Parameters.AddWithValue("@qty2", txtitemqty2.Text);
-                    command.Parameters["@qty2"].Direction = ParameterDirection.Input;
+                    command.Parameters.Add(new MySqlParameter("@comments", "Stock Request for the promotion '"+txtpromo.Text+"'"));
+                    command.Parameters["@comments"].Direction = ParameterDirection.Input;
 
-                    command.Parameters.AddWithValue("@user", lbluser.Text);
-                    command.Parameters["@user"].Direction = ParameterDirection.Input;
-
-                    command.Parameters.AddWithValue("@buyer", txtseller.Text);
-                    command.Parameters["@buyer"].Direction = ParameterDirection.Input;
-
-                    command.Parameters.AddWithValue("@salesdate", metroDateTime1.Text);
-                    command.Parameters["@salesdate"].Direction = ParameterDirection.Input;
-
-                    command.Parameters.AddWithValue("@distributer", lbluser.Text);
-                    command.Parameters["@distributer"].Direction = ParameterDirection.Input;
-
-                    command.Parameters.AddWithValue("@price1", txtprice1.Text);
-                    command.Parameters["@price1"].Direction = ParameterDirection.Input;
-
-                    command.Parameters.AddWithValue("@price2", txtprice2.Text);
-                    command.Parameters["@price2"].Direction = ParameterDirection.Input;
+                    command.Parameters.Add(new MySqlParameter("@distid", lbluser.Text));
+                    command.Parameters["@distid"].Direction = ParameterDirection.Input;
 
                     if (command.ExecuteNonQuery() == 1)
                     {
                         connect.Close();
-                        MetroMessageBox.Show(frmDistributersSales.ActiveForm, "Stock Allocated Sent to Finance Department for Approval.", "Success !", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        
-                        viewAllPromotionDetails();
-                        
-                        MySqlCommand command1 = new MySqlCommand();
-                        connect.Open();
-                        command1.Connection = connect;
-
-                        command1.CommandText = "strock_reduice_qty";
-                        command1.CommandType = CommandType.StoredProcedure;
-
-                        command1.Parameters.AddWithValue("@stockid", txtmaincode1.Text);
-                        command1.Parameters["@stockid"].Direction = ParameterDirection.Input;
-
-                        command1.Parameters.AddWithValue("@qty", txtitemqty1.Text);
-                        command1.Parameters["@qty"].Direction = ParameterDirection.Input;
-                        command1.ExecuteNonQuery();
-                        connect.Close();
-
-                        MySqlCommand command2 = new MySqlCommand();
-                        connect.Open();
-                        command2.Connection = connect;
-
-                        command2.CommandText = "strock_reduice_qty";
-                        command2.CommandType = CommandType.StoredProcedure;
-
-                        command2.Parameters.AddWithValue("@stockid", txtmaincode2.Text);
-                        command2.Parameters["@stockid"].Direction = ParameterDirection.Input;
-
-                        command2.Parameters.AddWithValue("@qty", txtitemqty2.Text);
-                        command2.Parameters["@qty"].Direction = ParameterDirection.Input;
-                        command2.ExecuteNonQuery();
-                        connect.Close();
-                        viewAllPromotionDetails();
+                        MessageBox.Show("Stock reqest Sent.", "Success !", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         clearFields();
-
                     }
                     else
                     {
                         connect.Close();
-                        MetroMessageBox.Show(frmDistributersSales.ActiveForm, "Can not allocate stock for the promotion..", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Can not send stock request.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         clearFields();
                     }
-                                                                                          
                 }
-                
+            }
+
+            else if (hand2 < sales2)
+            {
+                DialogResult dialogResult = MessageBox.Show("You can not do the sales for this promotion, Regarding less Onhand Stock on stock id '" + txtmaincode1.Text + "'. Do you want to send a stock reqeust atomaticaly to you Brand Manager?", "Qty not enough !", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (dialogResult == DialogResult.Yes)
+                {
+                    MessageBox.Show("over due stock2");
+                }
+            }
+
+            else
+            {
+                MySqlCommand command = new MySqlCommand();
+                connect.Open();
+                command.Connection = connect;
+
+                command.CommandText = "sales_new";
+                command.CommandType = CommandType.StoredProcedure;
+
+                command.Parameters.AddWithValue("@promotionid", txtpromo.Text);
+                command.Parameters["@promotionid"].Direction = ParameterDirection.Input;
+
+                command.Parameters.AddWithValue("@item1", txtmaincode1.Text);
+                command.Parameters["@item1"].Direction = ParameterDirection.Input;
+
+                command.Parameters.AddWithValue("@qty1", txtitemqty1.Text);
+                command.Parameters["@qty1"].Direction = ParameterDirection.Input;
+
+                command.Parameters.AddWithValue("@item2", txtmaincode2.Text);
+                command.Parameters["@item2"].Direction = ParameterDirection.Input;
+
+                command.Parameters.AddWithValue("@qty2", txtitemqty2.Text);
+                command.Parameters["@qty2"].Direction = ParameterDirection.Input;
+
+                command.Parameters.AddWithValue("@user", lbluser.Text);
+                command.Parameters["@user"].Direction = ParameterDirection.Input;
+
+                command.Parameters.AddWithValue("@buyer", txtseller.Text);
+                command.Parameters["@buyer"].Direction = ParameterDirection.Input;
+
+                command.Parameters.AddWithValue("@salesdate", metroDateTime1.Text);
+                command.Parameters["@salesdate"].Direction = ParameterDirection.Input;
+
+                command.Parameters.AddWithValue("@distributer", lbluser.Text);
+                command.Parameters["@distributer"].Direction = ParameterDirection.Input;
+
+                command.Parameters.AddWithValue("@price1", txtprice1.Text);
+                command.Parameters["@price1"].Direction = ParameterDirection.Input;
+
+                command.Parameters.AddWithValue("@price2", txtprice2.Text);
+                command.Parameters["@price2"].Direction = ParameterDirection.Input;
+
+                if (command.ExecuteNonQuery() == 1)
+                {
+                    connect.Close();
+                    MetroMessageBox.Show(frmDistributersSales.ActiveForm, "Stock Allocated Sent to Finance Department for Approval.", "Success !", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    viewAllPromotionDetails();
+
+                    MySqlCommand command1 = new MySqlCommand();
+                    connect.Open();
+                    command1.Connection = connect;
+
+                    command1.CommandText = "strock_reduice_qty";
+                    command1.CommandType = CommandType.StoredProcedure;
+
+                    command1.Parameters.AddWithValue("@stockid", txtmaincode1.Text);
+                    command1.Parameters["@stockid"].Direction = ParameterDirection.Input;
+
+                    command1.Parameters.AddWithValue("@qty", txtitemqty1.Text);
+                    command1.Parameters["@qty"].Direction = ParameterDirection.Input;
+                    command1.ExecuteNonQuery();
+                    connect.Close();
+
+                    MySqlCommand command2 = new MySqlCommand();
+                    connect.Open();
+                    command2.Connection = connect;
+
+                    command2.CommandText = "strock_reduice_qty";
+                    command2.CommandType = CommandType.StoredProcedure;
+
+                    command2.Parameters.AddWithValue("@stockid", txtmaincode2.Text);
+                    command2.Parameters["@stockid"].Direction = ParameterDirection.Input;
+
+                    command2.Parameters.AddWithValue("@qty", txtitemqty2.Text);
+                    command2.Parameters["@qty"].Direction = ParameterDirection.Input;
+                    command2.ExecuteNonQuery();
+                    connect.Close();
+                    viewAllPromotionDetails();
+                    clearFields();
+
+                }
+                else
+                {
+                    connect.Close();
+                    MetroMessageBox.Show(frmDistributersSales.ActiveForm, "Can not allocate stock for the promotion..", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    clearFields();
+                }
             }
         }
 
         private void buttonAdv2_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void metroDateTime1_ValueChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void metroDateTime1_ValueChanged_1(object sender, EventArgs e)
-        {
-
         }
     }
 }

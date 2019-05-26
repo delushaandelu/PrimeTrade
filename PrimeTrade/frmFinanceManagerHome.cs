@@ -105,5 +105,10 @@ namespace PrimeTrade
         {
 
         }
+
+        private void pToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

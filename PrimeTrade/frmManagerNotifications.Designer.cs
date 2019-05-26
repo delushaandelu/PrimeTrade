@@ -33,8 +33,14 @@
             this.btnreset = new Syncfusion.Windows.Forms.ButtonAdv();
             this.splashPanel1 = new Syncfusion.Windows.Forms.Tools.SplashPanel();
             this.listView2 = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.buttonAdv2 = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.splashPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,11 +72,12 @@
             this.btnreset.PushButton = true;
             this.btnreset.Size = new System.Drawing.Size(124, 41);
             this.btnreset.TabIndex = 147;
-            this.btnreset.Text = "RESET";
+            this.btnreset.Text = "Allocated";
             this.btnreset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnreset.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnreset.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnreset.UseVisualStyle = false;
+            this.btnreset.Click += new System.EventHandler(this.btnreset_Click);
             // 
             // splashPanel1
             // 
@@ -88,7 +95,13 @@
             // listView2
             // 
             this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1});
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6,
+            this.columnHeader7,
+            this.columnHeader8});
             this.listView2.FullRowSelect = true;
             this.listView2.GridLines = true;
             this.listView2.Location = new System.Drawing.Point(23, 73);
@@ -97,11 +110,6 @@
             this.listView2.TabIndex = 145;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Notification Details";
-            this.columnHeader1.Width = 800;
             // 
             // buttonAdv2
             // 
@@ -123,6 +131,37 @@
             this.buttonAdv2.ThemeStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.buttonAdv2.UseVisualStyle = false;
             this.buttonAdv2.Click += new System.EventHandler(this.buttonAdv2_Click);
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Trans ID";
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Stock ID";
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "QTY";
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Trans Date";
+            this.columnHeader5.Width = 120;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "State";
+            this.columnHeader6.Width = 100;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Comment";
+            this.columnHeader7.Width = 180;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Distributer";
             // 
             // frmManagerNotifications
             // 
@@ -147,7 +186,13 @@
         private Syncfusion.Windows.Forms.ButtonAdv btnreset;
         private Syncfusion.Windows.Forms.Tools.SplashPanel splashPanel1;
         private System.Windows.Forms.ListView listView2;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
         private Syncfusion.Windows.Forms.ButtonAdv buttonAdv2;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
     }
 }

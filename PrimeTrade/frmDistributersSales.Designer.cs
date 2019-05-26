@@ -88,6 +88,10 @@
             this.buttonAdv1 = new Syncfusion.Windows.Forms.ButtonAdv();
             this.metroLabel13 = new MetroFramework.Controls.MetroLabel();
             this.metroDateTime1 = new MetroFramework.Controls.MetroDateTime();
+            this.lbltot2 = new MetroFramework.Controls.MetroLabel();
+            this.lbltot1 = new MetroFramework.Controls.MetroLabel();
+            this.lblsold1 = new MetroFramework.Controls.MetroLabel();
+            this.lblsold2 = new MetroFramework.Controls.MetroLabel();
             this.splashPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -532,7 +536,7 @@
             // 
             // columnHeader36
             // 
-            this.columnHeader36.Text = "Left QTY";
+            this.columnHeader36.Text = "Promo Qty";
             // 
             // columnHeader37
             // 
@@ -545,7 +549,7 @@
             // 
             // columnHeader38
             // 
-            this.columnHeader38.Text = "Left QTY";
+            this.columnHeader38.Text = "Promo Qty";
             // 
             // columnHeader39
             // 
@@ -784,13 +788,56 @@
             this.metroDateTime1.Name = "metroDateTime1";
             this.metroDateTime1.Size = new System.Drawing.Size(200, 29);
             this.metroDateTime1.TabIndex = 137;
-            this.metroDateTime1.ValueChanged += new System.EventHandler(this.metroDateTime1_ValueChanged_1);
+            // 
+            // lbltot2
+            // 
+            this.lbltot2.AutoSize = true;
+            this.lbltot2.Location = new System.Drawing.Point(1115, 339);
+            this.lbltot2.Name = "lbltot2";
+            this.lbltot2.Size = new System.Drawing.Size(69, 19);
+            this.lbltot2.TabIndex = 138;
+            this.lbltot2.Text = "Sales Date";
+            this.lbltot2.Visible = false;
+            // 
+            // lbltot1
+            // 
+            this.lbltot1.AutoSize = true;
+            this.lbltot1.Location = new System.Drawing.Point(1115, 370);
+            this.lbltot1.Name = "lbltot1";
+            this.lbltot1.Size = new System.Drawing.Size(69, 19);
+            this.lbltot1.TabIndex = 139;
+            this.lbltot1.Text = "Sales Date";
+            this.lbltot1.Visible = false;
+            // 
+            // lblsold1
+            // 
+            this.lblsold1.AutoSize = true;
+            this.lblsold1.Location = new System.Drawing.Point(1134, 478);
+            this.lblsold1.Name = "lblsold1";
+            this.lblsold1.Size = new System.Drawing.Size(69, 19);
+            this.lblsold1.TabIndex = 140;
+            this.lblsold1.Text = "Sales Date";
+            this.lblsold1.Visible = false;
+            // 
+            // lblsold2
+            // 
+            this.lblsold2.AutoSize = true;
+            this.lblsold2.Location = new System.Drawing.Point(1134, 503);
+            this.lblsold2.Name = "lblsold2";
+            this.lblsold2.Size = new System.Drawing.Size(69, 19);
+            this.lblsold2.TabIndex = 141;
+            this.lblsold2.Text = "Sales Date";
+            this.lblsold2.Visible = false;
             // 
             // frmDistributersSales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1048, 737);
+            this.ClientSize = new System.Drawing.Size(1047, 737);
+            this.Controls.Add(this.lblsold2);
+            this.Controls.Add(this.lblsold1);
+            this.Controls.Add(this.lbltot1);
+            this.Controls.Add(this.lbltot2);
             this.Controls.Add(this.metroDateTime1);
             this.Controls.Add(this.metroLabel13);
             this.Controls.Add(this.buttonAdv2);
@@ -891,5 +938,9 @@
         private Syncfusion.Windows.Forms.ButtonAdv buttonAdv2;
         private MetroFramework.Controls.MetroLabel metroLabel13;
         private MetroFramework.Controls.MetroDateTime metroDateTime1;
+        private MetroFramework.Controls.MetroLabel lbltot2;
+        private MetroFramework.Controls.MetroLabel lbltot1;
+        private MetroFramework.Controls.MetroLabel lblsold1;
+        private MetroFramework.Controls.MetroLabel lblsold2;
     }
 }

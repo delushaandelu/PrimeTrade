@@ -338,9 +338,6 @@ namespace PrimeTrade
         public void Notification()
         {
             requestStockNotfication(); 
-            MetroFramework.MetroMessageBox.Show(this, "DO YOU RECOMMAND TO REALLOCATED THE STOCK BETWEEK DISTRIBUTORS", "NOTIFICATION", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            MetroFramework.MetroMessageBox.Show(this, "STOP PROMOTION ID 27, REGARDING THE FUTURE LOSE", "NOTIFICATION", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-
         }
 
         public void requestStockNotfication()
@@ -358,7 +355,7 @@ namespace PrimeTrade
                     {
                         string message = "The Distributor '"+ reader.GetString("distid") + "' is Requesting '" + reader.GetString("qty") + "' No of of stock from the stock '"+ reader.GetString("stock") + "' for the date of '"+ reader.GetString("fordate") + "'. Added Comments '"+ reader.GetString("comment") + "'" ;
 
-                        MetroFramework.MetroMessageBox.Show(this, message, "NEW STOCK REQUEST FROM THE DISTRIBUTOR...", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MetroFramework.MetroMessageBox.Show(this, message, "NEW STOCK REQUEST FROM THE DISTRIBUTOR...", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
                 connect.Close(); 

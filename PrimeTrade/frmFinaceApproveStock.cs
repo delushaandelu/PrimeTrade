@@ -29,7 +29,7 @@ namespace PrimeTrade
             listView6.Items.Clear();
             listView6.View = View.Details;
 
-            MySqlDataAdapter dAdpter = new MySqlDataAdapter("SELECT `tb_promo_distributer`.`idtb_promo_distributer`, `tbl_user`.`firstname`,`tb_promotion`.`promoname`,`tb_promotion`.`promomach`,`tb_promotion`.`promodes`,`tb_promotion_active`.`fromdate`,`tb_promotion_active`.`untildate`,`tb_promotion_active`.`Comments`,`tb_promo_distributer`.`itemone`,`tb_promo_distributer`.`itemoneqty`,`tb_promo_distributer`.`priceone`,`tb_promo_distributer`.`itemtwo`,`tb_promo_distributer`.`itemtwoqty`,`tb_promo_distributer`.`pricetwo`,`tb_promo_distributer`.`state`FROM `base`.`tb_promo_distributer`, `base`.`tbl_user`,`base`.`tb_promotion`,`base`.`tb_promotion_active` WHERE `tb_promo_distributer`.`dist_id` =`tbl_user`.`idtbl_user` AND `tb_promo_distributer`.`promo_id` = `tb_promotion`.`idtb_promotion` AND `tb_promo_distributer`.`promo_id`=`tb_promotion_active`.`idtb_promotion_active` AND `tb_promo_distributer`.`state` = 'FINANCEAPROVE'  ; ", connect); 
+            MySqlDataAdapter dAdpter = new MySqlDataAdapter("SELECT `tb_promo_distributer`.`idtb_promo_distributer`, `tbl_user`.`firstname`,`tb_promotion`.`promoname`,`tb_promotion`.`promomach`,`tb_promotion`.`promodes`,`tb_promotion_active`.`fromdate`,`tb_promotion_active`.`untildate`,`tb_promotion_active`.`Comments`,`tb_promo_distributer`.`itemone`,`tb_promo_distributer`.`itemoneqty`,`tb_promo_distributer`.`priceone`,`tb_promo_distributer`.`itemtwo`,`tb_promo_distributer`.`itemtwoqty`,`tb_promo_distributer`.`pricetwo`,`tb_promo_distributer`.`state`FROM `base`.`tb_promo_distributer`, `base`.`tbl_user`,`base`.`tb_promotion`,`base`.`tb_promotion_active` WHERE `tb_promo_distributer`.`dist_id` =`tbl_user`.`idtbl_user`  AND `tb_promo_distributer`.`promo_id`=`tb_promotion_active`.`idtb_promotion_active` AND `tb_promo_distributer`.`state` = 'FINANCEAPROVE'  ; ", connect); 
 
             DataTable dTable = new DataTable();
             dAdpter.Fill(dTable);
@@ -131,7 +131,8 @@ namespace PrimeTrade
             else
             {
                 connect.Close();
-                MessageBox.Show("All Promotion Allocated Successfully.", "Success !", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("All Promotion Allocated Successfully.", "Success !", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                loadDate();
             }
         }
 

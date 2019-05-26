@@ -163,6 +163,7 @@
             this.pToolStripMenuItem.Name = "pToolStripMenuItem";
             this.pToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.pToolStripMenuItem.Text = "View Promotion";
+            this.pToolStripMenuItem.Click += new System.EventHandler(this.pToolStripMenuItem_Click);
             // 
             // activeToolStripMenuItem
             // 
