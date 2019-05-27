@@ -207,7 +207,7 @@ namespace PrimeTrade
             salesChart.ResetAutoValues();
 
             MySqlCommand cmd = connect.CreateCommand();
-            cmd.CommandText = "SELECT  `tbl_user`.`firstname`, SUM( `tb_promo_distributer`.`itemoneqty`) FROM `base`.`tb_promo_distributer`, `base`.`tbl_user` WHERE `tbl_user`.`idtbl_user` = `tb_promo_distributer`.`idtb_promo_distributer` AND `tbl_user`.`role` = 'DISTRIBUTER' AND `tb_promo_distributer`.`state` in('APPROVED','ONSALES') GROUP BY `tbl_user`.`firstname`;";
+            cmd.CommandText = "SELECT  `tbl_user`.`firstname`, SUM( `tb_promo_distributer`.`itemoneqty`) FROM `base`.`tb_promo_distributer`, `base`.`tbl_user` WHERE `tbl_user`.`idtbl_user` = `tb_promo_distributer`.`dist_id` AND `tbl_user`.`role` = 'DISTRIBUTER' AND `tb_promo_distributer`.`state` in('APPROVED','ONSALES') GROUP BY `tbl_user`.`firstname`;";
             MySqlDataReader reader;
 
             reader = cmd.ExecuteReader();
